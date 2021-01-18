@@ -1,0 +1,15 @@
+D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe\obj\Debug\CENFe.csprojResolveAssemblyReference.cache
+D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe\obj\Debug\CEnfe.Properties.Resources.resources
+D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe\obj\Debug\CENFe.csproj.GenerateResource.Cache
+C:\camposevolution\CENFe\UniNfeSobre.xml
+C:\camposevolution\CENFe\logounimake.png
+C:\camposevolution\CENFe\CENFe.exe.config
+C:\camposevolution\CENFe\CENFe.exe
+C:\camposevolution\CENFe\CENFe.pdb
+D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe\obj\Debug\CENFe.exe
+D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe\obj\Debug\CENFe.pdb
+D:\Desenvolvimento\CENFe\trunk\fontes\uninfe\obj\Debug\CENFe.exe
+D:\Desenvolvimento\CENFe\trunk\fontes\uninfe\obj\Debug\CENFe.pdb
+D:\Desenvolvimento\CENFe\trunk\fontes\uninfe\obj\Debug\CENFe.csprojResolveAssemblyReference.cache
+D:\Desenvolvimento\CENFe\trunk\fontes\uninfe\obj\Debug\CEnfe.Properties.Resources.resources
+D:\Desenvolvimento\CENFe\trunk\fontes\uninfe\obj\Debug\CENFe.csproj.GenerateResource.Cache

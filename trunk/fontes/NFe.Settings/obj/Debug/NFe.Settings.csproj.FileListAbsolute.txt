@@ -1,0 +1,16 @@
+D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.Settings\bin\Release\NFe.Settings.dll
+D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.Settings\bin\Release\NFe.Settings.pdb
+D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.Settings\bin\Release\NFe.Components.dll
+D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.Settings\bin\Release\Newtonsoft.Json.dll
+D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.Settings\bin\Release\NFe.Components.pdb
+D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.Settings\bin\Release\Newtonsoft.Json.xml
+C:\camposevolution\NFe\Uni\NFe.Settings.dll
+C:\camposevolution\NFe\Uni\NFe.Settings.pdb
+C:\camposevolution\CENFe\NFe.Settings.dll
+C:\camposevolution\CENFe\NFe.Settings.pdb
+D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.Settings\obj\Debug\NFe.Settings.csprojResolveAssemblyReference.cache
+D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.Settings\obj\Debug\NFe.Settings.dll
+D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.Settings\obj\Debug\NFe.Settings.pdb
+D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Settings\obj\Debug\NFe.Settings.csprojResolveAssemblyReference.cache
+D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Settings\obj\Debug\NFe.Settings.dll
+D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Settings\obj\Debug\NFe.Settings.pdb

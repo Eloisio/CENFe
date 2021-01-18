@@ -1,0 +1,10 @@
+D:\Desenvolvimento\UNINFe\trunk\fontes\UniNFeServico\obj\Release\UniNFeServico.csprojResolveAssemblyReference.cache
+D:\Desenvolvimento\UNINFe\trunk\fontes\UniNFeServico\obj\Release\UniNFeServico.Installer1.resources
+D:\Desenvolvimento\UNINFe\trunk\fontes\UniNFeServico\obj\Release\UniNFeServico.UniNFeService.resources
+D:\Desenvolvimento\UNINFe\trunk\fontes\UniNFeServico\obj\Release\UniNFeServico.csproj.GenerateResource.Cache
+C:\camposevolution\NFe\Uni\logounimake.png
+C:\camposevolution\NFe\Uni\UniNFeServico.exe.config
+C:\camposevolution\NFe\Uni\UniNFeServico.exe
+C:\camposevolution\NFe\Uni\UniNFeServico.pdb
+D:\Desenvolvimento\UNINFe\trunk\fontes\UniNFeServico\obj\Release\UniNFeServico.exe
+D:\Desenvolvimento\UNINFe\trunk\fontes\UniNFeServico\obj\Release\UniNFeServico.pdb

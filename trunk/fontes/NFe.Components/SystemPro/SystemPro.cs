@@ -1,0 +1,24 @@
+﻿using System;
+using System.Security.Cryptography.X509Certificates;
+
+namespace NFe.Components.SystemPro
+{
+    #region classe final
+    public class SystemPro : SystemProBase
+    {
+        public override string NameSpaces
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        #region Construtores
+        public SystemPro(TipoAmbiente tpAmb, string pastaRetorno, X509Certificate certificate)
+            : base(tpAmb, pastaRetorno, certificate)
+        { }
+        #endregion
+    }
+    #endregion
+}

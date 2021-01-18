@@ -1,0 +1,11 @@
+C:\camposevolution\NFe\Uni\uninfe_ws.exe.config
+C:\camposevolution\NFe\Uni\uninfe_ws.exe
+C:\camposevolution\NFe\Uni\uninfe_ws.pdb
+D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe_ws\obj\Debug\uninfe_ws.csprojResolveAssemblyReference.cache
+D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe_ws\obj\Debug\NFe.UI.Form_Main.resources
+D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe_ws\obj\Debug\uninfe_ws.Properties.Resources.resources
+D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe_ws\obj\Debug\uninfe_ws.UserControl2.resources
+D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe_ws\obj\Debug\uninfe_ws.UserControl3.resources
+D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe_ws\obj\Debug\uninfe_ws.csproj.GenerateResource.Cache
+D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe_ws\obj\Debug\uninfe_ws.exe
+D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe_ws\obj\Debug\uninfe_ws.pdb

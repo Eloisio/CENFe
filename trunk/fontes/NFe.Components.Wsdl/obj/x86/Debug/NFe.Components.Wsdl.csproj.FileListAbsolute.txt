@@ -1,0 +1,10 @@
+D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Wsdl\bin\x86\Debug\NFe.Components.Wsdl.dll.config
+D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Wsdl\bin\x86\Debug\NFe.Components.Wsdl.dll
+D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Wsdl\bin\x86\Debug\NFe.Components.Wsdl.pdb
+D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Wsdl\obj\x86\Debug\NFe.Components.Wsdl.dll
+D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Wsdl\obj\x86\Debug\NFe.Components.Wsdl.pdb
+E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Wsdl\bin\x86\Debug\NFe.Components.Wsdl.dll.config
+E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Wsdl\bin\x86\Debug\NFe.Components.Wsdl.dll
+E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Wsdl\bin\x86\Debug\NFe.Components.Wsdl.pdb
+E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Wsdl\obj\x86\Debug\NFe.Components.Wsdl.dll
+E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Wsdl\obj\x86\Debug\NFe.Components.Wsdl.pdb
