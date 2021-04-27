@@ -10,24 +10,24 @@ namespace NFe.Components.Betha.NewVersion.Ambiente
     public class Producao : EmiteNFSeBase, IAmbiente
     {
         #region Propriedades
-        /// <summary>
+         
         /// Objeto de conexão com o Webservice
-        /// </summary>
+         
         private NfseWSService Service = new NfseWSService();
 
-        /// <summary>
+         
         /// Cabeçalho do soap
-        /// </summary>
+         
         private string CabecMsg = "<cabecalho xmlns=\"http://www.betha.com.br/e-nota-contribuinte-ws\" versao=\"2.02\"><versaoDados>2.02</versaoDados></cabecalho>";
 
-        /// <summary>
+         
         /// XML em string
-        /// </summary>
+         
         private string XmlString = "";
 
-        /// <summary>
+         
         /// Namespace utilizada para deserialização do objeto
-        /// </summary>
+         
         public override string NameSpaces
         {
             get
@@ -38,9 +38,9 @@ namespace NFe.Components.Betha.NewVersion.Ambiente
         #endregion
 
         #region Construtores
-        /// <summary>
+         
         /// Construtor
-        /// </summary>
+         
         /// <param name="tpAmb"></param>
         /// <param name="pastaRetorno"></param>
         /// <param name="usuario"></param>

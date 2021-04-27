@@ -8,9 +8,9 @@ namespace NFe.Components
 {
     public class GetRequest : RequestBase, IGetRequest
     {
-        /// <summary>
+         
         /// Faz o Get e retorna uma string como resultado
-        /// </summary>
+         
         /// <param name="url">url base para utilizar dentro do get</param>
         /// <returns></returns>
         public string GetForm(string url)

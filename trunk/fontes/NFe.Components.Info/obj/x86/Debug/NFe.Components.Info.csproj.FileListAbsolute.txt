@@ -22,7 +22,7 @@ E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Info\bin\x86\Debug\NFe.Comp
 E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Info\bin\x86\Debug\NFe.Components.dll.config
 E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Info\bin\x86\Debug\NFe.Settings.pdb
 E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Info\bin\x86\Debug\Newtonsoft.Json.xml
+E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Info\obj\x86\Debug\NFe.Components.Info.csprojAssemblyReference.cache
 E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Info\obj\x86\Debug\NFe.Components.Info.csproj.CopyComplete
 E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Info\obj\x86\Debug\NFe.Components.Info.dll
 E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Info\obj\x86\Debug\NFe.Components.Info.pdb
-E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Info\obj\x86\Debug\NFe.Components.Info.csprojAssemblyReference.cache

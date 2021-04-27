@@ -8,9 +8,9 @@ namespace NFe.Threadings
 {
     public class ThreadControlEvents : IDisposable
     {
-        /// <summary>
+         
         /// Construtor
-        /// </summary>
+         
         public ThreadControlEvents()
         {
             ThreadItem.OnEnded += new ThreadItem.ThreadEndedHandler(ThreadItem_OnEnded);
@@ -19,9 +19,9 @@ namespace NFe.Threadings
         }
 
         #region ThreadItem_OnStarted()
-        /// <summary>
+         
         /// Evento executado quando a thread vai iniciar
-        /// </summary>
+         
         /// <param name="item"></param>
         protected void ThreadItem_OnStarted(ThreadItem item)
         {
@@ -32,9 +32,9 @@ namespace NFe.Threadings
             Processar(item);
         }
 
-        /// <summary>
+         
         /// Executa os passos do processamento do arquivo informado em item
-        /// </summary>
+         
         /// <param name="item">Item que deverá ser processado</param>
         private static void Processar(ThreadItem item)
         {
@@ -47,9 +47,9 @@ namespace NFe.Threadings
         #endregion
 
         #region ThreadItem_OnReleased()
-        /// <summary>
+         
         /// Evento executado quando o item é removido da fila de execução
-        /// </summary>
+         
         /// <param name="item"></param>
         protected void ThreadItem_OnReleased(ThreadItem item)
         {
@@ -66,9 +66,9 @@ namespace NFe.Threadings
         #endregion
 
         #region ThreadItem_OnEnded()
-        /// <summary>
+         
         /// Evento é executado quando a thread vai finalizar
-        /// </summary>
+         
         /// <param name="item"></param>
         protected void ThreadItem_OnEnded(ThreadItem item)
         {
@@ -78,9 +78,9 @@ namespace NFe.Threadings
         #endregion
 
         #region IDisposable members
-        /// <summary>
+         
         /// Retorna true se este objeto foi descarregado
-        /// </summary>	
+         	
         public bool Disposed { get; private set; }
 
         ~ThreadControlEvents()

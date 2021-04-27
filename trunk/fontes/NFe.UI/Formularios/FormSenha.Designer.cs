@@ -2,15 +2,10 @@
 {
     partial class FormSenha
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
+         
+         
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,11 +16,7 @@
         }
 
         #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
+         
         private void InitializeComponent()
         {
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
@@ -70,8 +61,7 @@
             // 
             this.tbSenha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbSenha.Lines = new string[] {
-        "Normal Textbox"};
+            this.tbSenha.Lines = new string[] {"Normal Textbox"};
             this.tbSenha.Location = new System.Drawing.Point(16, 37);
             this.tbSenha.MaxLength = 32767;
             this.tbSenha.Name = "tbSenha";
@@ -124,7 +114,7 @@
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.AeroShadow;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultLocation;
-            this.Text = "Senha";
+            this.Text = "PassWord";
             this.Load += new System.EventHandler(this.FormSenha_Load);
             this.metroPanel2.ResumeLayout(false);
             this.metroPanel2.PerformLayout();

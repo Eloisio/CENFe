@@ -53,7 +53,6 @@ namespace NFe.UI.Formularios
 
                     metroButton1.Enabled = true;
 
-                    //Executar o instalador do uninfe
                     CEnfeDummy.mainForm.PararServicos(true);
 
                     IWebProxy proxy = null;

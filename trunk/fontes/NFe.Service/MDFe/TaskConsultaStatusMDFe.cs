@@ -4,9 +4,9 @@ using System;
 
 namespace NFe.Service
 {
-    /// <summary>
+     
     /// Classe para consultar status do serviço do MDFe
-    /// </summary>
+     
     public class TaskMDFeConsultaStatus : TaskAbst
     {
         public TaskMDFeConsultaStatus(string arquivo)
@@ -19,18 +19,18 @@ namespace NFe.Service
 
         #region Classe com os dados do XML da consulta do status do serviço da NFe
 
-        /// <summary>
+         
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s do status do serviço
-        /// </summary>
+         
         private DadosPedSta dadosPedSta;
 
         #endregion Classe com os dados do XML da consulta do status do serviço da NFe
 
         #region Execute
 
-        /// <summary>
+         
         /// Executa o serviço solicitado
-        /// </summary>
+         
         public override void Execute()
         {
             int emp = Empresas.FindEmpresaByThread();

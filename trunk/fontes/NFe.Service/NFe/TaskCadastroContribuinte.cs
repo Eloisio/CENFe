@@ -23,9 +23,9 @@ namespace NFe.Service
 
         #region Classe com os Dados do XML da Consulta Cadastro do Contribuinte
 
-        /// <summary>
+         
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s da consulta do cadastro do contribuinte
-        /// </summary>
+         
         private DadosConsCad dadosConsCad;
 
         #endregion Classe com os Dados do XML da Consulta Cadastro do Contribuinte
@@ -42,7 +42,7 @@ namespace NFe.Service
                 //Ler o XML para pegar parâmetros de envio
                 ConsCad(emp);
 
-                if (vXmlNfeDadosMsgEhXML)  //danasa 12-9-2009
+                if (vXmlNfeDadosMsgEhXML)  //  12-9-2009
                 {
                     //Definir o objeto do WebService
                     WebServiceProxy wsProxy = ConfiguracaoApp.DefinirWS(Servico, emp, dadosConsCad.cUF, dadosConsCad.tpAmb, (int)TipoEmissao.teNormal, dadosConsCad.versao, 0);
@@ -140,9 +140,9 @@ namespace NFe.Service
 
         #region ConsCad()
 
-        /// <summary>
+         
         /// Faz a leitura do XML de consulta do cadastro do contribuinte e disponibiliza os valores de algumas tag´s
-        /// </summary>
+         
         /// <param name="cArquivoXML">Caminho e nome do arquivo XML da consulta do cadastro do contribuinte a ser lido</param>
         private void ConsCad(int emp)
         {

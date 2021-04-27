@@ -9,9 +9,9 @@ namespace NFSe.Components
 {
     namespace Excpetions
     {
-        /// <summary>
+         
         /// Serviço não disponível para o padrão IPM
-        /// </summary>
+         
         public class ServicoInexistenteIPMException : NFe.Components.Exceptions.ServicoInexistenteException
         {
             public override string Message
@@ -24,9 +24,9 @@ namespace NFSe.Components
         }
     }
 
-    /// <summary>
+     
     /// Emite notas fiscais de serviço no padrão IPM
-    /// </summary>
+     
     public class IPM : EmiteNFSeBase, IEmiteNFSeIPM
     {
         public override string NameSpaces

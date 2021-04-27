@@ -8,9 +8,9 @@ using System.Xml;
 
 namespace NFe.Service
 {
-    /// <summary>
+     
     /// Classe responsável por montar lote de várias NFes
-    /// </summary>
+     
     public class TaskNFeMontarLoteVarias : TaskAbst
     {
         public TaskNFeMontarLoteVarias()

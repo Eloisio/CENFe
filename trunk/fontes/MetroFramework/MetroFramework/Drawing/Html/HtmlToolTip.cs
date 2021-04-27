@@ -30,9 +30,9 @@ using System.Windows.Forms;
 
 namespace MetroFramework.Drawing.Html
 {
-    /// <summary>
+     
     /// Provides HTML rendering on the tooltips
-    /// </summary>
+     
     public class HtmlToolTip
         : ToolTip
     {

@@ -5,23 +5,23 @@ using System.Windows.Forms;
 
 namespace MetroFramework
 {
-    /// <summary>
+     
     /// Metro-styled message notification.
-    /// </summary>
+     
     public static class MetroMessageBox
     {
-        /// <summary>
+         
         /// Shows a metro-styles message notification into the specified owner window.
-        /// </summary>
+         
         /// <param name="owner"></param>
         /// <param name="message"></param>
         /// <returns></returns>
         public static DialogResult Show(IWin32Window owner, String message)
         { return Show(owner, message, "Notification"); }
 
-        /// <summary>
+         
         /// Shows a metro-styles message notification into the specified owner window.
-        /// </summary>
+         
         /// <param name="owner"></param>
         /// <param name="message"></param>
         /// <param name="title"></param>
@@ -29,9 +29,9 @@ namespace MetroFramework
         public static DialogResult Show(IWin32Window owner, String message, String title)
         { return Show(owner, message, title, MessageBoxButtons.OK); }
 
-        /// <summary>
+         
         /// Shows a metro-styles message notification into the specified owner window.
-        /// </summary>
+         
         /// <param name="owner"></param>
         /// <param name="message"></param>
         /// <param name="title"></param>
@@ -40,9 +40,9 @@ namespace MetroFramework
         public static DialogResult Show(IWin32Window owner, String message, String title, MessageBoxButtons buttons)
         { return Show(owner, message, title, buttons, MessageBoxIcon.None); }
 
-        /// <summary>
+         
         /// Shows a metro-styles message notification into the specified owner window.
-        /// </summary>
+         
         /// <param name="owner"></param>
         /// <param name="message"></param>
         /// <param name="title"></param>
@@ -70,9 +70,9 @@ namespace MetroFramework
         }
         */
 
-        /// <summary>
+         
         /// Shows a metro-styles message notification into the specified owner window.
-        /// </summary>
+         
         /// <param name="owner"></param>
         /// <param name="message"></param>
         /// <param name="title"></param>

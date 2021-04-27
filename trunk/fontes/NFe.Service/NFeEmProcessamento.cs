@@ -150,7 +150,7 @@ namespace NFe.Service
                 try
                 {
                     // grava o arquivo generico
-                    oAux.GravarArqErroERP(string.Format(Propriedade.NomeArqERRUniNFe, DateTime.Now.ToString("yyyyMMddTHHmmss")), ex.Message);
+                    oAux.GravarArqErroERP(string.Format(Propriedade.NomeArqERRCENFe, DateTime.Now.ToString("yyyyMMddTHHmmss")), ex.Message);
                 }
                 catch
                 {

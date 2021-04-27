@@ -265,9 +265,9 @@ namespace NFe.ConvertTxt
         private string layout;
         private string chave;
         private const string prefix = "§";
-        /// <summary>
+         
         /// conteudo do arquivo de cada nota
-        /// </summary>
+         
         private Dictionary<int, List<string>> xConteudoArquivo;
 
         #endregion
@@ -280,9 +280,9 @@ namespace NFe.ConvertTxt
             LinhaLida = 0;
         }
 
-        /// <summary>
+         
         /// CarregarArquivo
-        /// </summary>
+         
         private bool CarregarArquivo(string cArquivo)
         {
             if (File.Exists(cArquivo))
@@ -338,9 +338,9 @@ namespace NFe.ConvertTxt
             return ((xConteudoArquivo.Count == 0 || !string.IsNullOrEmpty(cMensagemErro)) ? false : true);
         }
 
-        /// <summary>
+         
         /// Converter
-        /// </summary>
+         
         public bool Converter(string cArquivo, string cFolderDestino)
         {
             cRetorno.Clear();
@@ -429,9 +429,9 @@ namespace NFe.ConvertTxt
             return false;
         }
 
-        /// <summary>
+         
         /// getDateTime
-        /// </summary>
+         
         public DateTime getDateTime(TpcnTipoCampo Tipo, string value)
         {
             if (string.IsNullOrEmpty(value))
@@ -457,9 +457,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-        /// <summary>
+         
         /// getDateTime2
-        /// </summary>
+         
         public DateTime getDate2(TpcnTipoCampo Tipo, string value)
         {
             if (string.IsNullOrEmpty(value))
@@ -481,9 +481,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-        /// <summary>
+         
         /// getTime
-        /// </summary>
+         
         private DateTime getTime(string value)
         {
             if (string.IsNullOrEmpty(value))
@@ -502,9 +502,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-        /// <summary>
+         
         /// RetornarConteudoTag
-        /// </summary>
+         
         private string RetornarConteudoTag(string TAG, bool trim, ObOp optional)
         {
             ///
@@ -548,9 +548,9 @@ namespace NFe.ConvertTxt
                 return "";
         }
 
-        /// <summary>
+         
         /// SomenteNumeros
-        /// </summary>
+         
         private string SomenteNumeros(string entrada)
         {
             if (string.IsNullOrEmpty(entrada)) return "";
@@ -566,9 +566,9 @@ namespace NFe.ConvertTxt
             return saida.ToString();
         }
 
-        /// <summary>
+         
         /// LerCampo
-        /// </summary>
+         
 
         private double LerDouble(TpcnTipoCampo Tipo, TpcnResources tag, ObOp optional, int maxLength, bool returnNull)
         {
@@ -842,9 +842,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-        /// <summary>
+         
         /// LerRegistro
-        /// </summary>
+         
         private void LerRegistro(string aRegistro)
         {
             if (aRegistro.StartsWith("*")) return;

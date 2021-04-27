@@ -27,7 +27,7 @@ namespace NFe.UI
 
         bool LoadProcesso()
         {
-            //NFe.UI.uninfeDummy.showError = false;
+            //NFe.UI.CENFeDummy.showError = false;
             try
             {
                 UserControl1 control = null;
@@ -78,9 +78,9 @@ namespace NFe.UI
             {
                 StyleManager = CEnfeDummy.mainForm.StyleManager;
             }
-            //this.Theme = uninfeDummy.mainForm.uTheme;
-            //this.Style = uninfeDummy.mainForm.uStyle;
-            //this.StyleManager = uninfeDummy.mainForm.StyleManager;
+            //this.Theme = CENFeDummy.mainForm.uTheme;
+            //this.Style = CENFeDummy.mainForm.uStyle;
+            //this.StyleManager = CENFeDummy.mainForm.StyleManager;
 
             CEnfeDummy.xmlParams.LoadForm(this, "\\" + opcao.ToString(), true);
             Icon = Properties.Resources.uninfe_icon;

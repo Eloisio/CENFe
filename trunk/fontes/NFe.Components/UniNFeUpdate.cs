@@ -165,19 +165,19 @@ namespace NFe.Components
 
     public class UpdateProgessEventArgs : EventArgs
     {
-        /// <summary>
+         
         /// Bytes a serem lidos
-        /// </summary>
+         
         public Int64 BytesRead;
 
-        /// <summary>
+         
         /// Total de bytes (tamanho) do arquivo que está sendo efetuado o download
-        /// </summary>
+         
         public Int64 TotalBytes;
 
-        /// <summary>
+         
         /// Porcentagem de progresso do download do arquivo
-        /// </summary>
+         
         public int ProgressPercentage
         {
             get

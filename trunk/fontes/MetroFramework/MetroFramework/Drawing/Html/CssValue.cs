@@ -37,9 +37,9 @@ namespace MetroFramework.Drawing.Html
     [CLSCompliant(false)]
     public static class CssValue
     {
-        /// <summary>
+         
         /// Evals a number and returns it. If number is a percentage, it will be multiplied by <see cref="hundredPercent"/>
-        /// </summary>
+         
         /// <param name="number">Number to be parsed</param>
         /// <param name="factor">Number that represents the 100% if parsed number is a percentage</param>
         /// <returns>Parsed number. Zero if error while parsing.</returns>
@@ -69,9 +69,9 @@ namespace MetroFramework.Drawing.Html
             return result;
         }
 
-        /// <summary>
+         
         /// Parses a length. Lengths are followed by an unit identifier (e.g. 10px, 3.1em)
-        /// </summary>
+         
         /// <param name="length">Specified length</param>
         /// <param name="hundredPercent">Equivalent to 100 percent when length is percentage</param>
         /// <param name="box"></param>
@@ -81,9 +81,9 @@ namespace MetroFramework.Drawing.Html
             return ParseLength(length, hundredPercent, box, box.GetEmHeight(), false);
         }
 
-        /// <summary>
+         
         /// Parses a length. Lengths are followed by an unit identifier (e.g. 10px, 3.1em)
-        /// </summary>
+         
         /// <param name="length">Specified length</param>
         /// <param name="hundredPercent">Equivalent to 100 percent when length is percentage</param>
         /// <param name="box"></param>
@@ -150,9 +150,9 @@ namespace MetroFramework.Drawing.Html
             return factor * ParseNumber(number, hundredPercent);
         }
 
-        /// <summary>
+         
         /// Parses a color value in CSS style; e.g. #ff0000, red, rgb(255,0,0), rgb(100%, 0, 0)
-        /// </summary>
+         
         /// <param name="colorValue">Specified color value; e.g. #ff0000, red, rgb(255,0,0), rgb(100%, 0, 0)</param>
         /// <returns>System.Drawing.Color value</returns>
         public static Color GetActualColor(string colorValue)
@@ -274,9 +274,9 @@ namespace MetroFramework.Drawing.Html
             return Color.FromArgb(r, g, b);
         }
 
-        /// <summary>
+         
         /// Parses a border value in CSS style; e.g. 1px, 1, thin, thick, medium
-        /// </summary>
+         
         /// <param name="borderValue"></param>
         /// <returns></returns>
         public static float GetActualBorderWidth(string borderValue, CssBox b)
@@ -299,9 +299,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Split the value by spaces; e.g. Useful in values like 'padding:5 4 3 inherit'
-        /// </summary>
+         
         /// <param name="value">Value to be splitted</param>
         /// <returns>Splitted and trimmed values</returns>
         public static string[] SplitValues(string value)
@@ -309,9 +309,9 @@ namespace MetroFramework.Drawing.Html
             return SplitValues(value, ' ');
         }
 
-        /// <summary>
+         
         /// Split the value by the specified separator; e.g. Useful in values like 'padding:5 4 3 inherit'
-        /// </summary>
+         
         /// <param name="value">Value to be splitted</param>
         /// <returns>Splitted and trimmed values</returns>
         public static string[] SplitValues(string value, char separator)
@@ -337,10 +337,10 @@ namespace MetroFramework.Drawing.Html
             return result.ToArray();
         }
 
-        /// <summary>
+         
         /// Detects the type name in a path. 
         /// E.g. Gets System.Drawing.Graphics from a path like System.Drawing.Graphics.Clear
-        /// </summary>
+         
         /// <param name="path"></param>
         /// <returns></returns>
         private static Type GetTypeInfo(string path, ref string moreInfo)
@@ -364,9 +364,9 @@ namespace MetroFramework.Drawing.Html
             return null;
         }
 
-        /// <summary>
+         
         /// Returns the object specific to the path
-        /// </summary>
+         
         /// <param name="path"></param>
         /// <returns>One of the following possible objects: FileInfo, MethodInfo, PropertyInfo</returns>
         private static object DetectSource(string path)
@@ -402,9 +402,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the image of the specified path
-        /// </summary>
+         
         /// <param name="path"></param>
         /// <returns></returns>
         public static Image GetImage(string path)
@@ -447,9 +447,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the content of the stylesheet specified in the path
-        /// </summary>
+         
         /// <param name="path"></param>
         /// <returns></returns>
         public static string GetStyleSheet(string path)
@@ -495,9 +495,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Executes the desired action when the user clicks a link
-        /// </summary>
+         
         /// <param name="href"></param>
         public static void GoLink(string href)
         {

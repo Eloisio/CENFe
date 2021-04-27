@@ -34,14 +34,14 @@ namespace MetroFramework.Drawing.Html
     {
         #region References
 
-        /// <summary>
+         
         /// List of assembly references
-        /// </summary>
+         
         private static List<Assembly> _references;
 
-        /// <summary>
+         
         /// Gets a list of Assembly references used to search for external references
-        /// </summary>
+         
         /// <remarks>
         /// This references are used when loading images and other content, when
         /// rendering a piece of HTML/CSS
@@ -51,9 +51,9 @@ namespace MetroFramework.Drawing.Html
             get { return _references; }
         }
 
-        /// <summary>
+         
         /// Adds a reference to the References list if not yet listed
-        /// </summary>
+         
         /// <param name="assembly"></param>
         internal static void AddReference(Assembly assembly)
         {
@@ -76,9 +76,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Methods
 
-        /// <summary>
+         
         /// Draws the HTML on the specified point using the specified width.
-        /// </summary>
+         
         /// <param name="g">Device to draw</param>
         /// <param name="html">HTML source</param>
         /// <param name="location">Point to start drawing</param>
@@ -88,9 +88,9 @@ namespace MetroFramework.Drawing.Html
             Render(g, html, new RectangleF(location, new SizeF(width, 0)), false);
         }
 
-        /// <summary>
+         
         /// Renders the specified HTML source on the specified area clipping if specified
-        /// </summary>
+         
         /// <param name="g">Device to draw</param>
         /// <param name="html">HTML source</param>
         /// <param name="area">Area where HTML should be drawn</param>

@@ -2,9 +2,9 @@
 
 namespace NFe.ConvertTxt
 {
-    /// <summary>
+     
     /// Prod
-    /// </summary>
+     
     public class Prod
     {
         public string cProd;

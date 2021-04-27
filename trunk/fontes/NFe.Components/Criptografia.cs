@@ -94,10 +94,10 @@ namespace NFe.Components
             }
         }
 
-        /// <summary>
+         
         /// Metodo que verifica se a string encontra-se criptografada, pode ser utilizada
         /// antes de se tentar descriptografar uma senha evitando exceções na aplicação.
-        /// </summary>
+         
         /// <param name="senhaCripto">string com a senha</param>
         /// <returns>booleano que se a senha esta criptografda</returns>
         /// <author>Renan Borges</author>
@@ -117,10 +117,10 @@ namespace NFe.Components
 
         }
 
-        /// <summary>
+         
         /// Metodo que verifica se a string encontra-se criptografada, pode ser utilizada
         /// antes de se tentar descriptografar uma senha evitando exceções na aplicação.
-        /// </summary>
+         
         /// <param name="senhaCripto">string com a senha</param>
         /// <returns>booleano que se a senha esta criptografda</returns>
         /// <author>Renan Borges</author>
@@ -165,9 +165,9 @@ namespace NFe.Components
             return stringValor;
         }
 
-        /// <summary>
+         
         /// Assina a string utilizando RSA-SHA1
-        /// </summary>
+         
         /// <param name="cert">certificado utilizado para assinar a string</param>
         /// <param name="value">Valor a ser assinado</param>
         /// <returns></returns>

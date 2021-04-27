@@ -5,34 +5,34 @@ using System.Xml.Serialization;
 
 namespace NFe.SAT.Abstract.Servico
 {
-    /// <summary>
+     
     /// Classe abstrata para comunicação com as DLLs
-    /// </summary>
+     
     public abstract class ServicoBase : IServico
     {
-        /// <summary>
+         
         /// Marca do fabricante do SAT
-        /// </summary>
+         
         public Unimake.SAT.Enuns.Fabricante Marca { get; set; }
 
-        /// <summary>
+         
         /// Código de ativação do SAT
-        /// </summary>
+         
         public string CodigoAtivacao { get; set; }
 
-        /// <summary>
+         
         /// Arquivo XML carregado no construtor
-        /// </summary>
+         
         public abstract string ArquivoXML { get; set; }
 
-        /// <summary>
+         
         /// Define o objeto de comunicação SAT
-        /// </summary>
+         
         Unimake.SAT.SAT _Sat = null;
 
-        /// <summary>
+         
         /// Objeto de comunicação com o SAT
-        /// </summary>
+         
         protected Unimake.SAT.SAT Sat
         {
             get
@@ -44,21 +44,21 @@ namespace NFe.SAT.Abstract.Servico
             }
         }
 
-        /// <summary>
+         
         /// Método responsável em transmitir a comunicação com o SAT
-        /// </summary>
+         
         /// <returns></returns>
         public abstract void Enviar();
 
-        /// <summary>
+         
         /// Método responsável por salvar o retorno do SAT
-        /// </summary>
+         
         /// <returns>caminho do arquivo de resposta</returns>
         public abstract string SaveResponse();
 
-        /// <summary>
+         
         /// Deserializar o objeto para string
-        /// </summary>
+         
         /// <typeparam name="T">Tipo do objeto</typeparam>
         /// <returns></returns>
         public T DeserializarObjeto<T>()
@@ -78,9 +78,9 @@ namespace NFe.SAT.Abstract.Servico
             return envio;
         }
 
-        /// <summary>
+         
         /// Retorna o valor do documento a partir da raiz
-        /// </summary>
+         
         /// <param name="document">XML carregado</param>
         /// <param name="groupTag">nome do nó</param>
         /// <param name="nameTag">nome da tag</param>

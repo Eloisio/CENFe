@@ -28,9 +28,9 @@ using System;
 
 namespace MetroFramework.Drawing.Html
 {
-    /// <summary>
+     
     /// Defines HTML strings
-    /// </summary>
+     
     [CLSCompliant(false)]
     public class HtmlConstants
     {

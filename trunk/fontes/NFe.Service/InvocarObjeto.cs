@@ -10,9 +10,9 @@ using System.Xml.Serialization;
 
 namespace NFe.Service
 {
-    /// <summary>
+     
     /// Classe para invocar os métodos e propriedades das classes dos webservices da NFE
-    /// </summary>
+     
     public class InvocarObjeto
     {
         #region Objetos
@@ -25,9 +25,9 @@ namespace NFe.Service
 
         #region Invocar()
 
-        /// <summary>
+         
         /// Metodo responsável por invocar o serviço do WebService do SEFAZ
-        /// </summary>
+         
         /// <param name="wsProxy">Objeto da classe construida do WSDL</param>
         /// <param name="servicoWS">Objeto da classe de envio do XML</param>
         /// <param name="metodo">Método da classe de envio do XML que faz o envio</param>
@@ -184,9 +184,9 @@ namespace NFe.Service
 
         #region InvocarNFSe()
 
-        /// <summary>
+         
         /// Metodo responsável por invocar o serviço do WebService do SEFAZ
-        /// </summary>
+         
         /// <param name="wsProxy">Objeto da classe construida do WSDL</param>
         /// <param name="servicoWS">Objeto da classe de envio do XML</param>
         /// <param name="metodo">Método da classe de envio do XML que faz o envio</param>
@@ -739,9 +739,9 @@ namespace NFe.Service
         }
 
         #endregion InvocarNFSe()
-        /// <summary>
+         
         /// Serializar o objeto para XML
-        /// </summary>
+         
         /// <typeparam name="T">Tipo do objeto que será serializado</typeparam>
         /// <param name="retorno">Objeto de retorno que será convertivo</param>
         /// <returns></returns>
@@ -761,16 +761,16 @@ namespace NFe.Service
 
 namespace NFe.Exceptions
 {
-    /// <summary>
+     
     /// Classe para tratamento de exceções da classe Invocar Objeto
-    /// </summary>
+     
     public class ExceptionSemInternet : Exception
     {
         public ErroPadrao ErrorCode { get; private set; }
 
-        /// <summary>
+         
         /// Construtor que já define uma mensagem pré-definida de exceção
-        /// </summary>
+         
         /// <param name="CodigoErro">Código da mensagem de erro (Classe MsgErro)</param>
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>24/11/2009</date>
@@ -780,9 +780,9 @@ namespace NFe.Exceptions
             ErrorCode = Erro;
         }
 
-        /// <summary>
+         
         /// Construtor que já define uma mensagem pré-definida de exceção com possibilidade de complemento da mensagem
-        /// </summary>
+         
         /// <param name="CodigoErro">Código da mensagem de erro (Classe MsgErro)</param>
         /// <param name="ComplementoMensagem">Complemento da mensagem de exceção</param>
         public ExceptionSemInternet(ErroPadrao Erro, string ComplementoMensagem)
@@ -792,16 +792,16 @@ namespace NFe.Exceptions
         }
     }
 
-    /// <summary>
+     
     /// Classe para tratamento de exceções da classe Invocar Objeto, mas exatamente no ponto em que vai enviar o XML para o SEFAZ
-    /// </summary>
+     
     public class ExceptionEnvioXML : Exception
     {
         public ErroPadrao ErrorCode { get; private set; }
 
-        /// <summary>
+         
         /// Construtor que já define uma mensagem pré-definida de exceção
-        /// </summary>
+         
         /// <param name="CodigoErro">Código da mensagem de erro (Classe MsgErro)</param>
         /// <remarks>
         /// Autor: Wandrey Mundin Ferreira
@@ -813,9 +813,9 @@ namespace NFe.Exceptions
             ErrorCode = Erro;
         }
 
-        /// <summary>
+         
         /// Construtor que ´já define uma mensagem pré-definida de exceção com possibilidade de complemento da mensagem
-        /// </summary>
+         
         /// <param name="CodigoErro">Código da mensagem de erro (Classe MsgErro)</param>
         /// <param name="ComplementoMensagem">Complemento da mensagem de exceção</param>
         /// <remarks>

@@ -21,9 +21,9 @@ namespace NFe.Service
 
         #region Classe com os dados do XML da consulta do status do serviço da NFe
 
-        /// <summary>
+         
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s do status do serviço
-        /// </summary>
+         
         private DadosPedSta dadosPedSta;
 
         #endregion Classe com os dados do XML da consulta do status do serviço da NFe
@@ -40,7 +40,7 @@ namespace NFe.Service
                 //Ler o XML para pegar parâmetros de envio
                 PedSta(emp, dadosPedSta);
 
-                if (vXmlNfeDadosMsgEhXML)  //danasa 12-9-2009
+                if (vXmlNfeDadosMsgEhXML)  //  12-9-2009
                 {
                     //Definir o objeto do WebService
                     WebServiceProxy wsProxy =
@@ -127,9 +127,9 @@ namespace NFe.Service
 
         #region PedSta()
 
-        /// <summary>
+         
         /// Faz a leitura do XML de pedido do status de serviço
-        /// </summary>
+         
         /// <param name="cArquivoXml">Nome do XML a ser lido</param>
         /// <by>Wandrey Mundin Ferreira</by>
         ///

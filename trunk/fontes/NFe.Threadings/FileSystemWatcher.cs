@@ -226,9 +226,9 @@ namespace NFe.Threadings
                     Auxiliar.WriteLog(msgError, true);
         }
 
-        /// <summary>
+         
         /// StopWatch
-        /// </summary>
+         
         public bool StopWatch
         {
             get { return CancelProcess; }

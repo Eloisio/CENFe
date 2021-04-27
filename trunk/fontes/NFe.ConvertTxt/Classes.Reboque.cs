@@ -1,8 +1,8 @@
 ﻿namespace NFe.ConvertTxt
 {
-    /// <summary>
+     
     /// Reboque
-    /// </summary>
+     
     public class Reboque
     {
         public string placa;

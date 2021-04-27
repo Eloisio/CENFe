@@ -9,9 +9,9 @@ using Unimake.SAT.Servico.Envio;
 
 namespace NFe.SAT.Conversao
 {
-    /// <summary>
+     
     /// Classe responsável pela conversão da NFCe em CFe
-    /// </summary>
+     
     public class ConverterNFCe
     {
         private Empresa DadosEmpresa;
@@ -26,14 +26,14 @@ namespace NFe.SAT.Conversao
 
         private string OutputFile;
 
-        /// <summary>
+         
         /// Arquivo de saída
-        /// </summary>
+         
         public string XMLOutput = "";
 
-        /// <summary>
+         
         /// Converter a CFe
-        /// </summary>
+         
         /// <param name="file">arquivo da NFCe</param>
         /// <param name="dadosEmpresa">dados da empresa</param>
         /// <param name="outputfile">onde será salvo o arquivo</param>
@@ -55,9 +55,9 @@ namespace NFe.SAT.Conversao
             FileStream.Close();
         }
 
-        /// <summary>
+         
         /// Executar a conversão
-        /// </summary>
+         
         public void ConverterSAT()
         {
             ObjEnvio = GerarLoteCFe();
@@ -76,9 +76,9 @@ namespace NFe.SAT.Conversao
             xmloutput.Save(OutputFile);
         }
 
-        /// <summary>
+         
         /// Gerar arquivo de lote a partir da NFCe
-        /// </summary>
+         
         /// <returns>Lote da CFe</returns>
         private envCFeCFe GerarLoteCFe()
         {
@@ -133,9 +133,9 @@ namespace NFe.SAT.Conversao
             };
         }
 
-        /// <summary>
+         
         /// Adiciona os itens da nota ao Lote da CFe
-        /// </summary>
+         
         /// <returns>Lista de Produtos</returns>
         private List<envCFeCFeInfCFeDet> PopularProdutos()
         {
@@ -220,9 +220,9 @@ namespace NFe.SAT.Conversao
             return result;
         }
 
-        /// <summary>
+         
         /// Formas de pagamento
-        /// </summary>
+         
         /// <returns>lista de formas de pagamento</returns>
         private List<envCFeCFeInfCFePgtoMP> PopularMeioPagamento()
         {
@@ -242,9 +242,9 @@ namespace NFe.SAT.Conversao
             return result;
         }
 
-        /// <summary>
+         
         /// Grava valores de impostos nos produtos
-        /// </summary>
+         
         /// <typeparam name="T"></typeparam>
         /// <param name="childs"></param>
         /// <returns></returns>
@@ -488,9 +488,9 @@ namespace NFe.SAT.Conversao
             return result;
         }
 
-        /// <summary>
+         
         /// Adiciona valores por referencia nos objetos
-        /// </summary>
+         
         /// <param name="result">objeto que será definido o valor</param>
         /// <param name="propertyName">nome da propriedade</param>
         /// <param name="value">valor que será definido</param>
@@ -504,9 +504,9 @@ namespace NFe.SAT.Conversao
             }
         }
 
-        /// <summary>
+         
         /// Busca valor de uma tag a partir de um nó
-        /// </summary>
+         
         /// <param name="nodes">nó onde vai ser procurado a tag</param>
         /// <param name="nameTag">nome da tag</param>
         /// <returns></returns>
@@ -528,9 +528,9 @@ namespace NFe.SAT.Conversao
             return String.IsNullOrEmpty(value) ? null : value;
         }
 
-        /// <summary>
+         
         /// Busca valor de uma tag a partir de um nó
-        /// </summary>
+         
         /// <param name="nodes">nó onde vai ser procurado a tag</param>
         /// <param name="nameTag">nome da tag</param>
         /// <returns></returns>
@@ -546,9 +546,9 @@ namespace NFe.SAT.Conversao
             return retorna;
         }
 
-        /// <summary>
+         
         /// Localiza o numero do documento da pessoa
-        /// </summary>
+         
         /// <param name="parentTag"></param>
         /// <returns></returns>
         private string GetDocumentoPessoa(string parentTag)
@@ -561,9 +561,9 @@ namespace NFe.SAT.Conversao
             return result;
         }
 
-        /// <summary>
+         
         /// Retorna o valor do documento a partir da raiz
-        /// </summary>
+         
         /// <param name="groupTag">nome do nó</param>
         /// <param name="nameTag">nome da tag</param>
         /// <returns></returns>
@@ -595,9 +595,9 @@ namespace NFe.SAT.Conversao
             }
         }
 
-        /// <summary>
+         
         /// Retorna o dígito verificador do valor informado
-        /// </summary>
+         
         /// <param name="value">Valor para calcular o dígito verificador</param>
         /// <returns></returns>
         private int Modulus11Digit(string value)
@@ -628,9 +628,9 @@ namespace NFe.SAT.Conversao
             return result;
         }
 
-        /// <summary>
+         
         /// Realiza validação do XML a partir dos schemas
-        /// </summary>
+         
         public void ValidarCFe()
         {
             ValidarXML validar = new ValidarXML(OutputFile, Convert.ToInt16(DadosEmpresa.UnidadeFederativaCodigo), true);

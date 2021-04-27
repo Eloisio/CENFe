@@ -9,9 +9,9 @@ using System.Xml;
 
 namespace NFe.Settings
 {
-    /// <summary>
+     
     /// Classe contém os dados da empresa e suas configurações
-    /// </summary>
+     
     /// <remarks>
     /// Autor: Wandrey Mundin Ferreira
     /// Data: 28/07/2010
@@ -29,10 +29,10 @@ namespace NFe.Settings
          * Marcelo
          * 03/06/2013
          */
-        /// <summary>
+         
         /// Pasta base onde todas as outras estão configuradas. 
         /// <para>Diretório Root</para>
-        /// </summary>
+         
         /// <remarks>Esta propriedade tem como base a pasta envio</remarks>
         public string PastaBase
         {
@@ -55,43 +55,43 @@ namespace NFe.Settings
         }
         #endregion
 
-        /// <summary>
+         
         /// Pasta onde deve ser gravado os XML´s a serem enviados
-        /// </summary>
+         
         public string PastaXmlEnvio { get; set; }
-        /// <summary>
+         
         /// Pasta onde será gravado os XML´s de retorno para o ERP
-        /// </summary>
+         
         public string PastaXmlRetorno { get; set; }
-        /// <summary>
+         
         /// Pasta onde será gravado os XML´s enviados
-        /// </summary>
+         
         public string PastaXmlEnviado { get; set; }
-        /// <summary>
+         
         /// Pasta onde será gravado os XML´s que apresentaram algum tipo de erro em sua estrutura
-        /// </summary>
+         
         public string PastaXmlErro { get; set; }
-        /// <summary>
+         
         /// Pasta onde será gravado como forma de backup os XML´s enviados
-        /// </summary>
+         
         public string PastaBackup { get; set; }
-        /// <summary>
+         
         /// Pasta onde deve ser gravado os XML´s de notas fiscais a serem enviadas em lote
-        /// </summary>
+         
         [NFe.Components.AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public string PastaXmlEmLote { get; set; }
-        /// <summary>
+         
         /// Pasta onde é gravado os XML´s da NFE somente para validação
-        /// </summary>
+         
         public string PastaValidar { get; set; }
-        /// <summary>
+         
         /// Pasta para onde será gravado os XML´s de NFe para o DANFEMon fazer a impressão do DANFe
-        /// </summary>
+         
         [NFe.Components.AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public string PastaDanfeMon { get; set; }
-        /// <summary>
+         
         /// Pasta para onde será gravado os XML´s de download das NFe de destinatarios
-        /// </summary>
+         
         [NFe.Components.AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public string PastaDownloadNFeDest { get; set; }
 
@@ -113,92 +113,92 @@ namespace NFe.Settings
         #endregion
 
         #region Propriedades diversas
-        /// <summary>
+         
         /// CNPJ da Empresa
-        /// </summary>
+         
         public string CNPJ { get; set; }
-        /// <summary>
+         
         /// Nome da Empresa
-        /// </summary>
+         
         public string Nome { get; set; }
-        /// <summary>
+         
         /// Código da unidade Federativa da Empresa
-        /// </summary>
+         
         public int UnidadeFederativaCodigo { get; set; }
-        /// <summary>
+         
         /// Ambiente a ser utilizado para a emissão da nota fiscal eletrônica
-        /// </summary>
+         
         public int AmbienteCodigo { get; set; }
-        /// <summary>
+         
         /// Tipo de emissão a ser utilizado para a emissão da nota fiscal eletrônica
-        /// </summary>
+         
         public int tpEmis { get; set; }
-        /// <summary>
+         
         /// UsaCertificado
         /// Define se a empresa necessita de um certificado digital para assinatura/transmissao
-        /// </summary>
+         
         public bool UsaCertificado { get; set; }
-        /// <summary>
+         
         /// Define a utilização do certficado instalado no windows ou através de arquivo
-        /// </summary>
+         
         public bool CertificadoInstalado { get; set; }
-        /// <summary>
+         
         /// Quando utilizar o certificado através de arquivo será necessário informar o local de armazenamento do certificado digital
-        /// </summary>
+         
         public string CertificadoArquivo { get; set; }
-        /// <summary>
+         
         /// Quando utilizar o certificado através de arquivo será necessário informar a senha do certificado
-        /// </summary>
+         
         public string CertificadoSenha { get; set; }
-        /// <summary>
+         
         /// Utilizado para certificados A3
-        /// </summary>
+         
         public string CertificadoPIN { get; set; }
-        /// <summary>
+         
         /// Utiliza
-        /// </summary>
+         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public bool CertificadoPINCarregado = false;
-        /// <summary>
+         
         /// Certificado digital - Subject
-        /// </summary>
+         
         public string Certificado { get; set; }
-        /// <summary>
+         
         /// Certificado digital - ThumbPrint
-        /// </summary>
+         
         public string CertificadoDigitalThumbPrint { get; set; }
-        /// <summary>
+         
         /// Certificado digital
-        /// </summary>
+         
         [System.Xml.Serialization.XmlIgnore()]
         [AttributeTipoAplicacao(TipoAplicativo.Nulo)]
         public X509Certificate2 X509Certificado { get; set; }
-        /// <summary>
+         
         /// Gravar o retorno da NFe também em TXT
-        /// </summary>
+         
         [AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public bool GravarRetornoTXTNFe { get; set; }
-        /// <summary>
+         
         /// dias em que se deve manter os arquivos nas pastas retorno e temporario
         /// <para>coloque 0 para infinito</para>
-        /// </summary>
+         
         /// <by>http://desenvolvedores.net/marcelo</by>
         public int DiasLimpeza { get; set; }
-        /// <summary>
+         
         /// Tempo para execução da consulta do recibo após o envio do lote
-        /// </summary>
+         
         public int TempoConsulta { get; set; }
-        /// <summary>
+         
         /// Usuário de acesso ao webservice (Utilizado pelo UniNFS-e para algumas prefeituras)
-        /// </summary>
+         
         public string UsuarioWS { get; set; }
-        /// <summary>
+         
         /// Senha de acesso ao webservice (Utilizado pelo UniNFS-e para algumas prefeituras)
-        /// </summary>
+         
         public string SenhaWS { get; set; }
-        /// <summary>
+         
         /// Serviço que está sendo monitorado na configuração da empresa
-        /// </summary>
+         
         public TipoAplicativo Servico { get; set; }
         #endregion
 
@@ -207,9 +207,9 @@ namespace NFe.Settings
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         private List<Thread> threads;
 
-        /// <summary>
+         
         /// Nome da pasta onde é gravado as configurações e informações da Empresa
-        /// </summary>
+         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public string PastaEmpresa
         {
@@ -220,9 +220,9 @@ namespace NFe.Settings
                      Servico == TipoAplicativo.Todos ? "" : "\\" + Servico.ToString().ToLower());
             }
         }
-        /// <summary>
+         
         /// Nome do arquivo XML das configurações da empresa
-        /// </summary>
+         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public string NomeArquivoConfig
         {
@@ -246,67 +246,67 @@ namespace NFe.Settings
         [AttributeTipoAplicacao(TipoAplicativo.Nfe | TipoAplicativo.Todos)]
         public bool ArqNSU { get; set; }
 
-        /// <summary>
+         
         /// Enviar NFe utilizando o processo síncrono (true or false)
-        /// </summary>
+         
         [AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public bool IndSinc { get; set; }
 
-        /// <summary>
+         
         /// URLs de Serviços da NFe, NFCe, CTe
-        /// </summary>
+         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public EstadoURLConsultaDFe URLConsultaDFe { get; set; }
         #endregion
 
         #region Propriedades para controle da impressão do DANFE
-        /// <summary>
+         
         /// Pasta do executável do UniDanfe
-        /// </summary>
+         
         [NFe.Components.AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public string PastaExeUniDanfe { get; set; }
-        /// <summary>
+         
         /// Pasta do arquivo de configurações do UniDanfe (Tem que ser sem o \dados)
-        /// </summary>
+         
         [NFe.Components.AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public string PastaConfigUniDanfe { get; set; }
-        /// <summary>
+         
         /// Nome da configuracao da empresa no UniDANFE
-        /// </summary>
+         
         [NFe.Components.AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public string ConfiguracaoDanfe { get; set; }
-        /// <summary>
+         
         /// Nome da configuracao da empresa no UniDANFE de CCe
-        /// </summary>
+         
         [NFe.Components.AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public string ConfiguracaoCCe { get; set; }
-        /// <summary>
+         
         /// Copiar o XML da NFe (-nfe.xml) para a pasta do danfemon? 
-        /// </summary>
+         
         [NFe.Components.AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public bool XMLDanfeMonNFe { get; set; }
-        /// <summary>
+         
         /// Copiar o XML de Distribuição da NFe (-procNfe.xml) para a pasta do danfemon?
-        /// </summary>
+         
         [NFe.Components.AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public bool XMLDanfeMonProcNFe { get; set; }
-        /// <summary>
+         
         /// Copiar o XML de denegacao da NFe (-procNfe.xml) para a pasta do danfemon?
-        /// </summary>
+         
         [NFe.Components.AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public bool XMLDanfeMonDenegadaNFe { get; set; }
         [NFe.Components.AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public string EmailDanfe { get; set; }
         [NFe.Components.AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public bool AdicionaEmailDanfe { get; set; }
-        /// <summary>
+         
         /// Codigo de identificacao do CSC
-        /// </summary>
+         
         [NFe.Components.AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public string IdentificadorCSC { get; set; }
-        /// <summary>
+         
         /// Codigo CSC/Token
-        /// </summary>
+         
         [NFe.Components.AttributeTipoAplicacao(TipoAplicativo.Nfe)]
         public string TokenCSC { get; set; }
 
@@ -314,7 +314,7 @@ namespace NFe.Settings
 
         #region Propriedade para controle do nome da pasta a serem salvos os XML´s enviados
         private DiretorioSalvarComo mDiretorioSalvarComo = "";
-        /// <summary>
+         
         /// Define como devem ser salvos os diretórios dentro do Uninfe.
         /// <para>por enqto apenas usa a data e os valores possíveis para definir são:</para>
         /// <para>    A para ANO</para>
@@ -327,7 +327,7 @@ namespace NFe.Settings
         /// <para>        AD    para criar a pasta como ..\Enviados\Autorizados\ANODIA\nfe.xml</para>
         /// <para>        A\M\D para criar a pasta como ..\Enviados\Autorizados\ANO\MES\DIA\nfe.xml</para>
         /// <para>        podem ser criadas outras combinações, ficando a critério do usuário</para>
-        /// </summary>
+         
         /// <by>http://desenvolvedores.net/marcelo</by>
         [NFe.Components.AttributeTipoAplicacao(TipoAplicativo.Nulo)]
         public string diretorioSalvarComo
@@ -372,15 +372,15 @@ namespace NFe.Settings
         #endregion
 
         #region Propriedades de configuração do equipamento SAT
-        /// <summary>
+         
         /// Maraca do equipamento SAT
-        /// </summary>
+         
         [AttributeTipoAplicacao(TipoAplicativo.SAT)]
         public string MarcaSAT { get; set; }
 
-        /// <summary>
+         
         /// Código de ativação do equipamento SAT
-        /// </summary>
+         
         [AttributeTipoAplicacao(TipoAplicativo.SAT)]
         public string CodigoAtivacaoSAT { get; set; }
 
@@ -432,15 +432,15 @@ namespace NFe.Settings
         [AttributeTipoAplicacao(TipoAplicativo.SAT)]
         public IndRatISSQN IndRatISSQNSAT { get; set; }
 
-        /// <summary>
+         
         /// Código da aplicação que está cadastrada para acessar os serviços REST do município de Florianópolis-SC
-        /// </summary>
+         
         [AttributeTipoAplicacao(TipoAplicativo.Nfse)]
         public string ClientID { get; set; }
 
-        /// <summary>
+         
         /// Código secreto da aplicação que está cadastrada para acessar os serviços REST do município de Florianópolis-SC
-        /// </summary>
+         
         [AttributeTipoAplicacao(TipoAplicativo.Nfse)]
         public string ClientSecret { get; set; }
 
@@ -449,18 +449,18 @@ namespace NFe.Settings
         #endregion
 
         #region Coleções
-        /// <summary>
+         
         /// Objetos dos serviços da NFe
-        /// </summary>
+         
         /// 
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public Dictionary<string, WebServiceProxy> WSProxy = new Dictionary<string, WebServiceProxy>();
         #endregion
 
-        /// <summary>
+         
         /// Empresa
         /// danasa 20-9-2010
-        /// </summary>
+         
         public Empresa()
         {
             LimparPropriedades(this);
@@ -618,9 +618,9 @@ namespace NFe.Settings
         #endregion
 
         #region ChecaCaminhoDiretorio
-        /// <summary>
+         
         /// Método para checagem dos caminhos e sua existencia ou não no pc
-        /// </summary>
+         
         /// <param name="empresa">Empresa a ser validado os caminhos das pastas</param>
         public void ChecaCaminhoDiretorio()
         {
@@ -664,9 +664,9 @@ namespace NFe.Settings
         #endregion
 
         #region CriarSubPastaEnviado()
-        /// <summary>
+         
         /// Criar as subpastas (Autorizados/Denegados/EmProcessamento) dentro da pasta dos XML´s enviados para a empresa passada por parâmetro
-        /// </summary>
+         
         /// <param name="indexEmpresa">Index da Empresa a ser pesquisado na coleção de configurações das empresas cadastradas</param>
         /// <remarks>
         /// Autor: Wandrey Mundin Ferreira
@@ -826,9 +826,9 @@ namespace NFe.Settings
          * Marcelo
          * 03/06/2013
          */
-        /// <summary>
+         
         /// Exclui o arquivo de lock associado a esta empresa/ instancia
-        /// </summary>
+         
         public void DeleteLockFile()
         {
             string file = String.Format("{0}\\{1}-{2}.lock", PastaBase, Propriedade.NomeAplicacao, Environment.MachineName);
@@ -943,9 +943,9 @@ namespace NFe.Settings
         }
         #endregion
 
-        /// <summary>
+         
         /// RemoveEndSlash
-        /// </summary>
+         
         public void RemoveEndSlash()
         {
             PastaXmlEnvio = ConfiguracaoApp.RemoveEndSlash(PastaXmlEnvio);
@@ -1013,9 +1013,9 @@ namespace NFe.Settings
         #endregion
 
         #region Envia arquivos para o FTP
-        /// <summary>
+         
         /// Copia o arquivo para o FTP
-        /// </summary>
+         
         /// <param name="fileName"></param>
         /// <param name="folderName"></param>
         public void SendFileToFTP(string fileName, string folderName)

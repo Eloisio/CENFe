@@ -34,9 +34,9 @@ namespace NFe.Service.NFSe
     {
         #region Objeto com os dados do XML de lote rps
 
-        /// <summary>
+         
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s do lote rps
-        /// </summary>
+         
         private DadosEnvLoteRps oDadosEnvLoteRps;
 
         #endregion Objeto com os dados do XML de lote rps
@@ -790,12 +790,12 @@ namespace NFe.Service.NFSe
 
         #region EncryptAssinatura()
 
-        /// <summary>
+         
         /// Encriptar a tag Assinatura quando for município de Blumenau - SC
-        /// </summary>
+         
         private void EncryptAssinatura()
         {
-            ///danasa: 12/2013
+            /// : 12/2013
             Validate.ValidarXML val = new Validate.ValidarXML(NomeArquivoXML, oDadosEnvLoteRps.cMunicipio, false);
             val.EncryptAssinatura(NomeArquivoXML);
         }
@@ -804,9 +804,9 @@ namespace NFe.Service.NFSe
 
         #region EnvLoteRps()
 
-        /// <summary>
+         
         /// Fazer a leitura do conteúdo do XML de lote rps e disponibiliza o conteúdo em um objeto para analise
-        /// </summary>
+         
         /// <param name="arquivoXML">Arquivo XML que é para efetuar a leitura</param>
         private void EnvLoteRps(int emp, string arquivoXML)
         {

@@ -2,14 +2,14 @@
 {
     partial class menu
     {
-        /// <summary> 
+          
         /// Required designer variable.
-        /// </summary>
+         
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+          
         /// Clean up any resources being used.
-        /// </summary>
+         
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
@@ -22,10 +22,10 @@
 
         #region Component Designer generated code
 
-        /// <summary> 
+          
         /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
-        /// </summary>
+         
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -202,7 +202,7 @@
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(88, 19);
             this.metroLabel1.TabIndex = 28;
-            this.metroLabel1.Text = "Configuração";
+            this.metroLabel1.Text = "* Configuração *";
             this.metroLabel1.Click += new System.EventHandler(this.metroLabel1_Click);
             // 
             // menu

@@ -5,9 +5,9 @@ namespace NFe.Components
     public class Proxy
     {
         #region DefinirProxy()
-        /// <summary>
+         
         /// Efetua as definições do proxy
-        /// </summary>
+         
         /// <returns>Retorna as definições do Proxy</returns>
         /// <param name="servidor">Endereço do servidor de proxy</param>
         /// <param name="usuario">Usuário para autenticação no servidor de proxy</param>

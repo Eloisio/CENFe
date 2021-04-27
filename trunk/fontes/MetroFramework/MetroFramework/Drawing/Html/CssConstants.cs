@@ -27,9 +27,9 @@
 
 namespace MetroFramework.Drawing.Html
 {
-    /// <summary>
+     
     /// String constants to avoid typing errors.
-    /// </summary>
+     
     public class CssConstants
     {
         public const string Absolute = "absolute";
@@ -103,44 +103,44 @@ namespace MetroFramework.Drawing.Html
 
 
         #region Units
-        /// <summary>
+         
         /// Centimeters
-        /// </summary>
+         
         public const string Cm = "cm";
 
-        /// <summary>
+         
         /// Milimeters
-        /// </summary>
+         
         public const string Mm = "mm";
 
-        /// <summary>
+         
         /// Pixels
-        /// </summary>
+         
         public const string Px = "px";
 
-        /// <summary>
+         
         /// Inches
-        /// </summary>
+         
         public const string In = "in";
 
-        /// <summary>
+         
         /// Em - The font size of the relevant font
-        /// </summary>
+         
         public const string Em = "em";
 
-        /// <summary>
+         
         /// The 'x-height' of the relevan font
-        /// </summary>
+         
         public const string Ex = "ex";
 
-        /// <summary>
+         
         /// Points
-        /// </summary>
+         
         public const string Pt = "pt";
 
-        /// <summary>
+         
         /// Picas
-        /// </summary>
+         
         public const string Pc = "pc";
 
         #endregion

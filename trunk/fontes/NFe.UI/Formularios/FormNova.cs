@@ -92,7 +92,7 @@ namespace NFe.UI.Formularios
                 case TipoAplicativo.Todos:
                 case TipoAplicativo.Nfe:
 
-                    //Serviço todos e NFe utilizam a mesma pasta de configurações, então não posso permitir configurar o mesmo CNPJ para os dois serviços. Wandrey
+                    //Serviço todos e NFe utilizam a mesma pasta de configurações, então não posso permitir configurar o mesmo CNPJ para os dois serviços.
                     if ((empresa = Empresas.FindConfEmpresa(cnpj, TipoAplicativo.Todos)) == null)
                         empresa = Empresas.FindConfEmpresa(cnpj, TipoAplicativo.Nfe);
                     break;

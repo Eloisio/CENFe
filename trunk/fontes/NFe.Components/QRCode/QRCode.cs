@@ -41,9 +41,9 @@ namespace NFe.Components.QRCode
 
         #region Constrututor
 
-        /// <summary>
+         
         /// Construtor
-        /// </summary>
+         
         /// <param name="conteudoXML">Conteúdo do XML</param>
         public QRCode(XmlDocument conteudoXML)
         {
@@ -54,9 +54,9 @@ namespace NFe.Components.QRCode
 
         #region Metodos
 
-        /// <summary>
+         
         /// Gerar o Hash do QRCode e montar o Link para inseri-lo no XML
-        /// </summary>
+         
         /// <param name="linkUF">Link de consulta da UF</param>
         /// <param name="identificadorCSC">CSC</param>
         /// <param name="tokenCSC"></param>
@@ -112,9 +112,9 @@ namespace NFe.Components.QRCode
             AddLinkQRCode(linkUFManual);
         }
 
-        /// <summary>
+         
         /// Adicionar link gerado ao XML
-        /// </summary>
+         
         private void AddLinkQRCode(string linkUFManual)
         {
             foreach (var item in ConteudoXML)
@@ -144,9 +144,9 @@ namespace NFe.Components.QRCode
             }
         }
 
-        /// <summary>
+         
         /// Valida se deve adicionar o link ao XML
-        /// </summary>
+         
         /// <returns>Bolean</returns>
         public bool CalcularLink()
         {
@@ -168,9 +168,9 @@ namespace NFe.Components.QRCode
             return result;
         }
 
-        /// <summary>
+         
         /// Recuperar informações do XML
-        /// </summary>
+         
         private void Populate()
         {
             var minhaCultura = new CultureInfo("pt-BR"); //pt-BR usada como base
@@ -188,9 +188,9 @@ namespace NFe.Components.QRCode
             digVal = GetValueXML("Reference", "DigestValue").Trim();
         }
 
-        /// <summary>
+         
         /// Recupera as informações no XML
-        /// </summary>
+         
         /// <param name="elementTag">Grupo de tag</param>
         /// <param name="valueTag">Elmento que deseja retornar o valor</param>
         /// <returns>Valor do elemento</returns>
@@ -219,9 +219,9 @@ namespace NFe.Components.QRCode
             return value;
         }
 
-        /// <summary>
+         
         /// Recuperar valor de um atributo do XML
-        /// </summary>
+         
         /// <param name="node">Atribute</param>
         /// <param name="attribute">Nome do atributo</param>
         /// <returns></returns>

@@ -2,9 +2,9 @@
 
 namespace NFe.ConvertTxt
 {
-    /// <summary>
+     
     /// InfAdic
-    /// </summary>
+     
     public class InfAdic
     {
         public string infAdFisco;

@@ -6,9 +6,9 @@ using System.Xml;
 
 namespace NFe.Service
 {
-    /// <summary>
+     
     /// Executar as tarefas pertinentes a assinatura e montagem do lote de uma única nota fiscal eletrônica
-    /// </summary>
+     
     public class TaskCTeMontarLoteUm : TaskAbst
     {
         public TaskCTeMontarLoteUm(string arquivo)

@@ -1,8 +1,8 @@
 ﻿namespace NFe.ConvertTxt
 {
-    /// <summary>
+     
     /// Dest
-    /// </summary>
+     
     public class Dest
     {
         public string CNPJ;
@@ -15,9 +15,9 @@
         public string email;
         public TpcnindIEDest indIEDest;
 
-        /// <summary>
+         
         /// NFC-e
-        /// </summary>
+         
         public string idEstrangeiro;
 
         public Dest()
@@ -28,9 +28,9 @@
         }
     }
 
-    /// <summary>
+     
     /// enderDest
-    /// </summary>
+     
     public class enderDest
     {
         public string xLgr;

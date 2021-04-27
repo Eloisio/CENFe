@@ -72,19 +72,19 @@ namespace MetroFramework.Drawing.Html
 
         #region Props
 
-        /// <summary>
+         
         /// Gets the link regions of the container
-        /// </summary>
+         
         internal Dictionary<CssBox, RectangleF> LinkRegions
         {
             get { return _linkRegions; }
         }
 
 
-        /// <summary>
+         
         /// Gets the blocks of style defined on this structure, separated by media type.
         /// General blocks are defined under the "all" Key.
-        /// </summary>
+         
         /// <remarks>
         /// Normal use of this dictionary will be something like:
         /// 
@@ -99,46 +99,46 @@ namespace MetroFramework.Drawing.Html
             get { return _media_blocks; }
         }
 
-        /// <summary>
+         
         /// Gets the document's source
-        /// </summary>
+         
         public string DocumentSource
         {
             get { return _documentSource; }
         }
 
-        /// <summary>
+         
         /// Gets or sets a value indicating if antialiasing should be avoided 
         /// for geometry like backgrounds and borders
-        /// </summary>
+         
         public bool AvoidGeometryAntialias
         {
             get { return _avoidGeometryAntialias; }
             set { _avoidGeometryAntialias = value; }
         }
 
-        /// <summary>
+         
         /// Gets or sets a value indicating if antialiasing should be avoided
         /// for text rendering
-        /// </summary>
+         
         public bool AvoidTextAntialias
         {
             get { return _avoidTextAntialias; }
             set { _avoidTextAntialias = value; }
         }
 
-        /// <summary>
+         
         /// Gets or sets the maximum size of the container
-        /// </summary>
+         
         public SizeF MaximumSize
         {
             get { return _maxSize; }
             set { _maxSize = value; }
         }
 
-        /// <summary>
+         
         /// Gets or sets the scroll offset of the document
-        /// </summary>
+         
         public PointF ScrollOffset
         {
             get { return _scrollOffset; }
@@ -150,9 +150,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Methods
 
-        /// <summary>
+         
         /// Feeds the source of the stylesheet
-        /// </summary>
+         
         /// <param name="stylesheet"></param>
         public void FeedStyleSheet(string stylesheet)
         {
@@ -232,10 +232,10 @@ namespace MetroFramework.Drawing.Html
             #endregion
         }
 
-        /// <summary>
+         
         /// Feeds the style with a block about the specific media.
         /// When no media is specified, "all" will be used
-        /// </summary>
+         
         /// <param name="media"></param>
         /// <param name="block"></param>
         private void FeedStyleBlock(string media, string block)
@@ -294,9 +294,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Parses the document
-        /// </summary>
+         
         private void ParseDocument()
         {
             InitialContainer root = this;
@@ -348,9 +348,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Recursively searches for the parent with the specified HTML Tag name
-        /// </summary>
+         
         /// <param name="tagName"></param>
         /// <param name="b"></param>
         private CssBox FindParent(string tagName, CssBox b)
@@ -369,9 +369,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Applies style to all boxes in the tree
-        /// </summary>
+         
         private void CascadeStyles(CssBox startBox)
         {
             bool someBlock = false;
@@ -432,10 +432,10 @@ namespace MetroFramework.Drawing.Html
 
         }
 
-        /// <summary>
+         
         /// Makes block boxes be among only block boxes. 
         /// Inline boxes should live in a pool of Inline boxes only.
-        /// </summary>
+         
         /// <param name="startBox"></param>
         private void BlockCorrection(CssBox startBox)
         {
@@ -474,9 +474,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Scans the boxes (non-deeply) of the box, and returns groups of contiguous inline boxes.
-        /// </summary>
+         
         /// <param name="b"></param>
         /// <returns></returns>
         private List<List<CssBox>> BlockCorrection_GetInlineGroups(CssBox box)

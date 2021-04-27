@@ -20,3 +20,11 @@ D:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\Me
 D:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.csproj.GenerateResource.Cache
 D:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.dll
 D:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.pdb
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.Controls.MetroGrid.resources
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.Forms.MetroMessageBox.resources
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.Forms.MetroTaskWindow.resources
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.MetroMessageBoxControl.resources
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.Properties.Resources.resources
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.csproj.GenerateResource.cache
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.dll
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.pdb

@@ -31,9 +31,9 @@ using System.Text.RegularExpressions;
 
 namespace MetroFramework.Drawing.Html
 {
-    /// <summary>
+     
     /// Represents a block of CSS property values
-    /// </summary>
+     
     /// <remarks>
     /// To learn more about CSS blocks visit CSS spec:
     /// http://www.w3.org/TR/CSS21/syndata.html#block
@@ -50,18 +50,18 @@ namespace MetroFramework.Drawing.Html
 
         #region Ctor
 
-        /// <summary>
+         
         /// Initializes internal's
-        /// </summary>
+         
         private CssBlock()
         {
             _propertyValues = new Dictionary<PropertyInfo, string>();
             _properties = new Dictionary<string, string>();
         }
 
-        /// <summary>
+         
         /// Creates a new block from the block's source
-        /// </summary>
+         
         /// <param name="blockSource"></param>
         public CssBlock(string blockSource)
             : this()
@@ -99,26 +99,26 @@ namespace MetroFramework.Drawing.Html
 
         #region Props
 
-        /// <summary>
+         
         /// Gets the properties and its values
-        /// </summary>
+         
         public Dictionary<string, string> Properties
         {
             get { return _properties; }
         }
 
-        /// <summary>
+         
         /// Gets the dictionary with property-ready values
-        /// </summary>
+         
         public Dictionary<PropertyInfo, string> PropertyValues
         {
             get { return _propertyValues; }
         }
 
 
-        /// <summary>
+         
         /// Gets the block's source
-        /// </summary>
+         
         public string BlockSource
         {
             get { return _block; }
@@ -129,9 +129,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Method
 
-        /// <summary>
+         
         /// Updates the PropertyValues dictionary
-        /// </summary>
+         
         internal void UpdatePropertyValues()
         {
             PropertyValues.Clear();
@@ -143,9 +143,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Asigns the style on this block o the specified box
-        /// </summary>
+         
         /// <param name="b"></param>
         public void AssignTo(CssBox b)
         {

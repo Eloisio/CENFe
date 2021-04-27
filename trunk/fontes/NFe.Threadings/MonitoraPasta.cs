@@ -7,9 +7,9 @@ using System.Xml.Linq;
 
 namespace NFe.Threadings
 {
-    /// <summary>
+     
     /// Executar as thread´s dos serviços do UniNFe e NFe conforme necessário
-    /// </summary>
+     
     /// <remarks>
     /// Autor: Wandrey Mundin Ferreira
     /// Data: 04/04/2011
@@ -18,30 +18,31 @@ namespace NFe.Threadings
     {
         #region Construtores
 
-        /// <summary>
+         
         /// Construtor
-        /// </summary>
+         
         public MonitoraPasta()
         {
             MonitorarPasta();
+
         }
 
         #endregion Construtores
 
         #region Propriedades
 
-        /// <summary>
+         
         /// Tipos de arquivos a serem monitorados pelo UniNFe
-        /// </summary>
+         
         public static List<FileSystemWatcher> fsw = new List<FileSystemWatcher>();
 
         #endregion Propriedades
 
         #region MonitorarPastas()
 
-        /// <summary>
+         
         /// Executa as thread´s de monitoração de pastas
-        /// </summary>
+         
         private void MonitorarPasta()
         {
             fsw.Clear();
@@ -83,35 +84,17 @@ namespace NFe.Threadings
 
             #endregion Pasta Geral
         }
-
         #endregion MonitorarPastas()
-
         #region LocalizaEmpresa()
-
-        /// <summary>
         /// Localiza a empresa da qual o arquivo faz parte para processar com as configurações corretas
-        /// </summary>
-        /// <param name="fullPath">Nome do arquivo completo (com pasta e tudo)</param>
-        /// <returns>Index da empresa dentro da lista de configurações</returns>
-        /// <remarks>
-        /// Autor: Wandrey Mundin Ferreira
-        /// Data: 26/04/2011
-        /// </remarks>
         private int LocalizaEmpresa(FileInfo fi)
         {
             int empresa = -1;
-
             try
             {
-                ///
-                ///danasa 3/11/2011
                 string fullName = ConfiguracaoApp.RemoveEndSlash(fi.Directory.FullName.ToLower());
-                ///
-                /// "EndsWith" é para pegar apenas se terminar com, já que nas empresas pode ter um nome 'temp' no meio das definicoes das pastas
                 if (fullName.EndsWith("\\temp"))
-                    /// exclui o 'arquivo' temp.
                     fullName = Path.GetDirectoryName(fullName);
-
                 for (int i = 0; i < Empresas.Configuracoes.Count; i++)
                 {
                     if (fullName == Empresas.Configuracoes[i].PastaXmlEnvio.ToLower() ||
@@ -127,30 +110,21 @@ namespace NFe.Threadings
             catch
             {
             }
-
             return empresa;
         }
 
         #endregion LocalizaEmpresa()
-
         #region Eventos
-
-        /// <summary>
         /// Evento que executa thread´s para processar os arquivos que são colocados nas pastas que estão sendo monitoradas pela FileSystemWatcher
-        /// </summary>
-        /// <param name="fi">Arquivo detectado pela FileSystemWatcher</param>
+        /// Arquivo detectado pela FileSystemWatcher
         private void fsw_OnFileChanged(FileInfo fi)
         {
             try
             {
                 int empresa;
                 string arq = fi.FullName.ToLower();
-
                 if (fi.Directory.FullName.ToLower().EndsWith("geral\\temp"))
                 {
-                    ///
-                    /// encerra o UniNFe no arquivo -sair.xml
-                    ///
                     var sext = Components.Propriedade.Extensao(Components.Propriedade.TipoEnvio.sair_XML);
                     if (arq.EndsWith(sext.EnvioTXT) || arq.EndsWith(sext.EnvioXML))
                     {
@@ -163,17 +137,13 @@ namespace NFe.Threadings
                         }
                         else
                             ThreadService.Stop();
-                        Environment.Exit(0);
+                            Environment.Exit(0);
                         return;
                     }
-
                     string ExtRetorno = null;
                     string finalArqErro = null;
                     Exception exx = null;
-
-                    ///
                     /// Atualiza WSDL / Schemas
-                    ///
                     var ext = Components.Propriedade.Extensao(Components.Propriedade.TipoEnvio.pedUpdatewsdl);
                     if (arq.EndsWith(ext.EnvioTXT) || arq.EndsWith(ext.EnvioXML))
                     {
@@ -214,15 +184,11 @@ namespace NFe.Threadings
 
                         #endregion ---Atualiza WSDL e Schemas
                     }
-
-                    ///
-                    /// restart o UniNFe
-                    ///
+                    /// restart o CENFe
                     var uext = Components.Propriedade.Extensao(Components.Propriedade.TipoEnvio.pedRestart);
                     if (arq.EndsWith(uext.EnvioTXT) || arq.EndsWith(uext.EnvioXML))
                     {
-                        #region ---Reinicia o UniNFe
-
+                        #region ---Reinicia 
                         File.Delete(fi.FullName);
                         try
                         {
@@ -236,7 +202,6 @@ namespace NFe.Threadings
                                 for (int i = 0; i < 10; ++i)
                                 {
                                     Thread.Sleep(500);
-
                                     if (Components.ServiceProcess.StatusService(Components.Propriedade.ServiceName) == System.ServiceProcess.ServiceControllerStatus.Stopped)
                                     {
                                         Components.ServiceProcess.RestartService(Components.Propriedade.ServiceName, 40000);
@@ -254,7 +219,7 @@ namespace NFe.Threadings
                             exx = ex;
                         }
 
-                        #endregion ---Reinicia o UniNFe
+                        #endregion ---Reinicia
                     }
 
                     if (ExtRetorno != null)
@@ -278,7 +243,7 @@ namespace NFe.Threadings
                         l.Execute();
                         return;
                     }
-                    empresa = 0; //Vou criar fixo como 0 quando for na pasta geral, pois na pasta geral não tem como detectar qual é a empresa. Wandrey 20/03/2013
+                    empresa = 0; //Vou criar fixo como 0 quando for na pasta geral, pois na pasta geral não tem como detectar qual é a empresa. 
                 }
                 else
                 {
@@ -290,8 +255,6 @@ namespace NFe.Threadings
                     /*<#8084>
                      * Aqui foi modificado porque a ThreadControl deixou de existir.
                      * E todo o processamento que antes existia na thread control foi deixado apenas no método Run(), que é chamado abaixo
-                     *
-                     * Marcelo
                      */
                     new ThreadItem(fi, empresa).Run();
                     //</#8084>

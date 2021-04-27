@@ -7,18 +7,18 @@ using System.Text;
 
 namespace NFe
 {
-    /// <summary>
+     
     /// Classe para passar o Pin Code por baixo do código 
     /// (a caixa de dialógo pedindo o Pin Code não aparecerá para o usuário).
     /// <athor>Renan Borges</athor>
     /// <date>02/05/2014</date>
-    /// </summary>
+     
     public static class clsX509Certificate2Extension
     {
-        /// <summary>
+         
         /// Passa PIN Code (Senha/Password) para Certificados
         ///  eToken como o A3 do SERASA do Brasil
-        /// </summary>
+         
         /// <param name="_Certificado">O Certificado que está sendo usado 
         /// para a criptografia</param>
         /// <param name="_PinPassword">O Pin Code / Senha / Password</param>
@@ -52,9 +52,9 @@ namespace NFe
                                       );
         }
 
-        /// <summary>
+         
         /// Retorna true se o certificado for do tipo A3.
-        /// </summary>
+         
         /// <param name="x509cert">Certificado que deverá ser validado se é A3 ou não.</param>
         /// <returns></returns>
         public static bool IsA3(this X509Certificate2 x509cert)
@@ -84,9 +84,9 @@ namespace NFe
             return result;
         }
     }
-    /// <summary>
+     
     /// Funções da API do Windows que realmente executam a passagem do PIN
-    /// </summary>
+     
     internal static class SafeNativeMethods
     {
         internal enum CryptContextFlags

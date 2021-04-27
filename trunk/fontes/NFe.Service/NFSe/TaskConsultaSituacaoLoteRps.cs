@@ -19,9 +19,9 @@ namespace NFe.Service.NFSe
     {
         #region Objeto com os dados do XML de consulta situação do lote rps
 
-        /// <summary>
+         
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s do pedido de consulta da situação do lote rps
-        /// </summary>
+         
         private DadosPedSitLoteRps oDadosPedSitLoteRps;
 
         #endregion Objeto com os dados do XML de consulta situação do lote rps
@@ -378,9 +378,9 @@ namespace NFe.Service.NFSe
 
         #region PedSitLoteRps()
 
-        /// <summary>
+         
         /// Fazer a leitura do conteúdo do XML de consulta situação do lote rps e disponibilizar conteúdo em um objeto para analise
-        /// </summary>
+         
         /// <param name="arquivoXML">Arquivo XML que é para efetuar a leitura</param>
         private void PedSitLoteRps(string arquivoXML)
         {

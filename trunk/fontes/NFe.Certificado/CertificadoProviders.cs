@@ -9,17 +9,17 @@ namespace NFe.Certificado
     public class CertificadoProviders
     {
         #region Propriedades
-        /// <summary>
+         
         /// Propriedade que identifica se foi possível identificar um provider valido
-        /// </summary>
+         
         public bool ProviderIdentificado { get; private set; }
-        /// <summary>
+         
         /// Dados referente ao provider valido
-        /// </summary>
+         
         public CertProviders ProviderValido { get; private set; }
-        /// <summary>
+         
         /// Propriedade referente ao certificado que será testado
-        /// </summary>
+         
         public bool IsA3 { get; private set; }
 
         private CertificadoDigital oCertificado = new CertificadoDigital();
@@ -49,9 +49,9 @@ namespace NFe.Certificado
         #endregion
 
         #region Metodos
-        /// <summary>
+         
         /// Define a propriedade com o provider que deverá ser sugerida ao usuario
-        /// </summary>
+         
         private void GetProviderValido()
         {
             for (int i = 0; i < ProvidersIdentificados.Count; i++)
@@ -65,9 +65,9 @@ namespace NFe.Certificado
             }
         }
 
-        /// <summary>
+         
         /// Realiza efetivamente o teste assinando o XML de simualação
-        /// </summary>
+         
         /// <param name="provider">Objeto com as informaçoes do provider que será testado</param>
         /// <returns></returns>
         public bool TestarProvider(CertProviders provider)
@@ -89,18 +89,18 @@ namespace NFe.Certificado
             return result;
         }
 
-        /// <summary>
+         
         /// Apagar arquivo XML de teste para assinatura
-        /// </summary>
+         
         private void ApagarXMLTeste()
         {
             if (File.Exists(TempFile))
                 File.Delete(TempFile);
         }
 
-        /// <summary>
+         
         /// Gera um XML para realizar a simulação do teste da assinatura
-        /// </summary>
+         
         /// <param name="provider">Objeto CertProviders que contem o provider que será testado</param>
         /// <author>Renan Borges</author>
         private void SimularXML(CertProviders provider)
@@ -120,18 +120,18 @@ namespace NFe.Certificado
             docElement.Save(TempFile);
         }
 
-        /// <summary>
+         
         /// Busca uma lista de providers que podem ser utilizados pelo certificado
-        /// </summary>
+         
         /// <author>Renan Borges</author>
         public void GetProviders()
         {
             ProvidersIdentificados = oCertificado.GetListProviders();
         }
 
-        /// <summary>
+         
         /// Busca os types dos providers encontrados
-        /// </summary>
+         
         /// <author>Renan Borges</author>
         public void GetProvidersType()
         {

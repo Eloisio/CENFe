@@ -10,3 +10,7 @@ D:\Desenvolvimento\UNINFe\trunk\fontes\MetroFramework\MetroFramework.Fonts\obj\D
 D:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.csprojResolveAssemblyReference.cache
 D:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.dll
 D:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.pdb
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.csprojAssemblyReference.cache
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.csproj.CopyComplete
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.dll
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.pdb

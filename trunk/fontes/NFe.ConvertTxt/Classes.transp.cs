@@ -2,9 +2,9 @@
 
 namespace NFe.ConvertTxt
 {
-    /// <summary>
+     
     /// Transp
-    /// </summary>
+     
     public class Transp
     {
         public TpcnModalidadeFrete modFrete;

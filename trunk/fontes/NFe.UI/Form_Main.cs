@@ -9,6 +9,7 @@ namespace NFe.UI
 {
     public partial class Form_Main : MetroForm
     {
+        private const string Empresa = "Campos Evolution Monitor - NFe";
         private bool first = false;
         private bool servicoInstaladoErodando = false;
         private string srvName = Propriedade.ServiceName;
@@ -35,7 +36,7 @@ namespace NFe.UI
                 tbRestartServico.Visible =
                 tbPararServico.Visible = servicoInstaladoErodando;
                 //Trazer minimizado e no systray
-                notifyIcon1.Text = "Campos Evolution Monitor - NFe";// NFe.Components.Propriedade.NomeAplicacao + " - " + NFe.Components.Propriedade.DescricaoAplicacao;
+                notifyIcon1.Text = Empresa;
                 notifyIcon1.Visible = true;
                 WindowState = FormWindowState.Minimized;
                 Visible = false;
@@ -44,8 +45,8 @@ namespace NFe.UI
                 _menu = new menu();
                 Controls.Add(_menu);
                 _menu.Dock = DockStyle.Fill;
-                cmAbrir.Text = "Abrir Campos Evolution Monitor - NFe";
-                cmFechar.Text = "Fechar Campos Evolution Monitor - NFe";
+                cmAbrir.Text = "Abrir "+Empresa;
+                cmFechar.Text = "Fechar " + Empresa;
                 string msg = "";
                 Propriedade.VerificaArquivos(out error, out msg);
                 if (error)
@@ -54,11 +55,8 @@ namespace NFe.UI
                     Application.Exit();
                     return;
                 }
-                if (!servicoInstaladoErodando)     //danasa 12/8/2011
-                    //Definir eventos de controles de execução das thread´s de serviços do CENfe. Wandrey 26/07/2011
-                    new ThreadControlEvents();  //danasa 12/8/2011
-                //Executar os serviços do CENfe em novas threads
-                //Tem que ser carregado depois que o formulário da MainForm estiver totalmente carregado para evitar Erros. Wandrey 19/10/2010
+                if (!servicoInstaladoErodando)
+                    new ThreadControlEvents();
                 ExecutaServicos();
             }
             finally
@@ -71,9 +69,6 @@ namespace NFe.UI
         {
             if (first)
             {
-                //Faz a aplicação sumir da barra de tarefas
-                //danasa
-                //  Se usuario mudar o tamanho da janela, não pode desaparece-la da taskbar
                 if (WindowState == FormWindowState.Minimized)
                 {
                     ShowInTaskbar = false;
@@ -97,12 +92,9 @@ namespace NFe.UI
         {
             if (_formloaded)
                 SaveForm();
-            // TODO: Aqui, deveriamos verificar se ainda existe alguma Thread pendente antes de fechar
             if (e.CloseReason == CloseReason.UserClosing && !Propriedade.EncerrarApp)
             {
-                // se o botão de fechar for pressionado pelo usuário, o mainform não será fechado em sim minimizado.
                 e.Cancel = true;
-                /// verifica se o processo de manutencao de empresas está ativo
                 foreach (var uc in Controls)
                 {
                     if (uc.GetType().Equals(typeof(userConfiguracoes)))
@@ -112,7 +104,6 @@ namespace NFe.UI
                         break;
                     }
                 }
-                // hide this and metro owner
                 Form form = this;
                 do
                 {
@@ -123,7 +114,7 @@ namespace NFe.UI
             }
             else
             {
-                e.Cancel = false;  //se o PC for desligado o windows o fecha automaticamente.
+                e.Cancel = false;  
             }
             base.OnFormClosing(e);
         }
@@ -220,7 +211,6 @@ namespace NFe.UI
             }
             BringToFront();
             Show();
-            //Voltar a janela em seu estado normal
             if (_maximized)
                 WindowState = FormWindowState.Maximized;
             else
@@ -233,7 +223,6 @@ namespace NFe.UI
                     }
                     catch { }
             }
-            // Faz a aplicação aparecer na barra de tarefas.
             ShowInTaskbar = true;
             _formloaded = true;
             _maximized = false;

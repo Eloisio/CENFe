@@ -5,9 +5,9 @@ namespace NFe.Components
     public static class NativeMethods
     {
         // http://msdn.microsoft.com/en-us/library/ms681944(VS.85).aspx
-        /// <summary>
+         
         /// Allocates a new console for the calling process.
-        /// </summary>
+         
         /// <returns>true if the function succeeds; otherwise, false.</returns>
         /// <remarks>
         /// A process can be associated with only one console,
@@ -17,9 +17,9 @@ namespace NFe.Components
         public static extern bool AllocConsole();
 
         // http://msdn.microsoft.com/en-us/library/ms683150(VS.85).aspx
-        /// <summary>
+         
         /// Detaches the calling process from its console.
-        /// </summary>
+         
         /// <returns>true if the function succeeds; otherwise, false.</returns>
         /// <remarks>
         /// If the calling process is not already attached to a console,

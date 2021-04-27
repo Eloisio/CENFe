@@ -9,40 +9,40 @@ using System.Windows.Forms;
 
 namespace NFe.Certificado
 {
-    /// <summary>
+     
     /// Classe para trabalhar com certificados digitais
-    /// </summary>
+     
     public class CertificadoDigital
     {
         #region Propriedades da classe
 
-        /// <summary>
+         
         /// Certificado selecionado pelo método SelecionarCertificado()
-        /// </summary>
+         
         public X509Certificate2 oCertificado { get; private set; }
 
-        /// <summary>
+         
         /// Data inicial da validade do certificado
-        /// </summary>
+         
         public DateTime dValidadeInicial { get; private set; }
 
-        /// <summary>
+         
         /// Data final da validade do certificado
-        /// </summary>
+         
         public DateTime dValidadeFinal { get; private set; }
 
-        /// <summary>
+         
         /// Subject do Certificado, Razão Social da Empresa Certificada, CNPJ, etc...
-        /// </summary>
+         
         public string sSubject { get; private set; }
 
         #endregion Propriedades da classe
 
-        /// <summary>
+         
         /// Método responsável por abrir um browse para selecionar o
         /// certificado digital que será utilizado para autenticação
         /// dos WebServices e gravar ele no atributo oCertificado
-        /// </summary>
+         
         /// <returns>
         /// Retorna se o certificado foi selecionado corretamente ou não.
         /// true  = foi selecionado corretamente.
@@ -78,10 +78,10 @@ namespace NFe.Certificado
             return vRetorna;
         }
 
-        /// <summary>
+         
         /// Exibi uma tela com o certificado digital selecionado para ser
         /// utilizado na integração com os WEBServices da NFe
-        /// </summary>
+         
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>04/06/2008</date>
         public void ExibirCertSel()
@@ -96,9 +96,9 @@ namespace NFe.Certificado
             }
         }
 
-        /// <summary>
+         
         /// Pega algumas informações do certificado digital informado por parâmetro para o método e disponibiliza em propriedades para utilização
-        /// </summary>
+         
         /// <param name="empresa">Objeto com os dados da empresa</param>
         /// <returns>Retorna se localizou o certificado ou não (True or False)</returns>
         public bool PrepInfCertificado(Empresa empresa)
@@ -118,9 +118,9 @@ namespace NFe.Certificado
             return localizouCertificado;
         }
 
-        /// <summary>
+         
         /// Certificado digita está vencido ou não
-        /// </summary>
+         
         /// <param name="emp">Empresa que é para ser verificado o certificado</param>
         /// <returns>true = Certificado Vencido</returns>
         public bool Vencido(int emp)
@@ -141,9 +141,9 @@ namespace NFe.Certificado
             return retorna;
         }
 
-        /// <summary>
+         
         /// Lista os Providers que podem ser usados para o Certificado Digital A3
-        /// </summary>
+         
         /// <returns>Lista de Providers para o Certificado Digital</returns>
         /// <author>Renan Borges</author>
         public List<CertProviders> GetListProviders()
@@ -167,9 +167,9 @@ namespace NFe.Certificado
             return providers;
         }
 
-        /// <summary>
+         
         /// Retorna os dados do provedores do certificado digital A3
-        /// </summary>
+         
         /// <param name="provider">Nome do provider</param>
         /// <returns>Objeto com dados do provider</returns>
         /// <author>Renan Borges</author>
@@ -208,16 +208,16 @@ namespace NFe.Certificado
 
 namespace NFe.Exceptions
 {
-    /// <summary>
+     
     /// Classe para tratamento de exceções da classe Invocar Objeto
-    /// </summary>
+     
     public class ExceptionCertificadoDigital : Exception
     {
         public ErroPadrao ErrorCode { get; private set; }
 
-        /// <summary>
+         
         /// Construtor que já define uma mensagem pré-definida de exceção
-        /// </summary>
+         
         /// <param name="CodigoErro">Código da mensagem de erro (Classe MsgErro)</param>
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>24/11/2009</date>
@@ -227,9 +227,9 @@ namespace NFe.Exceptions
             ErrorCode = Erro;
         }
 
-        /// <summary>
+         
         /// Construtor que ´já define uma mensagem pré-definida de exceção com possibilidade de complemento da mensagem
-        /// </summary>
+         
         /// <param name="CodigoErro">Código da mensagem de erro (Classe MsgErro)</param>
         /// <param name="ComplementoMensagem">Complemento da mensagem de exceção</param>
         public ExceptionCertificadoDigital(ErroPadrao Erro, string ComplementoMensagem)

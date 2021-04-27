@@ -2,9 +2,9 @@
 
 namespace NFe.ConvertTxt
 {
-    /// <summary>
+     
     /// COFINS
-    /// </summary>
+     
     public struct COFINS
     {
         public string CST;
@@ -16,9 +16,9 @@ namespace NFe.ConvertTxt
         public double qBCProd;
     }
 
-    /// <summary>
+     
     /// COFINSST
-    /// </summary>
+     
     public struct COFINSST
     {
         public double vBC;
@@ -28,9 +28,9 @@ namespace NFe.ConvertTxt
         public double vCOFINS;
     }
 
-    /// <summary>
+     
     /// ICMS
-    /// </summary>
+     
     public struct ICMS
     {
         public TpcnOrigemMercadoria orig;
@@ -83,9 +83,9 @@ namespace NFe.ConvertTxt
         public ICMSUFDest ICMSUFDest;
     }
 
-    /// <summary>
+     
     /// ICMSTot
-    /// </summary>
+     
     public struct ICMSTot
     {
         public double vBC;
@@ -126,9 +126,9 @@ namespace NFe.ConvertTxt
         public double vBCFCPUFDest;
     }
 
-    /// <summary>
+     
     /// II
-    /// </summary>
+     
     public struct II
     {
         public double vBC;
@@ -137,9 +137,9 @@ namespace NFe.ConvertTxt
         public double vIOF;
     }
 
-    /// <summary>
+     
     /// Imposto
-    /// </summary>
+     
     public class Imposto
     {
         public double vTotTrib;
@@ -167,9 +167,9 @@ namespace NFe.ConvertTxt
         public double vIPIDevol;
     }
 
-    /// <summary>
+     
     /// IPI
-    /// </summary>
+     
     public struct IPI
     {
         public string clEnq;
@@ -185,9 +185,9 @@ namespace NFe.ConvertTxt
         public double vIPI;
     }
 
-    /// <summary>
+     
     /// ISSQN
-    /// </summary>
+     
     public struct ISSQN
     {
         public double vBC;
@@ -210,9 +210,9 @@ namespace NFe.ConvertTxt
         public bool indIncentivo;
     }
 
-    /// <summary>
+     
     /// ISSQNtot
-    /// </summary>
+     
     public struct ISSQNtot
     {
         public double vServ;
@@ -230,9 +230,9 @@ namespace NFe.ConvertTxt
         public TpcnRegimeTributario cRegTrib;
     }
 
-    /// <summary>
+     
     /// PIS
-    /// </summary>
+     
     public struct PIS
     {
         public string CST;
@@ -243,9 +243,9 @@ namespace NFe.ConvertTxt
         public double vAliqProd;
     }
 
-    /// <summary>
+     
     /// PISST
-    /// </summary>
+     
     public struct PISST
     {
         public double vBC;
@@ -255,9 +255,9 @@ namespace NFe.ConvertTxt
         public double vPIS;
     }
 
-    /// <summary>
+     
     /// retTransp
-    /// </summary>
+     
     public struct retTransp
     {
         public double vServ;
@@ -268,9 +268,9 @@ namespace NFe.ConvertTxt
         public int cMunFG;
     }
 
-    /// <summary>
+     
     /// retTrib
-    /// </summary>
+     
     public struct retTrib
     {
         public double vRetPIS;
@@ -282,9 +282,9 @@ namespace NFe.ConvertTxt
         public double vRetPrev;
     }
 
-    /// <summary>
+     
     /// Total
-    /// </summary>
+     
     public struct Total
     {
         public ICMSTot ICMSTot;

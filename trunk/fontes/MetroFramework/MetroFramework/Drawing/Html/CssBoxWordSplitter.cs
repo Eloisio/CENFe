@@ -28,17 +28,17 @@ using System.Collections.Generic;
 
 namespace MetroFramework.Drawing.Html
 {
-    /// <summary>
+     
     /// Splits text on words for a box
-    /// </summary>
+     
     internal class CssBoxWordSplitter
     {
         #region Static
 
-        /// <summary>
+         
         /// Returns a bool indicating if the specified box white-space processing model specifies
         /// that sequences of white spaces should be collapsed on a single whitespace
-        /// </summary>
+         
         /// <param name="b"></param>
         /// <returns></returns>
         public static bool CollapsesWhiteSpaces(CssBox b)
@@ -48,9 +48,9 @@ namespace MetroFramework.Drawing.Html
                 b.WhiteSpace == CssConstants.PreLine;
         }
 
-        /// <summary>
+         
         /// Returns a bool indicating if line breaks at the source should be eliminated
-        /// </summary>
+         
         /// <param name="b"></param>
         /// <returns></returns>
         public static bool EliminatesLineBreaks(CssBox b)
@@ -110,9 +110,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Public Metods
 
-        /// <summary>
+         
         /// Splits the text on words using rules of the specified box
-        /// </summary>
+         
         /// <param name="text"></param>
         /// <returns></returns>
         public void SplitWords()

@@ -204,9 +204,9 @@ namespace NFe.Settings
         private static string CriaArquivoDeErro(Empresa empresa, string cArqErro)
         {
             if (string.IsNullOrEmpty(empresa.PastaXmlRetorno))
-                cArqErro = Path.Combine(Propriedade.PastaGeralRetorno, string.Format(Propriedade.NomeArqERRUniNFe, DateTime.Now.ToString("yyyyMMddTHHmmss")));
+                cArqErro = Path.Combine(Propriedade.PastaGeralRetorno, string.Format(Propriedade.NomeArqERRCENFe, DateTime.Now.ToString("yyyyMMddTHHmmss")));
             else
-                cArqErro = Path.Combine(empresa.PastaXmlRetorno, string.Format(Propriedade.NomeArqERRUniNFe, DateTime.Now.ToString("yyyyMMddTHHmmss")));
+                cArqErro = Path.Combine(empresa.PastaXmlRetorno, string.Format(Propriedade.NomeArqERRCENFe, DateTime.Now.ToString("yyyyMMddTHHmmss")));
 
             if (!Directory.Exists(Path.GetDirectoryName(cArqErro)))
             {
@@ -215,10 +215,10 @@ namespace NFe.Settings
             return cArqErro;
         }
 
-        /// <summary>
+         
         /// Exclui todos os arquivos de lock existentes nas configurações de pasta das empresas
         /// <param name="confirm">Se verdadeiro confirma antes de apagar os arquivos</param>
-        /// </summary>
+         
         public static bool ClearLockFiles(bool confirm = true)
         {
             if (Empresas.Configuracoes == null || Empresas.Configuracoes.Count == 0) return true;
@@ -254,9 +254,9 @@ namespace NFe.Settings
         }
 
         #region CriarPasta()
-        /// <summary>
+         
         /// Criar as pastas para todas as empresas cadastradas e configuradas no sistema se as mesmas não existirem
-        /// </summary>
+         
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>29/09/2009</date>
         public static void CriarPasta(bool onlygeral)
@@ -287,9 +287,9 @@ namespace NFe.Settings
         #endregion
 
         #region CriarSubPastaEnviado()
-        /// <summary>
+         
         /// Criar as subpastas (Autorizados/Denegados/EmProcessamento) dentro da pasta dos XML´s enviados para todas as empresas cadastradas e configuradas
-        /// </summary>
+         
         /// <remarks>
         /// Autor: Wandrey Mundin Ferreira
         /// Date: 20/04/2010
@@ -310,9 +310,9 @@ namespace NFe.Settings
          * 29/07/2013
          */
         #region Reset certificado
-        /// <summary>
+         
         /// Reseta o certificado da empresa e recria o mesmo
-        /// </summary>
+         
         /// <param name="index">identificador da empresa</param>
         /// <returns></returns>
         public static X509Certificate2 ResetCertificado(int index)
@@ -359,9 +359,9 @@ namespace NFe.Settings
         #endregion
 
         #region FindConfEmpresa()
-        /// <summary>
+         
         /// Procurar o cnpj na coleção das empresas
-        /// </summary>
+         
         /// <param name="cnpj">CNPJ a ser pesquisado</param>
         /// <param param name="servico">Serviço a ser pesquisado</param>
         /// <returns>objeto empresa localizado, null se nada for localizado</returns>
@@ -381,9 +381,9 @@ namespace NFe.Settings
         #endregion
 
         #region FindConfEmpresaIndex()
-        /// <summary>
+         
         /// Procurar o cnpj na coleção das empresas
-        /// </summary>
+         
         /// <param name="cnpj">CNPJ a ser pesquisado</param>
         /// <param name="servico">Serviço a ser pesquisado</param>
         /// <returns>Retorna o index do objeto localizado ou null se nada for localizado</returns>
@@ -405,9 +405,9 @@ namespace NFe.Settings
         }
         #endregion
 
-        /// <summary>
+         
         /// Retorna a empresa pela thread atual
-        /// </summary>
+         
         /// <returns></returns>
         public static int FindEmpresaByThread()
         {
@@ -415,9 +415,9 @@ namespace NFe.Settings
         }
 
         #region Valid()
-        /// <summary>
+         
         /// Retorna se o indice da coleção que foi pesquisado é valido ou não
-        /// </summary>
+         
         /// <param name="index">Indice a ser validado</param>
         /// <returns>Retorna true or false</returns>
         /// <remarks>
@@ -435,9 +435,9 @@ namespace NFe.Settings
         #endregion
 
         #region Valid()
-        /// <summary>
+         
         /// Retorna se o objeto da coleção que foi pesquisado é valido ou não
-        /// </summary>
+         
         /// <param name="empresa">Objeto da empresa</param>
         /// <returns>Retorna true or false</returns>
         /// <remarks>

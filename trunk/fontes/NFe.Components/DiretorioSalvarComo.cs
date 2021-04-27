@@ -2,9 +2,9 @@
 
 namespace NFe.Components
 {
-    /// <summary>
+     
     /// Definição de como os diretórios devem ser salvos
-    /// </summary>
+     
     /// <by>http://desenvolvedores.net/marcelo</by>
     public class DiretorioSalvarComo
     {
@@ -42,9 +42,9 @@ namespace NFe.Components
         #endregion
 
         #region Métodos
-        /// <summary>
+         
         /// converte o diretório do formato AMD para a estrutura esperada
-        /// </summary>
+         
         /// <param name="emissao">date de emissão</param>
         /// <returns>estrutura de diretórios</returns>
         public string ToString(DateTime emissao)

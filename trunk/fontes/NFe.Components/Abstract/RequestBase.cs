@@ -9,9 +9,9 @@ namespace NFe.Components.Abstract
     {
         #region Public Properties
 
-        /// <summary>
+         
         /// Proxy para ser utilizado na requisição, pode ser nulo
-        /// </summary>
+         
         public IWebProxy Proxy { get; set; }
 
         #endregion Public Properties
@@ -23,9 +23,9 @@ namespace NFe.Components.Abstract
             Proxy = null;
         }
 
-        /// <summary>
+         
         /// Evita o erro de servidor cometeu uma violação de protocolo.
-        /// </summary>
+         
         /// <seealso cref="https://msdn.microsoft.com/pt-br/library/system.net.configuration.httpwebrequestelement.useunsafeheaderparsing%28v=vs.110%29.aspx"/>
         public void SetAllowUnsafeHeaderParsing20()
         {

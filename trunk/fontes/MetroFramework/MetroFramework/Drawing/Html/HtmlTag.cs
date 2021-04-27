@@ -105,35 +105,35 @@ namespace MetroFramework.Drawing.Html
 
         #region Props
 
-        /// <summary>
+         
         /// Gets the dictionary of attributes in the tag
-        /// </summary>
+         
         public Dictionary<string, string> Attributes
         {
             get { return _attributes; }
         }
 
 
-        /// <summary>
+         
         /// Gets the name of this tag
-        /// </summary>
+         
         public string TagName
         {
             get { return _tagName; }
         }
 
-        /// <summary>
+         
         /// Gets if the tag is actually a closing tag
-        /// </summary>
+         
         public bool IsClosing
         {
             get { return _isClosing; }
         }
 
-        /// <summary>
+         
         /// Gets if the tag is single placed; in other words it doesn't need a closing tag; 
         /// e.g. &lt;br&gt;
-        /// </summary>
+         
         public bool IsSingle
         {
             get
@@ -233,9 +233,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Methods
 
-        /// <summary>
+         
         /// Converts an HTML length into a Css length
-        /// </summary>
+         
         /// <param name="htmlLength"></param>
         /// <returns></returns>
         private string TranslateLength(string htmlLength)
@@ -250,9 +250,9 @@ namespace MetroFramework.Drawing.Html
             return htmlLength;
         }
 
-        /// <summary>
+         
         /// Cascades to the TD's the border spacified in the TABLE tag.
-        /// </summary>
+         
         /// <param name="table"></param>
         /// <param name="border"></param>
         private void ApplyTableBorder(CssBox table, string border)
@@ -266,9 +266,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Cascades to the TD's the border spacified in the TABLE tag.
-        /// </summary>
+         
         /// <param name="table"></param>
         /// <param name="border"></param>
         private void ApplyTablePadding(CssBox table, string padding)
@@ -283,9 +283,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets a boolean indicating if the attribute list has the specified attribute
-        /// </summary>
+         
         /// <param name="attribute"></param>
         /// <returns></returns>
         public bool HasAttribute(string attribute)

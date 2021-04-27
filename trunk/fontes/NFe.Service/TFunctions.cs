@@ -14,9 +14,9 @@ namespace NFe.Service
     public class TFunctions
     {
         #region GravarArqErroServico()
-        /// <summary>
+         
         /// Grava um arquivo texto com os erros ocorridos durante as operações para que o ERP possa tratá-los
-        /// </summary>
+         
         /// <param name="arquivo">Nome do arquivo que está sendo processado</param>
         /// <param name="finalArqEnvio">string final do nome do arquivo que é para ser substituida na gravação do arquivo de erro</param>
         /// <param name="finalArqErro">string final do nome do arquivo que é para ser utilizado no nome do arquivo de erro</param>
@@ -26,9 +26,9 @@ namespace NFe.Service
             GravarArqErroServico(arquivo, finalArqEnvio, finalArqErro, exception, ErroPadrao.ErroNaoDetectado, true);
         }
 
-        /// <summary>
+         
         /// Grava um arquivo texto com os erros ocorridos durante as operações para que o ERP possa tratá-los
-        /// </summary>
+         
         /// <param name="arquivo">Nome do arquivo que está sendo processado</param>
         /// <param name="finalArqEnvio">string final do nome do arquivo que é para ser substituida na gravação do arquivo de erro</param>
         /// <param name="finalArqErro">string final do nome do arquivo que é para ser utilizado no nome do arquivo de erro</param>
@@ -43,9 +43,9 @@ namespace NFe.Service
 
         #region GravarArqErroServico()
 
-        /// <summary>
+         
         /// Grava um arquivo texto com um erros ocorridos durante as operações para que o ERP possa tratá-los
-        /// </summary>
+         
         /// <param name="arquivo">Nome do arquivo que está sendo processado</param>
         /// <param name="finalArqEnvio">string final do nome do arquivo que é para ser substituida na gravação do arquivo de Erro</param>
         /// <param name="finalArqErro">string final do nome do arquivo que é para ser utilizado no nome do arquivo de erro</param>
@@ -65,9 +65,9 @@ namespace NFe.Service
 
         #region GravarArqErroServico()
 
-        /// <summary>
+         
         /// Grava um arquivo texto com um erros ocorridos durante as operações para que o ERP possa tratá-los
-        /// </summary>
+         
         /// <param name="arquivo">Nome do arquivo que está sendo processado</param>
         /// <param name="finalArqEnvio">string final do nome do arquivo que é para ser substituida na gravação do arquivo de Erro</param>
         /// <param name="finalArqErro">string final do nome do arquivo que é para ser utilizado no nome do arquivo de erro</param>
@@ -112,9 +112,9 @@ namespace NFe.Service
 
         #region MontaStringErro()
 
-        /// <summary>
+         
         /// Montar a string do erro da exception
-        /// </summary>
+         
         /// <param name="exception">Objeto da exception</param>
         /// <param name="erroPadrao">ErroPadrao</param>
         /// <returns>Retorna uma string com o erro ocorrido.</returns>
@@ -149,9 +149,9 @@ namespace NFe.Service
 
         #region MoveArqErro
 
-        /// <summary>
+         
         /// Move arquivos XML com erro para uma pasta de xml´s com erro configurados no UniNFe.
-        /// </summary>
+         
         /// <param name="cArquivo">Nome do arquivo a ser movido para a pasta de XML´s com erro</param>
         /// <example>this.MoveArqErro(this.vXmlNfeDadosMsg)</example>
         public static void MoveArqErro(string Arquivo)
@@ -163,9 +163,9 @@ namespace NFe.Service
 
         #region MoveArqErro()
 
-        /// <summary>
+         
         /// Move arquivos com a extensão informada e que está com erro para uma pasta de xml´s/arquivos com erro configurados no UniNFe.
-        /// </summary>
+         
         /// <param name="cArquivo">Nome do arquivo a ser movido para a pasta de XML´s com erro</param>
         /// <param name="ExtensaoArq">Extensão do arquivo que vai ser movido. Ex: .xml</param>
         /// <example>this.MoveArqErro(this.vXmlNfeDadosMsg, ".xml")</example>
@@ -199,9 +199,9 @@ namespace NFe.Service
 
         #region MoverArquivo()
 
-        /// <summary>
+         
         /// Move arquivos da nota fiscal eletrônica para suas respectivas pastas
-        /// </summary>
+         
         /// <param name="Arquivo">Nome do arquivo a ser movido</param>
         /// <param name="PastaXMLEnviado">Pasta de XML´s enviados para onde será movido o arquivo</param>
         /// <param name="SubPastaXMLEnviado">SubPasta de XML´s enviados para onde será movido o arquivo</param>
@@ -270,7 +270,7 @@ namespace NFe.Service
                         string destinoErro = Empresas.Configuracoes[emp].PastaXmlErro + "\\" + Path.GetFileName(arquivo);
                         File.Move(destinoArquivo, destinoErro);
 
-                        //danasa 11-4-2012
+                        //  11-4-2012
                         Auxiliar.WriteLog("Arquivo \"" + destinoArquivo + "\" movido para a pasta \"" + Empresas.Configuracoes[emp].PastaXmlErro + "\".", true);
                     }
 
@@ -290,7 +290,7 @@ namespace NFe.Service
                         string destinoErro = Empresas.Configuracoes[emp].PastaXmlErro + "\\" + Path.GetFileName(arquivo);
                         File.Move(arquivo, destinoErro);
 
-                        //danasa 11-4-2012
+                        //  11-4-2012
                         Auxiliar.WriteLog("Arquivo \"" + arquivo + "\" movido para a pasta \"" + Empresas.Configuracoes[emp].PastaXmlErro + "\".", true);
                     }
                 }
@@ -372,9 +372,9 @@ namespace NFe.Service
 
         #region MoverArquivo()
 
-        /// <summary>
+         
         /// Move arquivos da nota fiscal eletrônica para suas respectivas pastas
-        /// </summary>
+         
         /// <param name="Arquivo">Nome do arquivo a ser movido</param>
         /// <param name="PastaXMLEnviado">Pasta de XML´s enviados para onde será movido o arquivo</param>
         /// <param name="SubPastaXMLEnviado">SubPasta de XML´s enviados para onde será movido o arquivo</param>
@@ -389,10 +389,10 @@ namespace NFe.Service
 
         #region CopiarXMLPastaDanfeMon()
 
-        /// <summary>
+         
         /// Copia o XML da NFe para a pasta monitorada pelo DANFEMon para que o mesmo imprima o DANFe.
         /// A copia só é efetuada de o UniNFe estiver configurado para isso.
-        /// </summary>
+         
         /// <param name="arquivoCopiar">Nome do arquivo com as pastas e subpastas a ser copiado</param>
         /// <remarks>
         /// Autor: Wandrey Mundin Ferreira
@@ -433,9 +433,9 @@ namespace NFe.Service
 
         #region RetornarConteudoEntre()
 
-        /// <summary>
+         
         /// Executa o aplicativo UniDanfe para gerar/imprimir o DANFE
-        /// </summary>
+         
         /// <param name="NomeArqXMLNFe">Nome do arquivo XML da NFe (final -nfe.xml)</param>
         /// <param name="DataEmissaoNFe">Data de emissão da NFe</param>
         /// <remarks>
@@ -1380,10 +1380,10 @@ namespace NFe.Service
 
         #region RemoveSomenteLeitura()
 
-        /// <summary>
+         
         /// Metodo que remove atributo de Somente Leitura do Arquivo caso o mesmo estiver marcado, evitando problemas no acesso do arquivo.
         /// Renan - 26/11/13
-        /// </summary>
+         
         /// <param name="file">Arquivo a remover o atributo</param>
         public static void RemoveSomenteLeitura(string file)
         {
@@ -1483,10 +1483,10 @@ namespace NFe.Service
 
         #endregion Decompress
 
-        /// <summary>
+         
         /// Lucas A. Araujo
         /// Criptografa uma string.
-        /// </summary>
+         
         /// <param name="messageString">String</param>
         /// <returns>Texto criptografado</returns>
         public static string EncryptSHA1(string messageString)

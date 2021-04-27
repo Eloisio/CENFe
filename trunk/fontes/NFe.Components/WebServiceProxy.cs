@@ -34,53 +34,53 @@ namespace NFe.Components
 
         #region Propriedades
 
-        /// <summary>
+         
         /// Descrição do serviço (WSDL)
-        /// </summary>
+         
         private ServiceDescription serviceDescription { get; set; }
 
-        /// <summary>
+         
         /// Código assembly do serviço
-        /// </summary>
+         
         private Assembly serviceAssemby { get; set; }
 
-        /// <summary>
+         
         /// Certificado digital a ser utilizado no consumo dos serviços
-        /// </summary>
+         
         private X509Certificate2 oCertificado { get; set; }
 
         #region Proxy
 
-        /// <summary>
+         
         /// Utiliza servidor proxy?
-        /// </summary>
+         
         public bool UtilizaServidorProxy { get; set; }
 
-        /// <summary>
+         
         /// Endereço do servidor de proxy
-        /// </summary>
+         
         public string ProxyServidor { get; set; }
 
-        /// <summary>
+         
         /// Usuário para autenticação no servidor de proxy
-        /// </summary>
+         
         public string ProxyUsuario { get; set; }
 
-        /// <summary>
+         
         /// Senha do usuário para autenticação no servidor de proxy
-        /// </summary>
+         
         public string ProxySenha { get; set; }
 
-        /// <summary>
+         
         /// Porta de comunicação do servidor proxy
-        /// </summary>
+         
         public int ProxyPorta { get; set; }
 
         #endregion Proxy
 
-        /// <summary>
+         
         /// Arquivo WSDL
-        /// </summary>
+         
         public string ArquivoWSDL { get; set; }
 
         private PadroesNFSe PadraoNFSe { get; set; }
@@ -224,9 +224,9 @@ namespace NFe.Components
 
         public string[] NomeMetodoWS { get; protected set; }
 
-        /// <summary>
+         
         /// Lista utilizada para armazenar os webservices
-        /// </summary>
+         
         public static List<webServices> webServicesList { get; private set; }
 
         #endregion Propriedades
@@ -303,9 +303,9 @@ namespace NFe.Components
 
         #region ReturnArray()
 
-        /// <summary>
+         
         /// Método que verifica se o tipo de retornjo de uma operação/método é array ou não
-        /// </summary>
+         
         /// <param name="Instance">Instancia do objeto</param>
         /// <param name="methodName">Nome do método</param>
         /// <returns>true se o tipo de retorno do método passado por parâmetro for um array</returns>
@@ -320,9 +320,9 @@ namespace NFe.Components
 
         #region Invoke()
 
-        /// <summary>
+         
         /// Invocar o método da classe
-        /// </summary>
+         
         /// <param name="Instance">Instância do objeto</param>
         /// <param name="methodName">Nome do método</param>
         /// <param name="parameters">Objeto com o conteúdo dos parâmetros do método</param>
@@ -360,9 +360,9 @@ namespace NFe.Components
 
         #region InvokeXML()
 
-        /// <summary>
+         
         /// Invocar o método da classe
-        /// </summary>
+         
         /// <param name="Instance">Instância do objeto</param>
         /// <param name="methodName">Nome do método</param>
         /// <param name="parameters">Objeto com o conteúdo dos parâmetros do método</param>
@@ -377,9 +377,9 @@ namespace NFe.Components
 
         #region InvokeXML()
 
-        /// <summary>
+         
         /// Invocar o método da classe
-        /// </summary>
+         
         /// <param name="Instance">Instância do objeto</param>
         /// <param name="methodName">Nome do método</param>
         /// <param name="parameters">Objeto com o conteúdo dos parâmetros do método</param>
@@ -394,9 +394,9 @@ namespace NFe.Components
 
         #region SetProp()
 
-        /// <summary>
+         
         /// Alterar valor das propriedades da classe
-        /// </summary>
+         
         /// <param name="Instance">Instância do objeto</param>
         /// <param name="propertyName">Nome da propriedade</param>
         /// <param name="novoValor">Novo valor para ser gravado na propriedade</param>
@@ -415,9 +415,9 @@ namespace NFe.Components
 
         #region GetProp()
 
-        /// <summary>
+         
         /// Alterar valor das propriedades da classe
-        /// </summary>
+         
         /// <param name="instance">Instância do objeto</param>
         /// <param name="propertyName">Nome da propriedade</param>
         /// <remarks>
@@ -436,10 +436,10 @@ namespace NFe.Components
 
         #region CertificateValidation
 
-        /// <summary>
+         
         /// Responsável por retornar uma confirmação verdadeira para a proriedade ServerCertificateValidationCallback
         /// da classe ServicePointManager para confirmar a solicitação SSL automaticamente.
-        /// </summary>
+         
         /// <returns>Retornará sempre true</returns>
         public bool CertificateValidation(object sender,
             X509Certificate certificate,
@@ -453,9 +453,9 @@ namespace NFe.Components
 
         #region CriarObjeto()
 
-        /// <summary>
+         
         /// Criar objeto das classes do serviço
-        /// </summary>
+         
         /// <param name="NomeClasse">Nome da classe que é para ser instanciado um novo objeto</param>
         /// <returns>Retorna o objeto</returns>
         public object CriarObjeto(string NomeClasse)
@@ -472,9 +472,9 @@ namespace NFe.Components
 
         #region DefinirProtocoloSeguranca()
 
-        /// <summary>
+         
         /// Definir o protocolo de segurança a ser utilizado na comunicação com os WebServices
-        /// </summary>
+         
         /// <param name="cUF"></param>
         /// <param name="taHomologacao"></param>
         /// <param name="tpEmis"></param>
@@ -496,9 +496,9 @@ namespace NFe.Components
             return securityProtocolType;
         }
 
-        /// <summary>
+         
         /// Definir o protocolo de segurança a ser utilizado na comunicação com os WebServices
-        /// </summary>
+         
         /// <param name="cUF"></param>
         /// <param name="tpAmb"></param>
         /// <param name="tpEmis"></param>
@@ -509,9 +509,9 @@ namespace NFe.Components
             return DefinirProtocoloSeguranca(cUF, (tpAmb == (int)TipoAmbiente.taHomologacao), tpEmis, PadroesNFSe.NaoIdentificado, servico);
         }
 
-        /// <summary>
+         
         /// Definir o protocolo de segurança a ser utilizado na comunicação com os WebServices
-        /// </summary>
+         
         /// <param name="cUF"></param>
         /// <param name="tpAmb"></param>
         /// <param name="tpEmis"></param>
@@ -529,9 +529,9 @@ namespace NFe.Components
 
         #region GerarClasse()
 
-        /// <summary>
+         
         /// Gerar o source code do serviço
-        /// </summary>
+         
         private void GerarClasse()
         {
             #region Gerar o código da classe
@@ -556,9 +556,9 @@ namespace NFe.Components
 
         #region ParametroCompilacao
 
-        /// <summary>
+         
         /// Montar os parâmetros para a compilação da classe
-        /// </summary>
+         
         /// <returns>Retorna os parâmetros</returns>
         private CompilerParameters ParametroCompilacao()
         {
@@ -575,9 +575,9 @@ namespace NFe.Components
 
         #region GerarGrafo()
 
-        /// <summary>
+         
         /// Gerar a estrutura e o grafo da classe
-        /// </summary>
+         
         private CodeNamespace GerarGrafo()
         {
             #region Gerar a estrutura da classe do serviço
@@ -653,9 +653,9 @@ namespace NFe.Components
 
         #region RelacCertificado
 
-        /// <summary>
+         
         /// Relacionar o certificado digital com o serviço que será consumido do webservice
-        /// </summary>
+         
         /// <param name="instance">Objeto do serviço que será consumido</param>
         private void RelacCertificado(object instance)
         {
@@ -678,9 +678,9 @@ namespace NFe.Components
 
         #region CarregaWebServicesList()
 
-        /// <summary>
+         
         /// Carrega a lista de webservices definidos no arquivo WebService.XML
-        /// </summary>
+         
         public static void CarregaWebServicesList()
         {
             if (webServicesList == null)
@@ -688,9 +688,7 @@ namespace NFe.Components
                 webServicesList = new List<webServices>();
                 Propriedade.Municipios = null;
                 Propriedade.Municipios = new List<Municipio>();
-
                 XmlDocument doc = new XmlDocument();
-                /// danasa 1-2012
                 if (File.Exists(Propriedade.NomeArqXMLMunicipios))
                 {
                     int contaTentativa = 0;
@@ -757,27 +755,21 @@ namespace NFe.Components
                         }
                     }
                 }
-                /// danasa 1-2012
-
                 bool salvaXmlLocal = false;
                 LoadArqXMLWebService(Propriedade.NomeArqXMLWebService_NFe, "NFe\\");
                 salvaXmlLocal = LoadArqXMLWebService(Propriedade.NomeArqXMLWebService_NFSe, "NFse\\");
-
                 if (salvaXmlLocal)
                 {
                     WebServiceNFSe.SalvarXMLMunicipios(null, null, 0, null, false);
                 }
             }
         }
-
         private static bool LoadArqXMLWebService(string filenameWS, string subfolder)
         {
             bool salvaXmlLocal = false;
-
             if (File.Exists(filenameWS))
             {
                 XmlDocument doc = new XmlDocument();
-
                 try
                 {
                     doc.Load(filenameWS);
@@ -787,13 +779,10 @@ namespace NFe.Components
                     Functions.WriteLog("Ocorreu um erro na tentativa de carregamento do arquivo " + filenameWS + ".\r\n" +
                         "Acesse novamente o sistema para que se recupere automaticamente do erro.\r\n\r\n" +
                         "Erro:\r\n\r\n" + ex.Message, true, true, "");
-
                     if (File.Exists(Propriedade.XMLVersaoWSDLXSD))
                         File.Delete(Propriedade.XMLVersaoWSDLXSD);
-
                     Environment.Exit(0);
                 }
-
                 XmlNodeList estadoList = doc.GetElementsByTagName(NFeStrConstants.Estado);
                 foreach (XmlNode estadoNode in estadoList)
                 {
@@ -807,12 +796,6 @@ namespace NFe.Components
                                 continue;
                             string Nome = estadoElemento.Attributes[NFeStrConstants.Nome].Value;
                             string UF = estadoElemento.Attributes[TpcnResources.UF.ToString()].Value;
-
-                            /// danasa 1-2012
-                            ///
-                            /// verifica se o ID já está na lista
-                            /// isto previne que no xml de configuracao tenha duplicidade e evita derrubar o programa
-                            ///
                             var ci = (from i in webServicesList where i.ID == ID select i).FirstOrDefault();
                             if (ci == null)
                             {
@@ -837,7 +820,6 @@ namespace NFe.Components
 
                                 webServicesList.Add(wsItem);
                             }
-                            // danasa 1-2012
                             if (estadoElemento.HasAttribute(NFeStrConstants.Padrao))
                             {
                                 try
@@ -867,7 +849,6 @@ namespace NFe.Components
                                 }
                                 catch { }
                             }
-                            // danasa 1-2012
                         }
                     }
                 }
@@ -890,10 +871,10 @@ namespace NFe.Components
 
         #region reloadWebServicesList()
 
-        /// <summary>
+         
         /// Recarrega a lista de webservices
         /// usado pelo projeto da NFes quando da manutencao
-        /// </summary>
+         
         public static void reloadWebServicesList()
         {
             webServicesList = null;
@@ -1077,246 +1058,246 @@ namespace NFe.Components
         public string NFeAutorizacao { get; set; }
         public string NFeRetAutorizacao { get; set; }
 
-        /// <summary>
+         
         /// Recepção de eventos da NFe
-        /// </summary>
+         
         public string NFeRecepcaoEvento { get; set; }
 
         public string NFeDownload { get; set; }
         public string NFeManifDest { get; set; }
 
-        /// <summary>
+         
         /// Distribuição de DFe de interesses de autores (NFe)
-        /// </summary>
+         
         public string DFeRecepcao { get; set; }
 
         #endregion NFe
 
         #region NFS-e
 
-        /// <summary>
+         
         /// Enviar Lote RPS NFS-e
-        /// </summary>
+         
         public string RecepcionarLoteRps { get; set; }
 
-        /// <summary>
+         
         /// Consultar Situação do lote RPS NFS-e
-        /// </summary>
+         
         public string ConsultarSituacaoLoteRps { get; set; }
 
-        /// <summary>
+         
         /// Consultar NFS-e por RPS
-        /// </summary>
+         
         public string ConsultarNfsePorRps { get; set; }
 
-        /// <summary>
+         
         /// Consultar NFS-e por NFS-e
-        /// </summary>
+         
         public string ConsultarNfse { get; set; }
 
-        /// <summary>
+         
         /// Consultar lote RPS
-        /// </summary>
+         
         public string ConsultarLoteRps { get; set; }
 
-        /// <summary>
+         
         /// Cancelar NFS-e
-        /// </summary>
+         
         public string CancelarNfse { get; set; }
 
-        /// <summary>
+         
         /// Consulta URL de Visualização da NFSe
-        /// </summary>
+         
         public string ConsultarURLNfse { get; set; }
 
-        /// <summary>
+         
         /// Consulta a imagem em PNG da Nota
-        /// </summary>
+         
         public string ConsultarNFSePNG { get; set; }
 
-        /// <summary>
+         
         /// Consulta a imagem em PDF da Nota
-        /// </summary>
+         
         public string ConsultarNFSePDF { get; set; }
 
-        /// <summary>
+         
         /// Inutilização da NFSe
-        /// </summary>
+         
         public string InutilizarNFSe { get; set; }
 
-        /// <summary>
+         
         /// Obter o XML da NFSe
-        /// </summary>
+         
         public string ObterNotaFiscal { get; set; }
 
-        /// <summary>
+         
         /// Consulta Sequencia Lote Nota RPS
-        /// </summary>
+         
         public string ConsultaSequenciaLoteNotaRPS { get; set; }
 
-        /// <summary>
+         
         /// Substituir Nfse
-        /// </summary>
+         
         public string SubstituirNfse { get; set; }
 
         #endregion NFS-e
 
         #region CFS-e
 
-        /// <summary>
+         
         /// Enviar lote CFS-e
-        /// </summary>
+         
         public string RecepcionarLoteCfse { get; set; }
 
-        /// <summary>
+         
         /// Cancelar CFS-e
-        /// </summary>
+         
         public string CancelarCfse { get; set; }
 
-        /// <summary>
+         
         /// Consultar Lote CFS-e
-        /// </summary>
+         
         public string ConsultarLoteCfse { get; set; }
 
-        /// <summary>
+         
         /// Consultar Lote CFS-e
-        /// </summary>
+         
         public string ConsultarCfse { get; set; }
 
-        /// <summary>
+         
         /// Configurar/ativar terminal CFS-e
-        /// </summary>
+         
         public string ConfigurarTerminalCfse { get; set; }
 
-        /// <summary>
+         
         /// Enviar informe manutenção terminal CFS-e
-        /// </summary>
+         
         public string EnviarInformeManutencaoCfse { get; set; }
 
-        /// <summary>
+         
         /// Enviar informe de transmissão sem movimento da CFS-e
-        /// </summary>
+         
         public string InformeTrasmissaoSemMovimentoCfse { get; set; }
 
-        /// <summary>
+         
         /// Enviar o XML para consultar os dados do cadastro de terminal CFS-e
-        /// </summary>
+         
         public string ConsultarDadosCadastroCfse { get; set; }
 
         #endregion CFS-e
 
         #region MDF-e
 
-        /// <summary>
+         
         /// Recepção do MDFe
-        /// </summary>
+         
         public string MDFeRecepcao { get; set; }
 
-        /// <summary>
+         
         /// Consulta Recibo do lote de MDFe enviado
-        /// </summary>
+         
         public string MDFeRetRecepcao { get; set; }
 
-        /// <summary>
+         
         /// Consulta situação do MDFe
-        /// </summary>
+         
         public string MDFeConsulta { get; set; }
 
-        /// <summary>
+         
         /// Consulta status do serviço de MDFe
-        /// </summary>
+         
         public string MDFeStatusServico { get; set; }
 
-        /// <summary>
+         
         /// Recepcao dos eventos do MDF-e
-        /// </summary>
+         
         public string MDFeRecepcaoEvento { get; set; }
 
-        /// <summary>
+         
         /// Consulta dos MDFe´s não encerrados
-        /// </summary>
+         
         public string MDFeNaoEncerrado { get; set; }
 
-        /// <summary>
+         
         /// Recepcao dos LMC´s
-        /// </summary>
+         
         public string LMCAutorizacao { get; set; }
 
         #endregion MDF-e
 
         #region CTe
 
-        /// <summary>
+         
         /// Recepção do CTe
-        /// </summary>
+         
         public string CTeRecepcao { get; set; }
 
-        /// <summary>
+         
         /// Consulta recibo do lote de CTe enviado
-        /// </summary>
+         
         public string CTeRetRecepcao { get; set; }
 
-        /// <summary>
+         
         /// Inutilização numeração do CTe
-        /// </summary>
+         
         public string CTeInutilizacao { get; set; }
 
-        /// <summary>
+         
         /// Consulta Situação do CTe
-        /// </summary>
+         
         public string CTeConsulta { get; set; }
 
-        /// <summary>
+         
         /// Consulta Status Serviço do CTe
-        /// </summary>
+         
         public string CTeStatusServico { get; set; }
 
-        /// <summary>
+         
         /// Consulta cadastro do contribuinte do CTe
-        /// </summary>
+         
         public string CTeConsultaCadastro { get; set; }
 
-        /// <summary>
+         
         /// Recepção de eventos do CTe
-        /// </summary>
+         
         public string CTeRecepcaoEvento { get; set; }
 
-        /// <summary>
+         
         /// Distribuição de DFe de interesses de autores (CTe)
-        /// </summary>
+         
         public string CTeDistribuicaoDFe { get; set; }
 
-        /// <summary>
+         
         /// Recepção do CTe modelo 67
-        /// </summary>
+         
         public string CteRecepcaoOS { get; set; }
 
         #endregion CTe
 
         #region EFDReinf
 
-        /// <summary>
+         
         /// Recepção do lote de eventos do EFDReinf
-        /// </summary>
+         
         public string RecepcaoLoteReinf { get; set; }
 
-        /// <summary>
+         
         /// Consulta do lote de eventos do EFDReinf
-        /// </summary>
+         
         public string ConsultarLoteReinf { get; set; }
 
         #endregion EFDReinf
 
         #region eSocial
 
-        /// <summary>
+         
         /// Recepção do lote de eventos do eSocial
-        /// </summary>
+         
         public string RecepcaoLoteeSocial { get; set; }
 
-        /// <summary>
+         
         /// Consulta do lote de eventos do eSocial
-        /// </summary>
+         
         public string ConsultarLoteeSocial { get; set; }
 
         #endregion eSocial

@@ -82,25 +82,25 @@ namespace NFe.Components
     {
         #region Public Variables
 
-        /// <summary>
+         
         /// IP address or hostname to connect to
-        /// </summary>
+         
         public string server;
-        /// <summary>
+         
         /// Username to login as
-        /// </summary>
+         
         public string user;
-        /// <summary>
+         
         /// Password for account
-        /// </summary>
+         
         public string pass;
-        /// <summary>
+         
         /// Port number the FTP server is listening on
-        /// </summary>
+         
         public int port;
-        /// <summary>
+         
         /// The timeout (miliseconds) for waiting on data to arrive
-        /// </summary>
+         
         public int timeout;
 
         #endregion
@@ -124,9 +124,9 @@ namespace NFe.Components
         #endregion
 
         #region Constructors
-        /// <summary>
+         
         /// Constructor
-        /// </summary>
+         
         public FTP()
         {
             server = null;
@@ -145,9 +145,9 @@ namespace NFe.Components
             timeout = 10000;	// 10 seconds
             messages = "";
         }
-        /// <summary>
+         
         /// Constructor
-        /// </summary>
+         
         /// <param name="server">Server to connect to</param>
         /// <param name="user">Account to login as</param>
         /// <param name="pass">Account password</param>
@@ -169,9 +169,9 @@ namespace NFe.Components
             timeout = 10000;	// 10 seconds
             messages = "";
         }
-        /// <summary>
+         
         /// Constructor
-        /// </summary>
+         
         /// <param name="server">Server to connect to</param>
         /// <param name="port">Port server is listening on</param>
         /// <param name="user">Account to login as</param>
@@ -197,9 +197,9 @@ namespace NFe.Components
 
         #endregion
 
-        /// <summary>
+         
         /// Connection status to the server
-        /// </summary>
+         
         public bool IsConnected
         {
             get
@@ -209,9 +209,9 @@ namespace NFe.Components
                 return false;
             }
         }
-        /// <summary>
+         
         /// Returns true if the message buffer has data in it
-        /// </summary>
+         
         public bool MessagesAvailable
         {
             get
@@ -221,9 +221,9 @@ namespace NFe.Components
                 return false;
             }
         }
-        /// <summary>
+         
         /// Server messages if any, buffer is cleared after you access this property
-        /// </summary>
+         
         public string Messages
         {
             get
@@ -233,9 +233,9 @@ namespace NFe.Components
                 return tmp;
             }
         }
-        /// <summary>
+         
         /// The response string from the last issued command
-        /// </summary>
+         
         public string ResponseString
         {
             get
@@ -243,9 +243,9 @@ namespace NFe.Components
                 return responseStr;
             }
         }
-        /// <summary>
+         
         /// The total number of bytes sent/recieved in a transfer
-        /// </summary>
+         
         public long BytesTotal		// #######################################
         {
             get
@@ -253,9 +253,9 @@ namespace NFe.Components
                 return bytes_total;
             }
         }
-        /// <summary>
+         
         /// The size of the file being downloaded/uploaded (Can possibly be 0 if no size is available)
-        /// </summary>
+         
         public long FileSize		// #######################################
         {
             get
@@ -263,10 +263,10 @@ namespace NFe.Components
                 return file_size;
             }
         }
-        /// <summary>
+         
         /// True:  Passive mode [default]
         /// False: Active Mode
-        /// </summary>
+         
         public bool PassiveMode		// #######################################
         {
             get
@@ -589,9 +589,9 @@ namespace NFe.Components
 
             data_ipEndPoint = null;
         }
-        /// <summary>
+         
         /// Closes all connections to the ftp server
-        /// </summary>
+         
         public void Disconnect()
         {
             CloseDataSocket();
@@ -612,9 +612,9 @@ namespace NFe.Components
             main_ipEndPoint = null;
             file = null;
         }
-        /// <summary>
+         
         /// Connect to a ftp server
-        /// </summary>
+         
         /// <param name="server">IP or hostname of the server to connect to</param>
         /// <param name="port">Port number the server is listening on</param>
         /// <param name="user">Account name to login as</param>
@@ -628,9 +628,9 @@ namespace NFe.Components
 
             Connect();
         }
-        /// <summary>
+         
         /// Connect to a ftp server
-        /// </summary>
+         
         /// <param name="server">IP or hostname of the server to connect to</param>
         /// <param name="user">Account name to login as</param>
         /// <param name="pass">Password for the account specified</param>
@@ -642,9 +642,9 @@ namespace NFe.Components
 
             Connect();
         }
-        /// <summary>
+         
         /// Connect to an ftp server
-        /// </summary>
+         
         public void Connect()
         {
             if (server == null)
@@ -694,9 +694,9 @@ namespace NFe.Components
 
             return;
         }
-        /// <summary>
+         
         /// Retrieves a list of files from the ftp server
-        /// </summary>
+         
         /// <returns>An ArrayList of files</returns>
         public ArrayList List()
         {
@@ -764,9 +764,9 @@ namespace NFe.Components
 
             return list;
         }
-        /// <summary>
+         
         /// Gets a file list only
-        /// </summary>
+         
         /// <returns>ArrayList of files only</returns>
         public ArrayList ListFiles()
         {
@@ -785,9 +785,9 @@ namespace NFe.Components
 
             return list;
         }
-        /// <summary>
+         
         /// Gets a directory list only
-        /// </summary>
+         
         /// <returns>ArrayList of directories only</returns>
         public ArrayList ListDirectories()
         {
@@ -806,9 +806,9 @@ namespace NFe.Components
 
             return list;
         }
-        /// <summary>
+         
         /// Returns the 'Raw' DateInformation in ftp format. (YYYYMMDDhhmmss). Use GetFileDate to return a DateTime object as a better option.
-        /// </summary>
+         
         /// <param name="fileName">Remote FileName to Query</param>
         /// <returns>Returns the 'Raw' DateInformation in ftp format</returns>
         public string GetFileDateRaw(string fileName)
@@ -827,9 +827,9 @@ namespace NFe.Components
 
             return (responseStr.Substring(4));
         }
-        /// <summary>
+         
         /// GetFileDate will query the ftp server for the date of the remote file.
-        /// </summary>
+         
         /// <param name="fileName">Remote FileName to Query</param>
         /// <returns>DateTime of the Input FileName</returns>
         public DateTime GetFileDate(string fileName)
@@ -852,9 +852,9 @@ namespace NFe.Components
 
             return new DateTime(year, month, day, hour, min, sec);
         }
-        /// <summary>
+         
         /// Get the working directory on the ftp server
-        /// </summary>
+         
         /// <returns>The working directory</returns>
         public string GetWorkingDirectory()
         {
@@ -880,9 +880,9 @@ namespace NFe.Components
 
             return pwd;
         }
-        /// <summary>
+         
         /// Change to another directory on the ftp server
-        /// </summary>
+         
         /// <param name="path">Directory to change to</param>
         public void ChangeDir(string path)
         {
@@ -909,9 +909,9 @@ namespace NFe.Components
             }
             catch { return false; }
         }
-        /// <summary>
+         
         /// Create a directory on the ftp server
-        /// </summary>
+         
         /// <param name="dir">Directory to create</param>
         public void MakeDir(string dir)
         {
@@ -951,9 +951,9 @@ namespace NFe.Components
                 ChangeDir(vCorrent);
             }
         }
-        /// <summary>
+         
         /// Remove a directory from the ftp server
-        /// </summary>
+         
         /// <param name="dir">Name of directory to remove</param>
         public void RemoveDir(string dir)
         {
@@ -968,9 +968,9 @@ namespace NFe.Components
                 throw new Exception(responseStr);
             }
         }
-        /// <summary>
+         
         /// Remove a file from the ftp server
-        /// </summary>
+         
         /// <param name="filename">Name of the file to delete</param>
         public void RemoveFile(string filename)
         {
@@ -985,9 +985,9 @@ namespace NFe.Components
                 throw new Exception(responseStr);
             }
         }
-        /// <summary>
+         
         /// Rename a file on the ftp server
-        /// </summary>
+         
         /// <param name="oldfilename">Old file name</param>
         /// <param name="newfilename">New file name</param>
         public void RenameFile(string oldfilename, string newfilename)		// #######################################
@@ -1015,9 +1015,9 @@ namespace NFe.Components
                 }
             }
         }
-        /// <summary>
+         
         /// Get the size of a file (Provided the ftp server supports it)
-        /// </summary>
+         
         /// <param name="filename">Name of file</param>
         /// <returns>The size of the file specified by filename</returns>
         public long GetFileSize(string filename)
@@ -1036,18 +1036,18 @@ namespace NFe.Components
             return Int64.Parse(responseStr.Substring(4));
         }
 
-        /// <summary>
+         
         /// Open an upload with no resume if it already exists
-        /// </summary>
+         
         /// <param name="filename">File to upload</param>
         public void OpenUpload(string filename)
         {
             OpenUpload(filename, filename, false);
         }
 
-        /// <summary>
+         
         /// Open an upload with no resume if it already exists
-        /// </summary>
+         
         /// <param name="filename">Local file to upload (Can include path to file)</param>
         /// <param name="remotefilename">Filename to store file as on ftp server</param>
         public void OpenUpload(string filename, string remotefilename)
@@ -1055,9 +1055,9 @@ namespace NFe.Components
             OpenUpload(filename, remotefilename, false);
         }
 
-        /// <summary>
+         
         /// Open an upload with resume support
-        /// </summary>
+         
         /// <param name="filename">Local file to upload (Can include path to file)</param>
         /// <param name="resume">Attempt resume if exists</param>
         public void OpenUpload(string filename, bool resume)
@@ -1071,9 +1071,9 @@ namespace NFe.Components
             while (DoUpload() > 0) ;
         }
 
-        /// <summary>
+         
         /// Open an upload with resume support
-        /// </summary>
+         
         /// <param name="filename">Local file to upload (Can include path to file)</param>
         /// <param name="remote_filename">Filename to store file as on ftp server</param>
         /// <param name="resume">Attempt resume if exists</param>
@@ -1121,9 +1121,9 @@ namespace NFe.Components
             ConnectDataSocket();		// #######################################	
         }
 
-        /// <summary>
+         
         /// Upload the file, to be used in a loop until file is completely uploaded
-        /// </summary>
+         
         /// <returns>Bytes sent</returns>
         public long DoUpload()
         {
@@ -1174,35 +1174,35 @@ namespace NFe.Components
             return bytes_got;
         }
 
-        /// <summary>
+         
         /// Download a file with no resume
-        /// </summary>
+         
         /// <param name="filename">Remote file name</param>
         public void OpenDownload(string filename)
         {
             OpenDownload(filename, filename, false);
         }
-        /// <summary>
+         
         /// Download a file with optional resume
-        /// </summary>
+         
         /// <param name="filename">Remote file name</param>
         /// <param name="resume">Attempt resume if file exists</param>
         public void OpenDownload(string filename, bool resume)
         {
             OpenDownload(filename, filename, resume);
         }
-        /// <summary>
+         
         /// Download a file with no attempt to resume
-        /// </summary>
+         
         /// <param name="filename">Remote filename</param>
         /// <param name="localfilename">Local filename (Can include path to file)</param>
         public void OpenDownload(string filename, string localfilename)
         {
             OpenDownload(filename, localfilename, false);
         }
-        /// <summary>
+         
         /// Open a file for download
-        /// </summary>
+         
         /// <param name="remote_filename">The name of the file on the FTP server</param>
         /// <param name="local_filename">The name of the file to save as (Can include path to file)</param>
         /// <param name="resume">Attempt resume if file exists</param>
@@ -1272,9 +1272,9 @@ namespace NFe.Components
 
             return;
         }
-        /// <summary>
+         
         /// Download a file, to be used in a loop until the file is completely downloaded
-        /// </summary>
+         
         /// <returns>Number of bytes recieved</returns>
         public long DoDownload()
         {

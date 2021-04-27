@@ -16,9 +16,9 @@ namespace NFe.Components
         private static List<PadroesDataSource> _PadroesDataSource = null;
         private static List<PadroesDataSource> _PadroesUnicoWSDLDataSource = null;
 
-        /// <summary>
+         
         /// lista de padrões usados para preencher o datagrid e pesquisas internas
-        /// </summary>
+         
         public static List<PadroesDataSource> PadroesNFSeListDataSource
         {
             get
@@ -60,9 +60,9 @@ namespace NFe.Components
 
         private static List<string> _Padroes = null;
 
-        /// <summary>
+         
         /// lista de padrões usados para preencher o datagrid e pesquisas internas
-        /// </summary>
+         
         public static string[] PadroesNFSeList
         {
             get
@@ -257,9 +257,9 @@ namespace NFe.Components
             }
         }
 
-        /// <summary>
+         
         /// Responsavel pela gravacao do arquivo de municipios, caso nao exista
-        /// </summary>
+         
         public static void SalvarXMLMunicipios()
         {
             if (!System.IO.File.Exists(Propriedade.NomeArqXMLMunicipios) &&

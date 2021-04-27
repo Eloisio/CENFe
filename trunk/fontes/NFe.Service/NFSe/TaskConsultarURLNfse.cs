@@ -10,9 +10,9 @@ namespace NFe.Service.NFSe
     {
         #region Objeto com os dados do XML da consulta nfse
 
-        /// <summary>
+         
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s da consulta nfse
-        /// </summary>
+         
         private DadosPedSitNfse oDadosPedURLNfse;
 
         #endregion Objeto com os dados do XML da consulta nfse
@@ -105,9 +105,9 @@ namespace NFe.Service.NFSe
 
         #region PedURLNfse()
 
-        /// <summary>
+         
         /// Fazer a leitura do conteúdo do XML de consulta nfse por numero e disponibiliza conteúdo em um objeto para analise
-        /// </summary>
+         
         /// <param name="arquivoXML">Arquivo XML que é para efetuar a leitura</param>
         private void PedURLNfse(string arquivoXML)
         {

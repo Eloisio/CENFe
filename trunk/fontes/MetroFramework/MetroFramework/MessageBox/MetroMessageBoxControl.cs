@@ -48,9 +48,9 @@ namespace MetroFramework
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private Color _question = Color.FromArgb(198, 218, 204);
 
-        /// <summary>
+         
         /// Gets the top body section of the control. 
-        /// </summary>
+         
         public Panel Body
         {
             get { return panelbody; }
@@ -59,26 +59,26 @@ namespace MetroFramework
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private MetroMessageBoxProperties _properties = null;
 
-        /// <summary>
+         
         /// Gets the message box display properties.
-        /// </summary>
+         
         public MetroMessageBoxProperties Properties
         { get { return _properties; } }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private DialogResult _result = DialogResult.None;
 
-        /// <summary>
+         
         /// Gets the dialog result that the user have chosen.
-        /// </summary>
+         
         public DialogResult Result
         {
             get { return _result; }
         }
 
-        /// <summary>
+         
         /// Arranges the apperance of the message box overlay.
-        /// </summary>
+         
         public void ArrangeApperance()
         {
             _properties.Title += (String.IsNullOrEmpty(_properties.Title) ? "UniNFe" : "");
@@ -218,9 +218,9 @@ namespace MetroFramework
             button.Enabled = enabled; button.Visible = enabled;
         }
 
-        /// <summary>
+         
         /// Sets the default focused button.
-        /// </summary>
+         
         public void SetDefaultButton()
         {
             switch (_properties.DefaultButton)

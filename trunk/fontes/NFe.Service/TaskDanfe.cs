@@ -156,7 +156,7 @@ ExportarPasta|Enviar | Enviados | Erros
             {
                 Dictionary<string, string> args = new Dictionary<string, string>();
 
-                if (vXmlNfeDadosMsgEhXML)  //danasa 12-9-2009
+                if (vXmlNfeDadosMsgEhXML)  //  12-9-2009
                 {
 #if modelo_xml
 <?xml version="1.0" encoding="utf-8"?>

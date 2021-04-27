@@ -10,19 +10,19 @@ namespace NFe.Components.SimplISS.Homologacao
     {
         #region Propriedades
 
-        /// <summary>
+         
         /// Objeto de conexão com o Webservice
-        /// </summary>
+         
         private NfseService Service = new NfseService();
 
-        /// <summary>
+         
         /// Dados de login e senha para autenticação
-        /// </summary>
+         
         private ddDuasStrings DadosConexao = new ddDuasStrings();
 
-        /// <summary>
+         
         /// Namespace utilizada para deserialização do objeto
-        /// </summary>
+         
         public override string NameSpaces
         {
             get

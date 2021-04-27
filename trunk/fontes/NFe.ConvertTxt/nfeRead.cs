@@ -231,9 +231,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-        /// <summary>
+         
         /// processaPag
-        /// </summary>
+         
         /// <param name="nodenfeProc"></param>
         private void processaPag(XmlNode nodenfeProc)
         {
@@ -250,9 +250,9 @@ namespace NFe.ConvertTxt
             nfe.pag.Add(pagItem);
         }
 
-        /// <summary>
+         
         /// processaProtNfe
-        /// </summary>
+         
         /// <param name="nodenfeProc"></param>
         private void processaProtNfe(XmlNode nodenfeProc)
         {
@@ -266,9 +266,9 @@ namespace NFe.ConvertTxt
             nfe.protNFe.xMotivo = readValue(nodenfeProc, TpcnResources.xMotivo);
         }
 
-        /// <summary>
+         
         /// processaCana
-        /// </summary>
+         
         /// <param name="nodeinfNFe"></param>
         private void processaCana(XmlNode nodeinfNFe)
         {
@@ -309,9 +309,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-        /// <summary>
+         
         /// processaCompra
-        /// </summary>
+         
         /// <param name="nodeinfNFe"></param>
         private void processaCompra(XmlNode nodeinfNFe)
         {
@@ -320,9 +320,9 @@ namespace NFe.ConvertTxt
             nfe.compra.xCont = readValue(nodeinfNFe, TpcnResources.xCont);
         }
 
-        /// <summary>
+         
         /// processaExporta
-        /// </summary>
+         
         /// <param name="nodeinfNFe"></param>
         private void processaExporta(XmlNode nodeinfNFe)
         {
@@ -335,9 +335,9 @@ namespace NFe.ConvertTxt
             nfe.exporta.xLocDespacho = readValue(nodeinfNFe, TpcnResources.xLocDespacho);
         }
 
-        /// <summary>
+         
         /// processaInfAdic
-        /// </summary>
+         
         /// <param name="nodeinfNFe"></param>
         private void processaInfAdic(XmlNode nodeinfNFe)
         {
@@ -377,9 +377,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-        /// <summary>
+         
         /// processaRetirada
-        /// </summary>
+         
         /// <param name="nodeinfNFe"></param>
         private void processaRetirada(XmlNode nodeinfNFe)
         {
@@ -394,9 +394,9 @@ namespace NFe.ConvertTxt
             nfe.retirada.UF = readValue(nodeinfNFe, TpcnResources.UF);
         }
 
-        /// <summary>
+         
         /// processaEntrega
-        /// </summary>
+         
         /// <param name="nodeinfNFe"></param>
         private void processaEntrega(XmlNode nodeinfNFe)
         {
@@ -411,9 +411,9 @@ namespace NFe.ConvertTxt
             nfe.entrega.UF = readValue(nodeinfNFe, TpcnResources.UF);
         }
 
-        /// <summary>
+         
         /// processaautXML
-        /// </summary>
+         
         /// <param name="nodeinfNFe"></param>
         private void processaautXML(XmlNode nodeinfNFe)
         {
@@ -424,9 +424,9 @@ namespace NFe.ConvertTxt
                     nfe.autXML.Add(new autXML { CPF = noder.InnerText });
         }
 
-        /// <summary>
+         
         /// processaCOBR
-        /// </summary>
+         
         /// <param name="nodeinfNFe"></param>
         private void processaCOBR(XmlNode nodeinfNFe)
         {
@@ -450,9 +450,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-        /// <summary>
+         
         /// processaTRANSP
-        /// </summary>
+         
         /// <param name="nodeinfNFe"></param>
         private void processaTRANSP(XmlNode nodeinfNFe)
         {
@@ -537,9 +537,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-        /// <summary>
+         
         /// processaTOTAL
-        /// </summary>
+         
         /// <param name="nodetotal"></param>
         private void processaTOTAL(XmlNode nodetotal)
         {
@@ -599,9 +599,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-        /// <summary>
+         
         /// processaPROD
-        /// </summary>
+         
         /// <param name="nodedet"></param>
         private void processaPROD(XmlNode nodedet)
         {
@@ -1020,9 +1020,9 @@ namespace NFe.ConvertTxt
             nfe.det.Add(detInfo);
         }
 
-        /// <summary>
+         
         /// processaDEST
-        /// </summary>
+         
         /// <param name="el"></param>
         private void processaDEST(XmlNode el)
         {
@@ -1060,9 +1060,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-        /// <summary>
+         
         /// processaEMIT
-        /// </summary>
+         
         /// <param name="el"></param>
         private void processaEMIT(XmlNode el)
         {
@@ -1094,9 +1094,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-        /// <summary>
+         
         /// processaIDE
-        /// </summary>
+         
         /// <param name="nodeinfNFe"></param>
         private void processaIDE(XmlNode nodeinfNFe)
         {

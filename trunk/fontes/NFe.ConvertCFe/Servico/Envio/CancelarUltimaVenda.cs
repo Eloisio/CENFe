@@ -9,39 +9,39 @@ using Servicos = Unimake.SAT.Servico;
 
 namespace NFe.SAT.Servico.Envio
 {
-    /// <summary>
+     
     /// Classe responsável pelo envio do cancelamento do SAT
-    /// </summary>
+     
     public class CancelarUltimaVenda : ServicoBase
     {
-        /// <summary>
+         
         /// Dados da empresa
-        /// </summary>
+         
         private Empresa DadosEmpresa = null;
 
-        /// <summary>
+         
         /// Dados do envio do XML
-        /// </summary>
+         
         private string CancelarUltimaVendaEnvio = null;
 
-        /// <summary>
+         
         /// Chave de acesso da venda que esta sendo cancelada
-        /// </summary>
+         
         private string ChaveAcessoVenda = null;
 
-        /// <summary>
+         
         /// Resposta do equipamento sat
-        /// </summary>
+         
         private Servicos.Retorno.CancelarUltimaVendaResponse CancelarUltimaVendaRetorno = new Servicos.Retorno.CancelarUltimaVendaResponse();
 
-        /// <summary>
+         
         /// Nome do arquivo XML que esta sendo manipulado
-        /// </summary>
+         
         public override string ArquivoXML { get; set; }
 
-        /// <summary>
+         
         /// Construtor com serialização
-        /// </summary>
+         
         /// <param name="arquivoXML">arquivo a ser lido</param>
         /// <param name="dadosEmpresa">dados da empresa</param>
         public CancelarUltimaVenda(string arquivoXML, Empresa dadosEmpresa)
@@ -62,18 +62,18 @@ namespace NFe.SAT.Servico.Envio
             CancelarUltimaVendaEnvio = doc.InnerXml;
         }
 
-        /// <summary>
+         
         /// Comunicar com o equipamento SAT
-        /// </summary>
+         
         public override void Enviar()
         {
             string resposta = Sat.CancelarUltimaVenda(ChaveAcessoVenda, CancelarUltimaVendaEnvio);
             CancelarUltimaVendaRetorno = new Servicos.Retorno.CancelarUltimaVendaResponse(resposta);
         }
 
-        /// <summary>
+         
         /// Salva o XML de Retorno
-        /// </summary>
+         
         public override string SaveResponse()
         {
             string xml = string.Empty;

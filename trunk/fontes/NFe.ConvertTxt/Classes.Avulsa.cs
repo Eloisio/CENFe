@@ -2,9 +2,9 @@
 
 namespace NFe.ConvertTxt
 {
-    /// <summary>
+     
     /// Avulsa
-    /// </summary>
+     
     public class Avulsa
     {
         public string CNPJ;

@@ -34,9 +34,9 @@ using System.Text.RegularExpressions;
 
 namespace MetroFramework.Drawing.Html
 {
-    /// <summary>
+     
     /// Represents a CSS Box of text or replaced elements.
-    /// </summary>
+     
     /// <remarks>
     /// The Box can contains other boxes, that's the way that the CSS Tree
     /// is composed.
@@ -49,34 +49,34 @@ namespace MetroFramework.Drawing.Html
     {
         #region Static
 
-        /// <summary>
+         
         /// An empty box with empty values.
-        /// </summary>
+         
         internal readonly static CssBox Empty;
 
-        /// <summary>
+         
         /// Table of 'css-property' => .NET property
-        /// </summary>
+         
         internal static Dictionary<string, PropertyInfo> _properties;
 
-        /// <summary>
+         
         /// Dictionary of default values
-        /// </summary>
+         
         private static Dictionary<string, string> _defaults;
 
-        /// <summary>
+         
         /// Hosts all inhertiable properties
-        /// </summary>
+         
         private static List<PropertyInfo> _inheritables;
 
-        /// <summary>
+         
         /// Hosts css properties
-        /// </summary>
+         
         private static List<PropertyInfo> _cssproperties;
 
-        /// <summary>
+         
         /// Static constructor and initialization
-        /// </summary>
+         
         static CssBox()
         {
             #region Initialize _properties, _inheritables and _defaults Dictionaries
@@ -111,9 +111,9 @@ namespace MetroFramework.Drawing.Html
 
         }
 
-        /// <summary>
+         
         /// Gets the default value of the specified css property
-        /// </summary>
+         
         /// <param name="prop"></param>
         /// <returns></returns>
         private static string GetDefaultValue(PropertyInfo prop)
@@ -206,9 +206,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Fields
 
-        /// <summary>
+         
         /// Do not use or alter this flag
-        /// </summary>
+         
         /// <remarks>
         /// Flag that indicates that CssTable algorithm already made fixes on it.
         /// </remarks>
@@ -1295,9 +1295,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Boxing
         #region Padding
-        /// <summary>
+         
         /// Gets the actual top's padding
-        /// </summary>
+         
         public float ActualPaddingTop
         {
             get
@@ -1313,9 +1313,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the actual padding on the left
-        /// </summary>
+         
         public float ActualPaddingLeft
         {
             get
@@ -1328,9 +1328,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the actual Padding of the bottom
-        /// </summary>
+         
         public float ActualPaddingBottom
         {
             get
@@ -1343,9 +1343,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the actual padding on the right
-        /// </summary>
+         
         public float ActualPaddingRight
         {
             get
@@ -1361,9 +1361,9 @@ namespace MetroFramework.Drawing.Html
         #endregion
 
         #region Margin
-        /// <summary>
+         
         /// Gets the actual top's Margin
-        /// </summary>
+         
         public float ActualMarginTop
         {
             get
@@ -1380,9 +1380,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the actual Margin on the left
-        /// </summary>
+         
         public float ActualMarginLeft
         {
             get
@@ -1396,9 +1396,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the actual Margin of the bottom
-        /// </summary>
+         
         public float ActualMarginBottom
         {
             get
@@ -1412,9 +1412,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the actual Margin on the right
-        /// </summary>
+         
         public float ActualMarginRight
         {
             get
@@ -1433,9 +1433,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Border Width
 
-        /// <summary>
+         
         /// Gets the actual top border width
-        /// </summary>
+         
         public float ActualBorderTopWidth
         {
             get
@@ -1455,9 +1455,9 @@ namespace MetroFramework.Drawing.Html
         }
 
 
-        /// <summary>
+         
         /// Gets the actual Left border width
-        /// </summary>
+         
         public float ActualBorderLeftWidth
         {
             get
@@ -1477,9 +1477,9 @@ namespace MetroFramework.Drawing.Html
         }
 
 
-        /// <summary>
+         
         /// Gets the actual Bottom border width
-        /// </summary>
+         
         public float ActualBorderBottomWidth
         {
             get
@@ -1499,9 +1499,9 @@ namespace MetroFramework.Drawing.Html
         }
 
 
-        /// <summary>
+         
         /// Gets the actual Right border width
-        /// </summary>
+         
         public float ActualBorderRightWidth
         {
             get
@@ -1524,9 +1524,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Border Color
 
-        /// <summary>
+         
         /// Gets the actual top border Color
-        /// </summary>
+         
         public Color ActualBorderTopColor
         {
             get
@@ -1541,9 +1541,9 @@ namespace MetroFramework.Drawing.Html
         }
 
 
-        /// <summary>
+         
         /// Gets the actual Left border Color
-        /// </summary>
+         
         public Color ActualBorderLeftColor
         {
             get
@@ -1558,9 +1558,9 @@ namespace MetroFramework.Drawing.Html
         }
 
 
-        /// <summary>
+         
         /// Gets the actual Bottom border Color
-        /// </summary>
+         
         public Color ActualBorderBottomColor
         {
             get
@@ -1575,9 +1575,9 @@ namespace MetroFramework.Drawing.Html
         }
 
 
-        /// <summary>
+         
         /// Gets the actual Right border Color
-        /// </summary>
+         
         public Color ActualBorderRightColor
         {
             get
@@ -1597,9 +1597,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Corners
 
-        /// <summary>
+         
         /// Gets the actual lenght of the north west corner
-        /// </summary>
+         
         public float ActualCornerNW
         {
             get
@@ -1613,9 +1613,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the actual lenght of the north east corner
-        /// </summary>
+         
         public float ActualCornerNE
         {
             get
@@ -1628,9 +1628,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the actual lenght of the south east corner
-        /// </summary>
+         
         public float ActualCornerSE
         {
             get
@@ -1644,9 +1644,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the actual lenght of the south west corner
-        /// </summary>
+         
         public float ActualCornerSW
         {
             get
@@ -1666,9 +1666,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Layout Formatting
 
-        /// <summary>
+         
         /// Gets the actual word spacing of the word.
-        /// </summary>
+         
         public float ActualWordSpacing
         {
             get
@@ -1686,10 +1686,10 @@ namespace MetroFramework.Drawing.Html
 
         #region Colors and Backgrounds
 
-        /// <summary>
+         
         /// 
         /// Gets the actual color for the text.
-        /// </summary>
+         
         public Color ActualColor
         {
             get
@@ -1705,9 +1705,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the actual background color of the box
-        /// </summary>
+         
         public Color ActualBackgroundColor
         {
             get
@@ -1721,9 +1721,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the second color that creates a gradient for the background
-        /// </summary>
+         
         public Color ActualBackgroundGradient
         {
             get
@@ -1737,9 +1737,9 @@ namespace MetroFramework.Drawing.Html
         }
 
 
-        /// <summary>
+         
         /// Gets the actual angle specified for the background gradient
-        /// </summary>
+         
         public float ActualBackgroundGradientAngle
         {
             get
@@ -1757,9 +1757,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Fonts
 
-        /// <summary>
+         
         /// Gets the actual font of the parent
-        /// </summary>
+         
         public Font ActualParentFont
         {
             get
@@ -1773,9 +1773,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the font that should be actually used to paint the text of the box
-        /// </summary>
+         
         public Font ActualFont
         {
             get
@@ -1840,9 +1840,9 @@ namespace MetroFramework.Drawing.Html
         #region Text
 
 
-        /// <summary>
+         
         /// Gets the text indentation (on first line only)
-        /// </summary>
+         
         public float ActualTextIndent
         {
             get
@@ -1861,9 +1861,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Tables
 
-        /// <summary>
+         
         /// Gets the actual horizontal border spacing for tables
-        /// </summary>
+         
         public float ActualBorderSpacingHorizontal
         {
             get
@@ -1887,9 +1887,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the actual vertical border spacing for tables
-        /// </summary>
+         
         public float ActualBorderSpacingVertical
         {
             get
@@ -1922,9 +1922,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Properties
 
-        /// <summary>
+         
         /// Gets the • box
-        /// </summary>
+         
         public CssBox ListItemBox
         {
             get
@@ -1933,26 +1933,26 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the width available on the box, counting padding and margin.
-        /// </summary>
+         
         public float AvailableWidth
         {
             get { return Size.Width - ActualBorderLeftWidth - ActualPaddingLeft - ActualPaddingRight - ActualBorderRightWidth; }
         }
 
-        /// <summary>
+         
         /// Gets the bounds of the box
-        /// </summary>
+         
         public RectangleF Bounds
         {
             get { return new RectangleF(Location, Size); }
         }
 
-        /// <summary>
+         
         /// Gets or sets the bottom of the box. 
         /// (When setting, alters only the Size.Height of the box)
-        /// </summary>
+         
         public float ActualBottom
         {
             get
@@ -1965,57 +1965,57 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the childrenn boxes of this box
-        /// </summary>
+         
         public List<CssBox> Boxes
         {
             get { return _boxes; }
         }
 
-        /// <summary>
+         
         /// Gets the left of the client rectangle (Where content starts rendering)
-        /// </summary>
+         
         public float ClientLeft
         {
             get { return Location.X + ActualBorderLeftWidth + ActualPaddingLeft; }
         }
 
-        /// <summary>
+         
         /// Gets the top of the client rectangle (Where content starts rendering)
-        /// </summary>
+         
         public float ClientTop
         {
             get { return Location.Y + ActualBorderTopWidth + ActualPaddingTop; }
         }
 
-        /// <summary>
+         
         /// Gets the right of the client rectangle
-        /// </summary>
+         
         public float ClientRight
         {
             get { return ActualRight - ActualPaddingRight - ActualBorderRightWidth; }
         }
 
-        /// <summary>
+         
         /// Gets the bottom of the client rectangle
-        /// </summary>
+         
         public float ClientBottom
         {
             get { return ActualBottom - ActualPaddingBottom - ActualBorderBottomWidth; }
         }
 
-        /// <summary>
+         
         /// Gets the client rectangle
-        /// </summary>
+         
         public RectangleF ClientRectangle
         {
             get { return RectangleF.FromLTRB(ClientLeft, ClientTop, ClientRight, ClientBottom); }
         }
 
-        /// <summary>
+         
         /// Gets the containing block-box of this box. (The nearest parent box with display=block)
-        /// </summary>
+         
         public CssBox ContainingBlock
         {
             get
@@ -2043,9 +2043,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the font's ascent
-        /// </summary>
+         
         public float FontAscent
         {
             get
@@ -2058,9 +2058,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the font's line spacing
-        /// </summary>
+         
         public float FontLineSpacing
         {
             get
@@ -2074,9 +2074,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the font's descent
-        /// </summary>
+         
         public float FontDescent
         {
             get
@@ -2089,68 +2089,68 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the first word of the box
-        /// </summary>
+         
         internal CssBoxWord FirstWord
         {
             get { return Words[0]; }
         }
 
-        /// <summary>
+         
         /// Gets or sets the first linebox where content of this box appear
-        /// </summary>
+         
         internal CssLineBox FirstHostingLineBox
         {
             get { return _firstHostingLineBox; }
             set { _firstHostingLineBox = value; }
         }
 
-        /// <summary>
+         
         /// Gets or sets the last linebox where content of this box appear
-        /// </summary>
+         
         internal CssLineBox LastHostingLineBox
         {
             get { return _lastHostingLineBox; }
             set { _lastHostingLineBox = value; }
         }
 
-        /// <summary>
+         
         /// Gets the HTMLTag that hosts this box
-        /// </summary>
+         
         public HtmlTag HtmlTag
         {
             get { return _htmltag; }
         }
 
-        /// <summary>
+         
         /// Gets the InitialContainer of the Box.
         /// WARNING: May be null.
-        /// </summary>
+         
         public InitialContainer InitialContainer
         {
             get { return _initialContainer; }
         }
 
-        /// <summary>
+         
         /// Gets if this box represents an image
-        /// </summary>
+         
         public bool IsImage
         {
             get { return Words.Count == 1 && Words[0].IsImage; }
         }
 
-        /// <summary>
+         
         /// Gets a value indicating if at least one of the corners of the box is rounded
-        /// </summary>
+         
         public bool IsRounded
         {
             get { return ActualCornerNE > 0f || ActualCornerNW > 0f || ActualCornerSE > 0f || ActualCornerSW > 0f; }
         }
 
-        /// <summary>
+         
         /// Tells if the box is empty or contains just blank spaces
-        /// </summary>
+         
         public bool IsSpaceOrEmpty
         {
             get
@@ -2173,34 +2173,34 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the last word of the box
-        /// </summary>
+         
         internal CssBoxWord LastWord
         {
             get { return Words[Words.Count - 1]; }
         }
 
-        /// <summary>
+         
         /// Gets the line-boxes of this box (if block box)
-        /// </summary>
+         
         internal List<CssLineBox> LineBoxes
         {
             get { return _lineBoxes; }
         }
 
-        /// <summary>
+         
         /// Gets or sets the location of the box
-        /// </summary>
+         
         public PointF Location
         {
             get { return _location; }
             set { _location = value; }
         }
 
-        /// <summary>
+         
         /// Gets or sets the parent box of this box
-        /// </summary>
+         
         public CssBox ParentBox
         {
             get { return _parentBox; }
@@ -2223,17 +2223,17 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the linebox(es) that contains words of this box (if inline)
-        /// </summary>
+         
         internal List<CssLineBox> ParentLineBoxes
         {
             get { return _parentLineBoxes; }
         }
 
-        /// <summary>
+         
         /// Gets the rectangles where this box should be painted
-        /// </summary>
+         
         internal Dictionary<CssLineBox, RectangleF> Rectangles
         {
             get
@@ -2244,9 +2244,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the right of the box. When setting, it will affect only the width of the box.
-        /// </summary>
+         
         public float ActualRight
         {
             get { return Location.X + Size.Width; }
@@ -2256,27 +2256,27 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets or sets the size of the box
-        /// </summary>
+         
         public SizeF Size
         {
             get { return _size; }
             set { _size = value; }
         }
 
-        /// <summary>
+         
         /// Gets or sets the inner text of the box
-        /// </summary>
+         
         public string Text
         {
             get { return _text; }
             set { _text = value; UpdateWords(); }
         }
 
-        /// <summary>
+         
         /// Gets the BoxWords of text in the box
-        /// </summary>
+         
         internal List<CssBoxWord> Words
         {
             get { return _boxWords; }
@@ -2286,18 +2286,18 @@ namespace MetroFramework.Drawing.Html
 
         #region Methods
 
-        /// <summary>
+         
         /// Sets the initial container of the box
-        /// </summary>
+         
         /// <param name="b"></param>
         private void SetInitialContainer(InitialContainer b)
         {
             _initialContainer = b;
         }
 
-        /// <summary>
+         
         /// Returns false if some of the boxes
-        /// </summary>
+         
         /// <returns></returns>
         internal bool ContainsInlinesOnly()
         {
@@ -2312,9 +2312,9 @@ namespace MetroFramework.Drawing.Html
             return true;
         }
 
-        /// <summary>
+         
         /// Gets the index of the box to be used on a (ordered) list
-        /// </summary>
+         
         /// <returns></returns>
         private int GetIndexForList()
         {
@@ -2330,9 +2330,9 @@ namespace MetroFramework.Drawing.Html
             return index;
         }
 
-        /// <summary>
+         
         /// Creates the <see cref="ListItemBox"/>
-        /// </summary>
+         
         /// <param name="g"></param>
         private void CreateListItemBox(Graphics g)
         {
@@ -2362,9 +2362,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Searches for the first word occourence inside the box, on the specified linebox
-        /// </summary>
+         
         /// <param name="b"></param>
         /// <returns></returns>
         internal CssBoxWord FirstWordOccourence(CssBox b, CssLineBox line)
@@ -2401,9 +2401,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the specified Attribute, returns string.Empty if no attribute specified
-        /// </summary>
+         
         /// <param name="attribute">Attribute to retrieve</param>
         /// <returns>Attribute value or string.Empty if no attribute specified</returns>
         internal string GetAttribute(string attribute)
@@ -2411,9 +2411,9 @@ namespace MetroFramework.Drawing.Html
             return GetAttribute(attribute, string.Empty);
         }
 
-        /// <summary>
+         
         /// Gets the value of the specified attribute of the source HTML tag.
-        /// </summary>
+         
         /// <param name="attribute">Attribute to retrieve</param>
         /// <param name="defaultValue">Value to return if attribute is not specified</param>
         /// <returns>Attribute value or defaultValue if no attribute specified</returns>
@@ -2432,9 +2432,9 @@ namespace MetroFramework.Drawing.Html
             return HtmlTag.Attributes[attribute];
         }
 
-        /// <summary>
+         
         /// Gets the height of the font in the specified units
-        /// </summary>
+         
         /// <param name="unit"></param>
         /// <returns></returns>
         public float GetEmHeight()
@@ -2445,9 +2445,9 @@ namespace MetroFramework.Drawing.Html
             return res;
         }
 
-        /// <summary>
+         
         /// Gets the previous sibling of this box.
-        /// </summary>
+         
         /// <returns>Box before this one on the tree. Null if its the first</returns>
         private CssBox GetPreviousSibling(CssBox b)
         {
@@ -2474,11 +2474,11 @@ namespace MetroFramework.Drawing.Html
             return sib.Display == CssConstants.None ? null : sib;
         }
 
-        /// <summary>
+         
         /// Gets the minimum width that the box can be.
         /// The box can be as thin as the longest word plus padding.
         /// The check is deep thru box tree.
-        /// </summary>
+         
         /// <returns></returns>
         internal float GetMinimumWidth()
         {
@@ -2496,9 +2496,9 @@ namespace MetroFramework.Drawing.Html
             return maxw + padding;
         }
 
-        /// <summary>
+         
         /// Bubbles up the padding from the starting box
-        /// </summary>
+         
         /// <param name="box"></param>
         /// <returns></returns>
         private void GetMinimumWidth_BubblePadding(CssBox box, CssBox endbox, ref float sum)
@@ -2517,9 +2517,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the longest word (in width) inside the box, deeply.
-        /// </summary>
+         
         /// <param name="b"></param>
         /// <returns></returns>
         private void GetMinimumWidth_LongestWord(CssBox b, ref float maxw, ref CssBoxWord word)
@@ -2544,9 +2544,9 @@ namespace MetroFramework.Drawing.Html
 
         }
 
-        /// <summary>
+         
         /// Gets the maximum bottom of the boxes inside the startBox
-        /// </summary>
+         
         /// <param name="startBox"></param>
         /// <param name="currentMaxBottom"></param>
         /// <returns></returns>
@@ -2566,9 +2566,9 @@ namespace MetroFramework.Drawing.Html
             return currentMaxBottom;
         }
 
-        /// <summary>
+         
         /// Get the width of the box at full width (No line breaks)
-        /// </summary>
+         
         /// <returns></returns>
         internal float GetFullWidth(Graphics g)
         {
@@ -2579,9 +2579,9 @@ namespace MetroFramework.Drawing.Html
             return paddingsum + sum;
         }
 
-        /// <summary>
+         
         /// Gets the longest word (in width) inside the box, deeply.
-        /// </summary>
+         
         /// <param name="b"></param>
         /// <returns></returns>
         private void GetFullWidth_WordsWith(CssBox b, Graphics g, ref float sum, ref float paddingsum)
@@ -2608,9 +2608,9 @@ namespace MetroFramework.Drawing.Html
 
         }
 
-        /// <summary>
+         
         /// Gets the next sibling of this box.
-        /// </summary>
+         
         /// <returns>Box after this one on the tree. Null if its the last one.</returns>
         private CssBox GetNextSibling()
         {
@@ -2628,9 +2628,9 @@ namespace MetroFramework.Drawing.Html
             return ParentBox.Boxes[index + 1];
         }
 
-        /// <summary>
+         
         /// Gets if this box has only inline siblings (including itself)
-        /// </summary>
+         
         /// <returns></returns>
         internal bool HasJustInlineSiblings()
         {
@@ -2642,26 +2642,26 @@ namespace MetroFramework.Drawing.Html
             return ParentBox.ContainsInlinesOnly();
         }
 
-        /// <summary>
+         
         /// Gets the rectangles where inline box will be drawn. See Remarks for more info.
-        /// </summary>
+         
         /// <returns>Rectangles where content should be placed</returns>
         /// <remarks>
         /// Inline boxes can be splitted across different LineBoxes, that's why this method
         /// Delivers a rectangle for each LineBox related to this box, if inline.
         /// </remarks>
 
-        /// <summary>
+         
         /// Inherits inheritable values from parent.
-        /// </summary>
+         
         internal void InheritStyle()
         {
             InheritStyle(ParentBox, false);
         }
 
-        /// <summary>
+         
         /// Inherits inheritable values from specified box.
-        /// </summary>
+         
         /// <param name="everything">Set to true to inherit all CSS properties instead of only the ineritables</param>
         /// <param name="godfather">Box to inherit the properties</param>
         internal void InheritStyle(CssBox godfather, bool everything)
@@ -2678,9 +2678,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the result of collapsing the vertical margins of the two boxes
-        /// </summary>
+         
         /// <param name="a">Superior box (checks for margin-bottom)</param>
         /// <param name="b">Inferior box (checks for margin-top)</param>
         /// <returns>Maximum of margins</returns>
@@ -2692,9 +2692,9 @@ namespace MetroFramework.Drawing.Html
                 b == null ? 0 : b.ActualMarginTop);
         }
 
-        /// <summary>
+         
         /// Measures the bounds of box and children, recursively.
-        /// </summary>
+         
         /// <param name="g">Device context to draw</param>
         /// <param name="layoutRect">Rectangle containing the fragment</param>
         public virtual void MeasureBounds(Graphics g)
@@ -2791,9 +2791,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Measures the word spacing
-        /// </summary>
+         
         /// <param name="g"></param>
         private void MeasureWordSpacing(Graphics g)
         {
@@ -2807,9 +2807,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Assigns words its width and height
-        /// </summary>
+         
         /// <param name="g"></param>
         internal void MeasureWordsSize(Graphics g)
         {
@@ -2891,9 +2891,9 @@ namespace MetroFramework.Drawing.Html
             _wordsSizeMeasured = true;
         }
 
-        /// <summary>
+         
         /// Ensures that the specified length is converted to pixels if necessary
-        /// </summary>
+         
         /// <param name="length"></param>
         private string NoEms(string length)
         {
@@ -2907,9 +2907,9 @@ namespace MetroFramework.Drawing.Html
             return length;
         }
 
-        /// <summary>
+         
         /// Deeply offsets the top of the box and its contents
-        /// </summary>
+         
         /// <param name="amount"></param>
         internal void OffsetTop(float amount)
         {
@@ -2936,9 +2936,9 @@ namespace MetroFramework.Drawing.Html
             Location = new PointF(Location.X, Location.Y + amount);
         }
 
-        /// <summary>
+         
         /// Paints the fragment
-        /// </summary>
+         
         /// <param name="g"></param>
         public void Paint(Graphics g)
         {
@@ -3012,9 +3012,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Paints the border of the box
-        /// </summary>
+         
         /// <param name="g"></param>
         private void PaintBorder(Graphics g, RectangleF rectangle, bool isFirst, bool isLast)
         {
@@ -3077,9 +3077,9 @@ namespace MetroFramework.Drawing.Html
 
         }
 
-        /// <summary>
+         
         /// Paints the background of the box
-        /// </summary>
+         
         /// <param name="g"></param>
         private void PaintBackground(Graphics g, RectangleF rectangle)
         {
@@ -3124,9 +3124,9 @@ namespace MetroFramework.Drawing.Html
             if (b != null) b.Dispose();
         }
 
-        /// <summary>
+         
         /// Paints the text decoration
-        /// </summary>
+         
         /// <param name="g"></param>
         private void PaintDecoration(Graphics g, RectangleF rectangle, bool isFirst, bool isLast)
         {
@@ -3160,10 +3160,10 @@ namespace MetroFramework.Drawing.Html
             g.DrawLine(new Pen(ActualColor), x1, y, x2, y);
         }
 
-        /// <summary>
+         
         /// Offsets the rectangle of the specified linebox by the specified gap,
         /// and goes deep for rectangles of children in that linebox.
-        /// </summary>
+         
         /// <param name="lineBox"></param>
         /// <param name="gap"></param>
         internal void OffsetRectangle(CssLineBox lineBox, float gap)
@@ -3180,17 +3180,17 @@ namespace MetroFramework.Drawing.Html
             //}
         }
 
-        /// <summary>
+         
         /// Resets the <see cref="Rectangles"/> array
-        /// </summary>
+         
         internal void RectanglesReset()
         {
             _rectangles.Clear();
         }
 
-        /// <summary>
+         
         /// Removes boxes that are just blank spaces
-        /// </summary>
+         
         internal void RemoveAnonymousSpaces()
         {
             for (int i = 0; i < Boxes.Count; i++)
@@ -3203,18 +3203,18 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Sets the bounds of the box
-        /// </summary>
+         
         /// <param name="r"></param>
         public void SetBounds(Rectangle r)
         {
             SetBounds(new RectangleF(r.X, r.Y, r.Width, r.Height));
         }
 
-        /// <summary>
+         
         /// Sets the bounds of the box
-        /// </summary>
+         
         /// <param name="rectangle"></param>
         public void SetBounds(RectangleF rectangle)
         {
@@ -3222,9 +3222,9 @@ namespace MetroFramework.Drawing.Html
             Location = rectangle.Location;
         }
 
-        /// <summary>
+         
         /// ToString override.
-        /// </summary>
+         
         /// <returns></returns>
         public override string ToString()
         {
@@ -3255,9 +3255,9 @@ namespace MetroFramework.Drawing.Html
             //return base.ToString();
         }
 
-        /// <summary>
+         
         /// Splits the text into words and saves the result
-        /// </summary>
+         
         private void UpdateWords()
         {
 

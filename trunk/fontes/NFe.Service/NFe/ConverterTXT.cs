@@ -5,9 +5,9 @@ using System.IO;
 
 namespace NFe.Service
 {
-    /// <summary>
+     
     /// Converter o arquivo de NFe do formato TXT para XML
-    /// </summary>
+     
     /// <param name="arquivo">Nome completo do arquivo a ser convertido (Pasta e arquivo)</param>
     /// <remarks>
     /// Autor: Wandrey Mundin Ferreira

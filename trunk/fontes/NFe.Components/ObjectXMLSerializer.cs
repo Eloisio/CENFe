@@ -6,16 +6,16 @@ using System.Xml.Serialization;
 
 namespace NFe.Components
 {
-    /// <summary>
+     
     /// Custom class used as a wrapper to the XML serialization of an object to/from an XML file.
     /// See method calls 'Load' and 'Save' for usage.
     /// 
     /// References: XML Serialization at http://samples.gotdotnet.com/:
     /// http://samples.gotdotnet.com/QuickStart/howto/default.aspx?url=/quickstart/howto/doc/xmlserialization/rwobjfromxml.aspx
-    /// </summary>
+     
     public class ObjectXMLSerializer
     {
-        /// <summary>
+         
         /// Load an object from an XML file.
         /// <newpara></newpara>
         /// <example>
@@ -27,7 +27,7 @@ namespace NFe.Components
         /// objObjectXMLSerializer.Load(objTest, "Objects as XML.xml");
         /// </code>
         /// </example>
-        /// </summary>
+         
         /// <param name="objObjectToLoad">Object to be loaded.</param>
         /// <param name="strXMLFilePathName">File Path name of the XML file containing object(s) serialized to XML.</param>
         /// <returns>Returns an Object loaded from the XML file. If the Object could not be loaded returns null.</returns>
@@ -51,7 +51,7 @@ namespace NFe.Components
             }
         }
 
-        /// <summary>
+         
         /// Save an object to an XML file.
         /// <newpara></newpara>
         /// <example>
@@ -63,7 +63,7 @@ namespace NFe.Components
         /// bool blnSuccess = objObjectXMLSerializer.Save(objTest, "Objects as XML.xml");
         /// </code>
         /// </example>
-        /// </summary>
+         
         /// <param name="objObjectToSave">Object to be saved.</param>
         /// <param name="strXMLFilePathName">File Path name of the XML file to contain the object serialized to XML.</param>
         /// <returns>Returns success of the object save.</returns>

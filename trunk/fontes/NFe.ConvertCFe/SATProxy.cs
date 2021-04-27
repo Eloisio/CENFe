@@ -8,36 +8,36 @@ using Unimake.SAT.Servico.Retorno;
 
 namespace NFe.SAT
 {
-    /// <summary>
+     
     /// Classe responsável pelo consumo dos serviços SAT
-    /// </summary>
+     
     public class SATProxy
     {
         #region Propriedades
 
-        /// <summary>
+         
         /// Dados da empresa que esta sendo realizado o envio
-        /// </summary>
+         
         private Empresa DadosEmpresa;
 
-        /// <summary>
+         
         /// Serviço que esta sendo executado
-        /// </summary>
+         
         private Servicos Servicos;
 
-        /// <summary>
+         
         /// Arquivo XML
-        /// </summary>
+         
         private string Arquivo;
 
-        /// <summary>
+         
         /// Objeto de envio do SAT
-        /// </summary>
+         
         private ServicoBase _Dispatch = null;
 
-        /// <summary>
+         
         /// Define o objeto de envio
-        /// </summary>
+         
         protected ServicoBase Dispatch
         {
             get
@@ -110,14 +110,14 @@ namespace NFe.SAT
             }
         }
 
-        /// <summary>
+         
         /// Objeto de resposta do SAT
-        /// </summary>
+         
         private ResponseBase _Response = null;
 
-        /// <summary>
+         
         /// Define o objeto de resposta
-        /// </summary>
+         
         public ResponseBase Response
         {
             get
@@ -190,9 +190,9 @@ namespace NFe.SAT
 
         #region Construtores
 
-        /// <summary>
+         
         /// Construtor
-        /// </summary>
+         
         /// <param name="servicos">serviço que esta sendo usado</param>
         /// <param name="dadosEmpresa">dados da empresa</param>
         /// <param name="arquivo">arquivo XML</param>
@@ -205,9 +205,9 @@ namespace NFe.SAT
 
         #endregion Construtores
 
-        /// <summary>
+         
         /// Método de troca de código de ativação
-        /// </summary>
+         
         /// <returns></returns>
         public void Enviar()
         {
@@ -221,9 +221,9 @@ namespace NFe.SAT
             }
         }
 
-        /// <summary>
+         
         /// Método para salvar resposta do SAT
-        /// </summary>
+         
         public string SaveResponse()
         {
             try

@@ -2,14 +2,14 @@
 {
     partial class FormNova
     {
-        /// <summary>
+         
         /// Required designer variable.
-        /// </summary>
+         
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+         
         /// Clean up any resources being used.
-        /// </summary>
+         
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
@@ -22,10 +22,10 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
+         
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
-        /// </summary>
+         
         private void InitializeComponent()
         {
             this.lblCNPJ = new MetroFramework.Controls.MetroLabel();
@@ -47,9 +47,9 @@
             this.lblCNPJ.Location = new System.Drawing.Point(11, 15);
             this.lblCNPJ.Margin = new System.Windows.Forms.Padding(3);
             this.lblCNPJ.Name = "lblCNPJ";
-            this.lblCNPJ.Size = new System.Drawing.Size(57, 15);
+            this.lblCNPJ.Size = new System.Drawing.Size(33, 15);
             this.lblCNPJ.TabIndex = 0;
-            this.lblCNPJ.Text = "CPF/CNPJ";
+            this.lblCNPJ.Text = "CNPJ";
             // 
             // edtCNPJ
             // 
@@ -181,7 +181,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultLocation;
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Text = "FormNova";
+            this.Text = "Nova";
             this.metroPanel2.ResumeLayout(false);
             this.metroPanel2.PerformLayout();
             this.ResumeLayout(false);

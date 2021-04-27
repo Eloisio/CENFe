@@ -30,9 +30,9 @@ using System.Drawing;
 
 namespace MetroFramework.Drawing.Html
 {
-    /// <summary>
+     
     /// Represents a line of text.
-    /// </summary>
+     
     /// <remarks>
     /// To learn more about line-boxes see CSS spec:
     /// http://www.w3.org/TR/CSS21/visuren.html
@@ -51,9 +51,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Ctors
 
-        /// <summary>
+         
         /// Creates a new LineBox
-        /// </summary>
+         
         public CssLineBox(CssBox ownerBox)
         {
             _rects = new Dictionary<CssBox, RectangleF>();
@@ -69,35 +69,35 @@ namespace MetroFramework.Drawing.Html
 
 
 
-        /// <summary>
+         
         /// Gets a list of boxes related with the linebox. 
         /// To know the words of the box inside this linebox, use the <see cref="WordsOf"/> method.
-        /// </summary>
+         
         public List<CssBox> RelatedBoxes
         {
             get { return _relatedBoxes; }
         }
 
 
-        /// <summary>
+         
         /// Gets the words inside the linebox
-        /// </summary>
+         
         public List<CssBoxWord> Words
         {
             get { return _words; }
         }
 
-        /// <summary>
+         
         /// Gets the owner box
-        /// </summary>
+         
         public CssBox OwnerBox
         {
             get { return _ownerBox; }
         }
 
-        /// <summary>
+         
         /// Gets a List of rectangles that are to be painted on this linebox
-        /// </summary>
+         
         public Dictionary<CssBox, RectangleF> Rectangles
         {
             get { return _rects; }
@@ -110,9 +110,9 @@ namespace MetroFramework.Drawing.Html
 
 
 
-        /// <summary>
+         
         /// Gets the maximum bottom of the words
-        /// </summary>
+         
         /// <returns></returns>
         public float GetMaxWordBottom()
         {
@@ -128,9 +128,9 @@ namespace MetroFramework.Drawing.Html
 
         #endregion
 
-        /// <summary>
+         
         /// Lets the linebox add the word an its box to their lists if necessary.
-        /// </summary>
+         
         /// <param name="word"></param>
         internal void ReportExistanceOf(CssBoxWord word)
         {
@@ -145,9 +145,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Return the words of the specified box that live in this linebox
-        /// </summary>
+         
         /// <param name="box"></param>
         /// <returns></returns>
         internal List<CssBoxWord> WordsOf(CssBox box)
@@ -160,9 +160,9 @@ namespace MetroFramework.Drawing.Html
             return r;
         }
 
-        /// <summary>
+         
         /// Updates the specified rectangle of the specified box.
-        /// </summary>
+         
         /// <param name="box"></param>
         /// <param name="x"></param>
         /// <param name="y"></param>
@@ -203,9 +203,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Copies the rectangles to their specified box
-        /// </summary>
+         
         internal void AssignRectanglesToBoxes()
         {
             foreach (CssBox b in Rectangles.Keys)
@@ -214,9 +214,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Draws the rectangles for debug purposes
-        /// </summary>
+         
         /// <param name="g"></param>
         internal void DrawRectangles(Graphics g)
         {
@@ -230,9 +230,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the baseline Height of the rectangle
-        /// </summary>
+         
         /// <param name="g"></param>
         /// <returns></returns>
         public float GetBaseLineHeight(CssBox b, Graphics g)
@@ -243,9 +243,9 @@ namespace MetroFramework.Drawing.Html
             return f.GetHeight(g) * ff.GetCellAscent(s) / ff.GetLineSpacing(s);
         }
 
-        /// <summary>
+         
         /// Sets the baseline of the words of the specified box to certain height
-        /// </summary>
+         
         /// <param name="g">Device info</param>
         /// <param name="b">box to check words</param>
         /// <param name="baseline">baseline</param>
@@ -294,9 +294,9 @@ namespace MetroFramework.Drawing.Html
                     w.Top = newtop;
         }
 
-        /// <summary>
+         
         /// Returns the words of the linebox
-        /// </summary>
+         
         /// <returns></returns>
         public override string ToString()
         {

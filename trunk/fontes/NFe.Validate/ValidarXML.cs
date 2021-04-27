@@ -10,9 +10,9 @@ using System.Xml.Schema;
 
 namespace NFe.Validate
 {
-    /// <summary>
+     
     /// Classe de validação dos XML´s
-    /// </summary>
+     
     public class ValidarXML
     {
         #region Construtores
@@ -35,18 +35,18 @@ namespace NFe.Validate
         public int Retorno { get; private set; }
         public string RetornoString { get; private set; }
 
-        /// <summary>
+         
         /// Pasta dos schemas para validação do XML
-        /// </summary>
+         
         private string PastaSchema = Propriedade.PastaSchemas;
 
         private string cErro;
 
         #region EncryptAssinatura()
 
-        /// <summary>
+         
         /// Encriptar a tag Assinatura quando for município de Blumenau - SC
-        /// </summary>
+         
         public void EncryptAssinatura(string arquivoXML)
         {
             if (TipoArqXml.cArquivoSchema.Contains("PAULISTANA") ||
@@ -137,9 +137,9 @@ namespace NFe.Validate
 
         #endregion EncryptAssinatura()
 
-        /// <summary>
+         
         /// Método responsável por validar a estrutura do XML de acordo com o schema passado por parâmetro
-        /// </summary>
+         
         /// <param name="rotaArqXML">XML a ser validado</param>
         /// <param name="cRotaArqSchema">Schema a ser utilizado na validação</param>
         /// <param name="nsSchema">Namespace contendo a URL do schema</param>
@@ -167,9 +167,9 @@ namespace NFe.Validate
             }
         }
 
-        /// <summary>
+         
         /// Método responsável por validar a estrutura do XML de acordo com o schema passado por parâmetro
-        /// </summary>
+         
         /// <param name="rotaArqXML">Nome do arquivo XML</param>
         /// <param name="conteudoXML">Conteúdo do XML a ser validado</param>
         private void Validar(XmlDocument conteudoXML, string rotaArqXML)
@@ -185,7 +185,7 @@ namespace NFe.Validate
 
                 try
                 {
-                    EncryptAssinatura(rotaArqXML);    //danasa: 12/2013
+                    EncryptAssinatura(rotaArqXML);    // : 12/2013
 
                     XmlReaderSettings settings = new XmlReaderSettings();
                     settings.ValidationType = ValidationType.Schema;
@@ -254,9 +254,9 @@ namespace NFe.Validate
 
         #region ValidarArqXML()
 
-        /// <summary>
+         
         /// Valida o arquivo XML
-        /// </summary>
+         
         /// <param name="arquivo">Nome do arquivo XML a ser validado</param>
         /// <returns>
         /// Se retornar uma string em branco, significa que o XML foi
@@ -287,9 +287,9 @@ namespace NFe.Validate
 
         #region ValidarArqXML()
 
-        /// <summary>
+         
         /// Valida o arquivo XML
-        /// </summary>
+         
         /// <param name="conteudoXML">Conteudo do XML a ser validado</param>
         /// <param name="arquivo">Nome do arquivo XML que será validado</param>
         /// <returns>
@@ -322,9 +322,9 @@ namespace NFe.Validate
 
         #region ValidarAssinarXML()
 
-        /// <summary>
+         
         /// Efetua a validação de qualquer XML, NFE, Cancelamento, Inutilização, etc..., e retorna se está ok ou não
-        /// </summary>
+         
         /// <param name="Arquivo">Nome do arquivo XML a ser validado e assinado</param>
         /// <param name="PastaValidar">Nome da pasta onde fica os arquivos a serem validados</param>
         /// <param name="PastaXMLErro">Nome da pasta onde é para gravar os XML´s validados que apresentaram erro.</param>
@@ -497,9 +497,9 @@ namespace NFe.Validate
 
         #region GravarXMLRetornoValidacao()
 
-        /// <summary>
+         
         /// Na tentativa de somente validar ou assinar o XML se encontrar um erro vai ser retornado um XML para o ERP
-        /// </summary>
+         
         /// <param name="Arquivo">Nome do arquivo XML validado</param>
         /// <param name="PastaXMLRetorno">Pasta de retorno para ser gravado o XML</param>
         /// <param name="cStat">Status da validação</param>

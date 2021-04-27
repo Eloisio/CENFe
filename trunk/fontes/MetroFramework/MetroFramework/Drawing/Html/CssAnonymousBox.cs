@@ -28,9 +28,9 @@ using System;
 
 namespace MetroFramework.Drawing.Html
 {
-    /// <summary>
+     
     /// Represents an anonymous inline box
-    /// </summary>
+     
     /// <remarks>
     /// To learn more about anonymous inline boxes visit:
     /// http://www.w3.org/TR/CSS21/visuren.html#anonymous
@@ -50,9 +50,9 @@ namespace MetroFramework.Drawing.Html
         #endregion
     }
 
-    /// <summary>
+     
     /// Represents an anonymous inline box which contains nothing but blank spaces
-    /// </summary>
+     
     [CLSCompliant(false)]
     public class CssAnonymousSpaceBox
         : CssAnonymousBox

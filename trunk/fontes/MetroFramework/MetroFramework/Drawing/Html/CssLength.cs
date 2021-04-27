@@ -29,9 +29,9 @@ using System.Globalization;
 
 namespace MetroFramework.Drawing.Html
 {
-    /// <summary>
+     
     /// Represents and gets info about a CSS Length
-    /// </summary>
+     
     /// <remarks>
     /// http://www.w3.org/TR/CSS21/syndata.html#length-units
     /// </remarks>
@@ -39,9 +39,9 @@ namespace MetroFramework.Drawing.Html
     {
         #region Enum
 
-        /// <summary>
+         
         /// Represents the possible units of the CSS lengths
-        /// </summary>
+         
         /// <remarks>
         /// http://www.w3.org/TR/CSS21/syndata.html#length-units
         /// </remarks>
@@ -80,9 +80,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Ctor
 
-        /// <summary>
+         
         /// Creates a new CssLength from a length specified on a CSS style sheet or fragment
-        /// </summary>
+         
         /// <param name="length">Length as specified in the Style Sheet or style fragment</param>
         public CssLength(string length)
         {
@@ -162,51 +162,51 @@ namespace MetroFramework.Drawing.Html
 
         #region Props
 
-        /// <summary>
+         
         /// Gets the number in the length
-        /// </summary>
+         
         public float Number
         {
             get { return _number; }
         }
 
-        /// <summary>
+         
         /// Gets if the length has some parsing error
-        /// </summary>
+         
         public bool HasError
         {
             get { return _hasError; }
         }
 
 
-        /// <summary>
+         
         /// Gets if the length represents a precentage (not actually a length)
-        /// </summary>
+         
         public bool IsPercentage
         {
             get { return _isPercentage; }
         }
 
 
-        /// <summary>
+         
         /// Gets if the length is specified in relative units
-        /// </summary>
+         
         public bool IsRelative
         {
             get { return _isRelative; }
         }
 
-        /// <summary>
+         
         /// Gets the unit of the length
-        /// </summary>
+         
         public CssUnit Unit
         {
             get { return _unit; }
         }
 
-        /// <summary>
+         
         /// Gets the length as specified in the string
-        /// </summary>
+         
         public string Length
         {
             get { return _length; }
@@ -217,9 +217,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Methods
 
-        /// <summary>
+         
         /// If length is in Ems, returns its value in points
-        /// </summary>
+         
         /// <param name="emSize">Em size factor to multiply</param>
         /// <returns>Points size of this em</returns>
         /// <exception cref="InvalidOperationException">If length has an error or isn't in ems</exception>
@@ -231,9 +231,9 @@ namespace MetroFramework.Drawing.Html
             return new CssLength(string.Format("{0}pt", Convert.ToSingle(Number * emSize).ToString("0.0", NumberFormatInfo.InvariantInfo)));
         }
 
-        /// <summary>
+         
         /// If length is in Ems, returns its value in pixels
-        /// </summary>
+         
         /// <param name="emSize">Pixel size factor to multiply</param>
         /// <returns>Pixels size of this em</returns>
         /// <exception cref="InvalidOperationException">If length has an error or isn't in ems</exception>
@@ -245,9 +245,9 @@ namespace MetroFramework.Drawing.Html
             return new CssLength(string.Format("{0}px", Convert.ToSingle(Number * pixelFactor).ToString("0.0", NumberFormatInfo.InvariantInfo)));
         }
 
-        /// <summary>
+         
         /// Returns the length formatted ready for CSS interpreting.
-        /// </summary>
+         
         /// <returns></returns>
         public override string ToString()
         {

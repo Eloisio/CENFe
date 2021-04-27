@@ -23,9 +23,9 @@ namespace NFe.UI
 
         #region local
 
-        /// <summary>
+         
         /// Controla se o evento changed_Modificado deve ser executado, se true, não executa o evento
-        /// </summary>
+         
         private bool stopChangedEvent = false;
 
         #endregion local
@@ -187,9 +187,9 @@ namespace NFe.UI
             }
         }
 
-        /// <summary>
+         
         /// CopiaPastaDaEmpresa
-        /// </summary>
+         
         /// <param name="origemCNPJ"></param>
         /// <param name="origemPasta"></param>
         /// <param name="oEmpresa"></param>
@@ -231,9 +231,9 @@ namespace NFe.UI
             return newPasta;
         }
 
-        /// <summary>
+         
         /// CopiaPastaDeEmpresa
-        /// </summary>
+         
         /// <param name="empresa"></param>
         /// <param name="oempresa"></param>
         private void CopiaPastaDeEmpresa(Empresa empresa, Empresa oempresa)
@@ -655,10 +655,10 @@ namespace NFe.UI
 
         #region ValidarPastaBackup()
 
-        /// <summary>
+         
         /// Verifica se tem alguma empresa sem informar a pasta de backup.
         /// Esta verificação só ocorre quando configurado manualmente no uninfe, quando é configurado pelo ERP, a pasta é opcional.
-        /// </summary>
+         
         private void ValidarPastaBackup()
         {
             for (int i = 0; i < Empresas.Configuracoes.Count; i++)

@@ -9,34 +9,34 @@ using Servicos = Unimake.SAT.Servico;
 
 namespace NFe.SAT.Servico.Envio
 {
-    /// <summary>
+     
     /// Classe responsável pela comunicação com o SAT
-    /// </summary>
+     
     public class ConfigurarInterfaceDeRede : ServicoBase
     {
-        /// <summary>
+         
         /// Dados da empresa
-        /// </summary>
+         
         private Empresa DadosEmpresa = null;
 
-        /// <summary>
+         
         /// Dados do envio do XML
-        /// </summary>
+         
         private string ConfigurarInterfaceDeRedeEnvio = null;
 
-        /// <summary>
+         
         /// Resposta do equipamento sat
-        /// </summary>
+         
         private Servicos.Retorno.ConfigurarInterfaceDeRedeResponse ConfigurarInterfaceDeRedeRetorno = null;
 
-        /// <summary>
+         
         /// Nome do arquivo XML que esta sendo manipulado
-        /// </summary>
+         
         public override string ArquivoXML { get; set; }
 
-        /// <summary>
+         
         /// Construtor com serialização
-        /// </summary>
+         
         /// <param name="arquivoXML">arquivo a ser lido</param>
         /// <param name="dadosEmpresa">dados da empresa</param>
         public ConfigurarInterfaceDeRede(string arquivoXML, Empresa dadosEmpresa)
@@ -54,18 +54,18 @@ namespace NFe.SAT.Servico.Envio
             CodigoAtivacao = DadosEmpresa.CodigoAtivacaoSAT;
         }
 
-        /// <summary>
+         
         /// Comunicar com o equipamento SAT
-        /// </summary>
+         
         public override void Enviar()
         {
             string resposta = Sat.ConfigurarInterfaceDeRede(ConfigurarInterfaceDeRedeEnvio);
             ConfigurarInterfaceDeRedeRetorno = new Servicos.Retorno.ConfigurarInterfaceDeRedeResponse(resposta);
         }
 
-        /// <summary>
+         
         /// Salva o XML de Retorno
-        /// </summary>
+         
         public override string SaveResponse()
         {
             string result = Path.Combine(DadosEmpresa.PastaXmlRetorno,

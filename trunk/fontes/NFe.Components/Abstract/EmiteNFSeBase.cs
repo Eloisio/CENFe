@@ -27,9 +27,9 @@ namespace NFe.Components.Abstract
             PastaRetorno = pastaRetorno;
         }
 
-        /// <summary>
+         
         /// Deserializar o objeto para string
-        /// </summary>
+         
         /// <typeparam name="T">Tipo do objeto</typeparam>
         /// <param name="file">Caminho do arquivo</param>
         /// <returns></returns>
@@ -50,9 +50,9 @@ namespace NFe.Components.Abstract
             return envio;
         }
 
-        /// <summary>
+         
         /// Serializar o objeto para XML
-        /// </summary>
+         
         /// <typeparam name="T">Tipo do objeto que será serializado</typeparam>
         /// <param name="retorno">Objeto de retorno que será convertivo</param>
         /// <returns></returns>

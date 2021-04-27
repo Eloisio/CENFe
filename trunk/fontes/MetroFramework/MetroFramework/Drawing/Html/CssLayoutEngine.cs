@@ -32,9 +32,9 @@ namespace MetroFramework.Drawing.Html
 {
 
 
-    /// <summary>
+     
     /// Helps on CSS Layout
-    /// </summary>
+     
     internal static class CssLayoutEngine
     {
         #region Fields
@@ -45,9 +45,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Inline Boxes
 
-        /// <summary>
+         
         /// Creates line boxes for the specified blockbox
-        /// </summary>
+         
         /// <param name="g"></param>
         /// <param name="blockBox"></param>
         public static void CreateLineBoxes(Graphics g, CssBox blockBox)
@@ -90,9 +90,9 @@ namespace MetroFramework.Drawing.Html
             blockBox.ActualBottom = maxBottom + blockBox.ActualPaddingBottom + blockBox.ActualBorderBottomWidth;
         }
 
-        /// <summary>
+         
         /// Recursively flows the content of the box using the inline model
-        /// </summary>
+         
         /// <param name="g">Device Info</param>
         /// <param name="blockbox">Blockbox that contains the text flow</param>
         /// <param name="box">Current box to flow its content</param>
@@ -170,10 +170,10 @@ namespace MetroFramework.Drawing.Html
             box.LastHostingLineBox = line;
         }
 
-        /// <summary>
+         
         /// Recursively creates the rectangles of the blockBox, by bubbling from deep to outside of the boxes 
         /// in the rectangle structure
-        /// </summary>
+         
         private static void BubbleRectangles(CssBox box, CssLineBox line)
         {
             if (box.Words.Count > 0)
@@ -202,9 +202,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the white space width of the specified box
-        /// </summary>
+         
         /// <param name="g"></param>
         /// <param name="b"></param>
         /// <returns></returns>
@@ -229,9 +229,9 @@ namespace MetroFramework.Drawing.Html
             return w;
         }
 
-        /// <summary>
+         
         /// Applies vertical and horizontal alignment to words in lineboxes
-        /// </summary>
+         
         /// <param name="g"></param>
         /// <param name="lineBox"></param>
         private static void ApplyAlignment(Graphics g, CssLineBox lineBox)
@@ -260,9 +260,9 @@ namespace MetroFramework.Drawing.Html
             ApplyVerticalAlignment(g, lineBox);
         }
 
-        /// <summary>
+         
         /// Applies right to left direction to words
-        /// </summary>
+         
         /// <param name="line"></param>
         private static void ApplyRightToLeft(CssLineBox line)
         {
@@ -277,9 +277,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the ascent of the font
-        /// </summary>
+         
         /// <param name="f"></param>
         /// <returns></returns>
         /// <remarks>
@@ -291,9 +291,9 @@ namespace MetroFramework.Drawing.Html
             return mainAscent;
         }
 
-        /// <summary>
+         
         /// Gets the descent of the font
-        /// </summary>
+         
         /// <param name="f"></param>
         /// <returns></returns>
         /// <remarks>
@@ -305,9 +305,9 @@ namespace MetroFramework.Drawing.Html
             return mainDescent;
         }
 
-        /// <summary>
+         
         /// Gets the line spacing of the font
-        /// </summary>
+         
         /// <param name="f"></param>
         /// <returns></returns>
         /// <remarks>
@@ -319,9 +319,9 @@ namespace MetroFramework.Drawing.Html
             return s;
         }
 
-        /// <summary>
+         
         /// Applies vertical alignment to the linebox
-        /// </summary>
+         
         /// <param name="g"></param>
         /// <param name="lineBox"></param>
         private static void ApplyVerticalAlignment(Graphics g, CssLineBox lineBox)
@@ -376,9 +376,9 @@ namespace MetroFramework.Drawing.Html
 
         }
 
-        /// <summary>
+         
         /// Applies special vertical alignment for table-cells
-        /// </summary>
+         
         /// <param name="g"></param>
         /// <param name="cell"></param>
         public static void ApplyCellVerticalAlignment(Graphics g, CssBox cell)
@@ -428,9 +428,9 @@ namespace MetroFramework.Drawing.Html
             //}
         }
 
-        /// <summary>
+         
         /// Applies centered alignment to the text on the linebox
-        /// </summary>
+         
         /// <param name="g"></param>
         /// <param name="lineBox"></param>
         private static void ApplyJustifyAlignment(Graphics g, CssLineBox lineBox)
@@ -471,9 +471,9 @@ namespace MetroFramework.Drawing.Html
 
         }
 
-        /// <summary>
+         
         /// Applies centered alignment to the text on the linebox
-        /// </summary>
+         
         /// <param name="g"></param>
         /// <param name="lineBox"></param>
         private static void ApplyCenterAlignment(Graphics g, CssLineBox line)
@@ -499,9 +499,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Applies right alignment to the text on the linebox
-        /// </summary>
+         
         /// <param name="g"></param>
         /// <param name="lineBox"></param>
         private static void ApplyRightAlignment(Graphics g, CssLineBox line)
@@ -533,9 +533,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Simplest alignment, just arrange words.
-        /// </summary>
+         
         /// <param name="g"></param>
         /// <param name="lineBox"></param>
         private static void ApplyLeftAlignment(Graphics g, CssLineBox line)

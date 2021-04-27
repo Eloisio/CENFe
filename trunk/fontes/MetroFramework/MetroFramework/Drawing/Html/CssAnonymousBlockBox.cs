@@ -28,9 +28,9 @@ using System;
 
 namespace MetroFramework.Drawing.Html
 {
-    /// <summary>
+     
     /// Represents an anonymous block box
-    /// </summary>
+     
     /// <remarks>
     /// To learn more about anonymous block boxes visit CSS spec:
     /// http://www.w3.org/TR/CSS21/visuren.html#anonymous-block-level
@@ -59,9 +59,9 @@ namespace MetroFramework.Drawing.Html
         }
     }
 
-    /// <summary>
+     
     /// Represents an AnonymousBlockBox which contains only blank spaces
-    /// </summary>
+     
     [CLSCompliant(false)]
     public class CssAnonymousSpaceBlockBox
         : CssAnonymousBlockBox

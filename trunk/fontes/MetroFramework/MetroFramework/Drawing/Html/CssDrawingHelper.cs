@@ -29,22 +29,22 @@ using System.Drawing.Drawing2D;
 
 namespace MetroFramework.Drawing.Html
 {
-    /// <summary>
+     
     /// Provides some drawing functionallity
-    /// </summary>
+     
     internal static class CssDrawingHelper
     {
-        /// <summary>
+         
         /// Border specifiers
-        /// </summary>
+         
         internal enum Border
         {
             Top, Right, Bottom, Left
         }
 
-        /// <summary>
+         
         /// Rounds the specified point
-        /// </summary>
+         
         /// <param name="p"></param>
         /// <param name="b"></param>
         /// <returns></returns>
@@ -55,9 +55,9 @@ namespace MetroFramework.Drawing.Html
             return p;
         }
 
-        /// <summary>
+         
         /// Rounds the specified rectangle
-        /// </summary>
+         
         /// <param name="p"></param>
         /// <param name="b"></param>
         /// <returns></returns>
@@ -67,9 +67,9 @@ namespace MetroFramework.Drawing.Html
             return Rectangle.Round(r);
         }
 
-        /// <summary>
+         
         /// Makes a border path
-        /// </summary>
+         
         /// <param name="border">Desired border</param>
         /// <param name="b">Box wich the border corresponds</param>
         /// <param name="isLineStart">Specifies if the border is for a starting line (no bevel on left)</param>
@@ -144,9 +144,9 @@ namespace MetroFramework.Drawing.Html
             return path;
         }
 
-        /// <summary>
+         
         /// Creates the corner to place with the borders
-        /// </summary>
+         
         /// <param name="outer"></param>
         /// <param name="inner"></param>
         /// <param name="startAngle"></param>
@@ -216,9 +216,9 @@ namespace MetroFramework.Drawing.Html
             return corner;
         }
 
-        /// <summary>
+         
         /// Creates a rounded rectangle using the specified corner radius
-        /// </summary>
+         
         /// <param name="rect">Rectangle to round</param>
         /// <param name="nwRadius">Radius of the north east corner</param>
         /// <param name="neRadius">Radius of the north west corner</param>
@@ -292,9 +292,9 @@ namespace MetroFramework.Drawing.Html
             return path;
         }
 
-        /// <summary>
+         
         /// Makes the specified color darker
-        /// </summary>
+         
         /// <param name="c"></param>
         /// <returns></returns>
         public static Color Darken(Color c)

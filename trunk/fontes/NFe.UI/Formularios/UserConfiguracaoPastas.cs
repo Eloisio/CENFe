@@ -128,9 +128,9 @@ namespace NFe.UI.Formularios
 
         #region Private Methods
 
-        /// <summary>
+         
         /// Realinha os controles com base no tabindex
-        /// </summary>
+         
         private void AlinharControles()
         {
             int top = Top - VerticalScroll.Value;
@@ -164,10 +164,10 @@ namespace NFe.UI.Formularios
             control.Focus();
         }
 
-        /// <summary>
+         
         /// Ajusta o diretório no componente informado para o diretório base 
         /// respeitando o último nome de diretório informado
-        /// </summary>
+         
         /// <param name="textBox">Componente do tipo TextBox que será modificado</param>
         /// <param name="baseDir">diretório base para substituir no componente</param>
         private void SetNewDir(MetroFramework.Controls.MetroTextBox textBox, string baseDir, string subfolder)

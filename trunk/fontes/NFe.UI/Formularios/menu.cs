@@ -14,18 +14,11 @@ namespace NFe.UI
         {
             InitializeComponent();
         }
-
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-
             ConfiguracaoApp.CarregarDadosSobre();
-
-            // metroLink_unimake.Visible = !string.IsNullOrEmpty(ConfiguracaoApp.Site);
-            //metroLink_unimake.Text = ConfiguracaoApp.Site;
-            CEnfeDummy.mainForm.Text = "CAMPOS EVOLUTION";// Propriedade.NomeAplicacao + " - Monitor DF-e";
-            //metroTile_update.Text = "Atualizar o " + Propriedade.NomeAplicacao;
-
+            CEnfeDummy.mainForm.Text = "CAMPOS EVOLUTION";
             var Components = Controls.Cast<object>()
                                                    .Where(obj => !ReferenceEquals(obj, this))
                                                    .OfType<MetroFramework.Controls.MetroTile>();
@@ -33,18 +26,14 @@ namespace NFe.UI
             {
                 c.Style = (MetroFramework.MetroColorStyle)CEnfeDummy.xmlParams.ReadValue(Name + "\\" + c.Name, "color", Convert.ToInt16(c.Style));
             }
-
             UpdateControles();
         }
-
         public void UpdateControles()
         {
         }
-
         public void Show(CEnfeOpcoes opcao)
         {
             DisposeAllControls();
-
             switch (opcao)
             {
                 case CEnfeOpcoes.opCadastro:
@@ -60,17 +49,14 @@ namespace NFe.UI
                     break;
             }
         }
-
         private void menu_VisibleChanged(object sender, EventArgs e)
         {
             if (!Propriedade.EncerrarApp)
             {
                 UpdateControles();
-
                 DisposeAllControls();
             }
         }
-
         private void DisposeAllControls()
         {
             var Components = CEnfeDummy.mainForm.Controls.Cast<object>()
@@ -81,19 +67,14 @@ namespace NFe.UI
                 c.Dispose();
             }
         }
-
         private bool createControl(Type user)
         {
             bool _novo = false;
-
-            //NFe.UI.uninfeDummy.showError = false;
             VisibleChanged -= menu_VisibleChanged;
             try
             {
                 UserControl1 _uc = null;
-                ///
                 /// processo já existe?
-                ///
                 foreach (Control __uc in CEnfeDummy.mainForm.Controls)
                 {
                     if (__uc.GetType().Equals(user))
@@ -102,19 +83,10 @@ namespace NFe.UI
                         break;
                     }
                 }
-
                 _novo = (_uc == null);
-                if (_uc == null)
-                {
-                    ///
-                    /// cria o processo
-                    _uc = Activator.CreateInstance(user) as UserControl1;
-                }
+                if (_uc == null) _uc = Activator.CreateInstance(user) as UserControl1;/// cria o processo
                 _uc.UpdateControles();
-                if (_novo)
-                {
-                    CEnfeDummy.mainForm.Controls.Add(_uc);
-                }
+                if (_novo)CEnfeDummy.mainForm.Controls.Add(_uc);
                 var Components = CEnfeDummy.mainForm.Controls.Cast<object>()
                                                        .Where(obj => !ReferenceEquals(obj, _uc))
                                                        .OfType<MetroFramework.Controls.MetroUserControl>();
@@ -131,102 +103,27 @@ namespace NFe.UI
             finally
             {
                 VisibleChanged += menu_VisibleChanged;
-                //NFe.UI.uninfeDummy.showError = true;
             }
             return _novo;
         }
-
         private void metroTile_CFG_Click(object sender, EventArgs e)
         {
-
         }
-
-        private void metroTile_wsdl_Click(object sender, EventArgs e)
-        {
-            string msg = string.Format("Após confirmada esta função o {0} irá sobrepor todos os WSDLs e Schemas com as versões originais da versão do {0}" +
-                    ", sobrepondo assim possíveis arquivos que tenham sido atualizados manualmente.\r\n\r\nTem certeza que deseja continuar?",
-                                Propriedade.NomeAplicacao);
-
-            if (MetroFramework.MetroMessageBox.Show(CEnfeDummy.mainForm, msg, "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                try
-                {
-                    Functions.DeletarArquivo(Propriedade.XMLVersaoWSDLXSD);
-
-                    string cerros = "";
-                    ConfiguracaoApp.ForceUpdateWSDL(false, ref cerros);
-
-                    MetroFramework.MetroMessageBox.Show(CEnfeDummy.mainForm, "WSDLs e Schemas atualizados com sucesso.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                catch (Exception ex)
-                {
-                    MetroFramework.MetroMessageBox.Show(CEnfeDummy.mainForm, ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
-        private void metroTile_update_Click(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrEmpty(ConfiguracaoApp.SenhaConfig) && CEnfeDummy.TempoExpirou())
-            {
-                if (!FormSenha.SolicitaSenha(true))
-                    return;
-
-                CEnfeDummy.UltimoAcessoConfiguracao = DateTime.Now;
-            }
-
-            Formularios.FormUpdate FormUp = new Formularios.FormUpdate();
-            FormUp.ShowDialog();
-            FormUp.Dispose();
-        }
-
         private void metroTile_CAD_Click(object sender, EventArgs e)
         {
             createControl(typeof(userCadastro));
         }
-
         private void metroTile_municipios_Click(object sender, EventArgs e)
         {
             createControl(typeof(Formularios.userMunicipios));
         }
-
-        private void metroLink3_Click(object sender, EventArgs e)
-        {
-            StartPage("http://" + ConfiguracaoApp.Site);
-        }
-
-        private void metroTile_sefaz_Click(object sender, EventArgs e)
-        {
-            StartPage("http://www.cte.fazenda.gov.br/portal/disponibilidade.aspx?versao=1.00");
-        }
-
-        private void metroTile_sefaz_310_Click(object sender, EventArgs e)
-        {
-            StartPage("http://www.nfe.fazenda.gov.br/portal/disponibilidade.aspx?versao=3.100");
-        }
-
-        private void StartPage(string url)
-        {
-            try
-            {
-                System.Diagnostics.Process.Start(url);
-            }
-            catch (Exception ex)
-            {
-                MetroFramework.MetroMessageBox.Show(CEnfeDummy.mainForm, ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void contextMenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
             CurrentTile.Style = (MetroFramework.MetroColorStyle)Convert.ToInt16(e.ClickedItem.Tag);
             CurrentTile.Refresh();
-
             CEnfeDummy.xmlParams.WriteValue(Name + "\\" + CurrentTile.Name, "color", (int)CurrentTile.Style);
-
             CurrentTile = null;
         }
-
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
             if (CurrentTile != null)
@@ -237,7 +134,6 @@ namespace NFe.UI
                     {
                         if (item.ToString().Equals("Restaurar Padrão"))
                             continue;
-
                         ((ToolStripMenuItem)item).Checked = Convert.ToInt16(((ToolStripMenuItem)item).Tag) == (int)CurrentTile.Style;
                     }
                     catch
@@ -246,36 +142,17 @@ namespace NFe.UI
                 }
             }
         }
-
         private MetroFramework.Controls.MetroTile CurrentTile = null;
-
-        private void metroTile_Configuracoes_MouseDown(object sender, MouseEventArgs e)
-        {
-            CurrentTile = (MetroFramework.Controls.MetroTile)sender;
-        }
-
-        private void metroTile1_Click(object sender, EventArgs e)
-        {
-            StartPage("https://mdfe-portal.sefaz.rs.gov.br/Site/Servicos");
-        }
-
-        private void metroTile_Manual_Click(object sender, EventArgs e)
-        {
-            StartPage(Propriedade.UrlManualUniNFe);
-        }
-
         private void restaurarPadrãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
-
         private void metroLabel1_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(ConfiguracaoApp.SenhaConfig) && CEnfeDummy.TempoExpirou())
             {
                 if (!FormSenha.SolicitaSenha(true))
                     return;
-
                 CEnfeDummy.UltimoAcessoConfiguracao = DateTime.Now;
             }
             createControl(typeof(userConfiguracoes));

@@ -36,13 +36,9 @@ namespace NFe.UI
                 "Afirmamos que a produtora do software não se responsabiliza por decisões tomadas e/ou execuções realizadas com base nas informações acima.\r\n\r\n";
 
         public static DateTime UltimoAcessoConfiguracao { get; set; }
-
         public static Form_Main mainForm { get; set; }
-
         public static CEnfeOpcoes2 opServicos { get; set; }
-
         private static NFe.Components.XMLIniFile _xml;
-
         public static XMLIniFile xmlParams
         {
             get
@@ -52,11 +48,6 @@ namespace NFe.UI
                 return _xml;
             }
         }
-
-        /// <summary>
-        /// TempoExpirou
-        /// </summary>
-        /// <returns></returns>
         public static bool TempoExpirou()
         {
             if (CEnfeDummy.UltimoAcessoConfiguracao == DateTime.MinValue)
@@ -66,13 +57,6 @@ namespace NFe.UI
             TimeSpan elapsedTime = stopTime.Subtract(CEnfeDummy.UltimoAcessoConfiguracao);
             return (int)elapsedTime.TotalMinutes > 60;
         }
-
-        /// <summary>
-        /// FmtCgcCpf
-        /// </summary>
-        /// <param name="Value"></param>
-        /// <param name="juridica"></param>
-        /// <returns></returns>
         public static string FmtCnpjCpf(string Value, bool juridica)
         {
             string Result = Value.PadLeft(14, '0');
@@ -90,54 +74,17 @@ namespace NFe.UI
                             Result.Substring(12, 2);
             return Result;
         }
-
-        /// <summary>
-        /// DatasouceTipoAplicativo
-        /// </summary>
-        /// <param name="soConsulta">Inserir somente os serviços que tem consulta status</param>
-        /// <returns></returns>
         public static IList DatasouceTipoAplicativo(bool soConsulta)
         {
             ArrayList list = new ArrayList();
-
             if (!soConsulta)
-                list.Add(new KeyValuePair<int, string>((int)TipoAplicativo.Todos, EnumHelper.GetDescription(TipoAplicativo.Todos)));
-
             list.Add(new KeyValuePair<int, string>((int)TipoAplicativo.Nfe, EnumHelper.GetDescription(TipoAplicativo.Nfe)));
-            list.Add(new KeyValuePair<int, string>((int)TipoAplicativo.Cte, EnumHelper.GetDescription(TipoAplicativo.Cte)));
-            list.Add(new KeyValuePair<int, string>((int)TipoAplicativo.MDFe, EnumHelper.GetDescription(TipoAplicativo.MDFe)));
-            list.Add(new KeyValuePair<int, string>((int)TipoAplicativo.NFCe, EnumHelper.GetDescription(TipoAplicativo.NFCe)));
-            list.Add(new KeyValuePair<int, string>((int)TipoAplicativo.SAT, EnumHelper.GetDescription(TipoAplicativo.SAT)));
-
-            if (!soConsulta)
-            {
-                list.Add(new KeyValuePair<int, string>((int)TipoAplicativo.Nfse, EnumHelper.GetDescription(TipoAplicativo.Nfse)));
-#if _fw46
-                list.Add(new KeyValuePair<int, string>((int)TipoAplicativo.EFDReinfeSocial, EnumHelper.GetDescription(TipoAplicativo.EFDReinfeSocial)));
-                list.Add(new KeyValuePair<int, string>((int)TipoAplicativo.EFDReinf, EnumHelper.GetDescription(TipoAplicativo.EFDReinf)));
-                list.Add(new KeyValuePair<int, string>((int)TipoAplicativo.eSocial, EnumHelper.GetDescription(TipoAplicativo.eSocial)));
-#endif
-            }
-
             return list;
         }
-
-        /// <summary>
-        /// ClearControls
-        /// </summary>
-        /// <param name="Xcontrol"></param>
         public static void ClearControls(System.Windows.Forms.Control Xcontrol, bool clear, bool inverteTheme)
         {
-            if (Xcontrol == null)
-                return;
-
-            MetroFramework.MetroThemeStyle uTheme = CEnfeDummy.mainForm.metroStyleManager1.Theme;//.uTheme;
-            /* */
-            //if (inverteTheme)
-            //{
-            //uTheme = MetroFramework.MetroThemeStyle.Light;
-            //}
-            //return;
+            if (Xcontrol == null)  return;
+            MetroFramework.MetroThemeStyle uTheme = CEnfeDummy.mainForm.metroStyleManager1.Theme;
             if (Xcontrol.GetType().IsSubclassOf(typeof(MetroFramework.Controls.MetroUserControl)) ||
                 Xcontrol.GetType().IsSubclassOf(typeof(MetroFramework.Controls.MetroTabPage)) ||
                 Xcontrol.GetType().IsSubclassOf(typeof(MetroFramework.Controls.MetroTabControl)) ||
@@ -146,46 +93,32 @@ namespace NFe.UI
                 if (Xcontrol.GetType().IsSubclassOf(typeof(MetroFramework.Forms.MetroForm)))
                 {
                     ((MetroFramework.Interfaces.IMetroForm)Xcontrol).Theme = uTheme;
-                    ((MetroFramework.Interfaces.IMetroForm)Xcontrol).Style = CEnfeDummy.mainForm.metroStyleManager1.Style;//.uStyle;
-                    //((MetroFramework.Interfaces.IMetroForm)Xcontrol).StyleManager = uninfeDummy.mainForm.StyleManager;
+                    ((MetroFramework.Interfaces.IMetroForm)Xcontrol).Style = CEnfeDummy.mainForm.metroStyleManager1.Style;
                 }
                 else
                 {
                     ((MetroFramework.Interfaces.IMetroControl)Xcontrol).Theme = uTheme;
-                    ((MetroFramework.Interfaces.IMetroControl)Xcontrol).Style = CEnfeDummy.mainForm.metroStyleManager1.Style;//.uStyle;
-                    //((MetroFramework.Interfaces.IMetroControl)Xcontrol).StyleManager = uninfeDummy.mainForm.StyleManager;
+                    ((MetroFramework.Interfaces.IMetroControl)Xcontrol).Style = CEnfeDummy.mainForm.metroStyleManager1.Style;
                 }
             }
-            /* */
-
             foreach (Control control in Xcontrol.Controls)
             {
-                if (control.Controls.Count > 0)
-                {
-                    ClearControls(control, clear, inverteTheme);
-                }
-
+                if (control.Controls.Count > 0)             ClearControls(control, clear, inverteTheme);
                 if (clear)
                 {
                     if (control.GetType().IsAssignableFrom(typeof(TextBox)))
-                    {
                         NFe.Components.Functions.SetProperty(control, "Text", "");
-                    }
                     if (control.GetType().IsAssignableFrom(typeof(MetroFramework.Controls.MetroTextBox)))
-                    {
                         NFe.Components.Functions.SetProperty(control, "Text", "");
-                    }
                     NFe.Components.Functions.SetProperty(control, "PromptText", "");
                 }
                 NFe.Components.Functions.SetProperty(control, "UseStyleColors", false);
-
                 if (control is MetroFramework.Interfaces.IMetroControl)
                 {
                     try
                     {
                         ((MetroFramework.Interfaces.IMetroControl)control).Theme = mainForm.metroStyleManager1.Theme;
                         ((MetroFramework.Interfaces.IMetroControl)control).Style = mainForm.metroStyleManager1.Style;
-                        //((MetroFramework.Interfaces.IMetroControl)control).StyleManager = mainForm.metroStyleManager1;
                     }
                     catch { }
                 }

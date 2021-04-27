@@ -6,9 +6,9 @@ using System.Xml;
 
 namespace NFe.Service
 {
-    /// <summary>
+     
     /// Consultar situação do MDFe
-    /// </summary>
+     
     public class TaskMDFeConsultaSituacao : TaskAbst
     {
         public TaskMDFeConsultaSituacao(string arquivo)
@@ -22,9 +22,9 @@ namespace NFe.Service
 
         #region Classe com os dados do XML da pedido de consulta da situação da NFe
 
-        /// <summary>
+         
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s da consulta da situação da nota
-        /// </summary>
+         
         private DadosPedSit dadosPedSit;
 
         #endregion Classe com os dados do XML da pedido de consulta da situação da NFe
@@ -105,9 +105,9 @@ namespace NFe.Service
 
         #region LerRetornoSitMDFe()
 
-        /// <summary>
+         
         /// Ler o retorno da consulta situação da nota fiscal e de acordo com o status ele trata as notas enviadas se ainda não foram tratadas
-        /// </summary>
+         
         /// <param name="ChaveMDFe">Chave da NFe que está sendo consultada</param>
         /// <remarks>
         /// Autor: Wandrey Mundin Ferreira

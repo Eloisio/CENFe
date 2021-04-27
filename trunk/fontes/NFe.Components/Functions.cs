@@ -17,10 +17,10 @@ namespace NFe.Components
     public static class Functions
     {
         #region MemoryStream
-        /// <summary>
+         
         /// Método responsável por converter uma String contendo a estrutura de um XML em uma Stream para
         /// ser lida pela XMLDocument
-        /// </summary>
+         
         /// <returns>String convertida em Stream</returns>
         /// <remarks>Conteúdo do método foi fornecido pelo Marcelo da desenvolvedores.net</remarks>
         /// <by>Wandrey Mundin Ferreira</by>
@@ -49,9 +49,9 @@ namespace NFe.Components
         #endregion
 
         #region Move()
-        /// <summary>
+         
         /// Mover arquivo para uma determinada pasta
-        /// </summary>
+         
         /// <param name="arquivoOrigem">Arquivo de origem (arquivo a ser movido)</param>
         /// <param name="arquivoDestino">Arquivo de destino (destino do arquivo)</param>
         public static void Move(string arquivoOrigem, string arquivoDestino)
@@ -66,9 +66,9 @@ namespace NFe.Components
         #endregion
 
         #region DeletarArquivo()
-        /// <summary>
+         
         /// Excluir arquivos do HD
-        /// </summary>
+         
         /// <param name="Arquivo">Nome do arquivo a ser excluido.</param>
         /// <date>05/08/2009</date>
         /// <by>Wandrey Mundin Ferreira</by>
@@ -125,9 +125,9 @@ namespace NFe.Components
         #endregion
 
         #region OnlyNumbers()
-        /// <summary>
+         
         /// Remove caracteres não-numéricos e retorna.
-        /// </summary>
+         
         /// <param name="text">valor a ser convertido</param>
         /// <returns>somente números com decimais</returns>
         public static object OnlyNumbers(object text)
@@ -152,9 +152,9 @@ namespace NFe.Components
         #endregion
 
         #region OnlyNumbers()
-        /// <summary>
+         
         /// Remove caracteres não-numéricos e retorna.
-        /// </summary>
+         
         /// <param name="text">valor a ser convertido</param>
         /// <param name="additionalChars">caracteres adicionais a serem removidos</param>
         /// <returns>somente números com decimais</returns>
@@ -198,10 +198,10 @@ namespace NFe.Components
         #endregion
 
         #region LerArquivo()
-        /// <summary>
+         
         /// Le arquivos no formato TXT
         /// Retorna uma lista do conteudo do arquivo
-        /// </summary>
+         
         /// <param name="cArquivo"></param>
         /// <returns></returns>
         public static List<string> LerArquivo(string cArquivo)
@@ -237,9 +237,9 @@ namespace NFe.Components
         #endregion
 
         #region ExtrairNomeArq()
-        /// <summary>
+         
         /// Extrai o nome do arquivo de uma determinada string. Este não mantem a pasta que ele está localizado, fica somente o nome do arquivo.
-        /// </summary>
+         
         /// <param name="arquivo">string contendo o caminho e nome do arquivo que é para ser extraído o conteúdo desejado</param>
         /// <param name="finalArq">string contendo o final do nome do arquivo que é para ser retirado do nome</param>
         /// <returns>Retorna somente o nome do arquivo de acordo com os parâmetros passado</returns>
@@ -346,9 +346,9 @@ namespace NFe.Components
         #endregion
 
         #region ExtraiPastaNomeArq()
-        /// <summary>
+         
         /// Extrai o nome do arquivo de uma determinada string mantendo a pasta que ele está localizado
-        /// </summary>
+         
         /// <param name="arquivo">string contendo o caminho e nome do arquivo que é para ser extraído o conteúdo desejado</param>
         /// <param name="finalArq">string contendo o final do nome do arquivo que é para ser retirado do nome</param>
         /// <returns>Retorna a pasta e o nome do arquivo de acordo com os parâmetros passado.</returns>
@@ -387,9 +387,9 @@ namespace NFe.Components
         }
 
         #region FileInUse()
-        /// <summary>
+         
         /// detectar se o arquivo está em uso
-        /// </summary>
+         
         /// <param name="file">caminho do arquivo</param>
         /// <returns>true se estiver em uso</returns>
         /// <by>http://desenvolvedores.net/marcelo</by>
@@ -415,9 +415,9 @@ namespace NFe.Components
         #endregion
 
         #region LerTag()
-        /// <summary>
+         
         /// Busca o nome de uma determinada TAG em um Elemento do XML para ver se existe, se existir retorna seu conteúdo com um ponto e vírgula no final do conteúdo.
-        /// </summary>
+         
         /// <param name="Elemento">Elemento a ser pesquisado o Nome da TAG</param>
         /// <param name="NomeTag">Nome da Tag</param>
         /// <returns>Conteúdo da tag</returns>
@@ -430,15 +430,6 @@ namespace NFe.Components
         #endregion
 
         #region LerTag()
-        /// <summary>
-        /// Busca o nome de uma determinada TAG em um Elemento do XML para ver se existe, se existir retorna seu conteúdo, com ou sem um ponto e vírgula no final do conteúdo.
-        /// </summary>
-        /// <param name="Elemento">Elemento a ser pesquisado o Nome da TAG</param>
-        /// <param name="NomeTag">Nome da Tag</param>
-        /// <param name="RetornaPontoVirgula">Retorna com ponto e vírgula no final do conteúdo da tag</param>
-        /// <returns>Conteúdo da tag</returns>
-        /// <date>05/08/2009</date>
-        /// <by>Wandrey Mundin Ferreira</by>
         public static string LerTag(XmlElement Elemento, string NomeTag, bool RetornaPontoVirgula)
         {
             string Retorno = string.Empty;
@@ -447,12 +438,12 @@ namespace NFe.Components
             {
                 if (RetornaPontoVirgula)
                 {
-                    Retorno = Elemento.GetElementsByTagName(NomeTag)[0].InnerText.Replace(";", " ");  //danasa 19-9-2009
+                    Retorno = Elemento.GetElementsByTagName(NomeTag)[0].InnerText.Replace(";", " "); 
                     Retorno += ";";
                 }
                 else
                 {
-                    Retorno = Elemento.GetElementsByTagName(NomeTag)[0].InnerText;  //Wandrey 07/10/2009
+                    Retorno = Elemento.GetElementsByTagName(NomeTag)[0].InnerText; 
                 }
             }
 
@@ -482,9 +473,9 @@ namespace NFe.Components
         #endregion
 
         #region XmlToString()
-        /// <summary>
+         
         /// Método responsável por ler o conteúdo de um XML e retornar em uma string
-        /// </summary>
+         
         /// <param name="parNomeArquivo">Caminho e nome do arquivo XML que é para pegar o conteúdo e retornar na string.</param>
         /// <returns>Retorna uma string com o conteúdo do arquivo XML</returns>
         /// <example>
@@ -534,9 +525,9 @@ namespace NFe.Components
         #endregion
 
         #region CarregaUF()
-        /// <summary>
+         
         /// Carrega os Estados que possuem serviço de NFE já disponível. Estes Estados são carregados a partir do XML Webservice.xml que fica na pasta do executável do UNINFE
-        /// </summary>
+         
         /// <returns>Retorna a lista de UF e seus ID´s</returns>
         /// <remarks>
         /// Autor: Wandrey Mundin Ferreira
@@ -594,10 +585,10 @@ namespace NFe.Components
         #endregion
 
         #region ComputeHexadecimal()
-        /// <summary>
+         
         /// Calcula valor hexadecimal
         /// Usado para calcular o Link do QRCode da NFCe
-        /// </summary>
+         
         /// <param name="input">Valor a ser convertido</param>
         /// <returns></returns>
         public static string ComputeHexadecimal(string input)
@@ -617,9 +608,9 @@ namespace NFe.Components
         }
         #endregion
 
-        /// <summary>
+         
         /// Criptografar conteúdo com MD5
-        /// </summary>
+         
         /// <param name="input">Conteúdo a ser criptografado</param>
         /// <returns>Conteúdo criptografado com MD5</returns>
         public static string GetMD5Hash(string input)
@@ -636,9 +627,9 @@ namespace NFe.Components
             return sBuilder.ToString();
         }
 
-        /// <summary>
+         
         /// Retorna a empresa pela thread atual
-        /// </summary>
+         
         /// <returns></returns>
         public static int _FindEmpresaByThread()
         {
@@ -650,9 +641,9 @@ namespace NFe.Components
          * Marcelo
          * 03/06/2013
          */
-        /// <summary>
+         
         /// Retorna o endereço IP desta estação
-        /// </summary>
+         
         /// <returns>Endereço ip da estação</returns>
         public static string GetIPAddress()
         {
@@ -907,9 +898,9 @@ namespace NFe.Components
         }
         #endregion
 
-        /// <summary>
+         
         /// 
-        /// </summary>
+         
         /// <param name="file"></param>
         /// <param name="resultFolder"></param>
         /// <param name="ex"></param>
@@ -933,9 +924,9 @@ namespace NFe.Components
                 WriteLog(ex, false, true, "");
         }
 
-        /// <summary>
+         
         /// Codificar em base 64 um determinado valor
-        /// </summary>
+         
         /// <param name="value">Valor a ser codificado</param>
         /// <returns></returns>
         public static string Base64Encode(string value)

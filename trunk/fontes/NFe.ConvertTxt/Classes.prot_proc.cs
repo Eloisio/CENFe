@@ -3,9 +3,9 @@ using System;
 
 namespace NFe.ConvertTxt
 {
-    /// <summary>
+     
     /// procRef
-    /// </summary>
+     
     public class procRef
     {
         public string nProc;

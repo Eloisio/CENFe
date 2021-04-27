@@ -9,9 +9,9 @@ namespace NFe.Components.Info
 {
     public class Aplicacao
     {
-        /// <summary>
+         
         /// Grava XML com algumas informações do aplicativo, dentre elas os dados do certificado digital configurado nos parâmetros, versão, última modificação, etc.
-        /// </summary>
+         
         /// <param name="sArquivo">Pasta e nome do arquivo XML a ser gravado com as informações</param>
         public void GravarXMLInformacoes(string sArquivo)
         {
@@ -49,7 +49,7 @@ namespace NFe.Components.Info
             else
                 xMotivo = "Empresa sem certificado digital informado e/ou não necessário";
 
-            //danasa 22/7/2011
+            //  22/7/2011
             //pega a data da ultima modificacao do 'uninfe.exe' diretamente porque pode ser que esteja sendo executado o servico
             //então, precisamos dos dados do uninfe.exe e não do servico
             string dtUltModif;
@@ -110,7 +110,7 @@ namespace NFe.Components.Info
                 Functions.GravaTxtXml(oXmlGravar, "dUltModif", dtUltModif);
                 Functions.GravaTxtXml(oXmlGravar, "PastaExecutavel", Propriedade.PastaExecutavel);
                 Functions.GravaTxtXml(oXmlGravar, "NomeComputador", Environment.MachineName);
-                //danasa 22/7/2011
+                //  22/7/2011
                 Functions.GravaTxtXml(oXmlGravar, "ExecutandoPeloServico", Propriedade.ServicoRodando.ToString());
                 Functions.GravaTxtXml(oXmlGravar, "ConexaoInternet", Functions.IsConnectedToInternet().ToString());
 
@@ -281,9 +281,9 @@ namespace NFe.Components.Info
 
         #region AppExecutando()
 
-        /// <summary>
+         
         /// Verifica se a aplicação já está executando ou não
-        /// </summary>
+         
         /// <param name="oOneMutex">Objeto do tipo Mutex para ter como retorno para conseguir encerrar o mutex na finalização do aplicativo</param>
         /// <returns>True=Aplicação está executando</returns>
         /// <date>31/07/2009</date>
@@ -326,9 +326,9 @@ namespace NFe.Components.Info
 
         #region AppExecutando()
 
-        /// <summary>
+         
         /// Verifica se a aplicação já está executando ou não
-        /// </summary>
+         
         /// <returns>True=Aplicação está executando</returns>
         /// <remarks>
         /// Autor: Wandrey Mundin Ferreira

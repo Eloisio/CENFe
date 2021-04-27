@@ -8,14 +8,14 @@ using System.Xml;
 
 namespace NFe.Service
 {
-    /// <summary>
+     
     /// Classe para envio do XML de LMC para a SEFAZ
-    /// </summary>
+     
     internal class TaskLMCAutorizacao : TaskAbst
     {
-        /// <summary>
+         
         /// Conteúdo de algumas tags do XML de LMC
-        /// </summary>
+         
         private DadosLMC dadosLMC;
 
         public TaskLMCAutorizacao(string arquivo)
@@ -111,9 +111,9 @@ namespace NFe.Service
 
         #region LerRetornoLMC()
 
-        /// <summary>
+         
         /// Le o retorno do LMC, e de acordo com o status guarda o XML enviado na pasta enviados
-        /// </summary>
+         
         private void LerRetornoLMC(DadosLMC dadosLMC)
         {
             int emp = Empresas.FindEmpresaByThread();

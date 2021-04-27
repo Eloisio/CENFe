@@ -29,9 +29,9 @@ namespace MetroFramework.Drawing.Html
 {
     public class CssDefaults
     {
-        /// <summary>
+         
         /// CSS Specification's Default Style Sheet for HTML 4
-        /// </summary>
+         
         /// <remarks>
         /// http://www.w3.org/TR/CSS21/sample.html
         /// </remarks>
@@ -139,9 +139,9 @@ namespace MetroFramework.Drawing.Html
 
         ";
 
-        /// <summary>
+         
         /// Html Fragment used to draw the icon that shows an error on an IMG HTML element
-        /// </summary>
+         
         public const string ErrorOnImageIcon = @"
         <style>
           table { 
@@ -164,9 +164,9 @@ namespace MetroFramework.Drawing.Html
         </tr>
         </table>";
 
-        /// <summary>
+         
         /// Html Fragment used to draw the icon that shows an error on an OBJECT HTML element
-        /// </summary>
+         
         public const string ErrorOnObjectIcon = @"
         <style>
           table { 
@@ -189,34 +189,34 @@ namespace MetroFramework.Drawing.Html
         </tr>
         </table>";
 
-        /// <summary>
+         
         /// Default font size in points. Change this value to modify the default font size.
-        /// </summary>
+         
         public static float FontSize = 12f;
 
-        /// <summary>
+         
         /// Default font used for the generic 'serif' family
-        /// </summary>
+         
         public static string FontSerif = System.Drawing.FontFamily.GenericSerif.Name;
 
-        /// <summary>
+         
         /// Default font used for the generic 'sans-serif' family
-        /// </summary>
+         
         public static string FontSansSerif = System.Drawing.FontFamily.GenericSansSerif.Name;
 
-        /// <summary>
+         
         /// Default font used for the generic 'cursive' family
-        /// </summary>
+         
         public static string FontCursive = "Monotype Corsiva";
 
-        /// <summary>
+         
         /// Default font used for the generic 'fantasy' family
-        /// </summary>
+         
         public static string FontFantasy = "Comic Sans MS";
 
-        /// <summary>
+         
         /// Default font used for the generic 'monospace' family
-        /// </summary>
+         
         public static string FontMonospace = System.Drawing.FontFamily.GenericMonospace.Name;
     }
 }

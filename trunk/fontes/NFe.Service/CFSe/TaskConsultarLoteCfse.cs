@@ -6,9 +6,9 @@ using System.IO;
 
 namespace NFe.Service.NFSe
 {
-    /// <summary>
+     
     /// Consultar uma NFS-e por RPS
-    /// </summary>
+     
     public class TaskConsultarLoteCfse : TaskAbst
     {
         public TaskConsultarLoteCfse(string arquivo)

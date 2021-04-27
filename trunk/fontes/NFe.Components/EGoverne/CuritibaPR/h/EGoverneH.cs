@@ -22,9 +22,9 @@ namespace NFe.Components.EGoverne.CuritibaPR.h
             service.ClientCertificates.Add(certificado);
         }
 
-        /// <summary>
+         
         /// Indentificamos falha no certificado o do servidor, entao temos que ignorar os erros
-        /// </summary>
+         
         /// <param name="sender"></param>
         /// <param name="certificate"></param>
         /// <param name="chain"></param>

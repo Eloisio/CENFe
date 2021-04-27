@@ -7,21 +7,21 @@ namespace NFe.Service
 {
     #region Classe ParametroThread
 
-    /// <summary>
+     
     /// Classe para auxiliar na execução de várias thread´s com parâmetros
-    /// </summary>
+     
     public class ParametroThread
     {
         #region Propriedades
 
-        /// <summary>
+         
         /// Serviço que será executado
-        /// </summary>
+         
         public Servicos Servico { get; private set; }
 
-        /// <summary>
+         
         /// Arquivo que é para ser destinado/enviado/analisado
-        /// </summary>
+         
         public string Arquivo { get; private set; }
 
         #endregion Propriedades
@@ -96,9 +96,9 @@ namespace NFe.Service
 
     #endregion infCad & RetConsCad
 
-    /// <summary>
+     
     /// Classe utilizada para permitir o lock na hora de gravar os arquivos de fluxo da NFe
-    /// </summary>
+     
     public class FluxoNfeLock
     {
     }
@@ -114,9 +114,9 @@ namespace NFe.Service
             tpAmb = (int)NFe.Components.TipoAmbiente.taProducao;// "1";
         }
 
-        /// <summary>
+         
         /// Unidade Federativa (UF) - Sigla
-        /// </summary>
+         
         public string UF
         {
             get
@@ -243,34 +243,34 @@ namespace NFe.Service
             }
         }
 
-        /// <summary>
+         
         /// CPF
-        /// </summary>
+         
         public string CPF { get; set; }
 
-        /// <summary>
+         
         /// CNPJ
-        /// </summary>
+         
         public string CNPJ { get; set; }
 
-        /// <summary>
+         
         /// Inscrição Estadual
-        /// </summary>
+         
         public string IE { get; set; }
 
-        /// <summary>
+         
         /// Unidade Federativa (UF) - Código
-        /// </summary>
+         
         public int cUF { get; private set; }
 
-        /// <summary>
+         
         /// Ambiente (2-Homologação 1-Produção)
-        /// </summary>
+         
         public int tpAmb { get; set; }
 
-        /// <summary>
+         
         /// Versao (2.00 ou 3.10)
-        /// </summary>
+         
         public string versao { get; set; }
     }
 
@@ -278,80 +278,80 @@ namespace NFe.Service
 
     #region Classe com os dados do XML da NFe
 
-    /// <summary>
+     
     /// Esta classe possui as propriedades que vai receber o conteúdo
     /// do XML da nota fiscal eletrônica
-    /// </summary>
+     
     public class DadosNFeClass
     {
-        /// <summary>
+         
         /// Chave da nota fisca
-        /// </summary>
+         
         public string chavenfe { get; set; }
 
-        /// <summary>
+         
         /// Data de emissão
-        /// </summary>
+         
         public DateTime dEmi { get; set; }
 
-        /// <summary>
+         
         /// Tipo de emissão 1-Normal 2-Contigência em papel de segurança 6/7/8-Contigência SVC/AN/RS/SP
-        /// </summary>
+         
         public string tpEmis { get; set; }
 
-        /// <summary>
+         
         /// Tipo de Ambiente 1-Produção 2-Homologação
-        /// </summary>
+         
         public string tpAmb { get; set; }
 
-        /// <summary>
+         
         /// Lote que a NFe faz parte
-        /// </summary>
+         
         public string idLote { get; set; }
 
-        /// <summary>
+         
         /// Série da NFe
-        /// </summary>
+         
         public string serie { get; set; }
 
-        /// <summary>
+         
         /// UF do Emitente
-        /// </summary>
+         
         public string cUF { get; set; }
 
-        /// <summary>
+         
         /// Número randomico da chave da nfe
-        /// </summary>
+         
         public string cNF { get; set; }
 
-        /// <summary>
+         
         /// Modelo da nota fiscal
-        /// </summary>
+         
         public string mod { get; set; }
 
-        /// <summary>
+         
         /// Número da nota fiscal
-        /// </summary>
+         
         public string nNF { get; set; }
 
-        /// <summary>
+         
         /// Dígito verificador da chave da nfe
-        /// </summary>
+         
         public string cDV { get; set; }
 
-        /// <summary>
+         
         /// CNPJ do emitente
-        /// </summary>
+         
         public string CNPJ { get; set; }
 
-        /// <summary>
+         
         /// Versão do XML
-        /// </summary>
+         
         public string versao { get; set; }
 
-        /// <summary>
+         
         /// Enviar nota no modo síncrono? true/false
-        /// </summary>
+         
         public bool indSinc { get; set; }
     }
 
@@ -359,39 +359,39 @@ namespace NFe.Service
 
     #region Classe com os dados do XML do pedido de consulta do recibo do lote de nfe enviado
 
-    /// <summary>
+     
     /// Classe com os dados do XML do pedido de consulta do recibo do lote de nfe enviado
-    /// </summary>
+     
     public class DadosPedRecClass
     {
-        /// <summary>
+         
         /// Tipo de ambiente: 1-Produção 2-Homologação
-        /// </summary>
+         
         public int tpAmb { get; set; }
 
-        /// <summary>
+         
         /// Número do recibo do lote de NFe enviado
-        /// </summary>
+         
         public string nRec { get; set; }
 
-        /// <summary>
+         
         /// Tipo de Emissão: 1-Normal 2-Contingência FS 6/7/8-Contingência SVC/AN/RS/SP 4-Contingência DEPEC 5-Contingência FS-DA
-        /// </summary>
+         
         public int tpEmis { get; set; }
 
-        /// <summary>
+         
         /// Código da Unidade Federativa (UF)
-        /// </summary>
+         
         public int cUF { get; set; }
 
-        /// <summary>
+         
         /// Versão do XML
-        /// </summary>
+         
         public string versao { get; set; }
 
-        /// <summary>
+         
         /// Modelo do documento fiscal
-        /// </summary>
+         
         public string mod { get; set; }
     }
 
@@ -399,29 +399,29 @@ namespace NFe.Service
 
     #region Classe com os dados do XML do retorno do envio do Lote de NFe
 
-    /// <summary>
+     
     /// Esta classe possui as propriedades que vai receber o conteúdo do XML do recibo do lote
-    /// </summary>
+     
     public class DadosRecClass
     {
-        /// <summary>
+         
         /// Recibo do lote de notas fiscais enviado
-        /// </summary>
+         
         public string nRec { get; set; }
 
-        /// <summary>
+         
         /// Status do Lote
-        /// </summary>
+         
         public string cStat { get; set; }
 
-        /// <summary>
+         
         /// Tempo médio de resposta em segundos
-        /// </summary>
+         
         public int tMed { get; set; }
 
-        /// <summary>
+         
         /// Versão do XML
-        /// </summary>
+         
         public string versao { get; set; }
     }
 
@@ -429,9 +429,9 @@ namespace NFe.Service
 
     #region Classe com os dados do XML do pedido de inutilização de números de NF
 
-    /// <summary>
+     
     /// Classe com os dados do XML do pedido de inutilização de números de NF
-    /// </summary>
+     
     public class DadosPedInut
     {
         private int mSerie;
@@ -469,21 +469,21 @@ namespace NFe.Service
 
     #region Classe com os dados do XML da pedido de consulta da situação da NFe
 
-    /// <summary>
+     
     /// Classe com os dados do XML da pedido de consulta da situação da NFe
-    /// </summary>
+     
     public class DadosPedSit
     {
         private string mchNFe;
 
-        /// <summary>
+         
         /// Ambiente (2-Homologação ou 1-Produção)
-        /// </summary>
+         
         public int tpAmb { get; set; }
 
-        /// <summary>
+         
         /// Chave do documento fiscal
-        /// </summary>
+         
         public string chNFe
         {
             get
@@ -501,25 +501,25 @@ namespace NFe.Service
             }
         }
 
-        /// <summary>
+         
         /// Código da Unidade Federativa (UF)
-        /// </summary>
+         
         public int cUF { get; private set; }
 
-        /// <summary>
+         
         /// Série da NFe que está sendo consultada a situação
-        /// </summary>
+         
         //            public string serie { get; private set; }
-        /// <summary>
+         
         /// Tipo de emissão para saber para onde será enviado a consulta da situação da nota
-        /// </summary>
+         
         public int tpEmis { get; set; }
 
         public string versao { get; set; }
 
-        /// <summary>
+         
         /// Modelo do documento fiscal
-        /// </summary>
+         
         public string mod { get; set; }
 
         public DadosPedSit()
@@ -533,34 +533,34 @@ namespace NFe.Service
 
     #region Classe com os dados do XML da consulta do status do serviço da NFe
 
-    /// <summary>
+     
     /// Classe com os dados do XML da consulta do status do serviço da NFe
-    /// </summary>
+     
     public class DadosPedSta
     {
-        /// <summary>
+         
         /// Ambiente (2-Homologação ou 1-Produção)
-        /// </summary>
+         
         public int tpAmb { get; set; }
 
-        /// <summary>
+         
         /// Código da Unidade Federativa (UF)
-        /// </summary>
+         
         public int cUF { get; set; }
 
-        /// <summary>
+         
         /// Tipo de Emissao (1-Normal, 2-Contingencia, 6/7/8-SVC/AN/RS/SP, ...
-        /// </summary>
+         
         public int tpEmis { get; set; }
 
-        /// <summary>
+         
         /// Versão do XML
-        /// </summary>
+         
         public string versao { get; set; }
 
-        /// <summary>
+         
         /// Modelo do documento fiscal que é para consultar o status do serviço
-        /// </summary>
+         
         public string mod { get; set; }
     }
 
@@ -595,9 +595,9 @@ namespace NFe.Service
         /// Cancelamento de NFe como Evento e Manifestação do Destinatário
         public string xJust { get; set; }
 
-        /// <summary>
+         
         /// EPEC
-        /// </summary>
+         
         public EventoEPEC epec { get; set; }
 
         public string mod
@@ -605,14 +605,14 @@ namespace NFe.Service
             get { return chNFe.Substring(20, 2); }
         }
 
-        /// <summary>
+         
         /// Prorrogacao de ICMS
-        /// </summary>
+         
         public List<ProrrogacaoICMS> prorrogacaoICMS { get; set; }
 
-        /// <summary>
+         
         /// Cancelamento/Prorrogacao de ICMS
-        /// </summary>
+         
         public string idPedidoCancelado { get; set; }
 
         public string idPedido { get; set; }
@@ -764,9 +764,9 @@ namespace NFe.Service
 
     #region DadosPedLoteRps
 
-    /// <summary>
+     
     /// Classe com os dados do XML da consulta do lote de rps
-    /// </summary>
+     
     public class DadosPedLoteRps
     {
         public int cMunicipio { get; set; }
@@ -788,9 +788,9 @@ namespace NFe.Service
 
     #region DadosPedSitNfse
 
-    /// <summary>
+     
     /// Classe com os dados do XML da consulta da nfse por numero da nfse
-    /// </summary>
+     
     public class DadosPedSitNfse
     {
         public int cMunicipio { get; set; }
@@ -809,9 +809,9 @@ namespace NFe.Service
 
     #region DadosPedSitNfseRps
 
-    /// <summary>
+     
     /// Classe com os dados do XML da consulta da nfse por rps
-    /// </summary>
+     
     public class DadosPedSitNfseRps
     {
         public int cMunicipio { get; set; }
@@ -830,9 +830,9 @@ namespace NFe.Service
 
     #region Classe com os dados do XML da consulta do lote de rps
 
-    /// <summary>
+     
     /// Classe com os dados do XML da consulta do lote de rps
-    /// </summary>
+     
     public class DadosPedCanNfse
     {
         public int cMunicipio { get; set; }
@@ -851,9 +851,9 @@ namespace NFe.Service
 
     #region Classe com os dados do XML da consulta situacao do lote de rps
 
-    /// <summary>
+     
     /// Classe com os dados do XML da consulta do lote de rps
-    /// </summary>
+     
     public class DadosPedSitLoteRps
     {
         public int cMunicipio { get; set; }
@@ -872,9 +872,9 @@ namespace NFe.Service
 
     #region Classe com os dados do XML do Lote RPS
 
-    /// <summary>
+     
     /// Classe com os dados do XML do Lote RPS
-    /// </summary>
+     
     public class DadosEnvLoteRps
     {
         public int cMunicipio { get; set; }
@@ -893,9 +893,9 @@ namespace NFe.Service
 
     #region DadosPedURLNfse
 
-    /// <summary>
+     
     /// Classe com os dados do XML da consulta da URL da Nfse
-    /// </summary>
+     
     public class DadosPedURLNfse
     {
         public int cMunicipio { get; set; }
@@ -914,9 +914,9 @@ namespace NFe.Service
 
     #region DadosPedSeqLoteNotaRPS
 
-    /// <summary>
+     
     /// Classe com os dados do XML da consulta sequencia do lote da nota RPS
-    /// </summary>
+     
     public class DadosPedSeqLoteNotaRPS
     {
         public int cMunicipio { get; set; }
@@ -952,34 +952,34 @@ namespace NFe.Service
 
     #region Classe para receber dados do XML de LMC
 
-    /// <summary>
+     
     /// Classe com os dados do XML da consulta do status do serviço da NFe
-    /// </summary>
+     
     public class DadosLMC
     {
-        /// <summary>
+         
         /// Ambiente (2-Homologação ou 1-Produção)
-        /// </summary>
+         
         public int tpAmb { get; set; }
 
-        /// <summary>
+         
         /// Versão do XML
-        /// </summary>
+         
         public string versao { get; set; }
 
-        /// <summary>
+         
         /// Id do LMC
-        /// </summary>
+         
         public string Id { get; set; }
 
-        /// <summary>
+         
         /// Data de emissão do LMC
-        /// </summary>
+         
         public DateTime dEmissao { get; set; }
 
-        /// <summary>
+         
         /// Código da UF do emitente
-        /// </summary>
+         
         public int cUF { get; set; }
     }
 

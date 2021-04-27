@@ -12,9 +12,9 @@ namespace NFSe.Components
         public IWebProxy Proxy { get; set; }
 
         #region CancelarNfse
-        /// <summary>
+         
         /// Cancelar Nfse
-        /// </summary>
+         
         /// <param name="xml">XML de cancelamento da Nfse</param>
         /// <returns>XML Retornado pela prefeitura</returns>
         public string CancelarNfse(XmlNode xml, int tpAmb)
@@ -40,9 +40,9 @@ namespace NFSe.Components
         #endregion
 
         #region ConsultarLoteRps
-        /// <summary>
+         
         /// Consultar lote Rps
-        /// </summary>
+         
         /// <param name="xml">XML de consulta de lote Rps</param>
         /// <returns>XML Retornado pela prefeitura</returns>
         public string ConsultarLoteRps(XmlNode xml, int tpAmb)
@@ -69,9 +69,9 @@ namespace NFSe.Components
         #endregion
 
         #region ConsultarSituacaoLoteRps
-        /// <summary>
+         
         /// Consultar a situação do lote Rps
-        /// </summary>
+         
         /// <param name="xml">XML de consulta da situação do lote Rps</param>
         /// <returns>XML Retornado pela prefeitura</returns>
         public string ConsultarSituacaoLoteRps(XmlNode xml, int tpAmb)
@@ -98,9 +98,9 @@ namespace NFSe.Components
         #endregion
 
         #region RecepcionarLoteRps
-        /// <summary>
+         
         /// Consultar a situação do lote Rps
-        /// </summary>
+         
         /// <param name="xml">XML de consulta da situação do lote Rps</param>
         /// <returns>XML Retornado pela prefeitura</returns>
         public string RecepcionarLoteRps(XmlNode xml, int tpAmb)
@@ -128,9 +128,9 @@ namespace NFSe.Components
         #endregion
 
         #region RequestWS()
-        /// <summary>
+         
         /// Conecta com o Webservice, envia o XML e obtém o retorno
-        /// </summary>
+         
         /// <param name="xml">XML a ser enviado</param>
         /// <param name="url">URL do serviço para onde deve ser enviado o XML</param>
         /// <param name="metodo">Metodo do Webservice que é para ser executado</param>
@@ -166,9 +166,9 @@ namespace NFSe.Components
         #endregion
 
         #region Envelopar()
-        /// <summary>
+         
         /// Envelopa o XML (Soap)
-        /// </summary>
+         
         /// <param name="xml">XML a ser envelopado</param>
         /// <returns>Retorna o xml envelopado</returns>
         private string Envelopar(XmlNode xml)
@@ -190,9 +190,9 @@ namespace NFSe.Components
         #endregion
 
         #region ConsultarNfse
-        /// <summary>
+         
         /// Consultar Nfse
-        /// </summary>
+         
         /// <param name="xml">XML de consulta da Nfse</param>
         /// <returns>XML Retornado pela prefeitura</returns>
         public string ConsultarNfse(XmlNode xml, int tpAmb)
@@ -219,9 +219,9 @@ namespace NFSe.Components
         #endregion
 
         #region ConsultarNfsePorRps
-        /// <summary>
+         
         /// Consultar Nfse por RPS
-        /// </summary>
+         
         /// <param name="xml">XML de consulta da Nfse por RPS</param>
         /// <returns>XML Retornado pela prefeitura</returns>
         public string ConsultarNfsePorRps(XmlNode xml, int tpAmb)

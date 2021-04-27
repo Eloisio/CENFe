@@ -2,14 +2,14 @@
 {
     partial class userConfiguracoes
     {
-        /// <summary> 
+          
         /// Required designer variable.
-        /// </summary>
+         
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+          
         /// Clean up any resources being used.
-        /// </summary>
+         
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
@@ -22,10 +22,10 @@
 
         #region Component Designer generated code
 
-        /// <summary> 
+          
         /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
-        /// </summary>
+         
         private void InitializeComponent()
         {
             this.tc_main = new MetroFramework.Controls.MetroTabControl();
@@ -60,7 +60,7 @@
             this.tc_main.Margin = new System.Windows.Forms.Padding(2);
             this.tc_main.Name = "tc_main";
             this.tc_main.SelectedIndex = 1;
-            this.tc_main.Size = new System.Drawing.Size(577, 407);
+            this.tc_main.Size = new System.Drawing.Size(619, 457);
             this.tc_main.TabIndex = 13;
             this.tc_main.UseSelectable = true;
             // 
@@ -73,7 +73,7 @@
             this.tpGeral.Location = new System.Drawing.Point(4, 38);
             this.tpGeral.Margin = new System.Windows.Forms.Padding(2);
             this.tpGeral.Name = "tpGeral";
-            this.tpGeral.Size = new System.Drawing.Size(569, 365);
+            this.tpGeral.Size = new System.Drawing.Size(611, 415);
             this.tpGeral.TabIndex = 0;
             this.tpGeral.Text = "Geral";
             this.tpGeral.VerticalScrollbar = true;
@@ -96,7 +96,7 @@
             this.tpEmpresas.Location = new System.Drawing.Point(4, 38);
             this.tpEmpresas.Margin = new System.Windows.Forms.Padding(2);
             this.tpEmpresas.Name = "tpEmpresas";
-            this.tpEmpresas.Size = new System.Drawing.Size(569, 365);
+            this.tpEmpresas.Size = new System.Drawing.Size(611, 415);
             this.tpEmpresas.TabIndex = 3;
             this.tpEmpresas.Text = "Empresas";
             this.tpEmpresas.VerticalScrollbar = true;
@@ -133,7 +133,7 @@
             this.cbEmpresas.Margin = new System.Windows.Forms.Padding(2);
             this.cbEmpresas.MaxDropDownItems = 15;
             this.cbEmpresas.Name = "cbEmpresas";
-            this.cbEmpresas.Size = new System.Drawing.Size(417, 25);
+            this.cbEmpresas.Size = new System.Drawing.Size(459, 25);
             this.cbEmpresas.TabIndex = 15;
             this.cbEmpresas.UseSelectable = true;
             this.cbEmpresas.ValueMember = "CNPJ";
@@ -142,7 +142,7 @@
             // btnExcluir
             // 
             this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExcluir.Location = new System.Drawing.Point(496, 21);
+            this.btnExcluir.Location = new System.Drawing.Point(538, 21);
             this.btnExcluir.Margin = new System.Windows.Forms.Padding(2);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(70, 23);
@@ -162,19 +162,20 @@
             this.tc_empresa.Name = "tc_empresa";
             this.tc_empresa.SelectedIndex = 0;
             this.tc_empresa.ShowToolTips = true;
-            this.tc_empresa.Size = new System.Drawing.Size(571, 315);
+            this.tc_empresa.Size = new System.Drawing.Size(613, 365);
             this.tc_empresa.TabIndex = 14;
             this.tc_empresa.UseSelectable = true;
             // 
             // metroTabPage1
             // 
+            this.metroTabPage1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.HorizontalScrollbarSize = 8;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(563, 273);
+            this.metroTabPage1.Size = new System.Drawing.Size(605, 323);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "metroTabPage1";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
@@ -184,7 +185,7 @@
             // btnNova
             // 
             this.btnNova.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNova.Location = new System.Drawing.Point(423, 21);
+            this.btnNova.Location = new System.Drawing.Point(465, 21);
             this.btnNova.Margin = new System.Windows.Forms.Padding(2);
             this.btnNova.Name = "btnNova";
             this.btnNova.Size = new System.Drawing.Size(70, 23);
@@ -199,7 +200,7 @@
             this.Controls.Add(this.tc_main);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "userConfiguracoes";
-            this.Size = new System.Drawing.Size(579, 454);
+            this.Size = new System.Drawing.Size(621, 504);
             this.Resize += new System.EventHandler(this.userConfiguracoes_Resize);
             this.Controls.SetChildIndex(this.labelTitle, 0);
             this.Controls.SetChildIndex(this.tc_main, 0);
@@ -222,7 +223,6 @@
         private MetroFramework.Controls.MetroButton btnNova;
         private MetroFramework.Controls.MetroComboBox cbEmpresas;
         private MetroFramework.Controls.MetroButton btnExcluir;
-        private MetroFramework.Controls.MetroTabPage metroTabPage1;
-
+        public MetroFramework.Controls.MetroTabPage metroTabPage1;
     }
 }

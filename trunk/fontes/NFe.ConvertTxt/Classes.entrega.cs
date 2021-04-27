@@ -1,8 +1,8 @@
 ﻿namespace NFe.ConvertTxt
 {
-    /// <summary>
+     
     /// Entrega
-    /// </summary>
+     
     public class Entrega
     {
         public string CNPJ;

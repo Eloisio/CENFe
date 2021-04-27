@@ -44,9 +44,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Ctor
 
-        /// <summary>
+         
         /// Creates a new HtmlPanel
-        /// </summary>
+         
         public HtmlPanel()
         {
             htmlContainer = new InitialContainer();
@@ -93,17 +93,17 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the Initial HtmlContainer of this HtmlPanel
-        /// </summary>
+         
         public InitialContainer HtmlContainer
         {
             get { return htmlContainer; }
         }
 
-        /// <summary>
+         
         /// Gets or sets the text of this panel
-        /// </summary>
+         
         [Editor("System.Windows.Forms.Design.ListControlStringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(UITypeEditor)),
         DesignerSerializationVisibility(DesignerSerializationVisibility.Visible), Localizable(true), Browsable(true), EditorBrowsable(EditorBrowsableState.Always)]
         public override string Text
@@ -126,17 +126,17 @@ namespace MetroFramework.Drawing.Html
 
         #region Methods
 
-        /// <summary>
+         
         /// Creates the fragment of HTML that is rendered
-        /// </summary>
+         
         protected virtual void CreateFragment()
         {
             htmlContainer = new InitialContainer(Text);
         }
 
-        /// <summary>
+         
         /// Measures the bounds of the container
-        /// </summary>
+         
         public virtual void MeasureBounds()
         {
             htmlContainer.SetBounds(this is HtmlLabel ? new Rectangle(0, 0, 10, 10) : ClientRectangle);

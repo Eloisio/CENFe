@@ -9,9 +9,9 @@ namespace NFe.Service.NFSe
     public class TaskConsultarNfsePNG : TaskAbst
     {
         #region Objeto com os dados do XML da consulta nfse
-        /// <summary>
+         
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s da consulta nfse
-        /// </summary>
+         
         private DadosPedSitNfse oDadosPedNfsePNG;
         #endregion
 

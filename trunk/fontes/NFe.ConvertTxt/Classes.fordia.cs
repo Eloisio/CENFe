@@ -1,8 +1,8 @@
 ﻿namespace NFe.ConvertTxt
 {
-    /// <summary>
+     
     /// fordia
-    /// </summary>
+     
     public class fordia
     {
         public int dia;

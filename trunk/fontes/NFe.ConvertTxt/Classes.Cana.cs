@@ -2,9 +2,9 @@
 
 namespace NFe.ConvertTxt
 {
-    /// <summary>
+     
     /// Cana
-    /// </summary>
+     
     public class Cana
     {
         public string safra;

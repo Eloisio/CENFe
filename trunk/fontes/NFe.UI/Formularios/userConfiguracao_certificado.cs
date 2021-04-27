@@ -253,9 +253,9 @@ namespace NFe.UI.Formularios
                 changeEvent(sender, e);
         }
 
-        /// <summary>
+         
         /// Habilita os componentes na tela para digitação do PIN do certificado A3
-        /// </summary>
+         
         private void HabilitaComponentesPINA3()
         {
             bool isA3 = false;

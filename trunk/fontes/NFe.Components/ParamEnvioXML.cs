@@ -1,8 +1,8 @@
 ﻿namespace NFe.Components
 {
-    /// <summary>
+     
     /// Parâmetros necessários para o envio dos XML´s
-    /// </summary>
+     
     public class ParamEnvioXML
     {
         public int tpAmb { get; set; }

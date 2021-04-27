@@ -34,9 +34,9 @@ namespace MetroFramework.Drawing.Html
     {
         #region Subclasses
 
-        /// <summary>
+         
         /// Used to make space on vertical cell combination
-        /// </summary>
+         
         public class SpacingBox
             : CssBox
         {
@@ -55,9 +55,9 @@ namespace MetroFramework.Drawing.Html
             #region Props
 
             private int _startRow;
-            /// <summary>
+             
             /// Gets the index of the row where box starts
-            /// </summary>
+             
             public int StartRow
             {
                 get { return _startRow; }
@@ -65,9 +65,9 @@ namespace MetroFramework.Drawing.Html
 
             private int _endRow;
 
-            /// <summary>
+             
             /// Gets the index of the row where box ends
-            /// </summary>
+             
             public int EndRow
             {
                 get { return _endRow; }
@@ -122,42 +122,42 @@ namespace MetroFramework.Drawing.Html
 
         #region Props
 
-        /// <summary>
+         
         /// Gets if the user specified a width for the table
-        /// </summary>
+         
         public bool WidthSpecified
         {
             get { return _widthSpecified; }
         }
 
-        /// <summary>
+         
         /// Hosts a list of all rows in the table, including those on the TFOOT, THEAD and TBODY
-        /// </summary>
+         
         public List<CssBox> AllRows
         {
             get { return _allRows; }
         }
 
-        /// <summary>
+         
         /// Gets the box that represents the caption of this table, if any.
         /// WARNING: May be null
-        /// </summary>
+         
         public CssBox Caption
         {
             get { return _caption; }
         }
 
-        /// <summary>
+         
         /// Gets the column count of this table
-        /// </summary>
+         
         public int ColumnCount
         {
             get { return _columnCount; }
         }
 
-        /// <summary>
+         
         /// Gets the minimum width of each column
-        /// </summary>
+         
         public float[] ColumnMinWidths
         {
             get
@@ -186,53 +186,53 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the declared Columns on the TABLE tag
-        /// </summary>
+         
         public List<CssBox> Columns
         {
             get { return _columns; }
         }
 
-        /// <summary>
+         
         /// Gets an array indicating the withs of each column.
         /// This must have the same count than <see cref="Columns"/>
-        /// </summary>
+         
         public float[] ColumnWidths
         {
             get { return _columnWidths; }
         }
 
-        /// <summary>
+         
         /// Gets the boxes that represents the table-row Boxes of the table, 
         /// including those inside of the TBODY tags
-        /// </summary>
+         
         public List<CssBox> BodyRows
         {
             get { return _bodyrows; }
         }
 
-        /// <summary>
+         
         /// Gets the table-footer-group Box
         /// WARNING: May be null
-        /// </summary>
+         
         public CssBox FooterBox
         {
             get { return _footerBox; }
         }
 
-        /// <summary>
+         
         /// Gets the table-header-group Box
         /// WARNING: May be null
-        /// </summary>
+         
         public CssBox HeaderBox
         {
             get { return _headerBox; }
         }
 
-        /// <summary>
+         
         /// Gets the actual horizontal spacing of the table
-        /// </summary>
+         
         public float HorizontalSpacing
         {
             get
@@ -246,9 +246,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the actual vertical spacing of the table
-        /// </summary>
+         
         public float VerticalSpacing
         {
             get
@@ -262,18 +262,18 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the row count of this table, including the rows inside the table-row-group,
         /// table-row-heaer and table-row-footer Boxes
-        /// </summary>
+         
         public int RowCount
         {
             get { return _rowCount; }
         }
 
-        /// <summary>
+         
         /// Gets the original table box
-        /// </summary>
+         
         public CssBox TableBox
         {
             get { return _tableBox; }
@@ -283,10 +283,10 @@ namespace MetroFramework.Drawing.Html
 
         #region Methods
 
-        /// <summary>
+         
         /// Analyzes the Table and assigns values to this CssTable object.
         /// To be called from the constructor
-        /// </summary>
+         
         private void Analyze(Graphics g)
         {
             float availSpace = GetAvailableWidth();
@@ -667,10 +667,10 @@ namespace MetroFramework.Drawing.Html
             #endregion
         }
 
-        /// <summary>
+         
         /// Gets the spanned width of a cell
         /// (With of all columns it spans minus one)
-        /// </summary>
+         
         /// <param name="row"></param>
         /// <param name="cell"></param>
         /// <param name="realcolindex"></param>
@@ -688,9 +688,9 @@ namespace MetroFramework.Drawing.Html
             return w;
         }
 
-        /// <summary>
+         
         /// Gets the cell column index checking its position and other cells colspans
-        /// </summary>
+         
         /// <param name="row"></param>
         /// <param name="cell"></param>
         /// <returns></returns>
@@ -707,9 +707,9 @@ namespace MetroFramework.Drawing.Html
             return i;
         }
 
-        /// <summary>
+         
         /// Gets the cells width, taking colspan and being in the specified column
-        /// </summary>
+         
         /// <param name="column"></param>
         /// <param name="b"></param>
         /// <returns></returns>
@@ -730,9 +730,9 @@ namespace MetroFramework.Drawing.Html
             return sum; ;// -b.ActualBorderLeftWidth - b.ActualBorderRightWidth - b.ActualPaddingRight - b.ActualPaddingLeft;
         }
 
-        /// <summary>
+         
         /// Gets the colspan of the specified box
-        /// </summary>
+         
         /// <param name="b"></param>
         private int GetColSpan(CssBox b)
         {
@@ -747,9 +747,9 @@ namespace MetroFramework.Drawing.Html
             return colspan;
         }
 
-        /// <summary>
+         
         /// Gets the rowspan of the specified box
-        /// </summary>
+         
         /// <param name="b"></param>
         private int GetRowSpan(CssBox b)
         {
@@ -764,9 +764,9 @@ namespace MetroFramework.Drawing.Html
             return rowspan;
         }
 
-        /// <summary>
+         
         /// Recursively measures the specified box
-        /// </summary>
+         
         /// <param name="b"></param>
         /// <param name="g"></param>
         private void Measure(CssBox b, Graphics g)
@@ -780,9 +780,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Recursively measures words inside the box
-        /// </summary>
+         
         /// <param name="b"></param>
         /// <param name="g"></param>
         private void MeasureWords(CssBox b, Graphics g)
@@ -796,9 +796,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the number of reductable columns
-        /// </summary>
+         
         /// <returns></returns>
         private int GetReductableColumns()
         {
@@ -811,10 +811,10 @@ namespace MetroFramework.Drawing.Html
             return response;
         }
 
-        /// <summary>
+         
         /// Tells if the columns widths can be reduced,
         /// by checking the minimum widths of all cells
-        /// </summary>
+         
         /// <returns></returns>
         private bool CanReduceWidth()
         {
@@ -829,10 +829,10 @@ namespace MetroFramework.Drawing.Html
             return false;
         }
 
-        /// <summary>
+         
         /// Tells if the specified column can be reduced,
         /// by checking its minimum width
-        /// </summary>
+         
         /// <param name="columnIndex"></param>
         /// <returns></returns>
         private bool CanReduceWidth(int columnIndex)
@@ -841,10 +841,10 @@ namespace MetroFramework.Drawing.Html
             return ColumnWidths[columnIndex] > ColumnMinWidths[columnIndex];
         }
 
-        /// <summary>
+         
         /// Gets the available width for the whole table.
         /// It also sets the value of <see cref="WidthSpecified"/>
-        /// </summary>
+         
         /// <returns></returns>
         /// <remarks>
         /// The table's width can be larger than the result of this method, because of the minimum 
@@ -873,9 +873,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-        /// <summary>
+         
         /// Gets the width available for cells
-        /// </summary>
+         
         /// <returns></returns>
         /// <remarks>
         /// It takes away the cell-spacing from <see cref="GetAvailableWidth()"/>
@@ -887,9 +887,9 @@ namespace MetroFramework.Drawing.Html
                 TableBox.ActualBorderLeftWidth - TableBox.ActualBorderRightWidth;
         }
 
-        /// <summary>
+         
         /// Gets the current sum of column widths
-        /// </summary>
+         
         /// <returns></returns>
         private float GetWidthSum()
         {
@@ -910,9 +910,9 @@ namespace MetroFramework.Drawing.Html
             return f;
         }
 
-        /// <summary>
+         
         /// Gets the span attribute of the tag of the specified box
-        /// </summary>
+         
         /// <param name="b"></param>
         private int GetSpan(CssBox b)
         {
@@ -921,9 +921,9 @@ namespace MetroFramework.Drawing.Html
             return Math.Max(1, Convert.ToInt32(f));
         }
 
-        /// <summary>
+         
         /// Creates the column with the specified width
-        /// </summary>
+         
         /// <param name="width"></param>
         /// <returns></returns>
         private CssBox CreateColumn(CssBox modelBox)
