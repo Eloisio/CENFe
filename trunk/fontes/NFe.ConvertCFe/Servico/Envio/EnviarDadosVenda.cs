@@ -9,34 +9,34 @@ using Servicos = Unimake.SAT.Servico;
 
 namespace NFe.SAT.Servico.Envio
 {
-     
+
     /// Classe responsável pelo envio da venda pelo SAT
-     
+
     public class EnviarDadosVenda : ServicoBase
     {
-         
+
         /// Dados da empresa
-         
+
         private Empresa DadosEmpresa = null;
 
-         
+
         /// Dados do envio do XML
-         
+
         private string DadosVendaEnvio = null;
 
-         
+
         /// Resposta do equipamento sat
-         
+
         private Servicos.Retorno.EnviarDadosVendaResponse DadosVendaRetorno = new Servicos.Retorno.EnviarDadosVendaResponse();
 
-         
+
         /// Nome do arquivo XML que esta sendo manipulado
-         
+
         public override string ArquivoXML { get; set; }
 
-         
+
         /// Construtor com serialização
-         
+
         /// <param name="arquivoXML">arquivo a ser lido</param>
         /// <param name="dadosEmpresa">dados da empresa</param>
         public EnviarDadosVenda(string arquivoXML, Empresa dadosEmpresa)
@@ -54,18 +54,18 @@ namespace NFe.SAT.Servico.Envio
             DadosVendaEnvio = doc.InnerXml;
         }
 
-         
+
         /// Comunicar com o equipamento SAT
-         
+
         public override void Enviar()
         {
             string resposta = Sat.EnviarDadosVenda(DadosVendaEnvio);
             DadosVendaRetorno = new Servicos.Retorno.EnviarDadosVendaResponse(resposta);
         }
 
-         
+
         /// Salva o XML de Retorno
-         
+
         public override string SaveResponse()
         {
             string xml = string.Empty;

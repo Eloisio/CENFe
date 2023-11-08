@@ -29,9 +29,9 @@ namespace NFe.Service
 
         #region Classe com os dados do XML do retorno do envio do Lote de NFe
 
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s do recibo do lote
-         
+
         private DadosRecClass dadosRec;
 
         #endregion Classe com os dados do XML do retorno do envio do Lote de NFe
@@ -162,10 +162,10 @@ namespace NFe.Service
 
         #region Recibo
 
-         
+
         /// Faz a leitura do XML do Recibo do lote enviado e disponibiliza os valores
         /// de algumas tag´s
-         
+
         /// <param name="cArquivoXML">Caminho e nome do arquivo XML da NFe a ser lido</param>
         /// <param name="strXml">String contendo o XML</param>
         /// <example>

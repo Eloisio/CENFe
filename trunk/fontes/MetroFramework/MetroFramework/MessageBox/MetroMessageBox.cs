@@ -5,23 +5,23 @@ using System.Windows.Forms;
 
 namespace MetroFramework
 {
-     
+
     /// Metro-styled message notification.
-     
+
     public static class MetroMessageBox
     {
-         
+
         /// Shows a metro-styles message notification into the specified owner window.
-         
+
         /// <param name="owner"></param>
         /// <param name="message"></param>
         /// <returns></returns>
         public static DialogResult Show(IWin32Window owner, String message)
         { return Show(owner, message, "Notification"); }
 
-         
+
         /// Shows a metro-styles message notification into the specified owner window.
-         
+
         /// <param name="owner"></param>
         /// <param name="message"></param>
         /// <param name="title"></param>
@@ -29,9 +29,9 @@ namespace MetroFramework
         public static DialogResult Show(IWin32Window owner, String message, String title)
         { return Show(owner, message, title, MessageBoxButtons.OK); }
 
-         
+
         /// Shows a metro-styles message notification into the specified owner window.
-         
+
         /// <param name="owner"></param>
         /// <param name="message"></param>
         /// <param name="title"></param>
@@ -40,9 +40,9 @@ namespace MetroFramework
         public static DialogResult Show(IWin32Window owner, String message, String title, MessageBoxButtons buttons)
         { return Show(owner, message, title, buttons, MessageBoxIcon.None); }
 
-         
+
         /// Shows a metro-styles message notification into the specified owner window.
-         
+
         /// <param name="owner"></param>
         /// <param name="message"></param>
         /// <param name="title"></param>
@@ -70,9 +70,9 @@ namespace MetroFramework
         }
         */
 
-         
+
         /// Shows a metro-styles message notification into the specified owner window.
-         
+
         /// <param name="owner"></param>
         /// <param name="message"></param>
         /// <param name="title"></param>

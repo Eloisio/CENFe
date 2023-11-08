@@ -14,9 +14,9 @@ namespace NFe.Service
     public class TFunctions
     {
         #region GravarArqErroServico()
-         
+
         /// Grava um arquivo texto com os erros ocorridos durante as operações para que o ERP possa tratá-los
-         
+
         /// <param name="arquivo">Nome do arquivo que está sendo processado</param>
         /// <param name="finalArqEnvio">string final do nome do arquivo que é para ser substituida na gravação do arquivo de erro</param>
         /// <param name="finalArqErro">string final do nome do arquivo que é para ser utilizado no nome do arquivo de erro</param>
@@ -26,9 +26,9 @@ namespace NFe.Service
             GravarArqErroServico(arquivo, finalArqEnvio, finalArqErro, exception, ErroPadrao.ErroNaoDetectado, true);
         }
 
-         
+
         /// Grava um arquivo texto com os erros ocorridos durante as operações para que o ERP possa tratá-los
-         
+
         /// <param name="arquivo">Nome do arquivo que está sendo processado</param>
         /// <param name="finalArqEnvio">string final do nome do arquivo que é para ser substituida na gravação do arquivo de erro</param>
         /// <param name="finalArqErro">string final do nome do arquivo que é para ser utilizado no nome do arquivo de erro</param>
@@ -43,9 +43,9 @@ namespace NFe.Service
 
         #region GravarArqErroServico()
 
-         
+
         /// Grava um arquivo texto com um erros ocorridos durante as operações para que o ERP possa tratá-los
-         
+
         /// <param name="arquivo">Nome do arquivo que está sendo processado</param>
         /// <param name="finalArqEnvio">string final do nome do arquivo que é para ser substituida na gravação do arquivo de Erro</param>
         /// <param name="finalArqErro">string final do nome do arquivo que é para ser utilizado no nome do arquivo de erro</param>
@@ -65,9 +65,9 @@ namespace NFe.Service
 
         #region GravarArqErroServico()
 
-         
+
         /// Grava um arquivo texto com um erros ocorridos durante as operações para que o ERP possa tratá-los
-         
+
         /// <param name="arquivo">Nome do arquivo que está sendo processado</param>
         /// <param name="finalArqEnvio">string final do nome do arquivo que é para ser substituida na gravação do arquivo de Erro</param>
         /// <param name="finalArqErro">string final do nome do arquivo que é para ser utilizado no nome do arquivo de erro</param>
@@ -112,9 +112,9 @@ namespace NFe.Service
 
         #region MontaStringErro()
 
-         
+
         /// Montar a string do erro da exception
-         
+
         /// <param name="exception">Objeto da exception</param>
         /// <param name="erroPadrao">ErroPadrao</param>
         /// <returns>Retorna uma string com o erro ocorrido.</returns>
@@ -149,9 +149,9 @@ namespace NFe.Service
 
         #region MoveArqErro
 
-         
+
         /// Move arquivos XML com erro para uma pasta de xml´s com erro configurados no UniNFe.
-         
+
         /// <param name="cArquivo">Nome do arquivo a ser movido para a pasta de XML´s com erro</param>
         /// <example>this.MoveArqErro(this.vXmlNfeDadosMsg)</example>
         public static void MoveArqErro(string Arquivo)
@@ -163,9 +163,9 @@ namespace NFe.Service
 
         #region MoveArqErro()
 
-         
+
         /// Move arquivos com a extensão informada e que está com erro para uma pasta de xml´s/arquivos com erro configurados no UniNFe.
-         
+
         /// <param name="cArquivo">Nome do arquivo a ser movido para a pasta de XML´s com erro</param>
         /// <param name="ExtensaoArq">Extensão do arquivo que vai ser movido. Ex: .xml</param>
         /// <example>this.MoveArqErro(this.vXmlNfeDadosMsg, ".xml")</example>
@@ -199,9 +199,9 @@ namespace NFe.Service
 
         #region MoverArquivo()
 
-         
+
         /// Move arquivos da nota fiscal eletrônica para suas respectivas pastas
-         
+
         /// <param name="Arquivo">Nome do arquivo a ser movido</param>
         /// <param name="PastaXMLEnviado">Pasta de XML´s enviados para onde será movido o arquivo</param>
         /// <param name="SubPastaXMLEnviado">SubPasta de XML´s enviados para onde será movido o arquivo</param>
@@ -372,9 +372,9 @@ namespace NFe.Service
 
         #region MoverArquivo()
 
-         
+
         /// Move arquivos da nota fiscal eletrônica para suas respectivas pastas
-         
+
         /// <param name="Arquivo">Nome do arquivo a ser movido</param>
         /// <param name="PastaXMLEnviado">Pasta de XML´s enviados para onde será movido o arquivo</param>
         /// <param name="SubPastaXMLEnviado">SubPasta de XML´s enviados para onde será movido o arquivo</param>
@@ -389,10 +389,10 @@ namespace NFe.Service
 
         #region CopiarXMLPastaDanfeMon()
 
-         
+
         /// Copia o XML da NFe para a pasta monitorada pelo DANFEMon para que o mesmo imprima o DANFe.
         /// A copia só é efetuada de o UniNFe estiver configurado para isso.
-         
+
         /// <param name="arquivoCopiar">Nome do arquivo com as pastas e subpastas a ser copiado</param>
         /// <remarks>
         /// Autor: Wandrey Mundin Ferreira
@@ -433,9 +433,9 @@ namespace NFe.Service
 
         #region RetornarConteudoEntre()
 
-         
+
         /// Executa o aplicativo UniDanfe para gerar/imprimir o DANFE
-         
+
         /// <param name="NomeArqXMLNFe">Nome do arquivo XML da NFe (final -nfe.xml)</param>
         /// <param name="DataEmissaoNFe">Data de emissão da NFe</param>
         /// <remarks>
@@ -1380,10 +1380,10 @@ namespace NFe.Service
 
         #region RemoveSomenteLeitura()
 
-         
+
         /// Metodo que remove atributo de Somente Leitura do Arquivo caso o mesmo estiver marcado, evitando problemas no acesso do arquivo.
         /// Renan - 26/11/13
-         
+
         /// <param name="file">Arquivo a remover o atributo</param>
         public static void RemoveSomenteLeitura(string file)
         {
@@ -1483,10 +1483,10 @@ namespace NFe.Service
 
         #endregion Decompress
 
-         
+
         /// Lucas A. Araujo
         /// Criptografa uma string.
-         
+
         /// <param name="messageString">String</param>
         /// <returns>Texto criptografado</returns>
         public static string EncryptSHA1(string messageString)

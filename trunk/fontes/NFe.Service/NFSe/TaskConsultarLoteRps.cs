@@ -25,9 +25,9 @@ using static NFe.Components.Security.SOAPSecurity;
 
 namespace NFe.Service.NFSe
 {
-     
+
     /// Consultar uma NFS-e por RPS
-     
+
     public class TaskNFSeConsultarLoteRps : TaskAbst
     {
         public override void Execute()

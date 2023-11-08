@@ -26,17 +26,17 @@ namespace NFe.Settings
         public long Size;
     }
 
-     
+
     /// Classe responsável por realizar algumas tarefas na parte de configurações da aplicação.
     /// Arquivo de configurações: UniNfeConfig.xml
-     
+
     public class ConfiguracaoApp
     {
         #region NfeConfiguracoes
 
-         
+
         /// Enumerador com as tags do xml nfe_Configuracoes
-         
+
         private enum NfeConfiguracoes
         {
             Proxy = 0,
@@ -204,9 +204,9 @@ namespace NFe.Settings
 
             #region AtualizarWSDL()
 
-             
+
             /// Verifica se é para atualizar os recursos contidos no NFe.Components.Wsdl.dll
-             
+
             /// <returns>true=atualiza, false=não atualiza</returns>
             private bool AtualizarWSDL()
             {
@@ -565,9 +565,9 @@ namespace NFe.Settings
 
         #region CarregarDadosSobre()
 
-         
+
         /// Carrega informações da tela de sobre
-         
+
         /// <remarks>
         /// Autor: Leandro Souza
         /// </remarks>
@@ -625,9 +625,9 @@ namespace NFe.Settings
 
         #region DefinirWS()
 
-         
+
         /// Definir o webservice que será utilizado para o envio do XML
-         
+
         /// <param name="servico">Serviço que será executado</param>
         /// <param name="emp">Index da empresa que será executado o serviço</param>
         /// <param name="cUF">Código da UF</param>
@@ -642,9 +642,9 @@ namespace NFe.Settings
 
         #region DefinirWS()
 
-         
+
         /// Definir o webservice que será utilizado para o envio do XML
-         
+
         /// <param name="servico">Serviço que será executado</param>
         /// <param name="emp">Index da empresa que será executado o serviço</param>
         /// <param name="cUF">Código da UF</param>
@@ -661,9 +661,9 @@ namespace NFe.Settings
 
         #region DefinirWS()
 
-         
+
         /// Definir o webservice que será utilizado para o envio do XML
-         
+
         /// <param name="servico">Serviço que será executado</param>
         /// <param name="emp">Index da empresa que será executado o serviço</param>
         /// <param name="cUF">Código da UF</param>
@@ -680,9 +680,9 @@ namespace NFe.Settings
 
         #region DefinirWS()
 
-         
+
         /// Definir o webservice que será utilizado para o envio do XML
-         
+
         /// <param name="servico">Serviço que será executado</param>
         /// <param name="emp">Index da empresa que será executado o serviço</param>
         /// <param name="cUF">Código da UF</param>
@@ -700,9 +700,9 @@ namespace NFe.Settings
 
         #region DefinirWS()
 
-         
+
         /// Definir o webservice que será utilizado para o envio do XML
-         
+
         /// <param name="servico">Serviço que será executado</param>
         /// <param name="emp">Index da empresa que será executado o serviço</param>
         /// <param name="cUF">Código da UF</param>
@@ -719,9 +719,9 @@ namespace NFe.Settings
 
         #region DefinirWS()
 
-         
+
         /// Definir o webservice que será utilizado para o envio do XML
-         
+
         /// <param name="servico">Serviço que será executado</param>
         /// <param name="emp">Index da empresa que será executado o serviço</param>
         /// <param name="cUF">Código da UF</param>
@@ -770,9 +770,9 @@ namespace NFe.Settings
 
         #region DefLocalWSDL()
 
-         
+
         /// Definir o local do WSDL do webservice
-         
+
         /// <param name="CodigoUF">Código da UF que é para pesquisar a URL do WSDL</param>
         /// <param name="tipoAmbiente">Tipo de ambiente da NFe</param>
         /// <param name="tipoEmissao">Tipo de Emissao da NFe</param>
@@ -1173,9 +1173,9 @@ namespace NFe.Settings
 
         #region GravarConfig()
 
-         
+
         /// Método responsável por gravar as configurações da Aplicação no arquivo "UniNfeConfig.xml"
-         
+
         ////public void GravarConfig(bool gravaArqEmpresa, bool validaCertificado)  //<<<<<<danasa 1-5-2011
         ////{
         ////    ValidarConfig(validaCertificado, null);
@@ -1223,9 +1223,9 @@ namespace NFe.Settings
 
         #region GravarConfigGeral()
 
-         
+
         /// Gravar as configurações gerais
-         
+
         /// <remarks>
         /// Autor: Wandrey Mundin Ferreira
         /// Data: 30/07/2010
@@ -1308,9 +1308,9 @@ namespace NFe.Settings
             }
         }
 
-         
+
         /// Verifica se algumas das informações das configurações tem algum problema ou falha
-         
+
         /// <param name="validarCertificado">Se valida se tem certificado informado ou não nas configurações</param>
         public void ValidarConfig(bool validarCertificado, Empresa empresaValidada)
         {
@@ -1814,12 +1814,12 @@ namespace NFe.Settings
 
         #region ReconfigurarUniNFe()
 
-         
+
         /// Método responsável por reconfigurar automaticamente o UniNFe a partir de um XML com as
         /// informações necessárias.
         /// O Método grava um arquivo na pasta de retorno do UniNFe com a informação se foi bem
         /// sucedida a reconfiguração ou não.
-         
+
         /// <param name="cArquivoXml">Nome e pasta do arquivo de configurações gerado pelo ERP para atualização das configurações do uninfe</param>
         public void ReconfigurarUniNFe(string cArquivoXml)
         {
@@ -2125,9 +2125,9 @@ namespace NFe.Settings
 
         #region ExcluirEmpresa
 
-         
+
         /// Excluir a empresa e suas configurações
-         
+
         /// <param name="arquivoXml">Nome e pasta do arquivo de configurações gerado pelo ERP para atualização das configurações do uninfe</param>
         /// <returns>
         /// S - Excluido com sucesso.
@@ -2194,9 +2194,9 @@ namespace NFe.Settings
 
         #region RemoveEndSlash
 
-         
+
         ///
-         
+
         /// <param name="value"></param>
         /// <returns></returns>
         public static string RemoveEndSlash(string value)

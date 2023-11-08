@@ -7,30 +7,30 @@ using System.Xml;
 
 namespace NFe.SAT.Servico.Envio
 {
-     
+
     /// Classe responsável pela conversão da NFCe para CFe para envio pelo SAT
-     
+
     public class ConverterSAT : ServicoBase
     {
-         
+
         /// Dados da empresa
-         
+
         Empresa DadosEmpresa = null;
 
-         
+
         /// Nome do arquivo XML que esta sendo manipulado
-         
+
         public override string ArquivoXML { get; set; }
 
-         
+
         /// Caminho do arquivo XML convertido
-         
+
         private string ArquivoConvertido { get; set; }
 
 
-         
+
         /// Construtor com serialização
-         
+
         /// <param name="arquivoXML">arquivo a ser lido</param>
         /// <param name="dadosEmpresa">dados da empresa</param>
         public ConverterSAT(string arquivoXML, Empresa dadosEmpresa)
@@ -45,9 +45,9 @@ namespace NFe.SAT.Servico.Envio
             ArquivoXML = arquivoXML;
         }
 
-         
+
         /// Comunicar com o equipamento SAT
-         
+
         public override void Enviar()
         {
             ArquivoConvertido = Path.Combine(DadosEmpresa.PastaXmlRetorno,
@@ -58,9 +58,9 @@ namespace NFe.SAT.Servico.Envio
             conversao.ConverterSAT();
         }
 
-         
+
         /// Salva o XML de Retorno
-         
+
         public override string SaveResponse()
         {
             string result = Path.Combine(DadosEmpresa.PastaXmlEnvio, Path.GetFileName(ArquivoConvertido));

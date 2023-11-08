@@ -1,0 +1,23 @@
+﻿Versão|20.8.8.0
+ErrorCode|0000000000
+Message|Não foi possível localizar o arquivo 'E:\Desenvolvimento\CENFe\trunk\fontes\uninfe\bin\x86\Debug\22676702000122\Envio\Temp\35210302035796000143550010000002781001771410-nfe.xml'.
+StackTrace|   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   em System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   em System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   em System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   em System.Threading.CompressedStack.runTryCode(Object userData)
+   em System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   em System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   em System.Xml.XmlTextReaderImpl.OpenUrl()
+   em System.Xml.XmlTextReaderImpl.Read()
+   em System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   em System.Xml.XmlDocument.Load(XmlReader reader)
+   em System.Xml.XmlDocument.Load(String filename)
+   em NFe.Service.Processar.DefinirTipoServico(Int32 empresa, String fullPath) na E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Service\Processar.cs:linha 697
+   em NFe.Service.Processar.ProcessaArquivo(Int32 emp, String arquivo) na E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Service\Processar.cs:linha 47
+Source|mscorlib
+Type|System.IO.FileNotFoundException
+TargetSite|Void WinIOError(Int32, System.String)
+HashCode|66750044

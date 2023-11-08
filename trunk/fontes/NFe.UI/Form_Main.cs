@@ -45,7 +45,7 @@ namespace NFe.UI
                 _menu = new menu();
                 Controls.Add(_menu);
                 _menu.Dock = DockStyle.Fill;
-                cmAbrir.Text = "Abrir "+Empresa;
+                cmAbrir.Text = "Abrir " + Empresa;
                 cmFechar.Text = "Fechar " + Empresa;
                 string msg = "";
                 Propriedade.VerificaArquivos(out error, out msg);
@@ -114,7 +114,7 @@ namespace NFe.UI
             }
             else
             {
-                e.Cancel = false;  
+                e.Cancel = false;
             }
             base.OnFormClosing(e);
         }

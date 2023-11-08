@@ -4,9 +4,9 @@ using System;
 
 namespace NFe.Service
 {
-     
+
     /// Classe para consultar status do serviço do CTe
-     
+
     public class TaskCTeConsultaStatus : TaskAbst
     {
         public TaskCTeConsultaStatus(string arquivo)
@@ -19,9 +19,9 @@ namespace NFe.Service
 
         #region Classe com os dados do XML da consulta do status do serviço da NFe
 
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s do status do serviço
-         
+
         private DadosPedSta dadosPedSta;
 
         #endregion Classe com os dados do XML da consulta do status do serviço da NFe

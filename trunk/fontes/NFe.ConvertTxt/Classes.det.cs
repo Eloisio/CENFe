@@ -1,8 +1,8 @@
 ﻿namespace NFe.ConvertTxt
 {
-     
+
     /// Det
-     
+
     public class Det
     {
         public Prod Prod;

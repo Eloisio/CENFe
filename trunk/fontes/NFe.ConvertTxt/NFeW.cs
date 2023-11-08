@@ -20,9 +20,9 @@ namespace NFe.ConvertTxt
         private TpcnTipoCampo nDecimaisPerc = TpcnTipoCampo.tcDec2;
         private bool convertToOem;
 
-         
+
         /// GerarXml
-         
+
         /// <param name="NFe"></param>
         public void GerarXml(NFe NFe, string folderDestino)
         {
@@ -162,9 +162,9 @@ namespace NFe.ConvertTxt
             XMLString = doc.OuterXml;
         }
 
-         
+
         /// GerarAvulsa
-         
+
         /// <param name="NFe"></param>
         /// <param name="root"></param>
         private void GerarAvulsa(NFe NFe, XmlElement root)
@@ -189,9 +189,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarCobr
-         
+
         /// <param name="Cobr"></param>
         /// <param name="root"></param>
         private void GerarCobr(NFe NFe, XmlElement root)
@@ -243,9 +243,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// Gerarpag
-         
+
         /// <param name="nfe"></param>
         /// <param name="root"></param>
         private void GerarPag(NFe nfe, XmlElement root)
@@ -313,9 +313,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarCodigoNumerico
-         
+
         /// <param name="numeroNF"></param>
         /// <returns></returns>
         public Int32 GerarCodigoNumerico(Int32 numeroNF)
@@ -329,9 +329,9 @@ namespace NFe.ConvertTxt
             return codigoRetorno;
         }
 
-         
+
         /// GerarCana
-         
+
         /// <param name="cana"></param>
         /// <param name="root"></param>
         private void GerarCana(Cana cana, XmlElement root)
@@ -385,9 +385,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarCompra
-         
+
         /// <param name="compra"></param>
         /// <param name="root"></param>
         private void GerarCompra(Compra compra, XmlElement root)
@@ -404,9 +404,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarDest
-         
+
         /// <param name="NFe"></param>
         /// <returns></returns>
         private XmlElement GerarDest(NFe NFe)
@@ -505,9 +505,9 @@ namespace NFe.ConvertTxt
             return e0;
         }
 
-         
+
         /// GerarDet
-         
+
         /// <param name="NFe"></param>
         /// <param name="root"></param>
         private void GerarDet(NFe NFe, XmlElement root)
@@ -661,7 +661,7 @@ namespace NFe.ConvertTxt
                 #endregion /// GerarDetProd->detExport
 
                 wCampo(det.Prod.xPed, TpcnTipoCampo.tcStr, TpcnResources.xPed, ObOp.Opcional);
-                wCampo(det.Prod.nItemPed, TpcnTipoCampo.tcInt, TpcnResources.nItemPed, ObOp.Opcional);
+                //wCampo(det.Prod.nItemPed, TpcnTipoCampo.tcInt, TpcnResources.nItemPed, ObOp.Opcional);
 
                 wCampo(det.Prod.nFCI, TpcnTipoCampo.tcStr, TpcnResources.nFCI, ObOp.Opcional);
 
@@ -838,9 +838,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarDetImposto
-         
+
         /// <param name="nfe"></param>
         /// <param name="imposto"></param>
         /// <param name="root"></param>
@@ -881,9 +881,9 @@ namespace NFe.ConvertTxt
             GerarDetImpostoICMSUFDest(nfe, imposto, nodeImposto);
         }
 
-         
+
         /// GerarDetImpostoISSQN
-         
+
         /// <param name="nfe"></param>
         /// <param name="imposto"></param>
         /// <param name="nodeImposto"></param>
@@ -924,9 +924,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarDetImpostoCOFINS
-         
+
         /// <param name="COFINS"></param>
         /// <param name="nodeImposto"></param>
         private void GerarDetImpostoCOFINS(NFe nfe, COFINS COFINS, XmlElement nodeImposto)
@@ -1031,9 +1031,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarDetImpostoCOFINSST
-         
+
         /// <param name="COFINSST"></param>
         /// <param name="nodeImposto"></param>
         private void GerarDetImpostoCOFINSST(NFe nfe, COFINSST COFINSST, XmlElement nodeImposto)
@@ -1069,9 +1069,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarDetImpostoICMS
-         
+
         /// <param name="nfe"></param>
         /// <param name="imposto"></param>
         /// <param name="nodeImposto"></param>
@@ -1481,9 +1481,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarDetImpostoICMSUFDest
-         
+
         /// <param name="nfe"></param>
         /// <param name="imposto"></param>
         /// <param name="nodeImposto"></param>
@@ -1522,9 +1522,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarDetImpostoII
-         
+
         /// <param name="II"></param>
         /// <param name="nodeImposto"></param>
         private void GerarDetImpostoII(II II, XmlElement nodeImposto)
@@ -1541,9 +1541,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarDetImpostoIPI
-         
+
         /// <param name="IPI"></param>
         /// <param name="nodeImposto"></param>
         private bool GerarDetImpostoIPI(NFe nfe, IPI IPI, XmlElement nodeImposto)
@@ -1602,9 +1602,9 @@ namespace NFe.ConvertTxt
             return false;
         }
 
-         
+
         /// GerarDetImpostoPIS
-         
+
         /// <param name="PIS"></param>
         /// <param name="nodeImposto"></param>
         private void GerarDetImpostoPIS(NFe nfe, PIS PIS, XmlElement nodeImposto)
@@ -1698,9 +1698,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarDetImpostoPISST
-         
+
         /// <param name="PISST"></param>
         /// <param name="nodeImposto"></param>
         private void GerarDetImpostoPISST(NFe nfe, PISST PISST, XmlElement nodeImposto)
@@ -1734,9 +1734,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarDigito
-         
+
         /// <param name="chave"></param>
         /// <returns></returns>
         public Int32 GerarDigito(string chave)
@@ -1773,9 +1773,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarEmit
-         
+
         /// <param name="NFe"></param>
         /// <returns></returns>
         private XmlElement GerarEmit(NFe NFe)
@@ -1823,9 +1823,9 @@ namespace NFe.ConvertTxt
             return ELemit;
         }
 
-         
+
         /// GerarEntrega
-         
+
         /// <param name="NFe"></param>
         /// <param name="root"></param>
         private void GerarEntrega(NFe NFe, XmlElement root)
@@ -1853,9 +1853,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarautoXML
-         
+
         /// <param name="NFe"></param>
         /// <param name="root"></param>
         private void GerarautXML(NFe NFe, XmlElement root)
@@ -1872,9 +1872,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarDetDevol
-         
+
         /// <param name="impostoDevol"></param>
         /// <returns></returns>
         private void GerarDetDevol(impostoDevol impostoDevol, XmlElement root)
@@ -1894,9 +1894,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarExporta
-         
+
         /// <param name="exporta"></param>
         /// <param name="root"></param>
         private void GerarExporta(NFe nfe, Exporta exporta, XmlElement root)
@@ -1924,9 +1924,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarInfAdic
-         
+
         /// <param name="InfAdic"></param>
         /// <param name="root"></param>
         private void GerarInfAdic(InfAdic InfAdic, XmlElement root)
@@ -1990,9 +1990,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarInfNFe
-         
+
         /// <param name="Nfe"></param>
         /// <returns></returns>
         private XmlElement GerarIde(NFe Nfe)
@@ -2050,9 +2050,9 @@ namespace NFe.ConvertTxt
             return ELide;
         }
 
-         
+
         /// GerarIdeNFref
-         
+
         /// <param name="Nfe"></param>
         /// <param name="ELide"></param>
         private void GerarIdeNFref(NFe Nfe, XmlElement ELide)
@@ -2151,9 +2151,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarRetirada
-         
+
         /// <param name="NFe"></param>
         /// <param name="root"></param>
         private void GerarRetirada(NFe NFe, XmlElement root)
@@ -2178,9 +2178,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarTransp
-         
+
         /// <param name="Transp"></param>
         /// <param name="root"></param>
         private void GerarTransp(NFe NFe, XmlElement root)
@@ -2302,9 +2302,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// GerarTotal
-         
+
         /// <param name="NFe"></param>
         /// <param name="root"></param>
         private void GerarTotal(NFe NFe, XmlElement root)
@@ -2422,9 +2422,9 @@ namespace NFe.ConvertTxt
             #endregion --retTrib
         }
 
-         
+
         /// wCampo
-         
+
         /// <param name="obj"></param>
         /// <param name="Tipo"></param>
         /// <param name="TAG"></param>
@@ -2433,9 +2433,9 @@ namespace NFe.ConvertTxt
             wCampo(obj, Tipo, TAG.ToString(), ObOp.Obrigatorio, 0);
         }
 
-         
+
         /// wCampo
-         
+
         /// <param name="obj"></param>
         /// <param name="Tipo"></param>
         /// <param name="TAG"></param>
@@ -2445,9 +2445,9 @@ namespace NFe.ConvertTxt
             wCampo(obj, Tipo, TAG.ToString(), Obrigatorio, 0);
         }
 
-         
+
         /// wCampo
-         
+
         /// <param name="obj"></param>
         /// <param name="Tipo"></param>
         /// <param name="TAG"></param>
@@ -2560,9 +2560,9 @@ namespace NFe.ConvertTxt
 
         #region ConverToOEM
 
-         
+
         /// ConvertToOEM
-         
+
         /// <param name="FBuffer"></param>
         /// <returns></returns>
         public string ConvertToOEM(string FBuffer)
@@ -2655,10 +2655,10 @@ namespace NFe.ConvertTxt
 
         #region GerarChaveNFe
 
-         
+
         /// MontaChave
         /// Cria a chave de acesso da NFe
-         
+
         /// <param name="ArqXMLPedido"></param>
         public void GerarChaveNFe(string ArqPedido, Boolean xml)
         {

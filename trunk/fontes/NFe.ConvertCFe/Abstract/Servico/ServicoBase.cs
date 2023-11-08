@@ -5,34 +5,34 @@ using System.Xml.Serialization;
 
 namespace NFe.SAT.Abstract.Servico
 {
-     
+
     /// Classe abstrata para comunicação com as DLLs
-     
+
     public abstract class ServicoBase : IServico
     {
-         
+
         /// Marca do fabricante do SAT
-         
+
         public Unimake.SAT.Enuns.Fabricante Marca { get; set; }
 
-         
+
         /// Código de ativação do SAT
-         
+
         public string CodigoAtivacao { get; set; }
 
-         
+
         /// Arquivo XML carregado no construtor
-         
+
         public abstract string ArquivoXML { get; set; }
 
-         
+
         /// Define o objeto de comunicação SAT
-         
+
         Unimake.SAT.SAT _Sat = null;
 
-         
+
         /// Objeto de comunicação com o SAT
-         
+
         protected Unimake.SAT.SAT Sat
         {
             get
@@ -44,21 +44,21 @@ namespace NFe.SAT.Abstract.Servico
             }
         }
 
-         
+
         /// Método responsável em transmitir a comunicação com o SAT
-         
+
         /// <returns></returns>
         public abstract void Enviar();
 
-         
+
         /// Método responsável por salvar o retorno do SAT
-         
+
         /// <returns>caminho do arquivo de resposta</returns>
         public abstract string SaveResponse();
 
-         
+
         /// Deserializar o objeto para string
-         
+
         /// <typeparam name="T">Tipo do objeto</typeparam>
         /// <returns></returns>
         public T DeserializarObjeto<T>()
@@ -78,9 +78,9 @@ namespace NFe.SAT.Abstract.Servico
             return envio;
         }
 
-         
+
         /// Retorna o valor do documento a partir da raiz
-         
+
         /// <param name="document">XML carregado</param>
         /// <param name="groupTag">nome do nó</param>
         /// <param name="nameTag">nome da tag</param>

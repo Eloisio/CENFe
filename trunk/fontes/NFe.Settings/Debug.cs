@@ -3,21 +3,21 @@
 namespace NFe.Settings
 {
 #if DEBUG
-     
+
     /// Classe para mensagem em modo debug, que serão exibidas no output
-     
+
     public sealed class Debug
     {
         #region Constantes
-         
+
         /// Categoria para o modo debug
-         
+
         public const string Category = "UniNFe";
         #endregion
 
-         
+
         /// Escreve um log no Output
-         
+
         /// <param name="message">mensagem a ser escrita</param>
         public static void WriteLine(string message)
         {

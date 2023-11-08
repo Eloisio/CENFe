@@ -5,9 +5,9 @@ namespace MetroFramework.Demo
 {
     static class Program
     {
-         
+
         /// Der Haupteinstiegspunkt für die Anwendung.
-         
+
         [STAThread]
         static void Main()
         {

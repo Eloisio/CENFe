@@ -29,22 +29,22 @@ using System.Drawing.Drawing2D;
 
 namespace MetroFramework.Drawing.Html
 {
-     
+
     /// Provides some drawing functionallity
-     
+
     internal static class CssDrawingHelper
     {
-         
+
         /// Border specifiers
-         
+
         internal enum Border
         {
             Top, Right, Bottom, Left
         }
 
-         
+
         /// Rounds the specified point
-         
+
         /// <param name="p"></param>
         /// <param name="b"></param>
         /// <returns></returns>
@@ -55,9 +55,9 @@ namespace MetroFramework.Drawing.Html
             return p;
         }
 
-         
+
         /// Rounds the specified rectangle
-         
+
         /// <param name="p"></param>
         /// <param name="b"></param>
         /// <returns></returns>
@@ -67,9 +67,9 @@ namespace MetroFramework.Drawing.Html
             return Rectangle.Round(r);
         }
 
-         
+
         /// Makes a border path
-         
+
         /// <param name="border">Desired border</param>
         /// <param name="b">Box wich the border corresponds</param>
         /// <param name="isLineStart">Specifies if the border is for a starting line (no bevel on left)</param>
@@ -144,9 +144,9 @@ namespace MetroFramework.Drawing.Html
             return path;
         }
 
-         
+
         /// Creates the corner to place with the borders
-         
+
         /// <param name="outer"></param>
         /// <param name="inner"></param>
         /// <param name="startAngle"></param>
@@ -216,9 +216,9 @@ namespace MetroFramework.Drawing.Html
             return corner;
         }
 
-         
+
         /// Creates a rounded rectangle using the specified corner radius
-         
+
         /// <param name="rect">Rectangle to round</param>
         /// <param name="nwRadius">Radius of the north east corner</param>
         /// <param name="neRadius">Radius of the north west corner</param>
@@ -292,9 +292,9 @@ namespace MetroFramework.Drawing.Html
             return path;
         }
 
-         
+
         /// Makes the specified color darker
-         
+
         /// <param name="c"></param>
         /// <returns></returns>
         public static Color Darken(Color c)

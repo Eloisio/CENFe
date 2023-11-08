@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace NFe.ConvertTxt
 {
-     
+
     /// Cobr
-     
+
     public class Cobr
     {
         public Fat Fat;
@@ -17,9 +17,9 @@ namespace NFe.ConvertTxt
         }
     }
 
-     
+
     /// Dup
-     
+
     public class Dup
     {
         public string nDup;
@@ -27,9 +27,9 @@ namespace NFe.ConvertTxt
         public double vDup;
     }
 
-     
+
     /// Fat
-     
+
     public struct Fat
     {
         public string nFat;

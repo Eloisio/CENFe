@@ -10,14 +10,14 @@ using System.Xml;
 
 namespace NFSe.Components
 {
-     
+
     /// Esta classe utiliza métodos POST para fazer requisições
-     
+
     public class POSTRequest : RequestBase, IPostRequest
     {
-         
+
         /// Faz o post e retorna uma string  com o resultado
-         
+
         /// <param name="url">url base para utilizar dentro do post</param>
         /// <param name="postData">dados a serem enviados junto com o post</param>
         /// <returns></returns>
@@ -126,9 +126,9 @@ namespace NFSe.Components
 
 #if _fw46
 
-         
+
         /// Faz o post e retorna uma string  com o resultado
-         
+
         /// <param name="url">url base para utilizar dentro do post</param>
         /// <param name="postData">dados a serem enviados junto com o post</param>
         /// <returns></returns>

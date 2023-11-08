@@ -18,3 +18,7 @@ D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.Validate\obj\Debug\NFe.Validate.pdb
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Validate\obj\Debug\NFe.Validate.csprojResolveAssemblyReference.cache
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Validate\obj\Debug\NFe.Validate.dll
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Validate\obj\Debug\NFe.Validate.pdb
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Validate\obj\Debug\NFe.Validate.csprojAssemblyReference.cache
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Validate\obj\Debug\NFe.Validate.csproj.CopyComplete
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Validate\obj\Debug\NFe.Validate.dll
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Validate\obj\Debug\NFe.Validate.pdb

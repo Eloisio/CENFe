@@ -21,3 +21,7 @@ D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.ConvertCFe\obj\Debug\NFe.SAT.pdb
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.ConvertCFe\obj\Debug\NFe.SAT.csprojResolveAssemblyReference.cache
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.ConvertCFe\obj\Debug\NFe.SAT.dll
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.ConvertCFe\obj\Debug\NFe.SAT.pdb
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.ConvertCFe\obj\Debug\NFe.SAT.csprojAssemblyReference.cache
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.ConvertCFe\obj\Debug\NFe.SAT.csproj.CopyComplete
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.ConvertCFe\obj\Debug\NFe.SAT.dll
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.ConvertCFe\obj\Debug\NFe.SAT.pdb

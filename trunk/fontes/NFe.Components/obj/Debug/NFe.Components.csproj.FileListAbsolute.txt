@@ -15,3 +15,7 @@ D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.Components\obj\Debug\NFe.Components.c
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components\obj\Debug\NFe.Components.csprojResolveAssemblyReference.cache
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components\obj\Debug\NFe.Components.dll
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components\obj\Debug\NFe.Components.pdb
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Components\obj\Debug\NFe.Components.csprojAssemblyReference.cache
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Components\obj\Debug\NFe.Components.csproj.CopyComplete
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Components\obj\Debug\NFe.Components.dll
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Components\obj\Debug\NFe.Components.pdb

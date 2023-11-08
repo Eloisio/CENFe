@@ -1,0 +1,10 @@
+C:\camposevolution\NFe\Uni\MetroFramework.Demo.exe.config
+C:\camposevolution\NFe\Uni\MetroFramework.Demo.exe
+C:\camposevolution\NFe\Uni\MetroFramework.Demo.pdb
+D:\Desenvolvimento\UNINFe\trunk\fontes\MetroFramework\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.csprojResolveAssemblyReference.cache
+D:\Desenvolvimento\UNINFe\trunk\fontes\MetroFramework\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.MainForm.resources
+D:\Desenvolvimento\UNINFe\trunk\fontes\MetroFramework\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.Properties.Resources.resources
+D:\Desenvolvimento\UNINFe\trunk\fontes\MetroFramework\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.TaskWindowControl.resources
+D:\Desenvolvimento\UNINFe\trunk\fontes\MetroFramework\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.csproj.GenerateResource.Cache
+D:\Desenvolvimento\UNINFe\trunk\fontes\MetroFramework\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.exe
+D:\Desenvolvimento\UNINFe\trunk\fontes\MetroFramework\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.pdb

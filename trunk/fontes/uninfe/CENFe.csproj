@@ -29,7 +29,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>C:\camposevolution\ExtremeAdmin\</OutputPath>
     <DefineConstants>TRACE;_fw46</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -66,10 +66,10 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\x86\Debug\</OutputPath>
+    <OutputPath>C:\camposevolution\CENFe\</OutputPath>
     <DefineConstants>TRACE;DEBUG;_fw46</DefineConstants>
     <DebugType>full</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
@@ -112,6 +112,43 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>C:\camposevolution\dlls\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>C:\camposevolution\dlls\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>C:\camposevolution\dlls\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NFe.Components.Info\bin\Release\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NFe.Certificado">
+      <HintPath>..\NFe.Components.Info\bin\Release\NFe.Certificado.dll</HintPath>
+    </Reference>
+    <Reference Include="NFe.Components">
+      <HintPath>C:\camposevolution\dlls\NFe.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="NFe.Components.Info">
+      <HintPath>..\NFe.Components.Info\bin\Release\NFe.Components.Info.dll</HintPath>
+    </Reference>
+    <Reference Include="NFe.Components.Wsdl">
+      <HintPath>C:\camposevolution\dlls\NFe.Components.Wsdl.dll</HintPath>
+    </Reference>
+    <Reference Include="NFe.ConvertTxt">
+      <HintPath>C:\camposevolution\dlls\NFe.ConvertTxt.dll</HintPath>
+    </Reference>
+    <Reference Include="NFe.Service">
+      <HintPath>C:\camposevolution\dlls\NFe.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="NFe.Settings">
+      <HintPath>..\NFe.Components.Info\bin\Release\NFe.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="NFe.UI">
+      <HintPath>C:\camposevolution\dlls\NFe.UI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -180,48 +217,10 @@
     <Content Include="uninfe.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MetroFramework\MetroFramework.Design\MetroFramework.Design.csproj">
-      <Project>{7316584d-9a16-4280-a8ab-6d45198c6e4d}</Project>
-      <Name>MetroFramework.Design</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MetroFramework\MetroFramework.Fonts\MetroFramework.Fonts.csproj">
-      <Project>{5a2fcae8-c2fa-41bd-90ea-16103ea07b26}</Project>
-      <Name>MetroFramework.Fonts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MetroFramework\MetroFramework\MetroFramework.csproj">
-      <Project>{bb41ac8b-cbed-4387-a7e0-4567edb3f57f}</Project>
-      <Name>MetroFramework</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NFe.Components.Info\NFe.Components.Info.csproj">
-      <Project>{b7222c8a-6160-4d6f-bdc8-20134308175a}</Project>
-      <Name>NFe.Components.Info</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NFe.Components.Wsdl\NFe.Components.Wsdl.csproj">
-      <Project>{22362df8-4026-4964-8975-ed87871ba07e}</Project>
-      <Name>NFe.Components.Wsdl</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NFe.Components\NFe.Components.csproj">
-      <Project>{c199d582-6da4-4d00-8963-89ba04777872}</Project>
-      <Name>NFe.Components</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NFe.ConvertTxt\NFe.ConvertTxt.csproj">
-      <Project>{9f2e5401-1c0b-4613-ab7f-985c7f0f267a}</Project>
-      <Name>NFe.ConvertTxt</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NFe.Service\NFe.Service.csproj">
-      <Project>{975c0cfb-c646-4a1d-8927-fd63869f2daf}</Project>
-      <Name>NFe.Service</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NFe.Settings\NFe.Settings.csproj">
-      <Project>{a963e456-a54b-4c4d-a9de-e80c136c3554}</Project>
-      <Name>NFe.Settings</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NFe.UI\NFe.UI.csproj">
-      <Project>{37a93e14-d881-4957-ad44-3615ed65cd57}</Project>
-      <Name>NFe.UI</Name>
-    </ProjectReference>
+    <Analyzer Include="..\NFe.Components.Info\bin\Release\NFe.Certificado.dll" />
+    <Analyzer Include="..\NFe.Components.Info\bin\Release\NFe.Components.dll" />
+    <Analyzer Include="..\NFe.Components.Info\bin\Release\NFe.Components.Info.dll" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>if "$(ConfigurationName)" == "Debug"  (GOTO doNothing)

@@ -9,9 +9,9 @@ namespace NFe.Components.Info
 {
     public class Aplicacao
     {
-         
+
         /// Grava XML com algumas informações do aplicativo, dentre elas os dados do certificado digital configurado nos parâmetros, versão, última modificação, etc.
-         
+
         /// <param name="sArquivo">Pasta e nome do arquivo XML a ser gravado com as informações</param>
         public void GravarXMLInformacoes(string sArquivo)
         {
@@ -281,9 +281,9 @@ namespace NFe.Components.Info
 
         #region AppExecutando()
 
-         
+
         /// Verifica se a aplicação já está executando ou não
-         
+
         /// <param name="oOneMutex">Objeto do tipo Mutex para ter como retorno para conseguir encerrar o mutex na finalização do aplicativo</param>
         /// <returns>True=Aplicação está executando</returns>
         /// <date>31/07/2009</date>
@@ -326,9 +326,9 @@ namespace NFe.Components.Info
 
         #region AppExecutando()
 
-         
+
         /// Verifica se a aplicação já está executando ou não
-         
+
         /// <returns>True=Aplicação está executando</returns>
         /// <remarks>
         /// Autor: Wandrey Mundin Ferreira

@@ -13,3 +13,6 @@ D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.Components.Wsdl\obj\Debug\NFe.Compone
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Wsdl\obj\Debug\NFe.Components.Wsdl.csprojResolveAssemblyReference.cache
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Wsdl\obj\Debug\NFe.Components.Wsdl.dll
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Components.Wsdl\obj\Debug\NFe.Components.Wsdl.pdb
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Components.Wsdl\obj\Debug\NFe.Components.Wsdl.csprojAssemblyReference.cache
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Components.Wsdl\obj\Debug\NFe.Components.Wsdl.dll
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Components.Wsdl\obj\Debug\NFe.Components.Wsdl.pdb

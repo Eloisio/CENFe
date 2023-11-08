@@ -1,8 +1,8 @@
 ﻿namespace NFe.ConvertTxt
 {
-     
+
     /// Emit
-     
+
     public class Emit
     {
         public string CNPJ { get; set; }
@@ -24,9 +24,9 @@
         }
     }
 
-     
+
     /// enderEmit
-     
+
     public class enderEmit
     {
         public string xLgr { get; set; }

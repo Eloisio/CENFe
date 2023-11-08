@@ -10,9 +10,9 @@ namespace NFe.Service.NFSe
     {
         #region Objeto com os dados do XML de lote rps
 
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s do lote rps
-         
+
         private DadosEnvLoteRps oDadosEnvLoteRps;
 
         #endregion Objeto com os dados do XML de lote rps

@@ -82,7 +82,7 @@
     <OutputPath>bin\x86\Debug\</OutputPath>
     <DefineConstants>TRACE;DEBUG;_fw46</DefineConstants>
     <DebugType>full</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
@@ -243,14 +243,6 @@
     <ProjectReference Include="..\NFe.ConvertTxt\NFe.ConvertTxt.csproj">
       <Project>{9F2E5401-1C0B-4613-AB7F-985C7F0F267A}</Project>
       <Name>NFe.ConvertTxt</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NFe.Settings\NFe.Settings.csproj">
-      <Project>{A963E456-A54B-4C4D-A9DE-E80C136C3554}</Project>
-      <Name>NFe.Settings</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NFe.Validate\NFe.Validate.csproj">
-      <Project>{4A0D1E87-2994-4678-9AF1-EEBD093B7B44}</Project>
-      <Name>NFe.Validate</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

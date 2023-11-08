@@ -3,9 +3,9 @@ using System;
 
 namespace NFe.ConvertTxt
 {
-     
+
     /// infNFe
-     
+
     public struct infNFe
     {
         public string ID;

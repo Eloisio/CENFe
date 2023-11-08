@@ -23,9 +23,9 @@ namespace NFe.Components
 
         #region Overrides
 
-         
+
         /// gravação de dados
-         
+
         /// <param name="provider">CurrentCulture</param>
         /// <returns>somente os números</returns>
         public string ToString(IFormatProvider provider)
@@ -33,9 +33,9 @@ namespace NFe.Components
             return Functions.OnlyNumbers(mValue, ".,-").ToString();
         }
 
-         
+
         /// Converte para string.
-         
+
         /// <returns>Retorna uma string formatada para o CNPJ</returns>
         public override string ToString()
         {
@@ -47,9 +47,9 @@ namespace NFe.Components
         #region Métodos estáticos
 
         #region FormatCNPJ
-         
+
         /// formata o CNPJ
-         
+
         /// <param name="cnpj">valor a ser formatado</param>
         /// <returns></returns>
         public static string FormatCNPJ(string cnpj)
@@ -67,9 +67,9 @@ namespace NFe.Components
         #endregion
 
         #region Validate()
-         
+
         /// valida o CNPJ
-         
+
         /// <param name="cnpj"></param>
         /// <returns>true se for um CNPJ válido</returns>
         public static bool Validate(string cnpj)
@@ -128,9 +128,9 @@ namespace NFe.Components
 
 namespace NFe.Exceptions
 {
-     
+
     /// CNPJ não é válido.
-     
+
     public class ExceptionCNPJInvalido : Exception
     {
         private string mCnpj = "";

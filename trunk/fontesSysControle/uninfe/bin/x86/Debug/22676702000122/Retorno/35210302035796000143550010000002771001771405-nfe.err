@@ -1,0 +1,9 @@
+﻿Versão|20.8.8.0
+ErrorCode|0000000000
+Message|Conteúdo da tag tpAmb do XML está com conteúdo indicando o envio para ambiente de produção e o UniNFe está configurado para ambiente de homologação.
+StackTrace|   em NFe.Service.TaskAbst.ValidacoesGeraisXMLNFe(DadosNFeClass dadosNFe) na E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Service\TaskAbst.cs:linha 2441
+   em NFe.Service.TaskAbst.AssinarValidarXMLNFe(XmlDocument conteudoXML) na E:\Desenvolvimento\CENFe\trunk\fontes\NFe.Service\TaskAbst.cs:linha 2284
+Source|NFe.Service
+Type|System.Exception
+TargetSite|Void ValidacoesGeraisXMLNFe(NFe.Service.DadosNFeClass)
+HashCode|28013860

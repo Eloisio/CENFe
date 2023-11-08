@@ -32,18 +32,18 @@ namespace NFe.Service.NFSe
     {
         #region Private Fields
 
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s do pedido de cancelamento
-         
+
         private DadosPedCanNfse oDadosPedCanNfse;
 
         #endregion Private Fields
 
         #region Private Methods
 
-         
+
         /// Encriptar a tag Assinatura quando for município de Blumenau - SC
-         
+
         private void EncryptAssinatura()
         {
             /// : 12/2013
@@ -51,9 +51,9 @@ namespace NFe.Service.NFSe
             val.EncryptAssinatura(NomeArquivoXML);
         }
 
-         
+
         /// Fazer a leitura do conteúdo do XML de cancelamento de NFS-e e disponibilizar conteúdo em um objeto para analise
-         
+
         /// <param name="arquivoXML">Arquivo XML que é para efetuar a leitura</param>
         private void PedCanNfse(int emp, string arquivoXML)
         {

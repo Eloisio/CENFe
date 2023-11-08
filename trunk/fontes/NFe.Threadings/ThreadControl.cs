@@ -144,7 +144,7 @@ namespace NFe.Threadings
             if (Empresas.Configuracoes.Count != 0)
             {
                 Empresa empresa = Empresas.Configuracoes[Empresa];
-                 // Se o certificado for A3, então vai para o Buffer controlado, pois deverá ser executado um de cada vez
+                // Se o certificado for A3, então vai para o Buffer controlado, pois deverá ser executado um de cada vez
                 if (empresa.UsaCertificado && empresa.X509Certificado.IsA3())
                 {
                     // Usar o subject como chave, pois pode se configurar o mesmo certificado

@@ -1,8 +1,8 @@
 ﻿namespace NFe.ConvertTxt
 {
-     
+
     /// Compra
-     
+
     public struct Compra
     {
         public string xNEmp;

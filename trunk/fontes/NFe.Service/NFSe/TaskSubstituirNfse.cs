@@ -20,9 +20,9 @@ namespace NFe.Service.NFSe
 
         #region Objeto com os dados do XML da consulta nfse
 
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s da consulta nfse
-         
+
         private DadosPedSitNfse dadosXML;
 
         #endregion Objeto com os dados do XML da consulta nfse

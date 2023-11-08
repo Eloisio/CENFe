@@ -9,44 +9,44 @@ using Servicos = Unimake.SAT.Servico;
 
 namespace NFe.SAT.Servico.Envio
 {
-     
+
     /// Classe responsável pela associação da assinatura no SAT
-     
+
     public class AssociarAssinatura : ServicoBase
     {
-         
+
         /// Dados do XML
-         
+
         private XmlDocument Document = new XmlDocument();
 
-         
+
         /// Dados da empresa
-         
+
         private Empresa DadosEmpresa = null;
 
-         
+
         /// Assinatura digital conjunto "CNPJ Software House" + "CNPJ do estabelecimento comercial".
-         
+
         private string CNPJValue = null;
 
-         
+
         /// Assinatura digital conjunto "CNPJ Software House" + "CNPJ do estabelecimento comercial".
-         
+
         private string AssinaturaCNPJs = null;
 
-         
+
         /// Resposta do equipamento sat
-         
+
         private Servicos.Retorno.AssociarAssinaturaResponse AssociarAssinaturaRetorno = new Servicos.Retorno.AssociarAssinaturaResponse();
 
-         
+
         /// Nome do arquivo XML que esta sendo manipulado
-         
+
         public override string ArquivoXML { get; set; }
 
-         
+
         /// Construtor com serialização
-         
+
         /// <param name="arquivoXML">arquivo a ser lido</param>
         /// <param name="dadosEmpresa">dados da empresa</param>
         public AssociarAssinatura(string arquivoXML, Empresa dadosEmpresa)
@@ -65,18 +65,18 @@ namespace NFe.SAT.Servico.Envio
             CodigoAtivacao = DadosEmpresa.CodigoAtivacaoSAT;
         }
 
-         
+
         /// Comunicar com o equipamento SAT
-         
+
         public override void Enviar()
         {
             string resposta = Sat.CancelarUltimaVenda(CNPJValue, AssinaturaCNPJs);
             AssociarAssinaturaRetorno = new Servicos.Retorno.AssociarAssinaturaResponse(resposta);
         }
 
-         
+
         /// Salva o XML de Retorno
-         
+
         public override string SaveResponse()
         {
             string result = Path.Combine(DadosEmpresa.PastaXmlRetorno,

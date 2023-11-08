@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PastaXmlEnvio>E:\Desenvolvimento\CENFe\trunk\fontes\uninfe\bin\x86\Debug\22676702000122\Envio</PastaXmlEnvio>
+  <PastaXmlRetorno>E:\Desenvolvimento\CENFe\trunk\fontes\uninfe\bin\x86\Debug\22676702000122\Retorno</PastaXmlRetorno>
+  <PastaXmlEnviado>E:\Desenvolvimento\CENFe\trunk\fontes\uninfe\bin\x86\Debug\22676702000122\Enviado</PastaXmlEnviado>
+  <PastaXmlErro>E:\Desenvolvimento\CENFe\trunk\fontes\uninfe\bin\x86\Debug\22676702000122\Erro</PastaXmlErro>
+  <PastaBackup>D:</PastaBackup>
+  <PastaXmlEmLote>E:\Desenvolvimento\CENFe\trunk\fontes\uninfe\bin\x86\Debug\22676702000122\EnvioEmLote</PastaXmlEmLote>
+  <PastaValidar>E:\Desenvolvimento\CENFe\trunk\fontes\uninfe\bin\x86\Debug\22676702000122\Validar</PastaValidar>
+  <PastaDanfeMon />
+  <PastaDownloadNFeDest>E:\Desenvolvimento\CENFe\trunk\fontes\uninfe\bin\x86\Debug\22676702000122\DownloadNFe</PastaDownloadNFeDest>
+  <CNPJ>22676702000122</CNPJ>
+  <Nome>sdsss</Nome>
+  <UnidadeFederativaCodigo>41</UnidadeFederativaCodigo>
+  <AmbienteCodigo>2</AmbienteCodigo>
+  <tpEmis>1</tpEmis>
+  <UsaCertificado>true</UsaCertificado>
+  <CertificadoInstalado>true</CertificadoInstalado>
+  <CertificadoArquivo />
+  <CertificadoSenha />
+  <CertificadoPIN />
+  <Certificado>CN=DEC MATERIAIS DE CONSTRUCAO LTDA:24766330000150, OU=48408538000166, OU=RFB e-CNPJ A3, OU=Secretaria da Receita Federal do Brasil - RFB, L=Cacapava, S=SP, O=ICP-Brasil, C=BR</Certificado>
+  <CertificadoDigitalThumbPrint>22953CD6F4EB1486C869CD6D33E47864B8979F34</CertificadoDigitalThumbPrint>
+  <GravarRetornoTXTNFe>false</GravarRetornoTXTNFe>
+  <DiasLimpeza>0</DiasLimpeza>
+  <TempoConsulta>2</TempoConsulta>
+  <UsuarioWS />
+  <SenhaWS />
+  <Servico>Nfe</Servico>
+  <CriaPastasAutomaticamente>false</CriaPastasAutomaticamente>
+  <GravarEventosNaPastaEnviadosNFe>false</GravarEventosNaPastaEnviadosNFe>
+  <GravarEventosCancelamentoNaPastaEnviadosNFe>false</GravarEventosCancelamentoNaPastaEnviadosNFe>
+  <GravarEventosDeTerceiros>false</GravarEventosDeTerceiros>
+  <ArqNSU>false</ArqNSU>
+  <IndSinc>false</IndSinc>
+  <PastaExeUniDanfe />
+  <PastaConfigUniDanfe />
+  <ConfiguracaoDanfe />
+  <ConfiguracaoCCe />
+  <XMLDanfeMonNFe>false</XMLDanfeMonNFe>
+  <XMLDanfeMonProcNFe>false</XMLDanfeMonProcNFe>
+  <XMLDanfeMonDenegadaNFe>false</XMLDanfeMonDenegadaNFe>
+  <EmailDanfe />
+  <AdicionaEmailDanfe>true</AdicionaEmailDanfe>
+  <IdentificadorCSC />
+  <TokenCSC />
+  <diretorioSalvarComo>AM</diretorioSalvarComo>
+  <FTPPastaAutorizados />
+  <FTPPastaRetornos />
+  <FTPNomeDoServidor />
+  <FTPNomeDoUsuario />
+  <FTPSenha />
+  <FTPPorta>21</FTPPorta>
+  <FTPAtivo>false</FTPAtivo>
+  <FTPPassivo>false</FTPPassivo>
+  <FTPGravaXMLPastaUnica>false</FTPGravaXMLPastaUnica>
+  <UtilizaConversaoCFe>false</UtilizaConversaoCFe>
+  <NumeroCaixa>001</NumeroCaixa>
+  <RegTribISSQNSAT>MicroEmpresaMunicipal</RegTribISSQNSAT>
+  <IndRatISSQNSAT>S</IndRatISSQNSAT>
+  <ClientID />
+  <ClientSecret />
+</Empresa>

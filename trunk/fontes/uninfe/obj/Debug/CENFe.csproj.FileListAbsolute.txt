@@ -13,3 +13,9 @@ D:\Desenvolvimento\CENFe\trunk\fontes\uninfe\obj\Debug\CENFe.pdb
 D:\Desenvolvimento\CENFe\trunk\fontes\uninfe\obj\Debug\CENFe.csprojResolveAssemblyReference.cache
 D:\Desenvolvimento\CENFe\trunk\fontes\uninfe\obj\Debug\CEnfe.Properties.Resources.resources
 D:\Desenvolvimento\CENFe\trunk\fontes\uninfe\obj\Debug\CENFe.csproj.GenerateResource.Cache
+E:\Desenvolvimento\cenfe\trunk\fontes\uninfe\obj\Debug\CENFe.csprojAssemblyReference.cache
+E:\Desenvolvimento\cenfe\trunk\fontes\uninfe\obj\Debug\CEnfe.Properties.Resources.resources
+E:\Desenvolvimento\cenfe\trunk\fontes\uninfe\obj\Debug\CENFe.csproj.GenerateResource.cache
+E:\Desenvolvimento\cenfe\trunk\fontes\uninfe\obj\Debug\CENFe.csproj.CopyComplete
+E:\Desenvolvimento\cenfe\trunk\fontes\uninfe\obj\Debug\CENFe.exe
+E:\Desenvolvimento\cenfe\trunk\fontes\uninfe\obj\Debug\CENFe.pdb

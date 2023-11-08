@@ -9,60 +9,60 @@ using System.Xml;
 
 namespace NFe.Service
 {
-     
+
     /// Classe abstrata para gerar os XML´s da nota fiscal eletrônica
-     
+
     public class GerarXML
     {
         #region Atributos
 
-         
+
         /// Index da empresa selecionada
-         
+
         protected int EmpIndex { get; set; }
 
-         
+
         /// Atributo que vai receber a string do XML de lote de NFe´s para que este conteúdo seja gravado após finalizado em arquivo físico no HD
-         
+
         protected string XMLLoteDFe;
 
-         
+
         /// Nome do arquivo para controle da numeração sequencial do lote.
-         
+
         protected string NomeArqXmlLote;
 
-         
+
         /// Nome do arquivo 1 de backup de segurança do arquivo de controle da numeração sequencial do lote
-         
+
         protected string Bkp1NomeArqXmlLote;
 
-         
+
         /// Nome do arquivo 2 de backup de segurança do arquivo de controle da numeração sequencial do lote
-         
+
         protected string Bkp2NomeArqXmlLote;
 
-         
+
         /// Nome do arquivo 3 de backup de segurança do arquivo de controle da numeração sequencial do lote
-         
+
         protected string Bkp3NomeArqXmlLote;
 
         #endregion Atributos
 
         #region Propriedades
 
-         
+
         /// Nome do arquivo XML que está sendo enviado para os webservices
-         
+
         public string NomeXMLDadosMsg { get; set; }
 
-         
+
         /// Serviço que está sendo executado (Envio de NFE, Cancelamento, consultas, etc...)
-         
+
         public Servicos Servico { get; set; }
 
-         
+
         /// Nome do arquivo XML gerado
-         
+
         public string NomeArqGerado { get; private set; }
 
         #endregion Propriedades
@@ -93,9 +93,9 @@ namespace NFe.Service
 
         #region LoteNfe()
 
-         
+
         /// Gera o Lote das Notas Fiscais passada por parâmetro na pasta de envio
-         
+
         /// <param name="conteudosXML">Conteudos dos XMLs</param>
         /// <param name="versaoXml">Versão do XML do lote</param>
         /// <by>Wandrey Mundin Ferreira</by>
@@ -197,9 +197,9 @@ namespace NFe.Service
 
         #region FinalizacaoLote()
 
-         
+
         /// Executa alguns procedimentos para finalizar o processo de montagem de 1 lote de notas
-         
+
         private void FinalizacaoLote(int numeroLote, List<ArquivoXMLDFe> arquivosXMLDFe)
         {
             //Vou atualizar os lotes das NFE´s no fluxo de envio somente depois de encerrado o lote onde eu
@@ -234,9 +234,9 @@ namespace NFe.Service
 
         #region IniciarLoteNfe()
 
-         
+
         /// Inicia a string do XML do Lote de notas fiscais
-         
+
         /// <param name="intNumeroLote">Número do lote que será enviado</param>
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>15/04/2009</date>
@@ -274,9 +274,9 @@ namespace NFe.Service
 
         #region InserirNFeLote()
 
-         
+
         /// Insere o XML de Nota Fiscal passado por parâmetro na string do XML de Lote de NFe
-         
+
         /// <param name="strArquivoNfe">Nome do arquivo XML de nota fiscal eletrônica a ser inserido no lote</param>
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>15/04/2009</date>
@@ -313,9 +313,9 @@ namespace NFe.Service
 
         #region EncerrarLoteNfe()
 
-         
+
         /// Encerra a string do XML de lote de notas fiscais eletrônicas
-         
+
         /// <param name="numeroLote">Número do lote que será enviado</param>
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>15/04/2009</date>
@@ -345,9 +345,9 @@ namespace NFe.Service
 
         #region PopulateNomeArqLote()
 
-         
+
         /// Popular a propriedade do nome do arquivo de controle da numeração do lote
-         
+
         /// <remarks>
         /// Autor: Wandrey Mundin Ferreira
         /// Data: 20/08/2010
@@ -364,9 +364,9 @@ namespace NFe.Service
 
         #endregion PopulateNomeArqLote()
 
-         
+
         /// Somente gera o Número do lote no caso de CTeOS para manter compatibilidade com o processo do ERP, facilitando integração.
-         
+
         /// <returns>Número do lote</returns>
         public Int32 GerarLoteCTeOS(string nomeArquivoXML)
         {
@@ -378,9 +378,9 @@ namespace NFe.Service
         }
         #region ProximoNumeroLote()
 
-         
+
         /// Pega o ultimo número de lote utilizado e acrescenta mais 1 para novo envio
-         
+
         /// <returns>Retorna o um novo número de lote a ser utilizado nos envios das notas fiscais</returns>
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>15/04/2009</date>
@@ -513,9 +513,9 @@ namespace NFe.Service
         #endregion ProximoNumeroLote()
         #region SalvarNumeroLoteUtilizado()
 
-         
+
         /// Salva em XML o número do ultimo lote utilizado para envio
-         
+
         /// <param name="intNumeroLote">Numero do lote a ser salvo</param>
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>15/04/2009</date>
@@ -562,9 +562,9 @@ namespace NFe.Service
         #endregion SalvarNumeroLoteUtilizado()
         #region GravarXMLLoteRetERP()
 
-         
+
         /// Grava um XML com o número de lote utilizado na pasta de retorno para que o ERP possa pegar este número
-         
+
         /// <param name="intNumeroLote">Número do lote a ser gravado no retorno para o ERP</param>
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>15/04/2009</date>
@@ -617,9 +617,9 @@ namespace NFe.Service
 
         #region Consulta()
 
-         
+
         /// Gera arquivo XML de consulta situação da NFe, CTe ou MDFe
-         
+
         /// <param name="tipoAplicativo">Tipo do aplicativo, se NFe, CTe ou MDFe</param>
         /// <param name="Arquivo">Final do arquivo a ser gerado</param>
         /// <param name="tpAmb">Tipo de ambiente</param>
@@ -650,9 +650,9 @@ namespace NFe.Service
 
         #region ConsultaNFe()
 
-         
+
         /// Gera uma string com o XML de consulta (-ped-sit.xml) da NFe
-         
+
         /// <param name="tpAmb">Tipo de ambiente</param>
         /// <param name="tpEmis">Tipo de emissão</param>
         /// <param name="chNFe">Chave da NFe</param>
@@ -676,9 +676,9 @@ namespace NFe.Service
 
         #region ConsultaCTe()
 
-         
+
         /// Gera uma string com o XML de consulta (-ped-sit.xml) da CTe
-         
+
         /// <param name="tpAmb">Tipo de ambiente</param>
         /// <param name="tpEmis">Tipo de emissão</param>
         /// <param name="chCTe">Chave da CTe</param>
@@ -702,9 +702,9 @@ namespace NFe.Service
 
         #region ConsultaMDFe()
 
-         
+
         /// Gera uma string com o XML de consulta (-ped-sit.xml) da MDFe
-         
+
         /// <param name="tpAmb">Tipo de ambiente</param>
         /// <param name="tpEmis">Tipo de emissão</param>
         /// <param name="chMDFe">Chave da MDFe</param>
@@ -730,10 +730,10 @@ namespace NFe.Service
 
         #region ConsultaCadastro()
 
-         
+
         /// Cria um arquivo XML com a estrutura necessária para consultar um cadastro
         /// Voce deve preencher o estado e mais um dos tres itens: CPNJ, IE ou CPF
-         
+
         /// <param name="uf">Sigla do UF do cadastro a ser consultado. Tem que ter duas letras. SU para suframa.</param>
         /// <param name="cnpj"></param>
         /// <param name="ie"></param>
@@ -778,9 +778,9 @@ namespace NFe.Service
             return Empresas.Configuracoes[emp].PastaXmlEnvio + "\\" + _arquivo_saida;
         }
 
-         
+
         /// retorna uma string contendo apenas os digitos da entrada
-         
+
         /// <by>Marcos Diez</by>
         /// <date>29/08/2009</date>
         private static string OnlyNumbers(string entrada)
@@ -841,9 +841,9 @@ namespace NFe.Service
 
         #region StatusServico()
 
-         
+
         /// Consulta status do serviço da NFe, CTe e MDFe
-         
+
         /// <param name="servico">Servico</param>
         /// <param name="tpEmis">Tipo de emissão</param>
         /// <param name="cUF">Código da UF</param>
@@ -890,9 +890,9 @@ namespace NFe.Service
 
         #region StatusServicoNFe()
 
-         
+
         /// Gera o XML de consulta status do serviço da NFe
-         
+
         /// <param name="pArquivo">Caminho e nome do arquivo que é para ser gerado</param>
         /// <param name="tpAmb">Ambiente da consulta</param>
         /// <param name="tpEmis">Tipo de emissão da consulta</param>
@@ -907,9 +907,9 @@ namespace NFe.Service
 
         #region StatusServicoCTe()
 
-         
+
         /// Gera o XML de consulta status do serviço do CTe
-         
+
         /// <param name="pArquivo">Caminho e nome do arquivo que é para ser gerado</param>
         /// <param name="tpAmb">Ambiente da consulta</param>
         /// <param name="tpEmis">Tipo de emissão da consulta</param>
@@ -924,9 +924,9 @@ namespace NFe.Service
 
         #region StatusServicoMDFe()
 
-         
+
         /// Gera o XML de consulta status do serviço do MDFe
-         
+
         /// <param name="pArquivo">Caminho e nome do arquivo que é para ser gerado</param>
         /// <param name="tpAmb">Ambiente da consulta</param>
         /// <param name="tpEmis">Tipo de emissão da consulta</param>
@@ -943,9 +943,9 @@ namespace NFe.Service
 
         #region XmlRetorno()
 
-         
+
         /// Grava o XML com os dados do retorno dos webservices e deleta o XML de solicitação do serviço.
-         
+
         /// <param name="finalArqEnvio">Final do nome do arquivo de solicitação do serviço.</param>
         /// <param name="finalArqRetorno">Final do nome do arquivo que é para ser gravado o retorno.</param>
         /// <param name="conteudoXMLRetorno">Conteúdo do XML a ser gerado</param>
@@ -967,9 +967,9 @@ namespace NFe.Service
 
         #region XmlRetorno()
 
-         
+
         /// Grava o XML com os dados do retorno dos webservices e deleta o XML de solicitação do serviço.
-         
+
         /// <param name="finalArqEnvio">Final do nome do arquivo de solicitação do serviço.</param>
         /// <param name="finalArqRetorno">Final do nome do arquivo que é para ser gravado o retorno.</param>
         /// <param name="conteudoXMLRetorno">Conteúdo do XML a ser gerado</param>
@@ -992,9 +992,9 @@ namespace NFe.Service
 
         #region XmlRetorno()
 
-         
+
         /// Grava o XML com os dados do retorno dos webservices e deleta o XML de solicitação do serviço.
-         
+
         /// <param name="finalArqEnvio">Final do nome do arquivo de solicitação do serviço.</param>
         /// <param name="finalArqRetorno">Final do nome do arquivo que é para ser gravado o retorno.</param>
         /// <param name="conteudoXMLRetorno">Conteúdo do XML a ser gerado</param>
@@ -1611,9 +1611,9 @@ namespace NFe.Service
 
         #region XMLDistInut()
 
-         
+
         /// Criar o arquivo XML de distribuição das Inutilizações de Números de NFe´s com o protocolo de autorização anexado
-         
+
         /// <param name="nomeArqInut">Nome arquivo XML de Inutilização</param>
         /// <param name="strRetInut">Conteúdo retornado pela SEFAZ com o protocolo da inutilização</param>
         /// <param name="conteudoXML">Conteúdo do XML de inutilização já assinado</param>
@@ -1660,9 +1660,9 @@ namespace NFe.Service
             }
         }
 
-         
+
         /// Criar o arquivo XML de distribuição das Inutilizações de Números de NFe´s com o protocolo de autorização anexado
-         
+
         /// <param name="nomeArqInut">Nome arquivo XML de Inutilização</param>
         /// <param name="strRetInut">Conteúdo retornado pela SEFAZ com o protocolo da inutilização</param>
         /// <param name="conteudoXML">Conteúdo do XML de inutilização já assinado</param>
@@ -1710,9 +1710,9 @@ namespace NFe.Service
 
         #region XmlPedRec()
 
-         
+
         /// Gera o XML de pedido de consulta do recibo do lote
-         
+
         /// <param name="mod">Modelo do documento fiscal</param>
         /// <param name="recibo">Número do recibo a ser consultado o lote</param>
         public XmlDocument XmlPedRec(string mod, string recibo, string versao)
@@ -1757,9 +1757,9 @@ namespace NFe.Service
 
         #region XmlPedRecNFe()
 
-         
+
         /// Gera o XML de pedido de analise do recibo do lote
-         
+
         /// <param name="emp">Código da empresa</param>
         /// <param name="recibo">Número do recibo a ser consultado o lote</param>
         /// <param name="versao">Versão do schema do XML</param>
@@ -1784,9 +1784,9 @@ namespace NFe.Service
 
         #region XmlPedRecCTe()
 
-         
+
         /// Gera o XML de pedido de analise do recibo do lote
-         
+
         /// <param name="emp">Código da empresa</param>
         /// <param name="recibo">Número do recibo a ser consultado o lote</param>
         /// <param name="versao">Versão do schema do XML</param>
@@ -1809,9 +1809,9 @@ namespace NFe.Service
 
         #region XmlPedRecMDFe()
 
-         
+
         /// Gera o XML de pedido de analise do recibo do lote
-         
+
         /// <param name="emp">Código da empresa</param>
         /// <param name="recibo">Número do recibo a ser consultado o lote</param>
         /// <param name="versao">Versão do schema do XML</param>
@@ -1834,9 +1834,9 @@ namespace NFe.Service
 
         #region XMLDistNFe()
 
-         
+
         /// Criar o arquivo XML de distribuição das NFE com o protocolo de autorização anexado
-         
+
         /// <param name="arqNFe">Nome arquivo XML da NFe</param>
         /// <param name="protNfe">String contendo a parte do XML do protocolo a ser anexado</param>
         /// <param name="extensao">Extensão para gerar o arquivo de distribuição da NFe</param>
@@ -1898,9 +1898,9 @@ namespace NFe.Service
 
         #region XMLDistCTe()
 
-         
+
         /// Criar o arquivo XML de distribuição dos CTE com o protocolo de autorização anexado
-         
+
         /// <param name="arqCTe">Nome arquivo XML da CTe</param>
         /// <param name="protCTe">String contendo a parte do XML do protocolo a ser anexado</param>
         /// <param name="versao">Versão do XML da NFe</param>
@@ -1955,9 +1955,9 @@ namespace NFe.Service
             return nomeArqProcCTe;
         }
 
-         
+
         /// Criar o arquivo XML de distribuição dos CTE com o protocolo de autorização anexado
-         
+
         /// <param name="arqCTe">Nome arquivo XML da CTe</param>
         /// <param name="protCTe">String contendo a parte do XML do protocolo a ser anexado</param>
         /// <param name="versao">Versão do XML da NFe</param>
@@ -2016,9 +2016,9 @@ namespace NFe.Service
 
         #region XMLDistMDFe()
 
-         
+
         /// Criar o arquivo XML de distribuição dos MDFe com o protocolo de autorização anexado
-         
+
         /// <param name="arqMDFe">Nome arquivo XML da MDFe</param>
         /// <param name="protMDFe">String contendo a parte do XML do protocolo a ser anexado</param>
         /// <param name="versao">Versão do schema do XML</param>
@@ -2078,9 +2078,9 @@ namespace NFe.Service
 
         #region XMLDistLMC()
 
-         
+
         /// Criar o arquivo XML de distribuição dos LMC com o protocolo de autorização anexado
-         
+
         /// <param name="arqLMC">Nome arquivo XML da LMC</param>
         /// <param name="protLMC">String contendo a parte do XML do protocolo a ser anexado</param>
         /// <param name="extensao">String contendo a extensão do arquivo</param>
@@ -2158,9 +2158,9 @@ namespace NFe.Service
 
         #region EnvioEvento
 
-         
+
         /// EnvioEvento
-         
+
         /// <param name="pArquivo"></param>
         /// <param name="dadosEnvEvento"></param>
         public void EnvioEvento(string pArquivo, DadosenvEvento dadosEnvEvento)
@@ -2591,10 +2591,10 @@ namespace NFe.Service
         #endregion XmlDistEventoCTe()
         #region XmlDistEventoCTe()
 
-         
+
         /// XMLDistEvento
         /// Criar o arquivo XML de distribuição dos Eventos CTe
-         
+
         public void XmlDistEventoCTe(int emp, string ChaveNFe, int nSeqEvento, int tpEvento, string xmlEventoEnvio, string xmlRetornoEnvio,
             DateTime dhRegEvento, bool FromTaskEventos, string versao)
         {
@@ -2684,9 +2684,9 @@ namespace NFe.Service
 
         #region XmlDistEventoMDFe()
 
-         
+
         /// XMLDistEvento CTe
-         
+
         /// <param name="emp"></param>
         /// <param name="strXmlRetorno"></param>
         public void XmlDistEventoMDFe(int emp, string strXmlRetorno)
@@ -2718,10 +2718,10 @@ namespace NFe.Service
 
         #region XmlDistEventoMDFe()
 
-         
+
         /// XMLDistEvento
         /// Criar o arquivo XML de distribuição dos Eventos MDFe
-         
+
         public void XmlDistEventoMDFe(int emp, string ChaveNFe, int nSeqEvento, int tpEvento, string xmlEventoEnvio, string xmlRetornoEnvio, DateTime dhRegEvento, bool FromTaskEventos, string versao)
         {
             // grava o xml de distribuicao como: chave + "_" +  nSeqEvento

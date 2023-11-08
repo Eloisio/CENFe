@@ -17,10 +17,10 @@ namespace NFe.Service
             public Int32 tpEmis { get; set; }
             public string servicos { get; set; }
         }
-         
+
         /// Alguns estados nao tem o servico de consulta ao cadastro de contribuinte, por exemplo.
         /// Então, antes da aplicacao chamar um servico, ela pode consultar para saber ser um servico está disponivel para um estado
-         
+
         public override void Execute()
         {
             int emp = Empresas.FindEmpresaByThread();

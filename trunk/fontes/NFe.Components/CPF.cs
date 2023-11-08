@@ -14,9 +14,9 @@ namespace NFe.Components
 
         #region Private Constructors
 
-         
+
         /// Construtor do objeto CPF
-         
+
         /// <param name="value">CPF informado</param>
         private CPF(string value)
         {
@@ -36,9 +36,9 @@ namespace NFe.Components
         #region Public Methods
 
 
-         
+
         /// Analisa o CPF informado e verifica se é válido
-         
+
         /// <param name="cpf">CPF informado</param>
         /// <param name="allowNullOrEmpty">Se true, permite nulo e branco</param>
         /// <returns></returns>
@@ -107,9 +107,9 @@ namespace NFe.Components
         }
 
 
-         
+
         /// gravação de dados
-         
+
         /// <param name="provider">CurrentCulture</param>
         /// <returns>somente os números</returns>
         public string ToString(IFormatProvider provider)
@@ -117,18 +117,18 @@ namespace NFe.Components
             return Functions.OnlyNumbers(_value, ".-").ToString();
         }
 
-         
+
         /// Converte para o formato string
-         
+
         /// <returns></returns>
         public override string ToString()
         {
             return Format(_value);
         }
 
-         
+
         /// Formatar o CPF
-         
+
         /// <param name="cpf">CPF a ser formatado</param>
         /// <returns></returns>
         public string Format(string cpf)
@@ -143,9 +143,9 @@ namespace NFe.Components
 
         #region Private Methods
 
-         
+
         /// Conta a quantidade de vezes que um carácter aparece em uma string
-         
+
         /// <param name="value">string com os caracteres a ser analisado</param>
         /// <param name="charToCount">carácter a ser contado</param>
         /// <returns>A quantidade de vezes que o carácter (charToCount) foi encontrado na string (value)</returns>
@@ -162,9 +162,9 @@ namespace NFe.Components
 
 namespace NFe.Exceptions
 {
-     
+
     /// CPF não é válido.
-     
+
     public class ExceptionCPFInvalido : Exception
     {
         private string _cpf = "";

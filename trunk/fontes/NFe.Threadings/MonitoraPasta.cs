@@ -7,20 +7,13 @@ using System.Xml.Linq;
 
 namespace NFe.Threadings
 {
-     
-    /// Executar as thread´s dos serviços do UniNFe e NFe conforme necessário
-     
-    /// <remarks>
-    /// Autor: Wandrey Mundin Ferreira
-    /// Data: 04/04/2011
-    /// </remarks>
     public class MonitoraPasta
     {
         #region Construtores
 
-         
+
         /// Construtor
-         
+
         public MonitoraPasta()
         {
             MonitorarPasta();
@@ -31,18 +24,18 @@ namespace NFe.Threadings
 
         #region Propriedades
 
-         
+
         /// Tipos de arquivos a serem monitorados pelo UniNFe
-         
+
         public static List<FileSystemWatcher> fsw = new List<FileSystemWatcher>();
 
         #endregion Propriedades
 
         #region MonitorarPastas()
 
-         
+
         /// Executa as thread´s de monitoração de pastas
-         
+
         private void MonitorarPasta()
         {
             fsw.Clear();
@@ -137,7 +130,7 @@ namespace NFe.Threadings
                         }
                         else
                             ThreadService.Stop();
-                            Environment.Exit(0);
+                        Environment.Exit(0);
                         return;
                     }
                     string ExtRetorno = null;
@@ -209,7 +202,6 @@ namespace NFe.Threadings
                                     }
                                 }
                             }
-
                             return;
                         }
                         catch (Exception ex)
@@ -218,7 +210,6 @@ namespace NFe.Threadings
                             finalArqErro = uext.EnvioXML.Replace(".xml", ".err");
                             exx = ex;
                         }
-
                         #endregion ---Reinicia
                     }
 
@@ -250,19 +241,8 @@ namespace NFe.Threadings
                     empresa = LocalizaEmpresa(fi);
                 }
 
-                if (empresa >= 0)
-                {
-                    /*<#8084>
-                     * Aqui foi modificado porque a ThreadControl deixou de existir.
-                     * E todo o processamento que antes existia na thread control foi deixado apenas no método Run(), que é chamado abaixo
-                     */
-                    new ThreadItem(fi, empresa).Run();
-                    //</#8084>
-                }
-                else
-                {
-                    Auxiliar.WriteLog(fi.FullName + " - Não localizou a empresa.", true);
-                }
+                if (empresa >= 0) new ThreadItem(fi, empresa).Run();
+                else Auxiliar.WriteLog(fi.FullName + " - Não localizou a empresa.", true);
             }
             catch (Exception ex)
             {

@@ -1,0 +1,848 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NFe.SAT</name>
+    </assembly>
+    <members>
+        <member name="T:NFe.SAT.Conversao.ConverterNFCe">
+            <summary>
+            Classe responsável pela conversão da NFCe em CFe
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Conversao.ConverterNFCe.XMLOutput">
+            <summary>
+            Arquivo de saída
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Conversao.ConverterNFCe.#ctor(System.String,NFe.Settings.Empresa,System.String)">
+            <summary>
+            Converter a CFe
+            </summary>
+            <param name="file">arquivo da NFCe</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+            <param name="outputfile">onde será salvo o arquivo</param>
+        </member>
+        <member name="M:NFe.SAT.Conversao.ConverterNFCe.ConverterSAT">
+            <summary>
+            Executar a conversão
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Conversao.ConverterNFCe.GerarLoteCFe">
+            <summary>
+            Gerar arquivo de lote a partir da NFCe
+            </summary>
+            <returns>Lote da CFe</returns>
+        </member>
+        <member name="M:NFe.SAT.Conversao.ConverterNFCe.PopularProdutos">
+            <summary>
+            Adiciona os itens da nota ao Lote da CFe
+            </summary>
+            <returns>Lista de Produtos</returns>
+        </member>
+        <member name="M:NFe.SAT.Conversao.ConverterNFCe.PopularMeioPagamento">
+            <summary>
+            Formas de pagamento
+            </summary>
+            <returns>lista de formas de pagamento</returns>
+        </member>
+        <member name="M:NFe.SAT.Conversao.ConverterNFCe.ImpostoProduto``1(System.Xml.XmlNodeList)">
+            <summary>
+            Grava valores de impostos nos produtos
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="childs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NFe.SAT.Conversao.ConverterNFCe.SetProperrty(System.Object,System.String,System.Object)">
+            <summary>
+            Adiciona valores por referencia nos objetos
+            </summary>
+            <param name="result">objeto que será definido o valor</param>
+            <param name="propertyName">nome da propriedade</param>
+            <param name="value">valor que será definido</param>
+        </member>
+        <member name="M:NFe.SAT.Conversao.ConverterNFCe.GetXML(System.Xml.XmlNodeList,System.String)">
+            <summary>
+            Busca valor de uma tag a partir de um nó
+            </summary>
+            <param name="nodes">nó onde vai ser procurado a tag</param>
+            <param name="nameTag">nome da tag</param>
+            <returns></returns>
+        </member>
+        <member name="M:NFe.SAT.Conversao.ConverterNFCe.GetXMLZero(System.Xml.XmlNodeList,System.String)">
+            <summary>
+            Busca valor de uma tag a partir de um nó
+            </summary>
+            <param name="nodes">nó onde vai ser procurado a tag</param>
+            <param name="nameTag">nome da tag</param>
+            <returns></returns>
+        </member>
+        <member name="M:NFe.SAT.Conversao.ConverterNFCe.GetDocumentoPessoa(System.String)">
+            <summary>
+            Localiza o numero do documento da pessoa
+            </summary>
+            <param name="parentTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NFe.SAT.Conversao.ConverterNFCe.GetValueXML(System.String,System.String)">
+            <summary>
+            Retorna o valor do documento a partir da raiz
+            </summary>
+            <param name="groupTag">nome do nó</param>
+            <param name="nameTag">nome da tag</param>
+            <returns></returns>
+        </member>
+        <member name="M:NFe.SAT.Conversao.ConverterNFCe.Modulus11Digit(System.String)">
+            <summary>
+            Retorna o dígito verificador do valor informado
+            </summary>
+            <param name="value">Valor para calcular o dígito verificador</param>
+            <returns></returns>
+        </member>
+        <member name="M:NFe.SAT.Conversao.ConverterNFCe.ValidarCFe">
+            <summary>
+            Realiza validação do XML a partir dos schemas
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Abstract.Servico.ServicoBase">
+            <summary>
+            Classe abstrata para comunicação com as DLLs
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Abstract.Servico.ServicoBase.Marca">
+            <summary>
+            Marca do fabricante do SAT
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Abstract.Servico.ServicoBase.CodigoAtivacao">
+            <summary>
+            Código de ativação do SAT
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Abstract.Servico.ServicoBase.ArquivoXML">
+            <summary>
+            Arquivo XML carregado no construtor
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Abstract.Servico.ServicoBase._Sat">
+            <summary>
+            Define o objeto de comunicação SAT
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Abstract.Servico.ServicoBase.Sat">
+            <summary>
+            Objeto de comunicação com o SAT
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Abstract.Servico.ServicoBase.Enviar">
+            <summary>
+            Método responsável em transmitir a comunicação com o SAT
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NFe.SAT.Abstract.Servico.ServicoBase.SaveResponse">
+            <summary>
+            Método responsável por salvar o retorno do SAT
+            </summary>
+            <returns>caminho do arquivo de resposta</returns>
+        </member>
+        <member name="M:NFe.SAT.Abstract.Servico.ServicoBase.DeserializarObjeto``1">
+            <summary>
+            Deserializar o objeto para string
+            </summary>
+            <typeparam name="T">Tipo do objeto</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:NFe.SAT.Abstract.Servico.ServicoBase.GetValueXML(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Retorna o valor do documento a partir da raiz
+            </summary>
+            <param name="document">XML carregado</param>
+            <param name="groupTag">nome do nó</param>
+            <param name="nameTag">nome da tag</param>
+            <returns></returns>
+        </member>
+        <member name="T:NFe.SAT.SATProxy">
+            <summary>
+            Classe responsável pelo consumo dos serviços SAT
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.SATProxy.DadosEmpresa">
+            <summary>
+            Dados da empresa que esta sendo realizado o envio
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.SATProxy.Servicos">
+            <summary>
+            Serviço que esta sendo executado
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.SATProxy.Arquivo">
+            <summary>
+            Arquivo XML
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.SATProxy._Dispatch">
+            <summary>
+            Objeto de envio do SAT
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.SATProxy.Dispatch">
+            <summary>
+            Define o objeto de envio
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.SATProxy._Response">
+            <summary>
+            Objeto de resposta do SAT
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.SATProxy.Response">
+            <summary>
+            Define o objeto de resposta
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.SATProxy.#ctor(NFe.Components.Servicos,NFe.Settings.Empresa,System.String)">
+            <summary>
+            Construtor
+            </summary>
+            <param name="servicos">serviço que esta sendo usado</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+            <param name="arquivo">arquivo XML</param>
+        </member>
+        <member name="M:NFe.SAT.SATProxy.Enviar">
+            <summary>
+            Método de troca de código de ativação
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NFe.SAT.SATProxy.SaveResponse">
+            <summary>
+            Método para salvar resposta do SAT
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Servico.Envio.AtivarSAT">
+            <summary>
+            Classe responsável pela ativação do SAT
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.AtivarSAT.Document">
+            <summary>
+            Dados do XML
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.AtivarSAT.DadosEmpresa">
+            <summary>
+            Dados da empresa
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.AtivarSAT.SubComando">
+            <summary>
+            Identificador do tipo de Certificado, descritos na tabela 15
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.AtivarSAT.CNPJ">
+            <summary>
+            CNPJ do contribuinte, somente números
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.AtivarSAT.CodigoUF">
+            <summary>
+            Código do Estado da Federação, segundo tabela do IBGE, onde o SAT será ativado
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.AtivarSAT.AtivarSATRetorno">
+            <summary>
+            Resposta do equipamento sat
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Servico.Envio.AtivarSAT.ArquivoXML">
+            <summary>
+            Nome do arquivo XML que esta sendo manipulado
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.AtivarSAT.#ctor(System.String,NFe.Settings.Empresa)">
+            <summary>
+            Construtor com serialização
+            </summary>
+            <param name="arquivoXML">arquivo a ser lido</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.AtivarSAT.Enviar">
+            <summary>
+            Comunicar com o equipamento SAT
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.AtivarSAT.SaveResponse">
+            <summary>
+            Salva o XML de Retorno
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Servico.Envio.AssociarAssinatura">
+            <summary>
+            Classe responsável pela associação da assinatura no SAT
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.AssociarAssinatura.Document">
+            <summary>
+            Dados do XML
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.AssociarAssinatura.DadosEmpresa">
+            <summary>
+            Dados da empresa
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.AssociarAssinatura.CNPJValue">
+            <summary>
+            Assinatura digital conjunto "CNPJ Software House" + "CNPJ do estabelecimento comercial".
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.AssociarAssinatura.AssinaturaCNPJs">
+            <summary>
+            Assinatura digital conjunto "CNPJ Software House" + "CNPJ do estabelecimento comercial".
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.AssociarAssinatura.AssociarAssinaturaRetorno">
+            <summary>
+            Resposta do equipamento sat
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Servico.Envio.AssociarAssinatura.ArquivoXML">
+            <summary>
+            Nome do arquivo XML que esta sendo manipulado
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.AssociarAssinatura.#ctor(System.String,NFe.Settings.Empresa)">
+            <summary>
+            Construtor com serialização
+            </summary>
+            <param name="arquivoXML">arquivo a ser lido</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.AssociarAssinatura.Enviar">
+            <summary>
+            Comunicar com o equipamento SAT
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.AssociarAssinatura.SaveResponse">
+            <summary>
+            Salva o XML de Retorno
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Servico.Envio.ConsultarNumeroSessao">
+            <summary>
+            Classe responsável pela comunicação com o SAT
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ConsultarNumeroSessao.DadosEmpresa">
+            <summary>
+            Dados da empresa
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ConsultarNumeroSessao.ConsultarNumeroSessaoEnvio">
+            <summary>
+            Dados do envio do XML
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ConsultarNumeroSessao.NumeroSessao">
+            <summary>
+            Numero da sessão que será consultada
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ConsultarNumeroSessao.ConsultarRetorno">
+            <summary>
+            Resposta do equipamento sat
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Servico.Envio.ConsultarNumeroSessao.ArquivoXML">
+            <summary>
+            Nome do arquivo XML que esta sendo manipulado
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ConsultarNumeroSessao.#ctor(System.String,NFe.Settings.Empresa)">
+            <summary>
+            Construtor com serialização
+            </summary>
+            <param name="arquivoXML">arquivo a ser lido</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ConsultarNumeroSessao.Enviar">
+            <summary>
+            Comunicar com o equipamento SAT
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ConsultarNumeroSessao.SaveResponse">
+            <summary>
+            Salva o XML de Retorno
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Servico.Envio.DesbloquearSAT">
+            <summary>
+            Classe responsável pela comunicação com o SAT
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.DesbloquearSAT.DadosEmpresa">
+            <summary>
+            Dados da empresa
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.DesbloquearSAT.DesbloquearSATRetorno">
+            <summary>
+            Resposta do equipamento sat
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Servico.Envio.DesbloquearSAT.ArquivoXML">
+            <summary>
+            Nome do arquivo XML que esta sendo manipulado
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.DesbloquearSAT.#ctor(System.String,NFe.Settings.Empresa)">
+            <summary>
+            Construtor com serialização
+            </summary>
+            <param name="arquivoXML">arquivo a ser lido</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.DesbloquearSAT.Enviar">
+            <summary>
+            Comunicar com o equipamento SAT
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.DesbloquearSAT.SaveResponse">
+            <summary>
+            Salva o XML de Retorno
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Servico.Envio.ConfigurarInterfaceDeRede">
+            <summary>
+            Classe responsável pela comunicação com o SAT
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ConfigurarInterfaceDeRede.DadosEmpresa">
+            <summary>
+            Dados da empresa
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ConfigurarInterfaceDeRede.ConfigurarInterfaceDeRedeEnvio">
+            <summary>
+            Dados do envio do XML
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ConfigurarInterfaceDeRede.ConfigurarInterfaceDeRedeRetorno">
+            <summary>
+            Resposta do equipamento sat
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Servico.Envio.ConfigurarInterfaceDeRede.ArquivoXML">
+            <summary>
+            Nome do arquivo XML que esta sendo manipulado
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ConfigurarInterfaceDeRede.#ctor(System.String,NFe.Settings.Empresa)">
+            <summary>
+            Construtor com serialização
+            </summary>
+            <param name="arquivoXML">arquivo a ser lido</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ConfigurarInterfaceDeRede.Enviar">
+            <summary>
+            Comunicar com o equipamento SAT
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ConfigurarInterfaceDeRede.SaveResponse">
+            <summary>
+            Salva o XML de Retorno
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Servico.Envio.BloquearSAT">
+            <summary>
+            Classe responsável pela comunicação com o SAT
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.BloquearSAT.DadosEmpresa">
+            <summary>
+            Dados da empresa
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.BloquearSAT.BloquearSATRetorno">
+            <summary>
+            Resposta do equipamento sat
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Servico.Envio.BloquearSAT.ArquivoXML">
+            <summary>
+            Nome do arquivo XML que esta sendo manipulado
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.BloquearSAT.#ctor(System.String,NFe.Settings.Empresa)">
+            <summary>
+            Construtor com serialização
+            </summary>
+            <param name="arquivoXML">arquivo a ser lido</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.BloquearSAT.Enviar">
+            <summary>
+            Comunicar com o equipamento SAT
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.BloquearSAT.SaveResponse">
+            <summary>
+            Salva o XML de Retorno
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Servico.Envio.ConverterSAT">
+            <summary>
+            Classe responsável pela conversão da NFCe para CFe para envio pelo SAT
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ConverterSAT.DadosEmpresa">
+            <summary>
+            Dados da empresa
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Servico.Envio.ConverterSAT.ArquivoXML">
+            <summary>
+            Nome do arquivo XML que esta sendo manipulado
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Servico.Envio.ConverterSAT.ArquivoConvertido">
+            <summary>
+            Caminho do arquivo XML convertido
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ConverterSAT.#ctor(System.String,NFe.Settings.Empresa)">
+            <summary>
+            Construtor com serialização
+            </summary>
+            <param name="arquivoXML">arquivo a ser lido</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ConverterSAT.Enviar">
+            <summary>
+            Comunicar com o equipamento SAT
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ConverterSAT.SaveResponse">
+            <summary>
+            Salva o XML de Retorno
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Servico.Envio.CancelarUltimaVenda">
+            <summary>
+            Classe responsável pelo envio do cancelamento do SAT
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.CancelarUltimaVenda.DadosEmpresa">
+            <summary>
+            Dados da empresa
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.CancelarUltimaVenda.CancelarUltimaVendaEnvio">
+            <summary>
+            Dados do envio do XML
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.CancelarUltimaVenda.ChaveAcessoVenda">
+            <summary>
+            Chave de acesso da venda que esta sendo cancelada
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.CancelarUltimaVenda.CancelarUltimaVendaRetorno">
+            <summary>
+            Resposta do equipamento sat
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Servico.Envio.CancelarUltimaVenda.ArquivoXML">
+            <summary>
+            Nome do arquivo XML que esta sendo manipulado
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.CancelarUltimaVenda.#ctor(System.String,NFe.Settings.Empresa)">
+            <summary>
+            Construtor com serialização
+            </summary>
+            <param name="arquivoXML">arquivo a ser lido</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.CancelarUltimaVenda.Enviar">
+            <summary>
+            Comunicar com o equipamento SAT
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.CancelarUltimaVenda.SaveResponse">
+            <summary>
+            Salva o XML de Retorno
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Servico.Envio.EnviarDadosVenda">
+            <summary>
+            Classe responsável pelo envio da venda pelo SAT
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.EnviarDadosVenda.DadosEmpresa">
+            <summary>
+            Dados da empresa
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.EnviarDadosVenda.DadosVendaEnvio">
+            <summary>
+            Dados do envio do XML
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.EnviarDadosVenda.DadosVendaRetorno">
+            <summary>
+            Resposta do equipamento sat
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Servico.Envio.EnviarDadosVenda.ArquivoXML">
+            <summary>
+            Nome do arquivo XML que esta sendo manipulado
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.EnviarDadosVenda.#ctor(System.String,NFe.Settings.Empresa)">
+            <summary>
+            Construtor com serialização
+            </summary>
+            <param name="arquivoXML">arquivo a ser lido</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.EnviarDadosVenda.Enviar">
+            <summary>
+            Comunicar com o equipamento SAT
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.EnviarDadosVenda.SaveResponse">
+            <summary>
+            Salva o XML de Retorno
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Servico.Envio.TrocarCodigoDeAtivacao">
+            <summary>
+            Classe responsável pela comunicação com o SAT
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.TrocarCodigoDeAtivacao.DadosEmpresa">
+            <summary>
+            Dados da empresa
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.TrocarCodigoDeAtivacao.TrocarCodigoDeAtivacaoEnvio">
+            <summary>
+            Dados do envio do XML
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.TrocarCodigoDeAtivacao.TrocarCodigoDeAtivacaoRetorno">
+            <summary>
+            Resposta do equipamento sat
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Servico.Envio.TrocarCodigoDeAtivacao.ArquivoXML">
+            <summary>
+            Nome do arquivo XML que esta sendo manipulado
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.TrocarCodigoDeAtivacao.#ctor(System.String,NFe.Settings.Empresa)">
+            <summary>
+            Construtor com serialização
+            </summary>
+            <param name="arquivoXML">arquivo a ser lido</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.TrocarCodigoDeAtivacao.Enviar">
+            <summary>
+            Comunicar com o equipamento SAT
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.TrocarCodigoDeAtivacao.SaveResponse">
+            <summary>
+            Salva o XML de Retorno
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Servico.Envio.ConsultarStatusOperacional">
+            <summary>
+            Classe responsável pela comunicação com o SAT
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ConsultarStatusOperacional.DadosEmpresa">
+            <summary>
+            Dados da empresa
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ConsultarStatusOperacional.ConsultarStatusOperacionalEnvio">
+            <summary>
+            Dados do envio do XML
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ConsultarStatusOperacional.ConsultarStatusOperacionalRetorno">
+            <summary>
+            Resposta do equipamento sat
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Servico.Envio.ConsultarStatusOperacional.ArquivoXML">
+            <summary>
+            Nome do arquivo XML que esta sendo manipulado
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ConsultarStatusOperacional.#ctor(System.String,NFe.Settings.Empresa)">
+            <summary>
+            Construtor com serialização
+            </summary>
+            <param name="arquivoXML">arquivo a ser lido</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ConsultarStatusOperacional.Enviar">
+            <summary>
+            Comunicar com o equipamento SAT
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ConsultarStatusOperacional.SaveResponse">
+            <summary>
+            Salva o XML de Retorno
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Servico.Envio.TesteFimAFim">
+            <summary>
+            Classe responsável pelo teste de comunicação com o SAT
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.TesteFimAFim.DadosEmpresa">
+            <summary>
+            Dados da empresa
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.TesteFimAFim.TesteFimAFimEnvio">
+            <summary>
+            Dados do envio do XML
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.TesteFimAFim.TesteFimAFimRetorno">
+            <summary>
+            Resposta do equipamento sat
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Servico.Envio.TesteFimAFim.ArquivoXML">
+            <summary>
+            Nome do arquivo XML que esta sendo manipulado
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.TesteFimAFim.#ctor(System.String,NFe.Settings.Empresa)">
+            <summary>
+            Construtor com serialização
+            </summary>
+            <param name="arquivoXML">arquivo a ser lido</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.TesteFimAFim.Enviar">
+            <summary>
+            Comunicar com o equipamento SAT
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.TesteFimAFim.SaveResponse">
+            <summary>
+            Salva o XML de Retorno
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Servico.Envio.ExtrairLogs">
+            <summary>
+            Classe responsável pela comunicação com o SAT
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ExtrairLogs.DadosEmpresa">
+            <summary>
+            Dados da empresa
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ExtrairLogs.ExtrairLogsEnvio">
+            <summary>
+            Dados do envio do XML
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ExtrairLogs.ExtrairLogsRetorno">
+            <summary>
+            Resposta do equipamento sat
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Servico.Envio.ExtrairLogs.ArquivoXML">
+            <summary>
+            Nome do arquivo XML que esta sendo manipulado
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ExtrairLogs.#ctor(System.String,NFe.Settings.Empresa)">
+            <summary>
+            Construtor com serialização
+            </summary>
+            <param name="arquivoXML">arquivo a ser lido</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ExtrairLogs.Enviar">
+            <summary>
+            Comunicar com o equipamento SAT
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ExtrairLogs.SaveResponse">
+            <summary>
+            Salva o XML de Retorno
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Servico.Envio.ConsultarSAT">
+            <summary>
+            Classe responsável pela comunicação com o SAT
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ConsultarSAT.DadosEmpresa">
+            <summary>
+            Dados da empresa
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ConsultarSAT.ConsultarEnvio">
+            <summary>
+            Dados do envio do XML
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Servico.Envio.ConsultarSAT.ConsultarRetorno">
+            <summary>
+            Resposta do equipamento sat
+            </summary>
+        </member>
+        <member name="P:NFe.SAT.Servico.Envio.ConsultarSAT.ArquivoXML">
+            <summary>
+            Nome do arquivo XML que esta sendo manipulado
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ConsultarSAT.#ctor(System.String,NFe.Settings.Empresa)">
+            <summary>
+            Construtor com serialização
+            </summary>
+            <param name="arquivoXML">arquivo a ser lido</param>
+            <param name="dadosEmpresa">dados da empresa</param>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ConsultarSAT.Enviar">
+            <summary>
+            Comunicar com o equipamento SAT
+            </summary>
+        </member>
+        <member name="M:NFe.SAT.Servico.Envio.ConsultarSAT.SaveResponse">
+            <summary>
+            Salva o XML de Retorno
+            </summary>
+        </member>
+        <member name="T:NFe.SAT.Enum.TipoTpessoa">
+            <summary>
+            Tipo de pessoa que esta sendo convertida
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Enum.TipoTpessoa.Juridica">
+            <summary>
+            Pessoa Jurídica
+            </summary>
+        </member>
+        <member name="F:NFe.SAT.Enum.TipoTpessoa.Fisica">
+            <summary>
+            Pessoa Fisica
+            </summary>
+        </member>
+    </members>
+</doc>

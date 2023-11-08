@@ -9,17 +9,17 @@ namespace NFe.Certificado
     public class CertificadoProviders
     {
         #region Propriedades
-         
+
         /// Propriedade que identifica se foi possível identificar um provider valido
-         
+
         public bool ProviderIdentificado { get; private set; }
-         
+
         /// Dados referente ao provider valido
-         
+
         public CertProviders ProviderValido { get; private set; }
-         
+
         /// Propriedade referente ao certificado que será testado
-         
+
         public bool IsA3 { get; private set; }
 
         private CertificadoDigital oCertificado = new CertificadoDigital();
@@ -49,9 +49,9 @@ namespace NFe.Certificado
         #endregion
 
         #region Metodos
-         
+
         /// Define a propriedade com o provider que deverá ser sugerida ao usuario
-         
+
         private void GetProviderValido()
         {
             for (int i = 0; i < ProvidersIdentificados.Count; i++)
@@ -65,9 +65,9 @@ namespace NFe.Certificado
             }
         }
 
-         
+
         /// Realiza efetivamente o teste assinando o XML de simualação
-         
+
         /// <param name="provider">Objeto com as informaçoes do provider que será testado</param>
         /// <returns></returns>
         public bool TestarProvider(CertProviders provider)
@@ -89,18 +89,18 @@ namespace NFe.Certificado
             return result;
         }
 
-         
+
         /// Apagar arquivo XML de teste para assinatura
-         
+
         private void ApagarXMLTeste()
         {
             if (File.Exists(TempFile))
                 File.Delete(TempFile);
         }
 
-         
+
         /// Gera um XML para realizar a simulação do teste da assinatura
-         
+
         /// <param name="provider">Objeto CertProviders que contem o provider que será testado</param>
         /// <author>Renan Borges</author>
         private void SimularXML(CertProviders provider)
@@ -120,18 +120,18 @@ namespace NFe.Certificado
             docElement.Save(TempFile);
         }
 
-         
+
         /// Busca uma lista de providers que podem ser utilizados pelo certificado
-         
+
         /// <author>Renan Borges</author>
         public void GetProviders()
         {
             ProvidersIdentificados = oCertificado.GetListProviders();
         }
 
-         
+
         /// Busca os types dos providers encontrados
-         
+
         /// <author>Renan Borges</author>
         public void GetProvidersType()
         {

@@ -231,9 +231,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// processaPag
-         
+
         /// <param name="nodenfeProc"></param>
         private void processaPag(XmlNode nodenfeProc)
         {
@@ -250,9 +250,9 @@ namespace NFe.ConvertTxt
             nfe.pag.Add(pagItem);
         }
 
-         
+
         /// processaProtNfe
-         
+
         /// <param name="nodenfeProc"></param>
         private void processaProtNfe(XmlNode nodenfeProc)
         {
@@ -266,9 +266,9 @@ namespace NFe.ConvertTxt
             nfe.protNFe.xMotivo = readValue(nodenfeProc, TpcnResources.xMotivo);
         }
 
-         
+
         /// processaCana
-         
+
         /// <param name="nodeinfNFe"></param>
         private void processaCana(XmlNode nodeinfNFe)
         {
@@ -309,9 +309,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// processaCompra
-         
+
         /// <param name="nodeinfNFe"></param>
         private void processaCompra(XmlNode nodeinfNFe)
         {
@@ -320,9 +320,9 @@ namespace NFe.ConvertTxt
             nfe.compra.xCont = readValue(nodeinfNFe, TpcnResources.xCont);
         }
 
-         
+
         /// processaExporta
-         
+
         /// <param name="nodeinfNFe"></param>
         private void processaExporta(XmlNode nodeinfNFe)
         {
@@ -335,9 +335,9 @@ namespace NFe.ConvertTxt
             nfe.exporta.xLocDespacho = readValue(nodeinfNFe, TpcnResources.xLocDespacho);
         }
 
-         
+
         /// processaInfAdic
-         
+
         /// <param name="nodeinfNFe"></param>
         private void processaInfAdic(XmlNode nodeinfNFe)
         {
@@ -377,9 +377,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// processaRetirada
-         
+
         /// <param name="nodeinfNFe"></param>
         private void processaRetirada(XmlNode nodeinfNFe)
         {
@@ -394,9 +394,9 @@ namespace NFe.ConvertTxt
             nfe.retirada.UF = readValue(nodeinfNFe, TpcnResources.UF);
         }
 
-         
+
         /// processaEntrega
-         
+
         /// <param name="nodeinfNFe"></param>
         private void processaEntrega(XmlNode nodeinfNFe)
         {
@@ -411,9 +411,9 @@ namespace NFe.ConvertTxt
             nfe.entrega.UF = readValue(nodeinfNFe, TpcnResources.UF);
         }
 
-         
+
         /// processaautXML
-         
+
         /// <param name="nodeinfNFe"></param>
         private void processaautXML(XmlNode nodeinfNFe)
         {
@@ -424,9 +424,9 @@ namespace NFe.ConvertTxt
                     nfe.autXML.Add(new autXML { CPF = noder.InnerText });
         }
 
-         
+
         /// processaCOBR
-         
+
         /// <param name="nodeinfNFe"></param>
         private void processaCOBR(XmlNode nodeinfNFe)
         {
@@ -450,9 +450,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// processaTRANSP
-         
+
         /// <param name="nodeinfNFe"></param>
         private void processaTRANSP(XmlNode nodeinfNFe)
         {
@@ -537,9 +537,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// processaTOTAL
-         
+
         /// <param name="nodetotal"></param>
         private void processaTOTAL(XmlNode nodetotal)
         {
@@ -599,9 +599,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// processaPROD
-         
+
         /// <param name="nodedet"></param>
         private void processaPROD(XmlNode nodedet)
         {
@@ -621,7 +621,7 @@ namespace NFe.ConvertTxt
                 detInfo.Prod.indTot = (TpcnIndicadorTotal)readInt32(ele, TpcnResources.indTot);
                 detInfo.Prod.NCM = readValue(ele, TpcnResources.NCM);
                 detInfo.Prod.NVE = readValue(ele, TpcnResources.NVE);
-                detInfo.Prod.nItemPed = readInt32(ele, TpcnResources.nItemPed);
+                //detInfo.Prod.nItemPed = readInt32(ele, TpcnResources.nItemPed);
                 detInfo.Prod.qCom = readDouble(ele, TpcnResources.qCom);
                 detInfo.Prod.qTrib = readDouble(ele, TpcnResources.qTrib);
                 detInfo.Prod.uCom = readValue(ele, TpcnResources.uCom);
@@ -1020,9 +1020,9 @@ namespace NFe.ConvertTxt
             nfe.det.Add(detInfo);
         }
 
-         
+
         /// processaDEST
-         
+
         /// <param name="el"></param>
         private void processaDEST(XmlNode el)
         {
@@ -1060,9 +1060,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// processaEMIT
-         
+
         /// <param name="el"></param>
         private void processaEMIT(XmlNode el)
         {
@@ -1094,9 +1094,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// processaIDE
-         
+
         /// <param name="nodeinfNFe"></param>
         private void processaIDE(XmlNode nodeinfNFe)
         {

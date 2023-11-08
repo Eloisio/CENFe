@@ -34,9 +34,9 @@ namespace NFe.Service.NFSe
     {
         #region Objeto com os dados do XML de lote rps
 
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s do lote rps
-         
+
         private DadosEnvLoteRps oDadosEnvLoteRps;
 
         #endregion Objeto com os dados do XML de lote rps
@@ -790,9 +790,9 @@ namespace NFe.Service.NFSe
 
         #region EncryptAssinatura()
 
-         
+
         /// Encriptar a tag Assinatura quando for município de Blumenau - SC
-         
+
         private void EncryptAssinatura()
         {
             /// : 12/2013
@@ -804,9 +804,9 @@ namespace NFe.Service.NFSe
 
         #region EnvLoteRps()
 
-         
+
         /// Fazer a leitura do conteúdo do XML de lote rps e disponibiliza o conteúdo em um objeto para analise
-         
+
         /// <param name="arquivoXML">Arquivo XML que é para efetuar a leitura</param>
         private void EnvLoteRps(int emp, string arquivoXML)
         {

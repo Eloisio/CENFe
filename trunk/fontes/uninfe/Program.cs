@@ -17,10 +17,10 @@ namespace uninfe
                 Auxiliar.WriteLog(e.Exception.Message + "\r\n" + e.Exception.StackTrace, false);
                 if (e.Exception.InnerException != null)
                     Auxiliar.WriteLog(e.Exception.InnerException.Message + "\r\n" + e.Exception.InnerException.StackTrace, false);
-                    if (e.Exception.InnerException.InnerException != null)
-                        Auxiliar.WriteLog(e.Exception.InnerException.InnerException.Message + "\r\n" + e.Exception.InnerException.InnerException.StackTrace, false);
-                    if (e.Exception.InnerException.InnerException.InnerException != null)
-                        Auxiliar.WriteLog(e.Exception.InnerException.InnerException.InnerException.Message + "\r\n" + e.Exception.InnerException.InnerException.InnerException.StackTrace, false);
+                if (e.Exception.InnerException.InnerException != null)
+                    Auxiliar.WriteLog(e.Exception.InnerException.InnerException.Message + "\r\n" + e.Exception.InnerException.InnerException.StackTrace, false);
+                if (e.Exception.InnerException.InnerException.InnerException != null)
+                    Auxiliar.WriteLog(e.Exception.InnerException.InnerException.InnerException.Message + "\r\n" + e.Exception.InnerException.InnerException.InnerException.StackTrace, false);
             });
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler((sender, e) =>
             {

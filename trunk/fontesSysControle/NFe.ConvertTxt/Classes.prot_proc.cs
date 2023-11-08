@@ -1,0 +1,26 @@
+﻿using NFe.Components;
+using System;
+
+namespace NFe.ConvertTxt
+{
+     
+    /// procRef
+     
+    public class procRef
+    {
+        public string nProc;
+        public string indProc;
+    }
+
+    public class protNFe
+    {
+        public TipoAmbiente tpAmb;
+        public string verAplic;
+        public string chNFe;
+        public DateTime dhRecbto;
+        public string nProt;
+        public string digVal;
+        public int cStat;
+        public string xMotivo;
+    }
+}

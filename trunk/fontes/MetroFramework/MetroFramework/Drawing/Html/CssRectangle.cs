@@ -43,81 +43,81 @@ namespace MetroFramework.Drawing.Html
 
 
 
-         
+
         /// Left of the rectangle
-         
+
         public float Left
         {
             get { return _left; }
             set { _left = value; }
         }
 
-         
+
         /// Top of the rectangle
-         
+
         public float Top
         {
             get { return _top; }
             set { _top = value; }
         }
 
-         
+
         /// Width of the rectangle
-         
+
         public float Width
         {
             get { return _width; }
             set { _width = value; }
         }
 
-         
+
         /// Height of the rectangle
-         
+
         public float Height
         {
             get { return _height; }
             set { _height = value; }
         }
 
-         
+
         /// Gets or sets the right of the rectangle. When setting, it only affects the Width of the rectangle.
-         
+
         public float Right
         {
             get { return Bounds.Right; }
             set { Width = value - Left; }
         }
 
-         
+
         /// Gets or sets the bottom of the rectangle. When setting, it only affects the Height of the rectangle.
-         
+
         public float Bottom
         {
             get { return Bounds.Bottom; }
             set { Height = value - Top; }
         }
 
-         
+
         /// Gets or sets the bounds of the rectangle
-         
+
         public RectangleF Bounds
         {
             get { return new RectangleF(Left, Top, Width, Height); }
             set { Left = value.Left; Top = value.Top; Width = value.Width; Height = value.Height; }
         }
 
-         
+
         /// Gets or sets the location of the rectangle
-         
+
         public PointF Location
         {
             get { return new PointF(Left, Top); }
             set { Left = value.X; Top = value.Y; }
         }
 
-         
+
         /// Gets or sets the size of the rectangle
-         
+
         public SizeF Size
         {
             get { return new SizeF(Width, Height); }

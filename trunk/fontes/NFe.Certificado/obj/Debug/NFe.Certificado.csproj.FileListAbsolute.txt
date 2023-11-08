@@ -16,3 +16,7 @@ D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.Certificado\obj\Debug\NFe.Certificado
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Certificado\obj\Debug\NFe.Certificado.csprojResolveAssemblyReference.cache
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Certificado\obj\Debug\NFe.Certificado.dll
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Certificado\obj\Debug\NFe.Certificado.pdb
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Certificado\obj\Debug\NFe.Certificado.csprojAssemblyReference.cache
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Certificado\obj\Debug\NFe.Certificado.csproj.CopyComplete
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Certificado\obj\Debug\NFe.Certificado.dll
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Certificado\obj\Debug\NFe.Certificado.pdb

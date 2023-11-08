@@ -8,9 +8,9 @@ using System.Xml;
 
 namespace NFe.Service
 {
-     
+
     /// Classe para envio de XMLs de inutilização do NFe
-     
+
     public class TaskNFeInutilizacao : TaskAbst
     {
         public TaskNFeInutilizacao(string arquivo)
@@ -26,9 +26,9 @@ namespace NFe.Service
 
         #region Classe com os dados do XML do pedido de inutilização de números de NF
 
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s do pedido de inutilizacao
-         
+
         private DadosPedInut dadosPedInut;
 
         #endregion Classe com os dados do XML do pedido de inutilização de números de NF
@@ -140,9 +140,9 @@ namespace NFe.Service
 
         #region PedInut()
 
-         
+
         /// PedInut(string cArquivoXML)
-         
+
         /// <param name="emp">Código da empresa</param>
         private void PedInut(int emp)
         {
@@ -202,9 +202,9 @@ namespace NFe.Service
 
         #region LerRetornoInut()
 
-         
+
         /// Efetua a leitura do XML de retorno do processamento da Inutilização
-         
+
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>21/04/2009</date>
         private void LerRetornoInut()

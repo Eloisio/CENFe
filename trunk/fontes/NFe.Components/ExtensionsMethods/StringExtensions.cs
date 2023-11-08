@@ -5,9 +5,9 @@ namespace NFe
 {
     public static class StringExtensions
     {
-         
+
         /// Converte uma lista de string em um string separada pelo char definido em separator
-         
+
         /// <param name="strings">array de string que deverá ser concatenado</param>
         /// <param name="separator">Separador de cada índice do array que será concatenado</param>
         /// <param name="offSet">Define até que posição será concatenada dentro do array.</param>

@@ -2,9 +2,9 @@
 
 namespace NFe.ConvertTxt
 {
-     
+
     /// Vol
-     
+
     public class Vol
     {
         public int qVol;

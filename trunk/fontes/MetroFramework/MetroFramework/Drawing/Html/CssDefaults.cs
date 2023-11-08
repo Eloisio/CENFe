@@ -29,9 +29,9 @@ namespace MetroFramework.Drawing.Html
 {
     public class CssDefaults
     {
-         
+
         /// CSS Specification's Default Style Sheet for HTML 4
-         
+
         /// <remarks>
         /// http://www.w3.org/TR/CSS21/sample.html
         /// </remarks>
@@ -139,9 +139,9 @@ namespace MetroFramework.Drawing.Html
 
         ";
 
-         
+
         /// Html Fragment used to draw the icon that shows an error on an IMG HTML element
-         
+
         public const string ErrorOnImageIcon = @"
         <style>
           table { 
@@ -164,9 +164,9 @@ namespace MetroFramework.Drawing.Html
         </tr>
         </table>";
 
-         
+
         /// Html Fragment used to draw the icon that shows an error on an OBJECT HTML element
-         
+
         public const string ErrorOnObjectIcon = @"
         <style>
           table { 
@@ -189,34 +189,34 @@ namespace MetroFramework.Drawing.Html
         </tr>
         </table>";
 
-         
+
         /// Default font size in points. Change this value to modify the default font size.
-         
+
         public static float FontSize = 12f;
 
-         
+
         /// Default font used for the generic 'serif' family
-         
+
         public static string FontSerif = System.Drawing.FontFamily.GenericSerif.Name;
 
-         
+
         /// Default font used for the generic 'sans-serif' family
-         
+
         public static string FontSansSerif = System.Drawing.FontFamily.GenericSansSerif.Name;
 
-         
+
         /// Default font used for the generic 'cursive' family
-         
+
         public static string FontCursive = "Monotype Corsiva";
 
-         
+
         /// Default font used for the generic 'fantasy' family
-         
+
         public static string FontFantasy = "Comic Sans MS";
 
-         
+
         /// Default font used for the generic 'monospace' family
-         
+
         public static string FontMonospace = System.Drawing.FontFamily.GenericMonospace.Name;
     }
 }

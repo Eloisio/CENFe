@@ -10,9 +10,9 @@ namespace NFe.Service.NFSe
     public class TaskConsultarNfsePDF : TaskAbst
     {
         #region Objeto com os dados do XML da consulta nfse
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s da consulta nfse
-         
+
         private DadosPedSitNfse oDadosPedNfsePDF;
         #endregion
 
@@ -92,9 +92,9 @@ namespace NFe.Service.NFSe
         #endregion
 
         #region ConvertBase64ToPDF()
-         
+
         /// Converte o retorno em Base64 para PDF e grava o PDF na pasta de retorno com o mesmo nome do retorno em XML, modificando somente a extensão para PDF.
-         
+
         /// <param name="emp">Código da empresa</param>
         /// <param name="padraoNFSe">Padrão da NFSe</param>
         public void ConvertBase64ToPDF(int emp, PadroesNFSe padraoNFSe)

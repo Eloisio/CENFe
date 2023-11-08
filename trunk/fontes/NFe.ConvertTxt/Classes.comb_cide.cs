@@ -1,8 +1,8 @@
 ﻿namespace NFe.ConvertTxt
 {
-     
+
     /// Comb
-     
+
     public struct Comb
     {
         public int cProdANP;
@@ -19,9 +19,9 @@
         public Encerrante encerrante;
     }
 
-     
+
     /// CIDE
-     
+
     public struct CIDE
     {
         public double qBCprod;

@@ -1,8 +1,8 @@
 ﻿namespace NFe.Components
 {
-     
+
     /// Interface para a emissão de NFSe do padrão SOFTPLAN
-     
+
     public interface IEmiteNFSeSOFTPLAN : IEmiteNFSe
     {
         string ClientID { get; set; }

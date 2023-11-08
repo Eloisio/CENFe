@@ -9,39 +9,39 @@ using Servicos = Unimake.SAT.Servico;
 
 namespace NFe.SAT.Servico.Envio
 {
-     
+
     /// Classe responsável pelo envio do cancelamento do SAT
-     
+
     public class CancelarUltimaVenda : ServicoBase
     {
-         
+
         /// Dados da empresa
-         
+
         private Empresa DadosEmpresa = null;
 
-         
+
         /// Dados do envio do XML
-         
+
         private string CancelarUltimaVendaEnvio = null;
 
-         
+
         /// Chave de acesso da venda que esta sendo cancelada
-         
+
         private string ChaveAcessoVenda = null;
 
-         
+
         /// Resposta do equipamento sat
-         
+
         private Servicos.Retorno.CancelarUltimaVendaResponse CancelarUltimaVendaRetorno = new Servicos.Retorno.CancelarUltimaVendaResponse();
 
-         
+
         /// Nome do arquivo XML que esta sendo manipulado
-         
+
         public override string ArquivoXML { get; set; }
 
-         
+
         /// Construtor com serialização
-         
+
         /// <param name="arquivoXML">arquivo a ser lido</param>
         /// <param name="dadosEmpresa">dados da empresa</param>
         public CancelarUltimaVenda(string arquivoXML, Empresa dadosEmpresa)
@@ -62,18 +62,18 @@ namespace NFe.SAT.Servico.Envio
             CancelarUltimaVendaEnvio = doc.InnerXml;
         }
 
-         
+
         /// Comunicar com o equipamento SAT
-         
+
         public override void Enviar()
         {
             string resposta = Sat.CancelarUltimaVenda(ChaveAcessoVenda, CancelarUltimaVendaEnvio);
             CancelarUltimaVendaRetorno = new Servicos.Retorno.CancelarUltimaVendaResponse(resposta);
         }
 
-         
+
         /// Salva o XML de Retorno
-         
+
         public override string SaveResponse()
         {
             string xml = string.Empty;

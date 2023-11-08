@@ -24,11 +24,11 @@ namespace NFe.Certificado
         public bool AssinaturaValida { get; private set; }
         public bool TesteCertificado { get; set; }
 
-         
+
         /// O método assina digitalmente o arquivo XML passado por parâmetro e
         /// grava o XML assinado com o mesmo nome, sobreponto o XML informado por parâmetro.
         /// Disponibiliza também uma propriedade com uma string do xml assinado (this.vXmlStringAssinado)
-         
+
         /// <param name="arqXMLAssinar">Nome do arquivo XML a ser assinado</param>
         /// <param name="tagAssinatura">Nome da tag onde é para ficar a assinatura</param>
         /// <param name="tagAtributoId">Nome da tag que tem o atributo ID, tag que vai ser assinada</param>
@@ -74,11 +74,11 @@ namespace NFe.Certificado
             }
         }
 
-         
+
         /// O método assina digitalmente o arquivo XML passado por parâmetro e
         /// grava o XML assinado com o mesmo nome, sobreponto o XML informado por parâmetro.
         /// Disponibiliza também uma propriedade com uma string do xml assinado (this.vXmlStringAssinado)
-         
+
         /// <param name="conteudoXML">Conteúdo do XML</param>
         /// <param name="tagAssinatura">Nome da tag onde é para ficar a assinatura</param>
         /// <param name="tagAtributoId">Nome da tag que tem o atributo ID, tag que vai ser assinada</param>
@@ -291,9 +291,9 @@ namespace NFe.Certificado
 
         #region Assinar()
 
-         
+
         /// Assina o XML sobrepondo-o
-         
+
         /// <param name="arqXMLAssinar">Nome do arquivo XML a ser assinado</param>
         /// <param name="emp">Código da empresa</param>
         /// <param name="UFCod">Codigo da UF</param>
@@ -327,9 +327,9 @@ namespace NFe.Certificado
 
         #region Assinar()
 
-         
+
         /// Assina o conteúdo do XML
-         
+
         /// <param name="conteudoXML">Conteúdo do XML</param>
         /// <param name="emp">Código da empresa</param>
         /// <param name="UFCod">Codigo da UF</param>
@@ -355,9 +355,9 @@ namespace NFe.Certificado
 
         #region Assinar lote de eventos do eSocial
 
-         
+
         /// Assinar lote de eventos do eSocial
-         
+
         /// <param name="conteudoXML">Conteúdo do XML de lote do eSocial para ser assinado/param>
         /// <param name="emp">Código da empresa das configurações</param>
         public void AssinarLoteESocial(XmlDocument conteudoXML, int emp)
@@ -419,9 +419,9 @@ namespace NFe.Certificado
 
         #region Assinar lote de eventos do EFDReinf
 
-         
+
         /// Assinar lote de eventos do EFD-Reinf
-         
+
         /// <param name="conteudoXML">Conteúdo do XML de lote do EFDReinf para ser assinado</param>
         /// <param name="emp">Código da empresa das configurações</param>
         public void AssinarLoteEFDReinf(XmlDocument conteudoXML, int emp)
@@ -541,9 +541,9 @@ namespace NFe.Certificado
 
         #region Assinado()
 
-         
+
         /// Verificar se o XML já tem assinatura
-         
+
         /// <param name="arqXML">Arquivo XML a ser verificado se tem assinatura</param>
         /// <param name="tagAssinatura">Tag de assinatura onde vamos pesquisar</param>
         /// <returns>true = Já está assinado</returns>
@@ -566,9 +566,9 @@ namespace NFe.Certificado
 
         #region Assinado()
 
-         
+
         /// Verificar se o XML já tem assinatura
-         
+
         /// <param name="conteudoXML">Conteúdo do XML</param>
         /// <param name="tagAssinatura">Tag de assinatura onde vamos pesquisar</param>
         /// <returns>true = Já está assinado</returns>

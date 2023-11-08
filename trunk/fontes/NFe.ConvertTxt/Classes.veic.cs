@@ -1,8 +1,8 @@
 ﻿namespace NFe.ConvertTxt
 {
-     
+
     /// veicProd
-     
+
     public struct veicProd
     {
         public string tpOp;
@@ -31,9 +31,9 @@
         public int tpRest;
     }
 
-     
+
     /// veicTransp
-     
+
     public struct veicTransp
     {
         public string placa;

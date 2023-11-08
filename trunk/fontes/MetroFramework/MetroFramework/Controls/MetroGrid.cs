@@ -262,24 +262,24 @@ namespace MetroFramework.Controls
 
     public class MetroDataGridHelper
     {
-         
+
         /// The associated scrollbar or scrollbar collector
-         
+
         private MetroScrollBar _scrollbar;
 
-         
+
         /// Associated Grid
-         
+
         private DataGridView _grid;
 
-         
+
         /// if greater zero, scrollbar changes are ignored
-         
+
         private int _ignoreScrollbarChange = 0;
 
-         
+
         /// 
-         
+
         private bool _ishorizontal = false;
         private HScrollBar hScrollbar = null;
         private VScrollBar vScrollbar = null;
@@ -358,9 +358,9 @@ namespace MetroFramework.Controls
                 _ignoreScrollbarChange--;
         }
 
-         
+
         /// Updates the scrollbar values
-         
+
         public void UpdateScrollbar()
         {
             try
@@ -400,18 +400,18 @@ namespace MetroFramework.Controls
             }
         }
 
-         
+
         /// Determine the current count of visible rows
-         
+
         /// <returns></returns>
         private int VisibleFlexGridRows()
         {
             return _grid.DisplayedRowCount(true);
         }
 
-         
+
         /// 
-         
+
         /// <returns></returns>
         private int VisibleFlexGridCols()
         {

@@ -38,7 +38,7 @@ namespace NFe.Components.SigCorp
                                 break;
 
                             case 3505500: //Barretos-SP
-                                sigCorpService = new BarretosSP.h.SigCorpH(tpAmb, PastaRetorno);
+                                //sigCorpService = new BarretosSP.h.SigCorpH(tpAmb, PastaRetorno);
                                 break;
 
                             case 3530706: //Mogi Guaçu-SP

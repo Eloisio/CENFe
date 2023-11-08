@@ -6,9 +6,9 @@ using System.Xml;
 
 namespace NFe.Service
 {
-     
+
     /// Consultar situação do CTe
-     
+
     public class TaskCTeConsultaSituacao : TaskAbst
     {
         public TaskCTeConsultaSituacao(string arquivo)
@@ -22,9 +22,9 @@ namespace NFe.Service
 
         #region Classe com os dados do XML da pedido de consulta da situação da NFe
 
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s da consulta da situação da nota
-         
+
         private DadosPedSit dadosPedSit;
 
         #endregion Classe com os dados do XML da pedido de consulta da situação da NFe
@@ -105,9 +105,9 @@ namespace NFe.Service
 
         #region LerRetornoSitCTe()
 
-         
+
         /// Ler o retorno da consulta situação da nota fiscal e de acordo com o status ele trata as notas enviadas se ainda não foram tratadas
-         
+
         /// <param name="ChaveCTe">Chave da NFe que está sendo consultada</param>
         /// <remarks>
         /// Autor: Wandrey Mundin Ferreira

@@ -20,3 +20,9 @@ D:\Desenvolvimento\CENFe\trunk\fontes\NFe.ConvertTxt\obj\Debug\NFe.ConvertTxt.Pr
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.ConvertTxt\obj\Debug\NFe.ConvertTxt.csproj.GenerateResource.Cache
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.ConvertTxt\obj\Debug\NFe.ConvertTxt.dll
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.ConvertTxt\obj\Debug\NFe.ConvertTxt.pdb
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.ConvertTxt\obj\Debug\NFe.ConvertTxt.csprojAssemblyReference.cache
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.ConvertTxt\obj\Debug\NFe.ConvertTxt.Properties.Resources.resources
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.ConvertTxt\obj\Debug\NFe.ConvertTxt.csproj.GenerateResource.cache
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.ConvertTxt\obj\Debug\NFe.ConvertTxt.csproj.CopyComplete
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.ConvertTxt\obj\Debug\NFe.ConvertTxt.dll
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.ConvertTxt\obj\Debug\NFe.ConvertTxt.pdb

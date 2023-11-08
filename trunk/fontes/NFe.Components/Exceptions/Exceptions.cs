@@ -2,9 +2,9 @@
 
 namespace NFe.Components.Exceptions
 {
-     
+
     /// Serviço não disponível
-     
+
     public class ServicoInexistenteException : Exception
     {
         public override string Message
@@ -16,20 +16,20 @@ namespace NFe.Components.Exceptions
         }
     }
 
-     
+
     /// Serviço Indisponível para homologação
     /// Renan - 27/02/2014
-     
+
     public class ServicoInexistenteHomologacaoException : Exception
     {
-         
+
         /// Servico que esta indisponivel para Homologacao
-         
+
         private string _Service = "";
 
-         
+
         /// Construtor
-         
+
         /// <param name="service">nome do servico que esta indisponivel para o ambiente</param>
         public ServicoInexistenteHomologacaoException(Servicos service)
         {
@@ -63,9 +63,9 @@ namespace NFe.Components.Exceptions
 
     }
 
-     
+
     /// Se ocorrer alguma falha na execução do UniNFe vai gerar esta exceção
-     
+
     public class ProblemaExecucaoUniNFe : Exception
     {
         private string Mensagem = "";
@@ -84,9 +84,9 @@ namespace NFe.Components.Exceptions
         }
     }
 
-     
+
     /// Se já tiver algum UniNFe executando vai gerar esta exceção
-     
+
     public class AppJaExecutando : Exception
     {
         private string Mensagem = "";
@@ -106,14 +106,14 @@ namespace NFe.Components.Exceptions
 
     }
 
-     
+
     /// Lançado quando um município não funciona com o .NET Framework 3.5
-     
+
     public class MunicipioSemSuporteAoNETFramework35Exception : Exception
     {
-         
+
         /// Mensagem que é exibida ao usuário
-         
+
         public override string Message
         {
             get

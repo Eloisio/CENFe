@@ -29,9 +29,9 @@ using System.ComponentModel;
 
 namespace MetroFramework.Drawing.Html
 {
-     
+
     /// Provides HTML rendering on the text of the label
-     
+
     [CLSCompliant(false)]
     public class HtmlLabel
         : HtmlPanel
@@ -42,9 +42,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Ctor
 
-         
+
         /// Creates a new HTML Label
-         
+
         public HtmlLabel()
         {
             SetStyle(System.Windows.Forms.ControlStyles.Opaque, false);

@@ -8,7 +8,7 @@ using System.Threading;
 
 namespace NFe.Threadings
 {
-    public class FileSystemWatcher : IDisposable    //<<<danasa 1-5-2011
+    public class FileSystemWatcher : IDisposable
     {
         #region Propriedades
 
@@ -28,7 +28,6 @@ namespace NFe.Threadings
         public static int _padding;
 
         #endregion Propriedades
-
         #region Destrutores
 
         ~FileSystemWatcher()
@@ -52,16 +51,13 @@ namespace NFe.Threadings
         }
 
         #endregion Destrutores
-
         #region Construtores
-
         public FileSystemWatcher(string directory, string filter)
         {
             Directorys.Clear();
             Directorys.Add(directory);
             Filter = filter;
         }
-
         public FileSystemWatcher(List<string> directorys, string filter)
         {
             Directorys.Clear();
@@ -69,21 +65,16 @@ namespace NFe.Threadings
             {
                 Directorys.Add(item);
             }
-
             Filter = filter;
         }
-
         #endregion Construtores
-
         public void StartWatch()
         {
             Thread t = new Thread(new ThreadStart(ProcessFiles));
             t.IsBackground = true;
             t.Start();
         }
-
         #region Metodos
-
         private void ProcessFiles()
         {
             bool pastaGeral = false;
@@ -94,18 +85,9 @@ namespace NFe.Threadings
                     pastaGeral = true;
             }
             int emp = (pastaGeral ? -1 : Empresas.FindEmpresaByThread());
-
             string arqTemp = "";
-
             CancelProcess = false;
-
-            // Create a semaphore that can satisfy up to three
-            // concurrent requests. Use an initial count of zero,
-            // so that the entire semaphore count is initially
-            // owned by the main program thread.
-            //
             _pool = new System.Threading.Semaphore(10, 20);
-
             while (!CancelProcess)
             {
                 try
@@ -120,7 +102,7 @@ namespace NFe.Threadings
                             FileInfo[] files = dirInfo.GetFiles("*.*", SearchOption.TopDirectoryOnly)
                                                                 .Where(s => Filter.Contains(s.Extension.ToLower()))
                                                                 .OrderBy(o => o.CreationTime)
-                                                                .ToArray(); //Retorna o conteúdo já ordenado por data de modificação, do menor para o maior. Wandrey 26/03/2015
+                                                                .ToArray(); //Retorna o conteúdo já ordenado por data de modificação, do menor para o maior.
 
                             if (files != null)
                             {
@@ -162,17 +144,11 @@ namespace NFe.Threadings
                 }
             }
         }
-
         private void RaiseFileChanged(FileInfo fi, int emp)
         {
             string msgError = null;
-
             if (File.Exists(fi.FullName))
             {
-                ///
-                /// TODO!!!
-                /// entre este processo e o RaiseEvent está tendo uma demora considerável
-                ///
                 if (fi.Length > 0 || (fi.Name.ToLower().EndsWith(Propriedade.Extensao(Propriedade.TipoEnvio.sair_XML).EnvioTXT) ||
                                       fi.Name.ToLower().EndsWith(Propriedade.Extensao(Propriedade.TipoEnvio.pedUpdatewsdl).EnvioTXT) ||
                                       fi.Name.ToLower().EndsWith(Propriedade.Extensao(Propriedade.TipoEnvio.pedLayouts).EnvioTXT) ||
@@ -225,16 +201,12 @@ namespace NFe.Threadings
                 else
                     Auxiliar.WriteLog(msgError, true);
         }
-
-         
         /// StopWatch
-         
         public bool StopWatch
         {
             get { return CancelProcess; }
             set { CancelProcess = value; }
         }
-
         #endregion Metodos
     }
 }

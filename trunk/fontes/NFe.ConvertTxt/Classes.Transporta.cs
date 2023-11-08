@@ -1,8 +1,8 @@
 ﻿namespace NFe.ConvertTxt
 {
-     
+
     /// Transporta
-     
+
     public struct Transporta
     {
         public string CNPJ;

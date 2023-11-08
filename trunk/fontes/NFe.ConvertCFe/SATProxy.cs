@@ -8,36 +8,36 @@ using Unimake.SAT.Servico.Retorno;
 
 namespace NFe.SAT
 {
-     
+
     /// Classe responsável pelo consumo dos serviços SAT
-     
+
     public class SATProxy
     {
         #region Propriedades
 
-         
+
         /// Dados da empresa que esta sendo realizado o envio
-         
+
         private Empresa DadosEmpresa;
 
-         
+
         /// Serviço que esta sendo executado
-         
+
         private Servicos Servicos;
 
-         
+
         /// Arquivo XML
-         
+
         private string Arquivo;
 
-         
+
         /// Objeto de envio do SAT
-         
+
         private ServicoBase _Dispatch = null;
 
-         
+
         /// Define o objeto de envio
-         
+
         protected ServicoBase Dispatch
         {
             get
@@ -110,14 +110,14 @@ namespace NFe.SAT
             }
         }
 
-         
+
         /// Objeto de resposta do SAT
-         
+
         private ResponseBase _Response = null;
 
-         
+
         /// Define o objeto de resposta
-         
+
         public ResponseBase Response
         {
             get
@@ -190,9 +190,9 @@ namespace NFe.SAT
 
         #region Construtores
 
-         
+
         /// Construtor
-         
+
         /// <param name="servicos">serviço que esta sendo usado</param>
         /// <param name="dadosEmpresa">dados da empresa</param>
         /// <param name="arquivo">arquivo XML</param>
@@ -205,9 +205,9 @@ namespace NFe.SAT
 
         #endregion Construtores
 
-         
+
         /// Método de troca de código de ativação
-         
+
         /// <returns></returns>
         public void Enviar()
         {
@@ -221,9 +221,9 @@ namespace NFe.SAT
             }
         }
 
-         
+
         /// Método para salvar resposta do SAT
-         
+
         public string SaveResponse()
         {
             try

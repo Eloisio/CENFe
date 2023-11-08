@@ -1,8 +1,8 @@
 ﻿namespace NFe.ConvertTxt
 {
-     
+
     /// pag - NFC-e
-     
+
     public class pag
     {
         public TpcnIndicadorPagamento indPag = TpcnIndicadorPagamento.ipOutras;

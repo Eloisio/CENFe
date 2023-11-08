@@ -82,7 +82,7 @@
     <OutputPath>bin\x86\Debug\</OutputPath>
     <DefineConstants>TRACE;DEBUG;_fw46</DefineConstants>
     <DebugType>full</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
@@ -143,16 +143,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NFe.Certificado\NFe.Certificado.csproj">
-      <Project>{C045A27F-415B-4F7D-8B9B-2956589932C8}</Project>
+      <Project>{c045a27f-415b-4f7d-8b9b-2956589932c8}</Project>
       <Name>NFe.Certificado</Name>
     </ProjectReference>
     <ProjectReference Include="..\NFe.Components\NFe.Components.csproj">
       <Project>{C199D582-6DA4-4D00-8963-89BA04777872}</Project>
       <Name>NFe.Components</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NFe.Settings\NFe.Settings.csproj">
-      <Project>{A963E456-A54B-4C4D-A9DE-E80C136C3554}</Project>
-      <Name>NFe.Settings</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

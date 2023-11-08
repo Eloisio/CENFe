@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace NFe.ConvertTxt
 {
-     
+
     /// Adi
-     
+
     public class Adi
     {
         public int nAdicao;
@@ -15,9 +15,9 @@ namespace NFe.ConvertTxt
         public string nDraw;
     }
 
-     
+
     /// DI
-     
+
     public class DI
     {
         public string nDI;

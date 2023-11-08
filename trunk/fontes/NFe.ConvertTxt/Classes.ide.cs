@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace NFe.ConvertTxt
 {
-     
+
     /// Ide
-     
+
     public class Ide
     {
         public int cUF { get; set; }
@@ -32,9 +32,9 @@ namespace NFe.ConvertTxt
         public string dhCont { get; set; }  //mudado para 'string' pq na versao 3 (NFC-e) deve ter o time-zone
         public string xJust { get; set; }
 
-         
+
         /// NFC-e
-         
+
         public string dhEmi { get; set; }
         public string dhSaiEnt { get; set; }
         public TpcnDestinoOperacao idDest { get; set; }
@@ -58,9 +58,9 @@ namespace NFe.ConvertTxt
         }
     }
 
-     
+
     /// NFref
-     
+
     public class NFref
     {
         public string refNFe { get; set; }
@@ -83,9 +83,9 @@ namespace NFe.ConvertTxt
         }
     }
 
-     
+
     /// RefECF
-     
+
     public class refECF
     {
         public string mod { get; set; }
@@ -93,9 +93,9 @@ namespace NFe.ConvertTxt
         public int nCOO { get; set; }
     }
 
-     
+
     /// RefNF
-     
+
     public class refNF
     {
         public int cUF { get; set; }
@@ -106,9 +106,9 @@ namespace NFe.ConvertTxt
         public int nNF { get; set; }
     }
 
-     
+
     /// RefNFP
-     
+
     public class refNFP
     {
         public int cUF { get; set; }

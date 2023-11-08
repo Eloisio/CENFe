@@ -28,9 +28,9 @@ using System.Drawing;
 
 namespace MetroFramework.Drawing.Html
 {
-     
+
     /// Represents a word inside an inline box
-     
+
     /// <remarks>
     /// Because of performance, words of text are the most atomic 
     /// element in the project. It should be characters, but come on,
@@ -60,9 +60,9 @@ namespace MetroFramework.Drawing.Html
             _word = string.Empty;
         }
 
-         
+
         /// Creates a new BoxWord which represents an image
-         
+
         /// <param name="owner"></param>
         /// <param name="image"></param>
         public CssBoxWord(CssBox owner, Image image)
@@ -75,18 +75,18 @@ namespace MetroFramework.Drawing.Html
 
         #region Properties
 
-         
+
         /// Gets the width of the word including white-spaces
-         
+
         public float FullWidth
         {
             //get { return OwnerBox.ActualWordSpacing * (SpacesBefore + SpacesAfter) + Width; }
             get { return Width; }
         }
 
-         
+
         /// Gets the image this words represents (if one)
-         
+
         public Image Image
         {
             get { return _image; }
@@ -123,58 +123,58 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-         
+
         /// Gets if the word represents an image.
-         
+
         public bool IsImage
         {
             get { return Image != null; }
         }
 
-         
+
         /// Gets a bool indicating if this word is composed only by spaces.
         /// Spaces include tabs and line breaks
-         
+
         public bool IsSpaces
         {
             get { return string.IsNullOrEmpty(Text.Trim()); }
         }
 
-         
+
         /// Gets if the word is composed by only a line break
-         
+
         public bool IsLineBreak
         {
             get { return Text == "\n"; }
         }
 
-         
+
         /// Gets if the word is composed by only a tab
-         
+
         public bool IsTab
         {
             get { return Text == "\t"; }
         }
 
-         
+
         /// Gets the Box where this word belongs.
-         
+
         public CssBox OwnerBox
         {
             get { return _ownerBox; }
         }
 
-         
+
         /// Gets the text of the word
-         
+
         public string Text
         {
             get { return _word; }
         }
 
-         
+
         /// Gets or sets an offset to be considered in measurements
-         
+
         internal PointF LastMeasureOffset
         {
             get { return _lastMeasureOffset; }
@@ -185,28 +185,28 @@ namespace MetroFramework.Drawing.Html
 
         #region Methods
 
-         
+
         /// Removes line breaks and tabs on the text of the word,
         /// replacing them with white spaces
-         
+
         internal void ReplaceLineBreaksAndTabs()
         {
             _word = _word.Replace('\n', ' ');
             _word = _word.Replace('\t', ' ');
         }
 
-         
+
         /// Appends the specified char to the word's text
-         
+
         /// <param name="c"></param>
         internal void AppendChar(char c)
         {
             _word += c;
         }
 
-         
+
         /// Represents this word for debugging purposes
-         
+
         /// <returns></returns>
         public override string ToString()
         {

@@ -10,24 +10,24 @@ namespace NFe.Components.Betha.NewVersion.Ambiente
     public class Homologacao : EmiteNFSeBase, IAmbiente
     {
         #region Propriedades
-         
+
         /// Objeto de conexão com o Webservice
-         
+
         private NfseWSService Service = new NfseWSService();
 
-         
+
         /// Cabeçalho do soap
-         
+
         private string CabecMsg = "<cabecalho xmlns=\"http://www.betha.com.br/e-nota-contribuinte-ws\" versao=\"2.02\"><versaoDados>2.02</versaoDados></cabecalho>";
 
-         
+
         /// XML em string
-         
+
         private string XmlString = "";
 
-         
+
         /// Namespace utilizada para deserialização do objeto
-         
+
         public override string NameSpaces
         {
             get
@@ -38,9 +38,9 @@ namespace NFe.Components.Betha.NewVersion.Ambiente
         #endregion
 
         #region Construtores
-         
+
         /// Construtor
-         
+
         /// <param name="tpAmb"></param>
         /// <param name="pastaRetorno"></param>
         /// <param name="usuario"></param>

@@ -9,9 +9,9 @@ namespace NFe.Components.EGoverneISS.OsascoSP.p
         #region Propriedades
         NotaFiscalEletronicaServico Request = new NotaFiscalEletronicaServico();
 
-         
+
         /// Namespace utilizada para deserialização do objeto
-         
+
         public override string NameSpaces
         {
             get

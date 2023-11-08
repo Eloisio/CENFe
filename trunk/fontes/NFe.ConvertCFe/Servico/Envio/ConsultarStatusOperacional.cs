@@ -7,34 +7,34 @@ using Servicos = Unimake.SAT.Servico;
 
 namespace NFe.SAT.Servico.Envio
 {
-     
+
     /// Classe responsável pela comunicação com o SAT
-     
+
     public class ConsultarStatusOperacional : ServicoBase
     {
-         
+
         /// Dados da empresa
-         
+
         private Empresa DadosEmpresa = null;
 
-         
+
         /// Dados do envio do XML
-         
+
         private Servicos.Envio.ConsultarStatusOperacional ConsultarStatusOperacionalEnvio = new Servicos.Envio.ConsultarStatusOperacional();
 
-         
+
         /// Resposta do equipamento sat
-         
+
         private Servicos.Retorno.ConsultarStatusOperacionalResponse ConsultarStatusOperacionalRetorno = null;
 
-         
+
         /// Nome do arquivo XML que esta sendo manipulado
-         
+
         public override string ArquivoXML { get; set; }
 
-         
+
         /// Construtor com serialização
-         
+
         /// <param name="arquivoXML">arquivo a ser lido</param>
         /// <param name="dadosEmpresa">dados da empresa</param>
         public ConsultarStatusOperacional(string arquivoXML, Empresa dadosEmpresa)
@@ -52,18 +52,18 @@ namespace NFe.SAT.Servico.Envio
             CodigoAtivacao = ConsultarStatusOperacionalEnvio.CodigoAtivacao;
         }
 
-         
+
         /// Comunicar com o equipamento SAT
-         
+
         public override void Enviar()
         {
             string resposta = Sat.ConsultarStatusOperacional();
             ConsultarStatusOperacionalRetorno = new Servicos.Retorno.ConsultarStatusOperacionalResponse(resposta);
         }
 
-         
+
         /// Salva o XML de Retorno
-         
+
         public override string SaveResponse()
         {
             string result = Path.Combine(DadosEmpresa.PastaXmlRetorno,

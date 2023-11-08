@@ -1,5 +1,5 @@
 ﻿using NFe.Components.Abstract;
-using NFe.Components.br.com.sigiss.testebarretos;
+//using NFe.Components.br.com.sigiss.testebarretos;
 using System;
 using System.Reflection;
 using System.Xml;
@@ -8,7 +8,7 @@ namespace NFe.Components.SigCorp.BarretosSP.h
 {
     public class SigCorpH : EmiteNFSeBase
     {
-        WebServiceSigISS service = new WebServiceSigISS();
+       // WebServiceSigISS service = new WebServiceSigISS();
         public override string NameSpaces
         {
             get
@@ -28,34 +28,34 @@ namespace NFe.Components.SigCorp.BarretosSP.h
         #region Métodos
         public override void EmiteNF(string file)
         {
-            tcDescricaoRps oTcDescricaoRps = ReadXML<tcDescricaoRps>(file);
-            tcEstruturaDescricaoErros[] tcErros = null;
-            tcRetornoNota result = service.GerarNota(oTcDescricaoRps, out tcErros);
-            string strResult = base.CreateXML(result, tcErros);
-            GerarRetorno(file, strResult, Propriedade.Extensao(Propriedade.TipoEnvio.EnvLoteRps).EnvioXML,
-                                          Propriedade.Extensao(Propriedade.TipoEnvio.EnvLoteRps).RetornoXML);
+            //tcDescricaoRps oTcDescricaoRps = ReadXML<tcDescricaoRps>(file);
+            //tcEstruturaDescricaoErros[] tcErros = null;
+            //tcRetornoNota result = service.GerarNota(oTcDescricaoRps, out tcErros);
+            //string strResult = base.CreateXML(result, tcErros);
+            //GerarRetorno(file, strResult, Propriedade.Extensao(Propriedade.TipoEnvio.EnvLoteRps).EnvioXML,
+            //                              Propriedade.Extensao(Propriedade.TipoEnvio.EnvLoteRps).RetornoXML);
         }
 
         public override void CancelarNfse(string file)
         {
-            tcDadosCancelaNota oTcDadosCancela = ReadXML<tcDadosCancelaNota>(file);
-            tcEstruturaDescricaoErros[] tcErros = null;
-            tcRetornoNota result = service.CancelarNota(oTcDadosCancela, out tcErros);
-            string strResult = base.CreateXML(result, tcErros);
-            GerarRetorno(file, strResult, Propriedade.Extensao(Propriedade.TipoEnvio.PedCanNFSe).EnvioXML,
-                                          Propriedade.Extensao(Propriedade.TipoEnvio.PedCanNFSe).RetornoXML);
+            //tcDadosCancelaNota oTcDadosCancela = ReadXML<tcDadosCancelaNota>(file);
+            //tcEstruturaDescricaoErros[] tcErros = null;
+            //tcRetornoNota result = service.CancelarNota(oTcDadosCancela, out tcErros);
+            //string strResult = base.CreateXML(result, tcErros);
+            //GerarRetorno(file, strResult, Propriedade.Extensao(Propriedade.TipoEnvio.PedCanNFSe).EnvioXML,
+            //                              Propriedade.Extensao(Propriedade.TipoEnvio.PedCanNFSe).RetornoXML);
         }
 
         public override void ConsultarLoteRps(string file)
         {
 
-            tcDadosPrestador oTcDadosConsultaNota = ReadXML<tcDadosPrestador>(file);
-            tcEstruturaDescricaoErros[] tcErros = null;
+            //tcDadosPrestador oTcDadosConsultaNota = ReadXML<tcDadosPrestador>(file);
+            //tcEstruturaDescricaoErros[] tcErros = null;
 
-            string result = service.ConsultarNotaPrestador(oTcDadosConsultaNota, NumeroNota(file, "urn:ConsultarNotaPrestador"), out tcErros).ToString();
-            string strResult = result;
-            GerarRetorno(file, strResult, Propriedade.Extensao(Propriedade.TipoEnvio.PedLoteRps).EnvioXML,
-                                          Propriedade.Extensao(Propriedade.TipoEnvio.PedLoteRps).RetornoXML);
+            //string result = service.ConsultarNotaPrestador(oTcDadosConsultaNota, NumeroNota(file, "urn:ConsultarNotaPrestador"), out tcErros).ToString();
+            //string strResult = result;
+            //GerarRetorno(file, strResult, Propriedade.Extensao(Propriedade.TipoEnvio.PedLoteRps).EnvioXML,
+            //                              Propriedade.Extensao(Propriedade.TipoEnvio.PedLoteRps).RetornoXML);
         }
 
         public override void ConsultarSituacaoLoteRps(string file)
@@ -66,11 +66,11 @@ namespace NFe.Components.SigCorp.BarretosSP.h
         public override void ConsultarNfse(string file)
         {
 
-            tcDadosConsultaNota oTcDadosPrestador = ReadXML<tcDadosConsultaNota>(file);
-            tcEstruturaDescricaoErros[] tcErros = null;
-            string strResult = service.ConsultarNotaValida(oTcDadosPrestador, out tcErros).ToString();
-            GerarRetorno(file, strResult, Propriedade.Extensao(Propriedade.TipoEnvio.PedSitNFSe).EnvioXML,
-                                          Propriedade.Extensao(Propriedade.TipoEnvio.PedSitNFSe).RetornoXML);
+            //tcDadosConsultaNota oTcDadosPrestador = ReadXML<tcDadosConsultaNota>(file);
+            //tcEstruturaDescricaoErros[] tcErros = null;
+            //string strResult = service.ConsultarNotaValida(oTcDadosPrestador, out tcErros).ToString();
+            //GerarRetorno(file, strResult, Propriedade.Extensao(Propriedade.TipoEnvio.PedSitNFSe).EnvioXML,
+            //                              Propriedade.Extensao(Propriedade.TipoEnvio.PedSitNFSe).RetornoXML);
         }
 
         public override void ConsultarNfsePorRps(string file)

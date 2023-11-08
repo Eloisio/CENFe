@@ -43,9 +43,9 @@ namespace NFe.Service
 
         #region Classe com os dados do XML do pedido de consulta do recibo do lote de nfe enviado
 
-         
+
         /// Esta Herança que deve ser utilizada fora da classe para obter os valores das tag´s do pedido de consulta do recibo do lote de NFe enviado
-         
+
         private DadosPedRecClass dadosPedRec;
 
         #endregion Classe com os dados do XML do pedido de consulta do recibo do lote de nfe enviado
@@ -139,9 +139,9 @@ namespace NFe.Service
 
         #region PedRec()
 
-         
+
         /// Faz a leitura do XML de pedido da consulta do recibo do lote de notas enviadas
-         
+
         /// <param name="emp">Código da empresa</param>
         private void PedRec(int emp)
         {
@@ -187,10 +187,10 @@ namespace NFe.Service
 
         #region LerRetornoLoteNFe()
 
-         
+
         /// Efetua a leitura do XML de retorno do processamento do lote de notas fiscais e
         /// atualiza o arquivo de fluxo e envio de notas
-         
+
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>20/04/2009</date>
         private void LerRetornoLoteNFe(int emp)
@@ -367,9 +367,9 @@ namespace NFe.Service
 
         #region FinalizarNFe()
 
-         
+
         /// Finalizar o envio da NFe
-         
+
         public void FinalizarNFe(XmlNodeList protNFeList, FluxoNfe fluxoNFe, int emp, XmlDocument conteudoXMLLote)
         {
             var oLerXml = new LerXML();

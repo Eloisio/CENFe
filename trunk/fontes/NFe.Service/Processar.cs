@@ -3,26 +3,20 @@ using NFe.Components;
 using NFe.Components.Info;
 using NFe.ConvertTxt;
 using NFe.Exceptions;
+using NFe.SAT;
 using NFe.Settings;
 using NFe.Validate;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Net;
 using System.Reflection;
 using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
-using System.Net;
-
-#if _fw46
-
-using NFe.SAT;
-
-#endif
-
 namespace NFe.Service
 {
-    public class Processar 
+    public class Processar
     {
         #region ProcessaArquivo()
         public void ProcessaArquivo(int emp, string arquivo)
@@ -31,16 +25,11 @@ namespace NFe.Service
             {
                 XmlDocument XML = new XmlDocument();
                 XML.Load(arquivo);
-
-                 
-
-
-
-        Servicos servico = Servicos.Nulo;
+                Servicos servico = Servicos.Nulo;
                 try
                 {
                     // Só vou validar a extensão em homologação, pois depois que o desenvolvedor fez toda a integração, acredito que ele não vá mais gerar extensões erradas, com isso evito ficar validando todas as vezes arquivos corretos. Wandrey 17/09/2016
-                    if (emp == -1) 
+                    if (emp == -1)
                         ValidarExtensao(arquivo);
                     else if (Empresas.Configuracoes[emp].AmbienteCodigo == (int)TipoAmbiente.taHomologacao)
                         ValidarExtensao(arquivo);
@@ -108,7 +97,6 @@ namespace NFe.Service
                             break;
 
                         #endregion NFS-e
-
                         #region CFS-e
 
                         case Servicos.RecepcionarLoteCfse:
@@ -144,9 +132,6 @@ namespace NFe.Service
                             break;
 
                         #endregion CFS-e
-
-#if _fw46
-
                         #region SAT/CF-e
 
                         case Servicos.SATConsultar:
@@ -258,64 +243,46 @@ namespace NFe.Service
                             break;
 
                         #endregion SAT/CF-e
-
-#endif
-
                         #region NFe
-
                         case Servicos.NFeAssinarValidarEnvioEmLote:
                             CertVencido(emp);
                             AssinarValidarNFe(arquivo);
                             break;
-
                         case Servicos.ConsultaCadastroContribuinte:
                             DirecionarArquivo(emp, true, true, arquivo, new TaskCadastroContribuinte(arquivo));
                             break;
-
                         case Servicos.EventoRecepcao:
                             DirecionarArquivo(emp, true, true, arquivo, new TaskNFeEventos(arquivo));
                             break;
-
                         case Servicos.NFeConsultaStatusServico:
                             DirecionarArquivo(emp, true, true, arquivo, new TaskNFeConsultaStatus(arquivo));
                             break;
-
                         case Servicos.NFeConverterTXTparaXML:
                             ConverterTXTparaXML(arquivo);
                             break;
-
                         case Servicos.NFeEnviarLote:
                             DirecionarArquivo(emp, false, true, arquivo, new TaskNFeRecepcao(arquivo));
                             break;
-
                         case Servicos.NFeGerarChave:
                             GerarChaveNFe(arquivo);
                             break;
-
                         case Servicos.NFeInutilizarNumeros:
                             DirecionarArquivo(emp, true, true, arquivo, new TaskNFeInutilizacao(arquivo));
                             break;
-
                         case Servicos.NFePedidoSituacaoLote:
                             DirecionarArquivo(emp, false, true, arquivo, new TaskNFeRetRecepcao(arquivo));
                             break;
-
                         case Servicos.NFeMontarLoteUma:
                             DirecionarArquivo(emp, true, false, arquivo, new TaskNFeMontarLoteUmaNFe(arquivo));
                             break;
-
                         case Servicos.NFeMontarLoteVarias:
                             DirecionarArquivo(emp, true, false, arquivo, new TaskNFeMontarLoteVarias());
                             break;
-
                         case Servicos.NFePedidoConsultaSituacao:
                             DirecionarArquivo(emp, true, true, arquivo, new TaskNFeConsultaSituacao(arquivo));
                             break;
-
                         #endregion NFe
-
                         #region MDFe
-
                         case Servicos.MDFeAssinarValidarEnvioEmLote:
                             CertVencido(emp);
                             AssinarValidarMDFe(arquivo);
@@ -354,22 +321,17 @@ namespace NFe.Service
                             break;
 
                         #endregion MDFe
-
                         #region CTe
-
                         case Servicos.CTeAssinarValidarEnvioEmLote:
                             CertVencido(emp);
                             AssinarValidarCTe(arquivo);
                             break;
-
                         case Servicos.CTeConsultaStatusServico:
                             DirecionarArquivo(emp, true, true, arquivo, new TaskCTeConsultaStatus(arquivo));
                             break;
-
                         case Servicos.CTeEnviarLote:
                             DirecionarArquivo(emp, false, true, arquivo, new TaskCTeRecepcao(arquivo));
                             break;
-
                         case Servicos.CTeInutilizarNumeros:
                             DirecionarArquivo(emp, true, true, arquivo, new TaskCTeInutilizacao(arquivo));
                             break;
@@ -399,9 +361,7 @@ namespace NFe.Service
                             break;
 
                         #endregion CTe
-
                         #region DFe
-
                         case Servicos.DFeEnviar:
                             DirecionarArquivo(emp, false, true, arquivo, new TaskDFeRecepcao(arquivo));
                             break;
@@ -411,7 +371,6 @@ namespace NFe.Service
                             break;
 
                         #endregion DFe
-
                         #region LMC
 
                         case Servicos.LMCAutorizacao:
@@ -419,7 +378,6 @@ namespace NFe.Service
                             break;
 
                         #endregion LMC
-
                         #region EFDReinf
 
                         case Servicos.RecepcaoLoteReinf:
@@ -431,7 +389,6 @@ namespace NFe.Service
                             break;
 
                         #endregion EFDReinf
-
                         #region eSocial
 
                         case Servicos.RecepcaoLoteeSocial:
@@ -529,38 +486,38 @@ namespace NFe.Service
         }
         private void Get_Fornecedor_Produtos(string arquivo)
         {
-          // try
-          // {
-          //     var document = new XmlDocument();
-          //     document.Load(arquivo);
-          //     string[] ww = arquivo.Split('\\');
-          //     if (VerificaNFE(document))
-          //     {
-          //         XmlNodeList ide_ = document.GetElementsByTagName("ide");
-          //         XmlNodeList emit_ = document.GetElementsByTagName("emit");
-          //         XmlNodeList total_ = document.GetElementsByTagName("vNF");
-          //         XmlNodeList det_ = document.GetElementsByTagName("det");
-          //         if(emit_.Count>0) LoadFornecedor(emit_[0]);
-          //         LoadNota(ide_[0], total_[0]);
-          //         foreach (XmlNode no in det_)
-          //         {
-          //             ItensComprado pd = FillProdutos(no);
-          //             if (nota.LItens == null) nota.LItens = new List<ItensComprado>();
-          //             nota.LItens.Add(pd);
-          //         }
-          //         InsereNota();
-          //         // NotaCarregada();
-          //         var MovNota = TA_MovNota.GetDataByidcompra(IDCompra.ToString()).FirstOrDefault();
-          //         foreach (var itensComprado in nota.LItens) { prod.Add(itensComprado); }
-          //     }
-          //     else
-          //         MessageBox.Show(this, "Este não é um xml de NFE!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-          // }
-          // catch (Exception ex)
-          // {
-          //     MessageBox.Show(this, "Erro ao Carregar o Fornecedor do XML");
-          // }
-          // btnIncluir.Enabled = prod.Count > 0;
+            // try
+            // {
+            //     var document = new XmlDocument();
+            //     document.Load(arquivo);
+            //     string[] ww = arquivo.Split('\\');
+            //     if (VerificaNFE(document))
+            //     {
+            //         XmlNodeList ide_ = document.GetElementsByTagName("ide");
+            //         XmlNodeList emit_ = document.GetElementsByTagName("emit");
+            //         XmlNodeList total_ = document.GetElementsByTagName("vNF");
+            //         XmlNodeList det_ = document.GetElementsByTagName("det");
+            //         if(emit_.Count>0) LoadFornecedor(emit_[0]);
+            //         LoadNota(ide_[0], total_[0]);
+            //         foreach (XmlNode no in det_)
+            //         {
+            //             ItensComprado pd = FillProdutos(no);
+            //             if (nota.LItens == null) nota.LItens = new List<ItensComprado>();
+            //             nota.LItens.Add(pd);
+            //         }
+            //         InsereNota();
+            //         // NotaCarregada();
+            //         var MovNota = TA_MovNota.GetDataByidcompra(IDCompra.ToString()).FirstOrDefault();
+            //         foreach (var itensComprado in nota.LItens) { prod.Add(itensComprado); }
+            //     }
+            //     else
+            //         MessageBox.Show(this, "Este não é um xml de NFE!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // }
+            // catch (Exception ex)
+            // {
+            //     MessageBox.Show(this, "Erro ao Carregar o Fornecedor do XML");
+            // }
+            // btnIncluir.Enabled = prod.Count > 0;
         }
 
         #endregion ProcessaArquivo()
@@ -1101,9 +1058,9 @@ namespace NFe.Service
 
         #region AssinarValidarNFe()
 
-         
+
         /// Assinar e Validar todos os arquivos XML de notas fiscais encontrados na pasta informada por parâmetro
-         
+
         /// <param name="arquivo">Arquivo a ser validado e assinado</param>
         protected void AssinarValidarNFe(string arquivo)
         {
@@ -1116,9 +1073,9 @@ namespace NFe.Service
 
         #region AssinarValidarCTe()
 
-         
+
         /// Assinar e Validar todos os arquivos XML de notas fiscais encontrados na pasta informada por parâmetro
-         
+
         /// <param name="arquivo">Arquivo a ser validado e assinado</param>
         protected void AssinarValidarCTe(string arquivo)
         {
@@ -1131,9 +1088,9 @@ namespace NFe.Service
 
         #region AssinarValidarMDFe()
 
-         
+
         /// Assinar e Validar todos os arquivos XML de notas fiscais encontrados na pasta informada por parâmetro
-         
+
         /// <param name="arquivo">Arquivo a ser validado e assinado</param>
         protected void AssinarValidarMDFe(string arquivo)
         {
@@ -1146,9 +1103,9 @@ namespace NFe.Service
 
         #region AlterarConfiguracoesUniNFe()
 
-         
+
         /// Executa as tarefas pertinentes a consulta das informações do UniNFe
-         
+
         /// <param name="arquivo">Arquivo a ser tratado/param>
         protected void AlterarConfiguracoesUniNFe(string arquivo)
         {
@@ -1165,9 +1122,9 @@ namespace NFe.Service
 
         #region AssinarValidar()
 
-         
+
         /// Executa as tarefas pertinentes ao processo de somente assinar e validar os arquivos
-         
+
         /// <param name="arquivo">Arquivo a ser assinado e validado</param>
         protected void AssinarValidar(string arquivo)
         {
@@ -1292,9 +1249,9 @@ namespace NFe.Service
 
         #region ConsultaInformacoesUniNFe()
 
-         
+
         /// Executa as tarefas pertinentes a consulta das informações do UniNFe
-         
+
         /// <param name="arquivo">Arquivo a ser tratado/param>
         protected void ConsultaInformacoesUniNFe(string arquivo)
         {
@@ -1311,9 +1268,9 @@ namespace NFe.Service
 
         #region ConverterTXTparaXML()
 
-         
+
         /// Executa as tarefas pertinentes da conversão de NF-e em TXT para XML
-         
+
         /// <param name="arquivo">Nome do arquivo a ser convertido</param>
         protected void ConverterTXTparaXML(string arquivo)
         {
@@ -1330,9 +1287,9 @@ namespace NFe.Service
 
         #region LimpezaTemporario()
 
-         
+
         /// Executar as tarefas pertinentes a limpeza de arquivos temporários
-         
+
         public void LimpezaTemporario()
         {
             Thread.Sleep(600000); // 10 minutos para executar a primeira vez para evitar apagar arquivo que estava na pasta de envio e foi para a temp
@@ -1349,9 +1306,9 @@ namespace NFe.Service
 
         #region EmProcessamento()
 
-         
+
         /// Executar as tarefas pertinentes a analise das notas em processamento a mais de 5 minutos
-         
+
         public void EmProcessamento()
         {
             bool hasAll = false;
@@ -1379,9 +1336,9 @@ namespace NFe.Service
 
         #region GerarChaveNFe()
 
-         
+
         /// Executa tarefas pertinentes a geração da Chave da NFe solicitado pelo ERP
-         
+
         /// <param name="arquivo">Arquivo a ser tratado</param>
         protected void GerarChaveNFe(string arquivo)
         {
@@ -1406,9 +1363,9 @@ namespace NFe.Service
 
         #region GerarXMLPedRec()
 
-         
+
         /// Executa as tarefas pertinentes a geração dos pedidos de consulta situação de lote da NFe
-         
+
         /// <param name="nfe">Objeto da classe servico NFe</param>
         public void GerarXMLPedRec(object nfe)
         {
@@ -1430,9 +1387,9 @@ namespace NFe.Service
 
         #region DirecionarArquivo()
 
-         
+
         /// Direcionar o arquivo
-         
+
         /// <param name="arquivos">Arquivo</param>
         /// <param name="metodo">Método a ser executado do serviço da NFe</param>
         /// <param name="nfe">Objeto do serviço da NFe a ser executado</param>
@@ -1484,9 +1441,9 @@ namespace NFe.Service
 
         #region EnviarArquivo()
 
-         
+
         /// Analisa o tipo do XML que está na pasta de envio e executa a operação necessária. Exemplo: Envia ao SEFAZ, reconfigura o UniNFE, etc...
-         
+
         /// <param name="cArquivo">Nome do arquivo XML a ser enviado ou analisado</param>
         /// <param name="oNfe">Objeto da classe UniNfeClass a ser utilizado nas operações</param>
         private void EnviarArquivo(int emp, string arquivo, Object nfe, string metodo)
@@ -1544,9 +1501,9 @@ namespace NFe.Service
 
         #region GravarXMLDadosCertificado()
 
-         
+
         /// Gravar o XML de retorno com as informações do UniNFe para o aplicativo de ERP
-         
+
         /// <param name="oNfe">Objeto da classe UniNfeClass para conseguir pegar algumas informações para gravar o XML</param>
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>29/01/2009</date>
@@ -1597,9 +1554,9 @@ namespace NFe.Service
 
         #region ReconfigurarUniNFe()
 
-         
+
         /// Reconfigura o UniNFe, gravando as novas informações na tela de configuração
-         
+
         /// <param name="cArquivo">Nome do arquivo XML contendo as novas configurações</param>
         protected void ReconfigurarUniNFe(string cArquivo)
         {
@@ -1617,9 +1574,9 @@ namespace NFe.Service
 
         #region GerarXMLPedRec()
 
-         
+
         /// Gera o XML de consulta do recibo do lote de notas enviadas
-         
+
         /// <param name="empresa">Index da empresa que é para gerar os pedidos de consulta do recibo do lote da nfe</param>
         /// <param name="nfe">Objeto da classe ServicoNfe</param>
         /// <by>Wandrey Mundin Ferreira</by>
@@ -1688,9 +1645,9 @@ namespace NFe.Service
 
         #region Executa Limpeza
 
-         
+
         /// executa a limpeza das pastas temp e retorno
-         
+
         /// <by>http://desenvolvedores.net/marcelo</by>
         private void ExecutaLimpeza()
         {
@@ -1774,9 +1731,9 @@ namespace NFe.Service
 
         #region CertVencido
 
-         
+
         /// Verificar se o certificado digital está vencido
-         
+
         /// <param name="emp">Empresa que é para ser verificado o certificado digital</param>
         /// <remarks>
         /// Retorna uma exceção ExceptionCertificadoDigital caso o certificado esteja vencido
@@ -1793,9 +1750,9 @@ namespace NFe.Service
 
         #region IsConnectedToInternet()
 
-         
+
         /// Verifica se a conexão com a internet está OK
-         
+
         /// <remarks>
         /// Retorna uma exceção ExceptionSemInternet caso a internet não esteja OK
         /// </remarks>
@@ -1813,9 +1770,9 @@ namespace NFe.Service
 
         #region GravaErroERP()
 
-         
+
         /// Gravar o erro ocorrido para o ERP
-         
+
         /// <param name="arquivo">Nome do arquivo que seria processado</param>
         /// <param name="extRet">Extensão do arquivo de erro a ser gravado</param>
         /// <param name="servico">Serviço que está sendo executado</param>
@@ -2032,9 +1989,9 @@ namespace NFe.Service
 
         #region ConsultaDFe()
 
-         
+
         /// Executa o processo de consulta DFe das empresas cadastradas no UniNFe e já deixa tudo disponibilizado para o ERP.
-         
+
         public void ConsultaDFe()
         {
             bool hasAll = false;

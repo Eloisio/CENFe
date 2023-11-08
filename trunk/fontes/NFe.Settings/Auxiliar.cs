@@ -11,7 +11,7 @@ namespace NFe.Settings
     {
         #region GravarArqErroERP
         /// grava um arquivo de erro ao ERP
-         
+
         /// <param name="Arquivo"></param>
         /// <param name="Erro"></param>
         public void GravarArqErroERP(string Arquivo, string Erro)

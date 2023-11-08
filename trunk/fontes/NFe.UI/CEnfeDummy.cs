@@ -78,12 +78,12 @@ namespace NFe.UI
         {
             ArrayList list = new ArrayList();
             if (!soConsulta)
-            list.Add(new KeyValuePair<int, string>((int)TipoAplicativo.Nfe, EnumHelper.GetDescription(TipoAplicativo.Nfe)));
+                list.Add(new KeyValuePair<int, string>((int)TipoAplicativo.Nfe, EnumHelper.GetDescription(TipoAplicativo.Nfe)));
             return list;
         }
         public static void ClearControls(System.Windows.Forms.Control Xcontrol, bool clear, bool inverteTheme)
         {
-            if (Xcontrol == null)  return;
+            if (Xcontrol == null) return;
             MetroFramework.MetroThemeStyle uTheme = CEnfeDummy.mainForm.metroStyleManager1.Theme;
             if (Xcontrol.GetType().IsSubclassOf(typeof(MetroFramework.Controls.MetroUserControl)) ||
                 Xcontrol.GetType().IsSubclassOf(typeof(MetroFramework.Controls.MetroTabPage)) ||
@@ -103,7 +103,7 @@ namespace NFe.UI
             }
             foreach (Control control in Xcontrol.Controls)
             {
-                if (control.Controls.Count > 0)             ClearControls(control, clear, inverteTheme);
+                if (control.Controls.Count > 0) ClearControls(control, clear, inverteTheme);
                 if (clear)
                 {
                     if (control.GetType().IsAssignableFrom(typeof(TextBox)))

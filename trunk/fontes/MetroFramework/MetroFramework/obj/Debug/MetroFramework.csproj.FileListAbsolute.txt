@@ -28,3 +28,4 @@ E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\Me
 E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.csproj.GenerateResource.cache
 E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.dll
 E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.pdb
+E:\Desenvolvimento\cenfe\trunk\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.csprojAssemblyReference.cache

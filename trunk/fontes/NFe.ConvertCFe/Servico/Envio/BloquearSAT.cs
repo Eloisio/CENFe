@@ -9,29 +9,29 @@ using Servicos = Unimake.SAT.Servico;
 
 namespace NFe.SAT.Servico.Envio
 {
-     
+
     /// Classe responsável pela comunicação com o SAT
-     
+
     public class BloquearSAT : ServicoBase
     {
-         
+
         /// Dados da empresa
-         
+
         private Empresa DadosEmpresa = null;
 
-         
+
         /// Resposta do equipamento sat
-         
+
         private Servicos.Retorno.BloquearSATResponse BloquearSATRetorno = null;
 
-         
+
         /// Nome do arquivo XML que esta sendo manipulado
-         
+
         public override string ArquivoXML { get; set; }
 
-         
+
         /// Construtor com serialização
-         
+
         /// <param name="arquivoXML">arquivo a ser lido</param>
         /// <param name="dadosEmpresa">dados da empresa</param>
         public BloquearSAT(string arquivoXML, Empresa dadosEmpresa)
@@ -48,18 +48,18 @@ namespace NFe.SAT.Servico.Envio
             CodigoAtivacao = DadosEmpresa.CodigoAtivacaoSAT;
         }
 
-         
+
         /// Comunicar com o equipamento SAT
-         
+
         public override void Enviar()
         {
             string resposta = Sat.BloquearSAT();
             BloquearSATRetorno = new Servicos.Retorno.BloquearSATResponse(resposta);
         }
 
-         
+
         /// Salva o XML de Retorno
-         
+
         public override string SaveResponse()
         {
             string result = Path.Combine(DadosEmpresa.PastaXmlRetorno,

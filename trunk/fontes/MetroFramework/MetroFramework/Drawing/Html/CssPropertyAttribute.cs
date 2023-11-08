@@ -28,10 +28,10 @@ using System;
 
 namespace MetroFramework.Drawing.Html
 {
-     
+
     /// Used to mark a property as a Css property.
     /// The <see cref="Name"/> property is used to specify the oficial CSS name
-     
+
     public class CssPropertyAttribute : Attribute
     {
         #region Fields
@@ -40,9 +40,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Ctor
 
-         
+
         /// Creates a new CssPropertyAttribute
-         
+
         /// <param name="name">Name of the Css property</param>
         public CssPropertyAttribute(string name)
         {
@@ -52,9 +52,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Properties
 
-         
+
         /// Gets or sets the name of the CSS property
-         
+
         public string Name
         {
             get { return _name; }

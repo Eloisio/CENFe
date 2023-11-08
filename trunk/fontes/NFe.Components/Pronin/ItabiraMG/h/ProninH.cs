@@ -44,9 +44,9 @@ namespace NFe.Components.Pronin.ItabiraMG.h
             ServiceConsultas.cabecalho = cabecMsg;
         }
 
-         
+
         /// Identificamos falha no certificado o do servidor, então temos que ignorar os erros
-         
+
         /// <param name="sender"></param>
         /// <param name="certificate"></param>
         /// <param name="chain"></param>

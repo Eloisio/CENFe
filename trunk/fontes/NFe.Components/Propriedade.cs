@@ -725,9 +725,9 @@ namespace NFe.Components
         }
         #region Propriedades com as extensões dos XML ou TXT de retorno
 
-         
+
         /// Classe com as propriedades com as extensões dos XML ou TXT de retorno
-         
+
         public class ExtRetorno
         {
             #region Extensoes que so estao aqui para quem utiliza o codigo em seus projetos
@@ -774,205 +774,205 @@ namespace NFe.Components
 
             #region Extensões NFe
 
-             
+
             /// -procnfe.xml
-             
+
             public const string ProcNFe = "-procNFe.xml"; //Não deixar tudo minusculo para evitar problemas com Linux configurado para Case Sensitive. Wandrey 23/06/2011
 
-             
+
             /// -den.xml
-             
+
             public const string Den = "-den.xml";
 
-             
+
             /// -ret-env-cce.err
-             
+
             public const string retEnvCCe_ERR = "-ret-env-cce.err";
 
-             
+
             /// -ret-canc.err
-             
+
             public const string retCancelamento_ERR = "-ret-env-canc.err";
 
-             
+
             /// -procEventoNFe.xml
-             
+
             public const string ProcEventoNFe = "-procEventoNFe.xml";
 
-             
+
             /// -procinutnfe.xml
-             
+
             public const string ProcInutNFe = "-procInutNFe.xml"; //Não deixar tudo minusculo para evitar problemas com Linux configurado para Case Sensitive. Wandrey 23/06/2011
 
-             
+
             /// -nfe.err
-             
+
             public const string Nfe_ERR = "-nfe.err";
 
-             
+
             /// -ret-cons-nfe-dest.err
-             
+
             public const string retConsNFeDest_ERR = "-ret-cons-nfe-dest.err";
 
-             
+
             /// -ret-manif.err
-             
+
             public const string retManifestacao_ERR = "-ret-env-manif.err";
 
             #endregion Extensões NFe
 
             #region Extensões CTe
 
-             
+
             /// -procCTe.xml
-             
+
             public const string ProcCTe = "-procCTe.xml"; //Não deixar tudo minusculo para evitar problemas com Linux configurado para Case Sensitive. Wandrey 23/06/2011
 
-             
+
             /// -procEventoCTe.xml
-             
+
             public const string ProcEventoCTe = "-procEventoCTe.xml";
 
-             
+
             /// -procInutCTe.xml
-             
+
             public static string ProcInutCTe = "-procInutCTe.xml"; //Não deixar tudo minusculo para evitar problemas com Linux configurado para Case Sensitive. Wandrey 23/06/2011
 
-             
+
             /// -cte.err
-             
+
             public static string Cte_ERR = "-cte.err";
 
             #endregion Extensões CTe
 
             #region Extensões MDFe
 
-             
+
             /// -procMDFe.xml
-             
+
             public const string ProcMDFe = "-procMDFe.xml"; //Não deixar tudo minusculo para evitar problemas com Linux configurado para Case Sensitive. Wandrey 23/06/2011
 
-             
+
             /// -procEventoMDFe.xml
-             
+
             public const string ProcEventoMDFe = "-procEventoMDFe.xml";
 
-             
+
             /// -mdfe.err
-             
+
             public const string MDFe_ERR = "-mdfe.err";
 
-             
+
             /// -ret-consmdfenaoenc.err
-             
+
             public static string MDFeConsNaoEnc_ERR = "-ret-cons-mdfe-naoenc.err";
 
             #endregion Extensões MDFe
 
             #region Extensões em comum entre NFe, CTe e MDF-e
 
-             
+
             /// -eve.err
-             
+
             public const string Eve_ERR = "-eve.err";
 
-             
+
             /// -montar-lote.err
-             
+
             public const string MontarLote_ERR = "-montar-lote.err";
 
-             
+
             /// -ret-cons-cad.err
-             
+
             public const string ConsCad_ERR = "-ret-cons-cad.err";
 
-             
+
             /// -sit.err
-             
+
             public const string Sit_ERR = "-sit.err";
 
-             
+
             /// -pro-rec.err
-             
+
             public const string ProRec_ERR = "-pro-rec.err";
 
-             
+
             /// -sta.err
-             
+
             public const string Sta_ERR = "-sta.err";
 
-             
+
             /// -inu.err
-             
+
             public const string Inu_ERR = "-inu.err";
 
-             
+
             /// -rec.xml
-             
+
             public const string Rec = "-rec.xml";
 
-             
+
             /// -rec.err
-             
+
             public const string Rec_ERR = "-rec.err";
 
             #endregion Extensões em comum entre NFe, CTe e MDF-e
 
             #region Extensões NFSe
 
-             
+
             /// -ret-loterps.err
-             
+
             public const string RetEnvLoteRps_ERR = "-ret-loterps.err";
 
-             
+
             /// -cannfse.err
-             
+
             public const string CanNfse_ERR = "-cannfse.err";
 
-             
+
             /// -lotrps.err
-             
+
             public const string LoteRps_ERR = "-loterps.err";
 
-             
+
             /// -sitloterps.err
-             
+
             public const string SitLoteRps_ERR = "-sitloterps.err";
 
-             
+
             /// -sitnfse.err
-             
+
             public const string SitNfse_ERR = "-sitnfse.err";
 
-             
+
             /// -sitnfserps.err
-             
+
             public const string SitNfseRps_ERR = "-sitnfserps.err";
 
-             
+
             /// -urlnfse.xml x -ped-urlnfse.xml x -urlnfse.err
-             
+
             public const string Urlnfse_ERR = "-urlnfse.err";
 
             public const string UrlnfseSerie_ERR = "-urlnfserie.err";
 
-             
+
             /// nfsepng.err
-             
+
             public const string NFSePNG_ERR = "-nfsepng.err";
 
             public const string NFSePDF_ERR = "-nfsepdf.err";
             public const string NFSeXML_ERR = "-nfsexml.err";
 
-             
+
             /// -inunfse.err
-             
+
             public const string InuNfse_ERR = "-inunfse.err";
 
-             
+
             /// -seqlotenotarps.err
-             
+
             public const string SeqLoteNotaRPS_ERR = "-seqlotenotarps.err";
 
             #endregion Extensões NFSe
@@ -986,14 +986,14 @@ namespace NFe.Components
 
             #region Extensões do LMC
 
-             
+
             /// -ret-lmc.err
-             
+
             public static string LMCRet_ERR = "-ret-lmc.err";
 
-             
+
             /// -procLMC.xml
-             
+
             public static string ProcLMC = "-procLMC.xml";
 
             #endregion Extensões do LMC
@@ -1002,9 +1002,9 @@ namespace NFe.Components
         #endregion Propriedades com as extensões dos XML ou TXT de retorno
         #region NomeAplicacao
 
-         
+
         /// Retorna o nome do aplicativo
-         
+
         /// <param name="oAssembly">Passar sempre: Assembly.GetExecutingAssembly() pois ele vai pegar o Assembly do EXE ou DLL de onde está sendo chamado o método</param>
         /// <returns>string contendo o nome do Aplicativo</returns>
         /// <by>Wandrey Mundin Ferreira</by>
@@ -1059,7 +1059,7 @@ namespace NFe.Components
         }
 
         #endregion Versao
-        public static bool ServicoRodando 
+        public static bool ServicoRodando
         {
             get
             {
@@ -1077,9 +1077,9 @@ namespace NFe.Components
             }
         }
 
-         
+
         /// Retorna o XML para salvar os parametros das telas
-         
+
         public static string NomeArqXMLParams
         {
             get
@@ -1090,18 +1090,18 @@ namespace NFe.Components
 
         #region Atributos
 
-         
+
         /// Se pode encerrar a aplicação ou não
-         
+
         public static bool EncerrarApp = false;
 
         #endregion Atributos
 
         #region DescricaoAplicacao
 
-         
+
         /// Retorna a descrição da aplicação
-         
+
         /// <returns>Descrição da aplicação</returns>
         public static string DescricaoAplicacao
         {

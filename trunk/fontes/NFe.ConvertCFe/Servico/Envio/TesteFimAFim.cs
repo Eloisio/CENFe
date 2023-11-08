@@ -9,34 +9,34 @@ using Servicos = Unimake.SAT.Servico;
 
 namespace NFe.SAT.Servico.Envio
 {
-     
+
     /// Classe responsável pelo teste de comunicação com o SAT
-     
+
     public class TesteFimAFim : ServicoBase
     {
-         
+
         /// Dados da empresa
-         
+
         private Empresa DadosEmpresa = null;
 
-         
+
         /// Dados do envio do XML
-         
+
         private string TesteFimAFimEnvio = null;
 
-         
+
         /// Resposta do equipamento sat
-         
+
         private Servicos.Retorno.TesteFimAFimResponse TesteFimAFimRetorno = new Servicos.Retorno.TesteFimAFimResponse();
 
-         
+
         /// Nome do arquivo XML que esta sendo manipulado
-         
+
         public override string ArquivoXML { get; set; }
 
-         
+
         /// Construtor com serialização
-         
+
         /// <param name="arquivoXML">arquivo a ser lido</param>
         /// <param name="dadosEmpresa">dados da empresa</param>
         public TesteFimAFim(string arquivoXML, Empresa dadosEmpresa)
@@ -54,18 +54,18 @@ namespace NFe.SAT.Servico.Envio
             TesteFimAFimEnvio = doc.InnerXml;
         }
 
-         
+
         /// Comunicar com o equipamento SAT
-         
+
         public override void Enviar()
         {
             string resposta = Sat.TesteFimAFim(TesteFimAFimEnvio);
             TesteFimAFimRetorno = new Servicos.Retorno.TesteFimAFimResponse(resposta);
         }
 
-         
+
         /// Salva o XML de Retorno
-         
+
         public override string SaveResponse()
         {
             string result = Path.Combine(DadosEmpresa.PastaXmlRetorno,

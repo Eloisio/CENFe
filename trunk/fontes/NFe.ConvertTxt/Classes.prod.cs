@@ -2,9 +2,9 @@
 
 namespace NFe.ConvertTxt
 {
-     
+
     /// Prod
-     
+
     public class Prod
     {
         public string cProd;
@@ -31,7 +31,7 @@ namespace NFe.ConvertTxt
         public double vOutro;
         public TpcnIndicadorTotal indTot;
         public string xPed;
-        public int nItemPed;
+        //public int nItemPed;
         public string nFCI;
         public List<DI> DI;
         public veicProd veicProd;

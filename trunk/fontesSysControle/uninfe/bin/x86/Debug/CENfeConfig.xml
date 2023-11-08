@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<nfe_configuracoes>
+  <DetectarProxyAuto>False</DetectarProxyAuto>
+  <Proxy>False</Proxy>
+  <ProxyServidor></ProxyServidor>
+  <ProxyUsuario></ProxyUsuario>
+  <ProxyPorta>0</ProxyPorta>
+  <ProxySenha></ProxySenha>
+  <ChecarConexaoInternet>True</ChecarConexaoInternet>
+  <GravarLogOperacaoRealizada>True</GravarLogOperacaoRealizada>
+  <ConfirmaSaida>False</ConfirmaSaida>
+  <SenhaConfig>4ba09fb1831bd58ee076a1d82a5b7a0f</SenhaConfig>
+</nfe_configuracoes>

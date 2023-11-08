@@ -62,7 +62,7 @@
     <OutputPath>C:\camposevolution\CENFe\</OutputPath>
     <DefineConstants>TRACE;DEBUG;_fw46</DefineConstants>
     <DebugType>full</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
@@ -302,10 +302,6 @@
     <ProjectReference Include="..\NFe.Threadings\NFe.Threadings.csproj">
       <Project>{f570942e-c531-497d-a860-f86a8c2a31c9}</Project>
       <Name>NFe.Threadings</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NFe.Validate\NFe.Validate.csproj">
-      <Project>{4a0d1e87-2994-4678-9af1-eebd093b7b44}</Project>
-      <Name>NFe.Validate</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

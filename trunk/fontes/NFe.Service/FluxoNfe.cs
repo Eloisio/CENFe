@@ -10,14 +10,14 @@ using System.Xml;
 namespace NFe.Service
 {
     #region Classe FluxoNfe
-     
+
     /// Classe de controle do fluxo das notas fiscais eletrônicas que estão em processo de envio
-     
+
     public class FluxoNfe
     {
-         
+
         /// Código da empresa
-         
+
         private int empresa { get; set; }
 
         #region Construtores
@@ -39,63 +39,63 @@ namespace NFe.Service
         #region Enumeradores
 
         #region ElementoEditavel
-         
+
         /// Enumerador das tag´s editáveis do XML de controle do fluxo
-         
+
         public enum ElementoEditavel
         {
-             
+
             /// Tag que contém o número do lote
-             
+
             idLote,
-             
+
             /// Tag que contém o número do Recibo
-             
+
             nRec,
-             
+
             /// Tag que contém o status da NFe
-             
+
             cStat,
-             
+
             /// Data e hora da ultima consulta do recibo do lote de nfe enviado
-             
+
             dPedRec,
-             
+
             /// Tempo médio de resposta da SEFAZ
-             
+
             tMed,
-             
+
             /// Versão de schema do XML
-             
+
             versao,
-             
+
             /// Modelo do documento fiscal
-             
+
             mod
         }
         #endregion
 
         #region ElementoFixo
-         
+
         /// Enumerador das tag´s e atributos fixos do XML de controle do fluxo
-         
+
         public enum ElementoFixo
         {
-             
+
             /// Tag principal Documentos NFe
-             
+
             DocumentosNFe,
-             
+
             /// Tag Documento - Uma para cada NFe em processamento
-             
+
             Documento,
-             
+
             /// Tag com a ChaveNFe
-             
+
             ChaveNFe,
-             
+
             /// Tag com o nome do arquivo NFe
-             
+
             ArqNFe
         }
         #endregion
@@ -103,9 +103,9 @@ namespace NFe.Service
         #endregion
 
         #region Propriedades
-         
+
         /// Nome do arquivo XML onde é gravado o controle do fluxo
-         
+
         private string NomeXmlControleFluxo { get; set; }
         #endregion
 
@@ -119,9 +119,9 @@ namespace NFe.Service
         #endregion
 
         #region CriarXml()
-         
+
         /// Cria o arquivo XML para o controle do fluxo
-         
+
         /// <param name="forcar">Força criar o arquivo mesmo que já exista</param>
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>17/04/2009</date>
@@ -222,9 +222,9 @@ namespace NFe.Service
         #endregion
 
         #region InserirNfeFluxo()
-         
+
         /// Insere a NFe no fluxo em processo
-         
+
         /// <param name="strChaveNFe">Chave da NFe</param>
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>17/04/2009</date>
@@ -330,9 +330,9 @@ namespace NFe.Service
         #endregion
 
         #region CriarTag()
-         
+
         /// Criar Tag no XML de fluxo
-         
+
         /// <param name="xd">Objeto XmlDocument</param>
         /// <param name="cl">Objeto XmlElement</param>
         /// <param name="strTag">Nome da Tag</param>
@@ -348,9 +348,9 @@ namespace NFe.Service
         #endregion
 
         #region ExcluirNfeFluxo()
-         
+
         /// Excluir a NFe do fluxo em processamento através da chave da NFe
-         
+
         /// <param name="strChaveNFe">Chave da NFe</param>
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>17/04/2009</date>
@@ -420,9 +420,9 @@ namespace NFe.Service
         #endregion
 
         #region ExcluirNfeFluxoRec()
-         
+
         /// Excluir as NFe´s no fluxo através do recibo. Ótimo para retirar todas as notas de um único lote de uma única vez.
-         
+
         /// <param name=TpcnResources.nRec.ToString()>Número do recibo do lote enviado</param>
         /// <remarks>
         /// Autor: Wandrey Mundin Ferreira
@@ -503,9 +503,9 @@ namespace NFe.Service
         #endregion
 
         #region NfeExiste()
-         
+
         /// Verifica se a NFe já existe no arquivo XML de controle do fluxo.
-         
+
         /// <returns>true = Existe</returns>
         public bool NfeExiste(string strChaveNFe)
         {
@@ -565,9 +565,9 @@ namespace NFe.Service
         #endregion
 
         #region NFeComLote()
-         
+
         /// Verifica se a NFE já foi incluida em um lote de NFe
-         
+
         /// <param name="strChaveNFe">Chave da Nota Fiscal Eletrônica a ser Verificado</param>
         /// <returns>true = Já está em um lote</returns>
         /// <by>Wandrey Mundin Ferreira</by>
@@ -637,9 +637,9 @@ namespace NFe.Service
         #endregion
 
         #region AtualizarTag()
-         
+
         /// Atualizar o conteúdo das Tag´s do XML de controle do Fluxo
-         
+
         /// <param name="chaveNFe">Chave da NFe</param>
         /// <param name="tag">Tag a ser atualizada</param>
         /// <param name="novoConteudo">Novo conteúdo para a tag</param>
@@ -712,9 +712,9 @@ namespace NFe.Service
         #endregion
 
         #region AtualizarTagRec()
-         
+
         /// Atualiza a tag nRec de todas as NFe´s do lote passado por parâmetro
-         
+
         /// <param name="strLote">Lote que é para atualziar o número do recibo</param>
         /// <param name="strNovoConteudo">Número do recibo</param>
         public void AtualizarTagRec(string strLote, string strRecibo)
@@ -791,9 +791,9 @@ namespace NFe.Service
         #endregion
 
         #region LerTag()
-         
+
         /// Ler conteúdo da Tag de uma determinada NFe que já está no controle de fluxo de notas sendo enviadas
-         
+
         /// <param name="strChaveNFe">Chave da NFe que é para ler a tag</param>
         /// <param name="Tag">Nome da tag a ser lida</param>
         /// <returns>Retorna o conteúdo da TAG</returns>
@@ -870,9 +870,9 @@ namespace NFe.Service
         #endregion
 
         #region LerTag() - Sobrecarga
-         
+
         /// Ler conteúdo da Tag de uma determinada NFe que já está no controle de fluxo de notas sendo enviadas
-         
+
         /// <param name="strChaveNFe">Chave da NFe que é para ler a tag</param>
         /// <param name="Tag">Nome da tag a ser lida</param>
         /// <returns>Retorna o conteúdo da TAG</returns>
@@ -887,9 +887,9 @@ namespace NFe.Service
         #endregion
 
         #region LerTag() - Sobrecarga
-         
+
         /// Ler conteúdo da Tag de uma determinada NFe que já está no controle de fluxo de notas sendo enviadas
-         
+
         /// <param name="strChaveNFe">Chave da NFe que é para ler a tag</param>
         /// <param name="Tag">Nome da tag a ser lida</param>
         /// <returns>Retorna o conteúdo da TAG</returns>
@@ -904,9 +904,9 @@ namespace NFe.Service
         #endregion
 
         #region CriarListaRec()
-         
+
         /// Criar uma lista com os recibos a serem consultados no servidor do SEFAZ
-         
+
         /// <returns>Lista dos recibos</returns>
         /// <by>Wandrey Mundin Ferreira</by>
         public List<ReciboCons> CriarListaRec()
@@ -1021,9 +1021,9 @@ namespace NFe.Service
         #endregion
 
         #region AtualizarTagDPedRec()
-         
+
         /// Atualiza a tag nRec de todas as NFe´s do lote passado por parâmetro
-         
+
         /// <param name="strLote">Lote que é para atualziar o número do recibo</param>
         /// <param name="strNovoConteudo">Número do recibo</param>
         /// <by>Wandrey Mundin Ferreira</by>
@@ -1100,9 +1100,9 @@ namespace NFe.Service
         #endregion
 
         #region OpenFileFluxo()
-         
+
         /// Abre o arquivo FluxoNFe.XML com permissão de leitura e gravação, mas só compartilha para leitura
-         
+
         /// <returns>FileStream do arquivo FluxoNFe.XML</returns>
         private FileStream OpenFileFluxo(bool somenteLeitura)
         {
@@ -1118,30 +1118,30 @@ namespace NFe.Service
     #endregion
 
     #region ReciboCons
-     
+
     /// Classe para auxiliar retornos dos recibos a serem consultados no SEFAZ
-     
+
     public class ReciboCons
     {
-         
+
         /// Número do recibo
-         
+
         public string nRec = string.Empty;
-         
+
         /// Tempo médio de resposta do SEFAZ
-         
+
         public int tMed = 0;
-         
+
         /// Data e hora da ultima consulta do recibo efetuada
-         
+
         public DateTime dPedRec;
-         
+
         /// Versão do Schema do XML da NFe
-         
+
         public string versao;
-         
+
         /// Modelo do documento fiscal
-         
+
         public string mod;
     }
     #endregion

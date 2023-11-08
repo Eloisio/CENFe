@@ -9,9 +9,9 @@ using Unimake.SAT.Servico.Envio;
 
 namespace NFe.SAT.Conversao
 {
-     
+
     /// Classe responsável pela conversão da NFCe em CFe
-     
+
     public class ConverterNFCe
     {
         private Empresa DadosEmpresa;
@@ -26,14 +26,14 @@ namespace NFe.SAT.Conversao
 
         private string OutputFile;
 
-         
+
         /// Arquivo de saída
-         
+
         public string XMLOutput = "";
 
-         
+
         /// Converter a CFe
-         
+
         /// <param name="file">arquivo da NFCe</param>
         /// <param name="dadosEmpresa">dados da empresa</param>
         /// <param name="outputfile">onde será salvo o arquivo</param>
@@ -55,9 +55,9 @@ namespace NFe.SAT.Conversao
             FileStream.Close();
         }
 
-         
+
         /// Executar a conversão
-         
+
         public void ConverterSAT()
         {
             ObjEnvio = GerarLoteCFe();
@@ -76,9 +76,9 @@ namespace NFe.SAT.Conversao
             xmloutput.Save(OutputFile);
         }
 
-         
+
         /// Gerar arquivo de lote a partir da NFCe
-         
+
         /// <returns>Lote da CFe</returns>
         private envCFeCFe GerarLoteCFe()
         {
@@ -133,9 +133,9 @@ namespace NFe.SAT.Conversao
             };
         }
 
-         
+
         /// Adiciona os itens da nota ao Lote da CFe
-         
+
         /// <returns>Lista de Produtos</returns>
         private List<envCFeCFeInfCFeDet> PopularProdutos()
         {
@@ -220,9 +220,9 @@ namespace NFe.SAT.Conversao
             return result;
         }
 
-         
+
         /// Formas de pagamento
-         
+
         /// <returns>lista de formas de pagamento</returns>
         private List<envCFeCFeInfCFePgtoMP> PopularMeioPagamento()
         {
@@ -242,9 +242,9 @@ namespace NFe.SAT.Conversao
             return result;
         }
 
-         
+
         /// Grava valores de impostos nos produtos
-         
+
         /// <typeparam name="T"></typeparam>
         /// <param name="childs"></param>
         /// <returns></returns>
@@ -488,9 +488,9 @@ namespace NFe.SAT.Conversao
             return result;
         }
 
-         
+
         /// Adiciona valores por referencia nos objetos
-         
+
         /// <param name="result">objeto que será definido o valor</param>
         /// <param name="propertyName">nome da propriedade</param>
         /// <param name="value">valor que será definido</param>
@@ -504,9 +504,9 @@ namespace NFe.SAT.Conversao
             }
         }
 
-         
+
         /// Busca valor de uma tag a partir de um nó
-         
+
         /// <param name="nodes">nó onde vai ser procurado a tag</param>
         /// <param name="nameTag">nome da tag</param>
         /// <returns></returns>
@@ -528,9 +528,9 @@ namespace NFe.SAT.Conversao
             return String.IsNullOrEmpty(value) ? null : value;
         }
 
-         
+
         /// Busca valor de uma tag a partir de um nó
-         
+
         /// <param name="nodes">nó onde vai ser procurado a tag</param>
         /// <param name="nameTag">nome da tag</param>
         /// <returns></returns>
@@ -546,9 +546,9 @@ namespace NFe.SAT.Conversao
             return retorna;
         }
 
-         
+
         /// Localiza o numero do documento da pessoa
-         
+
         /// <param name="parentTag"></param>
         /// <returns></returns>
         private string GetDocumentoPessoa(string parentTag)
@@ -561,9 +561,9 @@ namespace NFe.SAT.Conversao
             return result;
         }
 
-         
+
         /// Retorna o valor do documento a partir da raiz
-         
+
         /// <param name="groupTag">nome do nó</param>
         /// <param name="nameTag">nome da tag</param>
         /// <returns></returns>
@@ -595,9 +595,9 @@ namespace NFe.SAT.Conversao
             }
         }
 
-         
+
         /// Retorna o dígito verificador do valor informado
-         
+
         /// <param name="value">Valor para calcular o dígito verificador</param>
         /// <returns></returns>
         private int Modulus11Digit(string value)
@@ -628,9 +628,9 @@ namespace NFe.SAT.Conversao
             return result;
         }
 
-         
+
         /// Realiza validação do XML a partir dos schemas
-         
+
         public void ValidarCFe()
         {
             ValidarXML validar = new ValidarXML(OutputFile, Convert.ToInt16(DadosEmpresa.UnidadeFederativaCodigo), true);

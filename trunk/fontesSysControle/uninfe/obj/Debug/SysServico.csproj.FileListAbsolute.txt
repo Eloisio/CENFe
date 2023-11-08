@@ -1,0 +1,11 @@
+E:\Desenvolvimento\cenfe\trunk\fontesSysControle\uninfe\obj\Debug\SysServico.csprojAssemblyReference.cache
+E:\Desenvolvimento\cenfe\trunk\fontesSysControle\uninfe\obj\Debug\CEnfe.Properties.Resources.resources
+E:\Desenvolvimento\cenfe\trunk\fontesSysControle\uninfe\obj\Debug\SysServico.csproj.GenerateResource.cache
+E:\Desenvolvimento\cenfe\trunk\fontesSysControle\uninfe\obj\Debug\CENFe.exe
+E:\Desenvolvimento\cenfe\trunk\fontesSysControle\uninfe\obj\Debug\CENFe.pdb
+C:\SysControle\UniNfeSobre.xml
+C:\SysControle\logounimake.png
+C:\SysControle\CENFe.exe.config
+C:\SysControle\CENFe.exe
+C:\SysControle\CENFe.pdb
+E:\Desenvolvimento\cenfe\trunk\fontesSysControle\uninfe\obj\Debug\SysServico.csproj.CopyComplete

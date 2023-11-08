@@ -3,15 +3,15 @@ using System.Xml;
 
 namespace NFe.Components.MGM
 {
-     
+
     /// Utilitários para o tipo XMLDocument
-     
+
     public class XmlDocumentUtilities
     {
 
-         
+
         /// Retorna um nó XML pelo seu nome
-         
+
         /// <param name="doc">Documento XML que contêm o nó. Se não existir irá retornar nulo.</param>
         /// <param name="name">Nome do nó que deverá ser pesquisado.</param>
         /// <returns></returns>

@@ -86,7 +86,7 @@ namespace NFe.UI
                 _novo = (_uc == null);
                 if (_uc == null) _uc = Activator.CreateInstance(user) as UserControl1;/// cria o processo
                 _uc.UpdateControles();
-                if (_novo)CEnfeDummy.mainForm.Controls.Add(_uc);
+                if (_novo) CEnfeDummy.mainForm.Controls.Add(_uc);
                 var Components = CEnfeDummy.mainForm.Controls.Cast<object>()
                                                        .Where(obj => !ReferenceEquals(obj, _uc))
                                                        .OfType<MetroFramework.Controls.MetroUserControl>();

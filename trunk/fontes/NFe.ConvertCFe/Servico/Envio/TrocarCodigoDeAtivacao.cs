@@ -7,34 +7,34 @@ using Servicos = Unimake.SAT.Servico;
 
 namespace NFe.SAT.Servico.Envio
 {
-     
+
     /// Classe responsável pela comunicação com o SAT
-     
+
     public class TrocarCodigoDeAtivacao : ServicoBase
     {
-         
+
         /// Dados da empresa
-         
+
         Empresa DadosEmpresa = null;
 
-         
+
         /// Dados do envio do XML
-         
+
         Servicos.Envio.TrocarCodigoDeAtivacao TrocarCodigoDeAtivacaoEnvio = new Servicos.Envio.TrocarCodigoDeAtivacao();
 
-         
+
         /// Resposta do equipamento sat
-         
+
         Servicos.Retorno.TrocarCodigoDeAtivacaoResponse TrocarCodigoDeAtivacaoRetorno = null;
 
-         
+
         /// Nome do arquivo XML que esta sendo manipulado
-         
+
         public override string ArquivoXML { get; set; }
 
-         
+
         /// Construtor com serialização
-         
+
         /// <param name="arquivoXML">arquivo a ser lido</param>
         /// <param name="dadosEmpresa">dados da empresa</param>
         public TrocarCodigoDeAtivacao(string arquivoXML, Empresa dadosEmpresa)
@@ -52,18 +52,18 @@ namespace NFe.SAT.Servico.Envio
             CodigoAtivacao = TrocarCodigoDeAtivacaoEnvio.CodigoAtivacaoAtual;
         }
 
-         
+
         /// Comunicar com o equipamento SAT
-         
+
         public override void Enviar()
         {
             string resposta = Sat.TrocarCodigoDeAtivacao(TrocarCodigoDeAtivacaoEnvio.Opcao, TrocarCodigoDeAtivacaoEnvio.CodigoAtivacaoNovo, TrocarCodigoDeAtivacaoEnvio.CodigoAtivacaoNovo);
             TrocarCodigoDeAtivacaoRetorno = new Servicos.Retorno.TrocarCodigoDeAtivacaoResponse(resposta);
         }
 
-         
+
         /// Salva o XML de Retorno
-         
+
         public override string SaveResponse()
         {
             string result = Path.Combine(DadosEmpresa.PastaXmlRetorno,

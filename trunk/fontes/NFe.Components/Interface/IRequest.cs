@@ -7,18 +7,18 @@ namespace NFe.Components.Interface
     {
         #region Properties
 
-         
+
         /// Proxy para ser utilizado na requisição, pode ser nulo
-         
+
         IWebProxy Proxy { get; set; }
 
         #endregion Properties
 
         #region Methods
 
-         
+
         /// Evita o erro de servidor cometeu uma violação de protocolo.
-         
+
         /// <seealso cref="https://msdn.microsoft.com/pt-br/library/system.net.configuration.httpwebrequestelement.useunsafeheaderparsing%28v=vs.110%29.aspx"/>
         void SetAllowUnsafeHeaderParsing20();
 

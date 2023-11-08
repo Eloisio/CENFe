@@ -31,9 +31,9 @@ using System.Text.RegularExpressions;
 
 namespace MetroFramework.Drawing.Html
 {
-     
+
     /// Represents a block of CSS property values
-     
+
     /// <remarks>
     /// To learn more about CSS blocks visit CSS spec:
     /// http://www.w3.org/TR/CSS21/syndata.html#block
@@ -50,18 +50,18 @@ namespace MetroFramework.Drawing.Html
 
         #region Ctor
 
-         
+
         /// Initializes internal's
-         
+
         private CssBlock()
         {
             _propertyValues = new Dictionary<PropertyInfo, string>();
             _properties = new Dictionary<string, string>();
         }
 
-         
+
         /// Creates a new block from the block's source
-         
+
         /// <param name="blockSource"></param>
         public CssBlock(string blockSource)
             : this()
@@ -99,26 +99,26 @@ namespace MetroFramework.Drawing.Html
 
         #region Props
 
-         
+
         /// Gets the properties and its values
-         
+
         public Dictionary<string, string> Properties
         {
             get { return _properties; }
         }
 
-         
+
         /// Gets the dictionary with property-ready values
-         
+
         public Dictionary<PropertyInfo, string> PropertyValues
         {
             get { return _propertyValues; }
         }
 
 
-         
+
         /// Gets the block's source
-         
+
         public string BlockSource
         {
             get { return _block; }
@@ -129,9 +129,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Method
 
-         
+
         /// Updates the PropertyValues dictionary
-         
+
         internal void UpdatePropertyValues()
         {
             PropertyValues.Clear();
@@ -143,9 +143,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-         
+
         /// Asigns the style on this block o the specified box
-         
+
         /// <param name="b"></param>
         public void AssignTo(CssBox b)
         {

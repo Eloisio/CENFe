@@ -265,9 +265,9 @@ namespace NFe.ConvertTxt
         private string layout;
         private string chave;
         private const string prefix = "§";
-         
+
         /// conteudo do arquivo de cada nota
-         
+
         private Dictionary<int, List<string>> xConteudoArquivo;
 
         #endregion
@@ -280,9 +280,9 @@ namespace NFe.ConvertTxt
             LinhaLida = 0;
         }
 
-         
+
         /// CarregarArquivo
-         
+
         private bool CarregarArquivo(string cArquivo)
         {
             if (File.Exists(cArquivo))
@@ -338,9 +338,9 @@ namespace NFe.ConvertTxt
             return ((xConteudoArquivo.Count == 0 || !string.IsNullOrEmpty(cMensagemErro)) ? false : true);
         }
 
-         
+
         /// Converter
-         
+
         public bool Converter(string cArquivo, string cFolderDestino)
         {
             cRetorno.Clear();
@@ -429,9 +429,9 @@ namespace NFe.ConvertTxt
             return false;
         }
 
-         
+
         /// getDateTime
-         
+
         public DateTime getDateTime(TpcnTipoCampo Tipo, string value)
         {
             if (string.IsNullOrEmpty(value))
@@ -457,9 +457,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// getDateTime2
-         
+
         public DateTime getDate2(TpcnTipoCampo Tipo, string value)
         {
             if (string.IsNullOrEmpty(value))
@@ -481,9 +481,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// getTime
-         
+
         private DateTime getTime(string value)
         {
             if (string.IsNullOrEmpty(value))
@@ -502,9 +502,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// RetornarConteudoTag
-         
+
         private string RetornarConteudoTag(string TAG, bool trim, ObOp optional)
         {
             ///
@@ -548,9 +548,9 @@ namespace NFe.ConvertTxt
                 return "";
         }
 
-         
+
         /// SomenteNumeros
-         
+
         private string SomenteNumeros(string entrada)
         {
             if (string.IsNullOrEmpty(entrada)) return "";
@@ -566,9 +566,9 @@ namespace NFe.ConvertTxt
             return saida.ToString();
         }
 
-         
+
         /// LerCampo
-         
+
 
         private double LerDouble(TpcnTipoCampo Tipo, TpcnResources tag, ObOp optional, int maxLength, bool returnNull)
         {
@@ -842,9 +842,9 @@ namespace NFe.ConvertTxt
             }
         }
 
-         
+
         /// LerRegistro
-         
+
         private void LerRegistro(string aRegistro)
         {
             if (aRegistro.StartsWith("*")) return;
@@ -1338,7 +1338,7 @@ namespace NFe.ConvertTxt
                     NFe.det[nProd].Prod.vOutro = LerDouble(TpcnTipoCampo.tcDec2, TpcnResources.vOutro, ObOp.Opcional, 15);
                     NFe.det[nProd].Prod.indTot = (TpcnIndicadorTotal)LerInt32(TpcnResources.indTot, ObOp.Obrigatorio, 1, 1);
                     NFe.det[nProd].Prod.xPed = LerString(TpcnResources.xPed, ObOp.Opcional, 1, 15);
-                    NFe.det[nProd].Prod.nItemPed = LerInt32(TpcnResources.nItemPed, ObOp.Opcional, 0, 6);
+                    // NFe.det[nProd].Prod.nItemPed = LerInt32(TpcnResources.nItemPed, ObOp.Opcional, 0, 6);
                     NFe.det[nProd].Prod.nFCI = LerString(TpcnResources.nFCI, ObOp.Opcional, 0, 255);
                     NFe.det[nProd].Imposto.ISSQN.cSitTrib = string.Empty;
 

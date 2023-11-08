@@ -9,34 +9,34 @@ namespace NFe.Components
         public int nRetornoTipoArq { get; private set; }
         public string cRetornoTipoArq { get; private set; }
 
-         
+
         /// Tag que deve ser assinada no XML, se o conteúdo estiver em branco é por que o XML não deve ser assinado
-         
+
         public string TagAssinatura { get; private set; }
 
-         
+
         /// Tag que tem o atributo ID no XML
-         
+
         public string TagAtributoId { get; private set; }
 
-         
+
         /// Nome da tag do XML que será assinada (uma segunda tag que tem que ser assinada ex. SubstituirNfse Pelotas-RS)
-         
+
         public string TagAssinatura0 { get; private set; }
 
-         
+
         /// Nome da tag que tem o atributo ID que será assinada, faz consunto com a TagAssinatura0
-         
+
         public string TagAtributoId0 { get; private set; }
 
-         
+
         /// Tag que deve ser assinada no XML, se o conteúdo estiver em branco é por que o XML não deve ser assinado
-         
+
         public string TagLoteAssinatura { get; private set; }
 
-         
+
         /// Tag que tem o atributo ID no XML
-         
+
         public string TagLoteAtributoId { get; private set; }
 
         public string cArquivoSchema { get; private set; }

@@ -215,10 +215,10 @@ namespace NFe.Settings
             return cArqErro;
         }
 
-         
+
         /// Exclui todos os arquivos de lock existentes nas configurações de pasta das empresas
         /// <param name="confirm">Se verdadeiro confirma antes de apagar os arquivos</param>
-         
+
         public static bool ClearLockFiles(bool confirm = true)
         {
             if (Empresas.Configuracoes == null || Empresas.Configuracoes.Count == 0) return true;
@@ -254,9 +254,9 @@ namespace NFe.Settings
         }
 
         #region CriarPasta()
-         
+
         /// Criar as pastas para todas as empresas cadastradas e configuradas no sistema se as mesmas não existirem
-         
+
         /// <by>Wandrey Mundin Ferreira</by>
         /// <date>29/09/2009</date>
         public static void CriarPasta(bool onlygeral)
@@ -287,9 +287,9 @@ namespace NFe.Settings
         #endregion
 
         #region CriarSubPastaEnviado()
-         
+
         /// Criar as subpastas (Autorizados/Denegados/EmProcessamento) dentro da pasta dos XML´s enviados para todas as empresas cadastradas e configuradas
-         
+
         /// <remarks>
         /// Autor: Wandrey Mundin Ferreira
         /// Date: 20/04/2010
@@ -310,9 +310,9 @@ namespace NFe.Settings
          * 29/07/2013
          */
         #region Reset certificado
-         
+
         /// Reseta o certificado da empresa e recria o mesmo
-         
+
         /// <param name="index">identificador da empresa</param>
         /// <returns></returns>
         public static X509Certificate2 ResetCertificado(int index)
@@ -359,9 +359,9 @@ namespace NFe.Settings
         #endregion
 
         #region FindConfEmpresa()
-         
+
         /// Procurar o cnpj na coleção das empresas
-         
+
         /// <param name="cnpj">CNPJ a ser pesquisado</param>
         /// <param param name="servico">Serviço a ser pesquisado</param>
         /// <returns>objeto empresa localizado, null se nada for localizado</returns>
@@ -381,9 +381,9 @@ namespace NFe.Settings
         #endregion
 
         #region FindConfEmpresaIndex()
-         
+
         /// Procurar o cnpj na coleção das empresas
-         
+
         /// <param name="cnpj">CNPJ a ser pesquisado</param>
         /// <param name="servico">Serviço a ser pesquisado</param>
         /// <returns>Retorna o index do objeto localizado ou null se nada for localizado</returns>
@@ -405,9 +405,9 @@ namespace NFe.Settings
         }
         #endregion
 
-         
+
         /// Retorna a empresa pela thread atual
-         
+
         /// <returns></returns>
         public static int FindEmpresaByThread()
         {
@@ -415,9 +415,9 @@ namespace NFe.Settings
         }
 
         #region Valid()
-         
+
         /// Retorna se o indice da coleção que foi pesquisado é valido ou não
-         
+
         /// <param name="index">Indice a ser validado</param>
         /// <returns>Retorna true or false</returns>
         /// <remarks>
@@ -435,9 +435,9 @@ namespace NFe.Settings
         #endregion
 
         #region Valid()
-         
+
         /// Retorna se o objeto da coleção que foi pesquisado é valido ou não
-         
+
         /// <param name="empresa">Objeto da empresa</param>
         /// <returns>Retorna true or false</returns>
         /// <remarks>

@@ -105,35 +105,35 @@ namespace MetroFramework.Drawing.Html
 
         #region Props
 
-         
+
         /// Gets the dictionary of attributes in the tag
-         
+
         public Dictionary<string, string> Attributes
         {
             get { return _attributes; }
         }
 
 
-         
+
         /// Gets the name of this tag
-         
+
         public string TagName
         {
             get { return _tagName; }
         }
 
-         
+
         /// Gets if the tag is actually a closing tag
-         
+
         public bool IsClosing
         {
             get { return _isClosing; }
         }
 
-         
+
         /// Gets if the tag is single placed; in other words it doesn't need a closing tag; 
         /// e.g. &lt;br&gt;
-         
+
         public bool IsSingle
         {
             get
@@ -233,9 +233,9 @@ namespace MetroFramework.Drawing.Html
 
         #region Methods
 
-         
+
         /// Converts an HTML length into a Css length
-         
+
         /// <param name="htmlLength"></param>
         /// <returns></returns>
         private string TranslateLength(string htmlLength)
@@ -250,9 +250,9 @@ namespace MetroFramework.Drawing.Html
             return htmlLength;
         }
 
-         
+
         /// Cascades to the TD's the border spacified in the TABLE tag.
-         
+
         /// <param name="table"></param>
         /// <param name="border"></param>
         private void ApplyTableBorder(CssBox table, string border)
@@ -266,9 +266,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-         
+
         /// Cascades to the TD's the border spacified in the TABLE tag.
-         
+
         /// <param name="table"></param>
         /// <param name="border"></param>
         private void ApplyTablePadding(CssBox table, string padding)
@@ -283,9 +283,9 @@ namespace MetroFramework.Drawing.Html
             }
         }
 
-         
+
         /// Gets a boolean indicating if the attribute list has the specified attribute
-         
+
         /// <param name="attribute"></param>
         /// <returns></returns>
         public bool HasAttribute(string attribute)

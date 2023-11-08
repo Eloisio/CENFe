@@ -35,3 +35,7 @@ D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.Threadings\obj\Debug\NFe.Threadings.p
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Threadings\obj\Debug\NFe.Threadings.csprojResolveAssemblyReference.cache
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Threadings\obj\Debug\NFe.Threadings.dll
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Threadings\obj\Debug\NFe.Threadings.pdb
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Threadings\obj\Debug\NFe.Threadings.csprojAssemblyReference.cache
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Threadings\obj\Debug\NFe.Threadings.csproj.CopyComplete
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Threadings\obj\Debug\NFe.Threadings.dll
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Threadings\obj\Debug\NFe.Threadings.pdb

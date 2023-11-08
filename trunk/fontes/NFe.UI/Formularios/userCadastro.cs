@@ -185,9 +185,9 @@ namespace NFe.UI
             }
         }
 
-         
+
         /// VerConsultaCadastroClass
-         
+
         /// <param name="XmlNfeDadosMsg"></param>
         /// <returns></returns>
         public object VerConsultaCadastro(string XmlNfeDadosMsg)
@@ -214,10 +214,10 @@ namespace NFe.UI
         }
 
         #region ConsultaCadastro()
-         
+
         /// Verifica um cadastro no site da receita.
         /// Voce deve preencher o estado e mais um dos tres itens: CPNJ, IE ou CPF.
-         
+
         /// <param name="uf">Sigla do UF do cadastro a ser consultado. Tem que ter dois dígitos. SU para suframa.</param>
         /// <param name="cnpj"></param>
         /// <param name="ie"></param>
@@ -236,9 +236,9 @@ namespace NFe.UI
         }
         #endregion
 
-         
+
         /// Envia um arquivo para o webservice da NFE e recebe a resposta. 
-         
+
         /// <returns>Retorna uma string com a mensagem obtida do webservice de status do serviço da NFe</returns>
         /// <example>string vPastaArq = this.CriaArqXMLStatusServico();</example>
         /// <by>Wandrey Mundin Ferreira</by>

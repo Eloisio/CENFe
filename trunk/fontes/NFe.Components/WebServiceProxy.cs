@@ -34,53 +34,53 @@ namespace NFe.Components
 
         #region Propriedades
 
-         
+
         /// Descrição do serviço (WSDL)
-         
+
         private ServiceDescription serviceDescription { get; set; }
 
-         
+
         /// Código assembly do serviço
-         
+
         private Assembly serviceAssemby { get; set; }
 
-         
+
         /// Certificado digital a ser utilizado no consumo dos serviços
-         
+
         private X509Certificate2 oCertificado { get; set; }
 
         #region Proxy
 
-         
+
         /// Utiliza servidor proxy?
-         
+
         public bool UtilizaServidorProxy { get; set; }
 
-         
+
         /// Endereço do servidor de proxy
-         
+
         public string ProxyServidor { get; set; }
 
-         
+
         /// Usuário para autenticação no servidor de proxy
-         
+
         public string ProxyUsuario { get; set; }
 
-         
+
         /// Senha do usuário para autenticação no servidor de proxy
-         
+
         public string ProxySenha { get; set; }
 
-         
+
         /// Porta de comunicação do servidor proxy
-         
+
         public int ProxyPorta { get; set; }
 
         #endregion Proxy
 
-         
+
         /// Arquivo WSDL
-         
+
         public string ArquivoWSDL { get; set; }
 
         private PadroesNFSe PadraoNFSe { get; set; }
@@ -224,9 +224,9 @@ namespace NFe.Components
 
         public string[] NomeMetodoWS { get; protected set; }
 
-         
+
         /// Lista utilizada para armazenar os webservices
-         
+
         public static List<webServices> webServicesList { get; private set; }
 
         #endregion Propriedades
@@ -303,9 +303,9 @@ namespace NFe.Components
 
         #region ReturnArray()
 
-         
+
         /// Método que verifica se o tipo de retornjo de uma operação/método é array ou não
-         
+
         /// <param name="Instance">Instancia do objeto</param>
         /// <param name="methodName">Nome do método</param>
         /// <returns>true se o tipo de retorno do método passado por parâmetro for um array</returns>
@@ -320,9 +320,9 @@ namespace NFe.Components
 
         #region Invoke()
 
-         
+
         /// Invocar o método da classe
-         
+
         /// <param name="Instance">Instância do objeto</param>
         /// <param name="methodName">Nome do método</param>
         /// <param name="parameters">Objeto com o conteúdo dos parâmetros do método</param>
@@ -360,9 +360,9 @@ namespace NFe.Components
 
         #region InvokeXML()
 
-         
+
         /// Invocar o método da classe
-         
+
         /// <param name="Instance">Instância do objeto</param>
         /// <param name="methodName">Nome do método</param>
         /// <param name="parameters">Objeto com o conteúdo dos parâmetros do método</param>
@@ -377,9 +377,9 @@ namespace NFe.Components
 
         #region InvokeXML()
 
-         
+
         /// Invocar o método da classe
-         
+
         /// <param name="Instance">Instância do objeto</param>
         /// <param name="methodName">Nome do método</param>
         /// <param name="parameters">Objeto com o conteúdo dos parâmetros do método</param>
@@ -394,9 +394,9 @@ namespace NFe.Components
 
         #region SetProp()
 
-         
+
         /// Alterar valor das propriedades da classe
-         
+
         /// <param name="Instance">Instância do objeto</param>
         /// <param name="propertyName">Nome da propriedade</param>
         /// <param name="novoValor">Novo valor para ser gravado na propriedade</param>
@@ -415,9 +415,9 @@ namespace NFe.Components
 
         #region GetProp()
 
-         
+
         /// Alterar valor das propriedades da classe
-         
+
         /// <param name="instance">Instância do objeto</param>
         /// <param name="propertyName">Nome da propriedade</param>
         /// <remarks>
@@ -436,10 +436,10 @@ namespace NFe.Components
 
         #region CertificateValidation
 
-         
+
         /// Responsável por retornar uma confirmação verdadeira para a proriedade ServerCertificateValidationCallback
         /// da classe ServicePointManager para confirmar a solicitação SSL automaticamente.
-         
+
         /// <returns>Retornará sempre true</returns>
         public bool CertificateValidation(object sender,
             X509Certificate certificate,
@@ -453,9 +453,9 @@ namespace NFe.Components
 
         #region CriarObjeto()
 
-         
+
         /// Criar objeto das classes do serviço
-         
+
         /// <param name="NomeClasse">Nome da classe que é para ser instanciado um novo objeto</param>
         /// <returns>Retorna o objeto</returns>
         public object CriarObjeto(string NomeClasse)
@@ -472,9 +472,9 @@ namespace NFe.Components
 
         #region DefinirProtocoloSeguranca()
 
-         
+
         /// Definir o protocolo de segurança a ser utilizado na comunicação com os WebServices
-         
+
         /// <param name="cUF"></param>
         /// <param name="taHomologacao"></param>
         /// <param name="tpEmis"></param>
@@ -496,9 +496,9 @@ namespace NFe.Components
             return securityProtocolType;
         }
 
-         
+
         /// Definir o protocolo de segurança a ser utilizado na comunicação com os WebServices
-         
+
         /// <param name="cUF"></param>
         /// <param name="tpAmb"></param>
         /// <param name="tpEmis"></param>
@@ -509,9 +509,9 @@ namespace NFe.Components
             return DefinirProtocoloSeguranca(cUF, (tpAmb == (int)TipoAmbiente.taHomologacao), tpEmis, PadroesNFSe.NaoIdentificado, servico);
         }
 
-         
+
         /// Definir o protocolo de segurança a ser utilizado na comunicação com os WebServices
-         
+
         /// <param name="cUF"></param>
         /// <param name="tpAmb"></param>
         /// <param name="tpEmis"></param>
@@ -529,9 +529,9 @@ namespace NFe.Components
 
         #region GerarClasse()
 
-         
+
         /// Gerar o source code do serviço
-         
+
         private void GerarClasse()
         {
             #region Gerar o código da classe
@@ -556,9 +556,9 @@ namespace NFe.Components
 
         #region ParametroCompilacao
 
-         
+
         /// Montar os parâmetros para a compilação da classe
-         
+
         /// <returns>Retorna os parâmetros</returns>
         private CompilerParameters ParametroCompilacao()
         {
@@ -575,9 +575,9 @@ namespace NFe.Components
 
         #region GerarGrafo()
 
-         
+
         /// Gerar a estrutura e o grafo da classe
-         
+
         private CodeNamespace GerarGrafo()
         {
             #region Gerar a estrutura da classe do serviço
@@ -653,9 +653,9 @@ namespace NFe.Components
 
         #region RelacCertificado
 
-         
+
         /// Relacionar o certificado digital com o serviço que será consumido do webservice
-         
+
         /// <param name="instance">Objeto do serviço que será consumido</param>
         private void RelacCertificado(object instance)
         {
@@ -678,9 +678,9 @@ namespace NFe.Components
 
         #region CarregaWebServicesList()
 
-         
+
         /// Carrega a lista de webservices definidos no arquivo WebService.XML
-         
+
         public static void CarregaWebServicesList()
         {
             if (webServicesList == null)
@@ -871,10 +871,10 @@ namespace NFe.Components
 
         #region reloadWebServicesList()
 
-         
+
         /// Recarrega a lista de webservices
         /// usado pelo projeto da NFes quando da manutencao
-         
+
         public static void reloadWebServicesList()
         {
             webServicesList = null;
@@ -1058,246 +1058,246 @@ namespace NFe.Components
         public string NFeAutorizacao { get; set; }
         public string NFeRetAutorizacao { get; set; }
 
-         
+
         /// Recepção de eventos da NFe
-         
+
         public string NFeRecepcaoEvento { get; set; }
 
         public string NFeDownload { get; set; }
         public string NFeManifDest { get; set; }
 
-         
+
         /// Distribuição de DFe de interesses de autores (NFe)
-         
+
         public string DFeRecepcao { get; set; }
 
         #endregion NFe
 
         #region NFS-e
 
-         
+
         /// Enviar Lote RPS NFS-e
-         
+
         public string RecepcionarLoteRps { get; set; }
 
-         
+
         /// Consultar Situação do lote RPS NFS-e
-         
+
         public string ConsultarSituacaoLoteRps { get; set; }
 
-         
+
         /// Consultar NFS-e por RPS
-         
+
         public string ConsultarNfsePorRps { get; set; }
 
-         
+
         /// Consultar NFS-e por NFS-e
-         
+
         public string ConsultarNfse { get; set; }
 
-         
+
         /// Consultar lote RPS
-         
+
         public string ConsultarLoteRps { get; set; }
 
-         
+
         /// Cancelar NFS-e
-         
+
         public string CancelarNfse { get; set; }
 
-         
+
         /// Consulta URL de Visualização da NFSe
-         
+
         public string ConsultarURLNfse { get; set; }
 
-         
+
         /// Consulta a imagem em PNG da Nota
-         
+
         public string ConsultarNFSePNG { get; set; }
 
-         
+
         /// Consulta a imagem em PDF da Nota
-         
+
         public string ConsultarNFSePDF { get; set; }
 
-         
+
         /// Inutilização da NFSe
-         
+
         public string InutilizarNFSe { get; set; }
 
-         
+
         /// Obter o XML da NFSe
-         
+
         public string ObterNotaFiscal { get; set; }
 
-         
+
         /// Consulta Sequencia Lote Nota RPS
-         
+
         public string ConsultaSequenciaLoteNotaRPS { get; set; }
 
-         
+
         /// Substituir Nfse
-         
+
         public string SubstituirNfse { get; set; }
 
         #endregion NFS-e
 
         #region CFS-e
 
-         
+
         /// Enviar lote CFS-e
-         
+
         public string RecepcionarLoteCfse { get; set; }
 
-         
+
         /// Cancelar CFS-e
-         
+
         public string CancelarCfse { get; set; }
 
-         
+
         /// Consultar Lote CFS-e
-         
+
         public string ConsultarLoteCfse { get; set; }
 
-         
+
         /// Consultar Lote CFS-e
-         
+
         public string ConsultarCfse { get; set; }
 
-         
+
         /// Configurar/ativar terminal CFS-e
-         
+
         public string ConfigurarTerminalCfse { get; set; }
 
-         
+
         /// Enviar informe manutenção terminal CFS-e
-         
+
         public string EnviarInformeManutencaoCfse { get; set; }
 
-         
+
         /// Enviar informe de transmissão sem movimento da CFS-e
-         
+
         public string InformeTrasmissaoSemMovimentoCfse { get; set; }
 
-         
+
         /// Enviar o XML para consultar os dados do cadastro de terminal CFS-e
-         
+
         public string ConsultarDadosCadastroCfse { get; set; }
 
         #endregion CFS-e
 
         #region MDF-e
 
-         
+
         /// Recepção do MDFe
-         
+
         public string MDFeRecepcao { get; set; }
 
-         
+
         /// Consulta Recibo do lote de MDFe enviado
-         
+
         public string MDFeRetRecepcao { get; set; }
 
-         
+
         /// Consulta situação do MDFe
-         
+
         public string MDFeConsulta { get; set; }
 
-         
+
         /// Consulta status do serviço de MDFe
-         
+
         public string MDFeStatusServico { get; set; }
 
-         
+
         /// Recepcao dos eventos do MDF-e
-         
+
         public string MDFeRecepcaoEvento { get; set; }
 
-         
+
         /// Consulta dos MDFe´s não encerrados
-         
+
         public string MDFeNaoEncerrado { get; set; }
 
-         
+
         /// Recepcao dos LMC´s
-         
+
         public string LMCAutorizacao { get; set; }
 
         #endregion MDF-e
 
         #region CTe
 
-         
+
         /// Recepção do CTe
-         
+
         public string CTeRecepcao { get; set; }
 
-         
+
         /// Consulta recibo do lote de CTe enviado
-         
+
         public string CTeRetRecepcao { get; set; }
 
-         
+
         /// Inutilização numeração do CTe
-         
+
         public string CTeInutilizacao { get; set; }
 
-         
+
         /// Consulta Situação do CTe
-         
+
         public string CTeConsulta { get; set; }
 
-         
+
         /// Consulta Status Serviço do CTe
-         
+
         public string CTeStatusServico { get; set; }
 
-         
+
         /// Consulta cadastro do contribuinte do CTe
-         
+
         public string CTeConsultaCadastro { get; set; }
 
-         
+
         /// Recepção de eventos do CTe
-         
+
         public string CTeRecepcaoEvento { get; set; }
 
-         
+
         /// Distribuição de DFe de interesses de autores (CTe)
-         
+
         public string CTeDistribuicaoDFe { get; set; }
 
-         
+
         /// Recepção do CTe modelo 67
-         
+
         public string CteRecepcaoOS { get; set; }
 
         #endregion CTe
 
         #region EFDReinf
 
-         
+
         /// Recepção do lote de eventos do EFDReinf
-         
+
         public string RecepcaoLoteReinf { get; set; }
 
-         
+
         /// Consulta do lote de eventos do EFDReinf
-         
+
         public string ConsultarLoteReinf { get; set; }
 
         #endregion EFDReinf
 
         #region eSocial
 
-         
+
         /// Recepção do lote de eventos do eSocial
-         
+
         public string RecepcaoLoteeSocial { get; set; }
 
-         
+
         /// Consulta do lote de eventos do eSocial
-         
+
         public string ConsultarLoteeSocial { get; set; }
 
         #endregion eSocial

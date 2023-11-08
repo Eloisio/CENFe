@@ -33,3 +33,7 @@ D:\Desenvolvimento\UNINFe\trunk\fontes\NFe.Service\obj\Debug\NFe.Service.pdb
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Service\obj\Debug\NFe.Service.csprojResolveAssemblyReference.cache
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Service\obj\Debug\NFe.Service.dll
 D:\Desenvolvimento\CENFe\trunk\fontes\NFe.Service\obj\Debug\NFe.Service.pdb
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Service\obj\Debug\NFe.Service.csprojAssemblyReference.cache
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Service\obj\Debug\NFe.Service.csproj.CopyComplete
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Service\obj\Debug\NFe.Service.dll
+E:\Desenvolvimento\cenfe\trunk\fontes\NFe.Service\obj\Debug\NFe.Service.pdb

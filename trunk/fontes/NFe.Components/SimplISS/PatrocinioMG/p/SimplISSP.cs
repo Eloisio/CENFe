@@ -8,19 +8,19 @@ namespace NFe.Components.SimplISS.PatrocinioMG.p
     public class SimplISSP : EmiteNFSeBase
     {
         #region Propriedades
-         
+
         /// Objeto de conexão com o Webservice
-         
+
         private NfseService Service = new NfseService();
 
-         
+
         /// Dados de login e senha para autenticação
-         
+
         private ddDuasStrings DadosConexao = new ddDuasStrings();
 
-         
+
         /// Namespace utilizada para deserialização do objeto
-         
+
         public override string NameSpaces
         {
             get

@@ -23,9 +23,9 @@ namespace NFe.Service
 
         #region Classe com os Dados do XML da Consulta Cadastro do Contribuinte
 
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s da consulta do cadastro do contribuinte
-         
+
         private DadosConsCad dadosConsCad;
 
         #endregion Classe com os Dados do XML da Consulta Cadastro do Contribuinte
@@ -140,9 +140,9 @@ namespace NFe.Service
 
         #region ConsCad()
 
-         
+
         /// Faz a leitura do XML de consulta do cadastro do contribuinte e disponibiliza os valores de algumas tag´s
-         
+
         /// <param name="cArquivoXML">Caminho e nome do arquivo XML da consulta do cadastro do contribuinte a ser lido</param>
         private void ConsCad(int emp)
         {

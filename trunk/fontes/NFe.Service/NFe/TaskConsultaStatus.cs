@@ -21,9 +21,9 @@ namespace NFe.Service
 
         #region Classe com os dados do XML da consulta do status do serviço da NFe
 
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s do status do serviço
-         
+
         private DadosPedSta dadosPedSta;
 
         #endregion Classe com os dados do XML da consulta do status do serviço da NFe
@@ -127,9 +127,9 @@ namespace NFe.Service
 
         #region PedSta()
 
-         
+
         /// Faz a leitura do XML de pedido do status de serviço
-         
+
         /// <param name="cArquivoXml">Nome do XML a ser lido</param>
         /// <by>Wandrey Mundin Ferreira</by>
         ///

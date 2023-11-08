@@ -1,0 +1,16 @@
+D:\Desenvolvimento\UNINFe\trunk\fontes\MetroFramework\MetroFramework.Design\bin\Release\MetroFramework.Design.dll
+D:\Desenvolvimento\UNINFe\trunk\fontes\MetroFramework\MetroFramework.Design\bin\Release\MetroFramework.Design.pdb
+D:\Desenvolvimento\UNINFe\trunk\fontes\MetroFramework\MetroFramework.Design\bin\Release\MetroFramework.dll
+D:\Desenvolvimento\UNINFe\trunk\fontes\MetroFramework\MetroFramework.Design\bin\Release\MetroFramework.pdb
+C:\camposevolution\NFe\Uni\MetroFramework.Design.dll
+C:\camposevolution\NFe\Uni\MetroFramework.Design.pdb
+D:\Desenvolvimento\UNINFe\trunk\fontes\MetroFramework\MetroFramework.Design\obj\Debug\MetroFramework.Design.csprojResolveAssemblyReference.cache
+D:\Desenvolvimento\UNINFe\trunk\fontes\MetroFramework\MetroFramework.Design\obj\Debug\MetroFramework.Design.dll
+D:\Desenvolvimento\UNINFe\trunk\fontes\MetroFramework\MetroFramework.Design\obj\Debug\MetroFramework.Design.pdb
+D:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework.Design\obj\Debug\MetroFramework.Design.csprojResolveAssemblyReference.cache
+D:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework.Design\obj\Debug\MetroFramework.Design.dll
+D:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework.Design\obj\Debug\MetroFramework.Design.pdb
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework.Design\obj\Debug\MetroFramework.Design.csprojAssemblyReference.cache
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework.Design\obj\Debug\MetroFramework.Design.csproj.CopyComplete
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework.Design\obj\Debug\MetroFramework.Design.dll
+E:\Desenvolvimento\CENFe\trunk\fontes\MetroFramework\MetroFramework.Design\obj\Debug\MetroFramework.Design.pdb

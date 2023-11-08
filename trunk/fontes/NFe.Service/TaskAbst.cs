@@ -137,9 +137,9 @@ namespace NFe.Service
         #endregion NomeMetodoWS()
         #region NomeMetodoWSNFe()
 
-         
+
         /// Retorna o nome do método da classe de serviço - NFe
-         
+
         /// <param name="servico">Servico</param>
         /// <param name="cUF">Código da UF</param>
         /// <param name="versao">Versão do XML</param>
@@ -275,9 +275,9 @@ namespace NFe.Service
         #endregion NomeMetodoWSNFe()
         #region NomeMetodoWSNFSe()
 
-         
+
         /// Retorna o nome da classe do serviço passado por parâmetro do WebService do SEFAZ - CTe
-         
+
         /// <param name="servico">Servico</param>
         /// <param name="cMunicipio">Código do Municipio UF</param>
         /// <returns>Nome da classe</returns>
@@ -2324,10 +2324,10 @@ namespace NFe.Service
         #endregion AssinarValidarXMLNFe()
         #region ValidacoesGerais()
 
-         
+
         /// Efetua uma leitura do XML da nota fiscal eletrônica e faz diversas conferências do seu conteúdo e bloqueia se não
         /// estiver de acordo com as configurações do UNINFE
-         
+
         /// <param name="dadosNFe">Objeto com o conteúdo das tags do XML</param>
         /// <returns>true = Validado com sucesso</returns>
         /// <by>Wandrey Mundin Ferreira</by>
@@ -2582,9 +2582,9 @@ namespace NFe.Service
         #endregion ValidacoesGerais()
         #region LoteNfe()
 
-         
+
         /// Auxiliar na geração do arquivo XML de Lote de notas fiscais
-         
+
         /// <param name="arquivo">Nome do arquivo XML da NFe</param>
         /// <param name="conteudoXML">Conteúdo do XML</param>
         /// <param name="versaoXml">Versão do XML</param>
@@ -2599,9 +2599,9 @@ namespace NFe.Service
         #endregion LoteNfe()
         #region LoteNfe()
 
-         
+
         /// Auxliar na geração do arquivo XML de Lote de notas fiscais
-         
+
         /// <param name="arquivosNfe">Lista de arquivos de NFe para montagem do lote de várias NFe</param>
         /// <param name="versaoXml">Versao do Xml de lote</param>
         /// <date>24/08/2009</date>
@@ -2716,9 +2716,9 @@ namespace NFe.Service
         #endregion ProcessaNFeDenegada
         #region XmlPedRec()
 
-         
+
         /// Gerar o XML de consulta do recibo do lote da nfe
-         
+
         /// <param name="empresa">Código da empresa</param>
         /// <param name="nRec">Número do recibo a ser inserido no XML de consulta</param>
         /// <param name="versao">Versao do Schema XML</param>
@@ -3298,9 +3298,9 @@ namespace NFe.Service
         #endregion EnvEvento
         #region XmlLMC()
 
-         
+
         /// Efetua a leitura do XML de LMC e grava os dados no objeto "dadosLMC"
-         
+
         /// <param name="emp">Empresa</param>
         /// <param name="dadosLMC">Objeto dados LMC para receber os valores</param>
         protected virtual void XmlLMC(int emp, DadosLMC dadosLMC)

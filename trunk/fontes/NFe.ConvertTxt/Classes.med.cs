@@ -2,9 +2,9 @@
 
 namespace NFe.ConvertTxt
 {
-     
+
     /// Med
-     
+
     public class Med
     {
         public string nLote;

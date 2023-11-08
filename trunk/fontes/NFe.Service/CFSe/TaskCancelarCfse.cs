@@ -10,9 +10,9 @@ namespace NFe.Service.NFSe
     {
         #region Objeto com os dados do XML de cancelamento de NFS-e
 
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s do pedido de cancelamento
-         
+
         private DadosPedCanNfse oDadosPedCanNfse;
 
         #endregion Objeto com os dados do XML de cancelamento de NFS-e

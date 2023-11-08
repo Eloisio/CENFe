@@ -29,9 +29,9 @@ namespace NFe.Service
 
         #region Classe com os dados do XML do retorno do envio do Lote de NFe
 
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s do recibo do lote
-         
+
         private DadosRecClass dadosRec;
 
         #endregion Classe com os dados do XML do retorno do envio do Lote de NFe
@@ -163,9 +163,9 @@ namespace NFe.Service
 
         #endregion Execute
 
-         
+
         /// Tratar exceção
-         
+
         /// <param name="emp">Código da empresa</param>
         /// <param name="ex">Objeto com a exception</param>
         private void TrataException(int emp, Exception ex, string chavenfe)
@@ -201,10 +201,10 @@ namespace NFe.Service
 
         #region Recibo
 
-         
+
         /// Faz a leitura do XML do Recibo do lote enviado e disponibiliza os valores
         /// de algumas tag´s
-         
+
         /// <param name="strXml">String contendo o XML</param>
         private void Recibo(string strXml, int emp)
         {
@@ -245,9 +245,9 @@ namespace NFe.Service
 
         #region Protocolo()
 
-         
+
         /// Faz leitura do protocolo quando configurado para processo Síncrono
-         
+
         /// <param name="strXml">String contendo o XML</param>
         private void Protocolo(string strXml)
         {
@@ -275,9 +275,9 @@ namespace NFe.Service
 
         #region FinalizarNFeSincrono()
 
-         
+
         /// Finalizar a NFe no processo Síncrono
-         
+
         /// <param name="xmlRetorno">Conteúdo do XML retornado da SEFAZ</param>
         /// <param name="emp">Código da empresa para buscar as configurações</param>
         private void FinalizarNFeSincrono(string xmlRetorno, int emp, string chNFe)

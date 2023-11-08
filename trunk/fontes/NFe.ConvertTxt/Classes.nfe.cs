@@ -2,9 +2,9 @@
 
 namespace NFe.ConvertTxt
 {
-     
+
     /// NFe
-     
+
     public class NFe
     {
         public Ide ide { get; private set; }
@@ -26,9 +26,9 @@ namespace NFe.ConvertTxt
         public Cana cana;
         public protNFe protNFe { get; private set; }
 
-         
+
         /// NFC-e
-         
+
         public List<pag> pag { get; private set; }
         public qrCode qrCode { get; private set; }
 

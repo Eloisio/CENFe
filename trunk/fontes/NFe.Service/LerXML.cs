@@ -5,19 +5,19 @@ using System.Xml;
 
 namespace NFe.Service
 {
-     
+
     /// Classe responsável por ler os diversos XML´s utilizados na nota fiscal eletrônica
     /// e dispor as informações em propriedades para facilitar a leitura.
-     
+
     public class LerXML
     {
         #region Classes
 
         #region Classe com os dados do XML da NFe
 
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s da nota fiscal eletrônica
-         
+
         public DadosNFeClass oDadosNfe = new DadosNFeClass();
 
         #endregion Classe com os dados do XML da NFe
@@ -26,18 +26,18 @@ namespace NFe.Service
 
         #region Objeto com os dados do XML da consulta lote rps
 
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s da consulta lote rps
-         
+
         public DadosPedLoteRps oDadosPedLoteRps = new DadosPedLoteRps(Empresas.FindEmpresaByThread());
 
         #endregion Objeto com os dados do XML da consulta lote rps
 
         #region Objeto com os dados do XML da consulta nfse por RPS
 
-         
+
         /// Esta herança que deve ser utilizada fora da classe para obter os valores das tag´s da consulta nfse por rps
-         
+
         public DadosPedSitNfseRps oDadosPedSitNfseRps = new DadosPedSitNfseRps(Empresas.FindEmpresaByThread());
 
         #endregion Objeto com os dados do XML da consulta nfse por RPS
@@ -50,9 +50,9 @@ namespace NFe.Service
 
         #region Nfe()
 
-         
+
         /// Faz a leitura do XML da nota fiscal eletrônica e disponibiliza os valores de algumas tag´s
-         
+
         /// <param name="conteudoXML">Conteúdo do XML para ser lido</param>
         public void Nfe(XmlDocument conteudoXML)
         {
@@ -126,9 +126,9 @@ namespace NFe.Service
 
         #region Cte()
 
-         
+
         /// Faz a leitura do XML da nota fiscal eletrônica e disponibiliza os valores de algumas tag´s
-         
+
         /// <param name="conteudoXML">Conteúdo do XML para ser lido</param>
         public void Cte(XmlDocument conteudoXML)
         {
@@ -190,9 +190,9 @@ namespace NFe.Service
 
         #region Mdfe()
 
-         
+
         /// Faz a leitura do XML da nota fiscal eletrônica e disponibiliza os valores de algumas tag´s
-         
+
         /// <param name="conteudoXML">Conteúdo do XML para ser lido</param>
         public void Mdfe(XmlDocument conteudoXML)
         {
@@ -254,9 +254,9 @@ namespace NFe.Service
 
         #region ClearDados()
 
-         
+
         /// Limpa conteúdo das propriedades do objeto oDadosNFe
-         
+
         private void ClearDados()
         {
             oDadosNfe.chavenfe =
@@ -281,9 +281,9 @@ namespace NFe.Service
 
         #region PedLoteRps()
 
-         
+
         /// Fazer a leitura do conteúdo do XML de consulta lote rps e disponibilizar conteúdo em um objeto para analise
-         
+
         /// <param name="arquivoXML">Arquivo XML que é para efetuar a leitura</param>
         public void PedLoteRps(string arquivoXML)
         {
@@ -316,9 +316,9 @@ namespace NFe.Service
 
         #region PedSitNfseRps()
 
-         
+
         /// Fazer a leitura do conteúdo do XML de consulta nfse por rps e disponibiliza conteúdo em um objeto para analise
-         
+
         /// <param name="arquivoXML">Arquivo XML que é para efetuar a leitura</param>
         public void PedSitNfseRps(string arquivoXML)
         {
