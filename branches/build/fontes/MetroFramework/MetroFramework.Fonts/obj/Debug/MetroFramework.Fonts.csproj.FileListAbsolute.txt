@@ -1,0 +1,9 @@
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework.Fonts\bin\Release\MetroFramework.Fonts.dll
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework.Fonts\bin\Release\MetroFramework.Fonts.pdb
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework.Fonts\bin\Release\MetroFramework.dll
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework.Fonts\bin\Release\MetroFramework.pdb
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.csproj.AssemblyReference.cache
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.csproj.CopyComplete
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.dll
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.pdb

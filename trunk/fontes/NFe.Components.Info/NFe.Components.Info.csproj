@@ -142,16 +142,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NFe.Certificado\NFe.Certificado.csproj">
-      <Project>{c045a27f-415b-4f7d-8b9b-2956589932c8}</Project>
-      <Name>NFe.Certificado</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NFe.Components\NFe.Components.csproj">
-      <Project>{C199D582-6DA4-4D00-8963-89BA04777872}</Project>
-      <Name>NFe.Components</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>

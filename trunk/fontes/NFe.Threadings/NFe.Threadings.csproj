@@ -151,14 +151,6 @@
       <Project>{c199d582-6da4-4d00-8963-89ba04777872}</Project>
       <Name>NFe.Components</Name>
     </ProjectReference>
-    <ProjectReference Include="..\NFe.Service\NFe.Service.csproj">
-      <Project>{975C0CFB-C646-4A1D-8927-FD63869F2DAF}</Project>
-      <Name>NFe.Service</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NFe.Settings\NFe.Settings.csproj">
-      <Project>{A963E456-A54B-4C4D-A9DE-E80C136C3554}</Project>
-      <Name>NFe.Settings</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

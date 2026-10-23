@@ -185,12 +185,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NFe.Components\NFe.Components.csproj">
-      <Project>{C199D582-6DA4-4D00-8963-89BA04777872}</Project>
-      <Name>NFe.Components</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

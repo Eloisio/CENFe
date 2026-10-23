@@ -176,10 +176,6 @@
       <Project>{c199d582-6da4-4d00-8963-89ba04777872}</Project>
       <Name>NFe.Components</Name>
     </ProjectReference>
-    <ProjectReference Include="..\NFe.Settings\NFe.Settings.csproj">
-      <Project>{a963e456-a54b-4c4d-a9de-e80c136c3554}</Project>
-      <Name>NFe.Settings</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

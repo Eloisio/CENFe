@@ -1,6 +1,3 @@
-C:\camposevolution\CENFe\CEnfe_ws.exe.config
-C:\camposevolution\CENFe\CEnfe_ws.exe
-C:\camposevolution\CENFe\CEnfe_ws.pdb
 D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.csprojResolveAssemblyReference.cache
 D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe_ws\obj\Debug\NFe.UI.Form_Main.resources
 D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.Properties.Resources.resources
@@ -9,3 +6,14 @@ D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.UserControl3
 D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.csproj.GenerateResource.Cache
 D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.exe
 D:\Desenvolvimento\UNINFe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.pdb
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.csproj.AssemblyReference.cache
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.csproj.SuggestedBindingRedirects.cache
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.exe.config
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\Debug\NFe.UI.Form_Main.resources
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.Properties.Resources.resources
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.UserControl2.resources
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.UserControl3.resources
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.csproj.GenerateResource.cache
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.csproj.CoreCompileInputs.cache
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.exe
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\Debug\CEnfe_ws.pdb

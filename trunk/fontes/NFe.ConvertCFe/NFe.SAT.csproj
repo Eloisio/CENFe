@@ -140,12 +140,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NFe.Components\NFe.Components.csproj">
-      <Project>{C199D582-6DA4-4D00-8963-89BA04777872}</Project>
-      <Name>NFe.Components</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

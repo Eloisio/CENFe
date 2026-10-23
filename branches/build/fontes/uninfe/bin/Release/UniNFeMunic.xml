@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<nfes_municipios>
+  <Registro ID="2900702" Nome="Alagoinhas - BA" Padrao="FREIRE_INFORMATICA" />
+  <Registro ID="4300406" Nome="Alegrete - RS" Padrao="DBSELLER" />
+  <Registro ID="4100400" Nome="Almirante Tamandaré - PR" Padrao="BETHA" />
+  <Registro ID="2901007" Nome="Amargosa - BA" Padrao="ADM_SISTEMAS" />
+  <Registro ID="1500800" Nome="Ananindeua - PA" Padrao="GINFES" />
+  <Registro ID="5201108" Nome="Anapolis - GO" Padrao="ISSNET" />
+  <Registro ID="4101101" Nome="Andirá - PR" Padrao="SIMPLISS" />
+  <Registro ID="3102605" Nome="Andradas - MG" Padrao="GOVDIGITAL" />
+  <Registro ID="3300100" Nome="Angra dos Reis - RJ" Padrao="TIPLAN" />
+  <Registro ID="4101408" Nome="Apucarana - PR" Padrao="ISSONLINE_ASSESSORPUBLICO" />
+  <Registro ID="2800308" Nome="Aracaju - SE" Padrao="WEBISS_202" />
+  <Registro ID="3502804" Nome="Aracatuba - SP" Padrao="ISSONLINE_ASSESSORPUBLICO" />
+  <Registro ID="4201307" Nome="Araquari - SC" Padrao="IPM" />
+  <Registro ID="3503208" Nome="Araraquara - SP" Padrao="GINFES" />
+  <Registro ID="3503307" Nome="Araras - SP" Padrao="SIMPLISS" />
+  <Registro ID="3104205" Nome="Arcos - MG" Padrao="WEBISS" />
+  <Registro ID="3504008" Nome="Assis - SP" Padrao="FIORILLI" />
+  <Registro ID="4102109" Nome="Astorga - PR" Padrao="SIMPLISS" />
+  <Registro ID="3504503" Nome="Avaré - SP" Padrao="FIORILLI" />
+  <Registro ID="4301602" Nome="Bagé - RS" Padrao="WEBISS_202" />
+  <Registro ID="4202008" Nome="Balneário Camboriú - SC" Padrao="SIMPLISS" />
+  <Registro ID="4102307" Nome="Balsa Nova - PR" Padrao="EQUIPLANO" />
+  <Registro ID="3105608" Nome="Barbacena - MG" Padrao="WEBISS" />
+  <Registro ID="3200904" Nome="Barra de São Francisco - ES" Padrao="EL" />
+  <Registro ID="3300308" Nome="Barra do Piraí - RJ" Padrao="WEBISS_202" />
+  <Registro ID="3300407" Nome="Barra Mansa - RJ" Padrao="ISSONLINE_ASSESSORPUBLICO" />
+  <Registro ID="3505500" Nome="Barretos - SP" Padrao="SIGCORP_SIGISS" />
+  <Registro ID="3105905" Nome="Barroso - MG" Padrao="SH3" />
+  <Registro ID="3505807" Nome="Bastos - SP" Padrao="PRONIN" />
+  <Registro ID="3506003" Nome="Bauru - SP" Padrao="BAURU_SP" />
+  <Registro ID="3506102" Nome="Bebedouro - SP" Padrao="CONAM" />
+  <Registro ID="1501402" Nome="Belém - PA" Padrao="DSF" />
+  <Registro ID="3300456" Nome="Belford Roxo - RJ" Padrao="GINFES" />
+  <Registro ID="3106200" Nome="Belo Horizonte - MG" Padrao="BHISS" />
+  <Registro ID="4302105" Nome="Bento Gonçalves - RS" Padrao="BETHA" />
+  <Registro ID="3506359" Nome="Bertioga - SP" Padrao="GINFES" />
+  <Registro ID="3106705" Nome="Betim - MG" Padrao="GINFES" />
+  <Registro ID="3506508" Nome="Birigui - SP" Padrao="SMARAPD" />
+  <Registro ID="4202404" Nome="Blumenau - SC" Padrao="BLUMENAU_SC" />
+  <Registro ID="3507001" Nome="Boituva - SP" Padrao="ISSONLINE4R" />
+  <Registro ID="3107406" Nome="Bom Despacho - MG" Padrao="WEBISS" />
+  <Registro ID="4202453" Nome="Bombinhas - SC" Padrao="BETHA" />
+  <Registro ID="4302451" Nome="Boqueirão do Leão - RS" Padrao="BETHA" />
+  <Registro ID="3507506" Nome="Botucatu - SP" Padrao="SIGCORP_SIGISS" />
+  <Registro ID="2904605" Nome="Brumado - BA" Padrao="WEBISS" />
+  <Registro ID="4202909" Nome="Brusque - SC" Padrao="IPM" />
+  <Registro ID="4203006" Nome="Caçador - SC" Padrao="PUBLICA" />
+  <Registro ID="4302808" Nome="Caçapava do Sul - RS" Padrao="DUETO" />
+  <Registro ID="4303004" Nome="Cachoeira do Sul - RS" Padrao="PRONIN" />
+  <Registro ID="4303103" Nome="Cachoeirinha - RS" Padrao="THEMA" />
+  <Registro ID="4103453" Nome="Cafelândia - PR" Padrao="EQUIPLANO" />
+  <Registro ID="4303301" Nome="Caibaté - RS" Padrao="ABASE" />
+  <Registro ID="3509007" Nome="Caieiras - SP" Padrao="CONAM" />
+  <Registro ID="2905701" Nome="Camaçari - BA" Padrao="CAMACARI_BA" />
+  <Registro ID="3509502" Nome="Campinas - SP" Padrao="DSF" />
+  <Registro ID="4303905" Nome="Campo Bom - RS" Padrao="GIF" />
+  <Registro ID="5002704" Nome="Campo Grande - MS" Padrao="DSF" />
+  <Registro ID="4104204" Nome="Campo Largo - PR" Padrao="IPM" />
+  <Registro ID="4104303" Nome="Campo Mourão - PR" Padrao="IPM" />
+  <Registro ID="5102637" Nome="Campo Novo do Parecis - MT" Padrao="COPLAN" />
+  <Registro ID="3301009" Nome="Campos dos Goytacazes - RJ" Padrao="GINFES" />
+  <Registro ID="2906501" Nome="Candeias - BA" Padrao="WEBISS" />
+  <Registro ID="4104428" Nome="Candói - PR" Padrao="EQUIPLANO" />
+  <Registro ID="4304606" Nome="Canoas - RS" Padrao="CANOAS_RS" />
+  <Registro ID="4104501" Nome="Capanema - PR" Padrao="EQUIPLANO" />
+  <Registro ID="4203907" Nome="Capinzal - SC" Padrao="BETHA" />
+  <Registro ID="4104600" Nome="Capitão Leônidas Marques - PR" Padrao="EQUIPLANO" />
+  <Registro ID="3510500" Nome="Caraguatatuba - SP" Padrao="GINFES" />
+  <Registro ID="4104659" Nome="Carâmbei - PR" Padrao="EQUIPLANO" />
+  <Registro ID="3201308" Nome="Cariacica - ES" Padrao="SMARAPD" />
+  <Registro ID="2604106" Nome="Caruaru - PE" Padrao="GINFES" />
+  <Registro ID="4104808" Nome="Cascavel - PR" Padrao="ISSNET" />
+  <Registro ID="3115300" Nome="Cataguases - MG" Padrao="GINFES" />
+  <Registro ID="3511102" Nome="Catanduva - SP" Padrao="PRONIN" />
+  <Registro ID="4305108" Nome="Caxias do Sul - RS" Padrao="GIF" />
+  <Registro ID="3511300" Nome="Cedral - SP" Padrao="GINFES" />
+  <Registro ID="4105508" Nome="Cianorte - PR" Padrao="SIGCORP_SIGISS" />
+  <Registro ID="3116605" Nome="Cláudio - MG" Padrao="BETHA" />
+  <Registro ID="4204251" Nome="Cocal do Sul - SC" Padrao="BETHA" />
+  <Registro ID="3201506" Nome="Colatina - ES" Padrao="EL" />
+  <Registro ID="3118601" Nome="Contagem - MG" Padrao="GINFES" />
+  <Registro ID="5003207" Nome="Corumba - MS" Padrao="FIORILLI" />
+  <Registro ID="3512803" Nome="Cosmópolis - SP" Padrao="PRONIN" />
+  <Registro ID="3512902" Nome="Cosmorama - SP" Padrao="FIORILLI" />
+  <Registro ID="3513009" Nome="Cotia - SP" Padrao="GINFES" />
+  <Registro ID="4204608" Nome="Criciúma - SC" Padrao="BETHA" />
+  <Registro ID="4306106" Nome="Cruz Alta - RS" Padrao="ISSNET" />
+  <Registro ID="5103403" Nome="Cuiabá - MT" Padrao="ISSNET" />
+  <Registro ID="4106902" Nome="Curitiba - PR" Padrao="EGOVERNE" />
+  <Registro ID="4204806" Nome="Curitibanos - SC" Padrao="BETHA" />
+  <Registro ID="3513801" Nome="Diadema - SP" Padrao="GINFES" />
+  <Registro ID="3122306" Nome="Divinópolis - MG" Padrao="GOVDIGITAL" />
+  <Registro ID="4306403" Nome="Dois Irmãos - RS" Padrao="TECNOSISTEMAS" />
+  <Registro ID="4107207" Nome="Dois Vizinhos - PR" Padrao="EQUIPLANO" />
+  <Registro ID="3301702" Nome="Duque de Caxias - RJ" Padrao="TIPLAN" />
+  <Registro ID="3515004" Nome="Embu das Artes - SP" Padrao="SIMPLISS" />
+  <Registro ID="4307005" Nome="Erechim - RS" Padrao="SYSTEMPRO" />
+  <Registro ID="4307609" Nome="Estância Velha - RS" Padrao="TECNOSISTEMAS" />
+  <Registro ID="4307708" Nome="Esteio - RS" Padrao="THEMA" />
+  <Registro ID="4307807" Nome="Estrela - RS" Padrao="IPM" />
+  <Registro ID="2304285" Nome="Eusébio - CE" Padrao="INTERSOL" />
+  <Registro ID="4307906" Nome="Farroupilha - RS" Padrao="GIF" />
+  <Registro ID="2910800" Nome="Feira de Santana - BA" Padrao="WEBISS" />
+  <Registro ID="4205407" Nome="Florianópolis - SC" Padrao="SOFTPLAN" />
+  <Registro ID="3126109" Nome="Formiga - MG" Padrao="WEBISS" />
+  <Registro ID="2304400" Nome="Fortaleza - CE" Padrao="GINFES" />
+  <Registro ID="4108304" Nome="Foz do Iguaçu - PR" Padrao="LEXSOM" />
+  <Registro ID="3516200" Nome="Franca - SP" Padrao="GINFES" />
+  <Registro ID="4108403" Nome="Francisco Beltrão - PR" Padrao="EQUIPLANO" />
+  <Registro ID="4308607" Nome="Garibaldi - RS" Padrao="GIF" />
+  <Registro ID="4205902" Nome="Gaspar - SC" Padrao="THEMA" />
+  <Registro ID="4309001" Nome="Giruá - RS" Padrao="ABASE" />
+  <Registro ID="5208707" Nome="Goiania - GO" Padrao="GOIANIA" />
+  <Registro ID="3127701" Nome="Governador Valadares - MG" Padrao="SIGCORP_SIGISS" />
+  <Registro ID="4309209" Nome="Gravataí - RS" Padrao="IPM" />
+  <Registro ID="4309308" Nome="Guaíba - RS" Padrao="GINFES" />
+  <Registro ID="5104104" Nome="Guarantã do Norte - MT" Padrao="COPLAN" />
+  <Registro ID="4109401" Nome="Guarapuava - PR" Padrao="PRONIN" />
+  <Registro ID="3518404" Nome="Guaratinguetá - SP" Padrao="GINFES" />
+  <Registro ID="4109609" Nome="Guaratuba - PR" Padrao="EQUIPLANO" />
+  <Registro ID="3518800" Nome="Guarulhos - SP" Padrao="GINFES" />
+  <Registro ID="3128709" Nome="Guaxupé - MG" Padrao="GOVDIGITAL" />
+  <Registro ID="4309555" Nome="Harmonia - RS" Padrao="TECNOSISTEMAS" />
+  <Registro ID="4206702" Nome="Herval D'Oeste - SC" Padrao="BETHA" />
+  <Registro ID="4309605" Nome="Horizontina - RS" Padrao="PRONIN" />
+  <Registro ID="3519071" Nome="Hortolândia - SP" Padrao="GINFES" />
+  <Registro ID="4109708" Nome="Ibaiti - PR" Padrao="EQUIPLANO" />
+  <Registro ID="4109807" Nome="Ibiporã - PR" Padrao="EQUIPLANO" />
+  <Registro ID="4207007" Nome="Içara - SC" Padrao="WEBISS" />
+  <Registro ID="3202603" Nome="Iconha - ES" Padrao="EL" />
+  <Registro ID="3130101" Nome="Igarapé - MG" Padrao="SIGCORP_SIGISS" />
+  <Registro ID="3130309" Nome="Iguatama - MG" Padrao="SIMPLISS" />
+  <Registro ID="4310207" Nome="Ijui - RS" Padrao="DUETO" />
+  <Registro ID="4110102" Nome="Imbituva - PR" Padrao="EQUIPLANO" />
+  <Registro ID="3131307" Nome="Ipatinga - MG" Padrao="GINFES" />
+  <Registro ID="4110706" Nome="Irati - PR" Padrao="FINTEL" />
+  <Registro ID="3131703" Nome="Itabira - MG" Padrao="PRONIN" />
+  <Registro ID="3301900" Nome="Itaboraí - RJ" Padrao="GINFES" />
+  <Registro ID="1503606" Nome="Itaituba - PA" Padrao="FIORILLI" />
+  <Registro ID="4208203" Nome="Itajaí - SC" Padrao="PUBLICA" />
+  <Registro ID="3132404" Nome="Itajubá - MG" Padrao="GINFES" />
+  <Registro ID="3522208" Nome="Itapecerica da Serra - SP" Padrao="CONAM" />
+  <Registro ID="4208302" Nome="Itapema - SC" Padrao="BETHA" />
+  <Registro ID="3522802" Nome="Itaporanga - SP" Padrao="FIORILLI" />
+  <Registro ID="3133808" Nome="Itaúna - MG" Padrao="GINFES" />
+  <Registro ID="3523909" Nome="Itu - SP" Padrao="GINFES" />
+  <Registro ID="5211503" Nome="Itumbiara - GO" Padrao="PRODATA" />
+  <Registro ID="4310801" Nome="Ivoti - RS" Padrao="TECNOSISTEMAS" />
+  <Registro ID="2607901" Nome="Jaboatão dos Guararapes - PE" Padrao="TINUS" />
+  <Registro ID="3524402" Nome="Jacareí - SP" Padrao="ISSNET" />
+  <Registro ID="3524501" Nome="Jaci - SP" Padrao="FIORILLI" />
+  <Registro ID="4112009" Nome="Jaguariaíva - PR" Padrao="BETHA" />
+  <Registro ID="3524709" Nome="Jaguariúna - SP" Padrao="GINFES" />
+  <Registro ID="5211800" Nome="Jaragua - GO" Padrao="BSITBR" />
+  <Registro ID="4208906" Nome="Jaragua do Sul - SC" Padrao="BETHA" />
+  <Registro ID="3525300" Nome="Jaú - SP" Padrao="CONAM" />
+  <Registro ID="4209003" Nome="Joaçaba - SC" Padrao="BETHA" />
+  <Registro ID="2507507" Nome="João Pessoa - PB" Padrao="GINFES" />
+  <Registro ID="4209102" Nome="Joinville - SC" Padrao="JOINVILLE_SC" />
+  <Registro ID="3136702" Nome="Juiz de Fora - MG" Padrao="PORTALFACIL_ACTCON_202" />
+  <Registro ID="3525904" Nome="Jundiaí - SP" Padrao="GINFES" />
+  <Registro ID="3526100" Nome="Juquiá - SP" Padrao="ISSONLINE4R" />
+  <Registro ID="4209300" Nome="Lages - SC" Padrao="BETHA" />
+  <Registro ID="3137601" Nome="Lagoa Santa - MG" Padrao="GINFES" />
+  <Registro ID="4311403" Nome="Lajeado - RS" Padrao="THEMA" />
+  <Registro ID="4113304" Nome="Laranjeiras do Sul - PR" Padrao="EQUIPLANO" />
+  <Registro ID="2919207" Nome="Lauro de Freitas - SP" Padrao="METROPOLIS" />
+  <Registro ID="3138203" Nome="Lavras - MG" Padrao="GOVDIGITAL" />
+  <Registro ID="3526902" Nome="Limeira - SP" Padrao="CONAM" />
+  <Registro ID="4113700" Nome="Londrina - PR" Padrao="SIGCORP_SIGISS" />
+  <Registro ID="3527207" Nome="Lorena - SP" Padrao="EMBRAS" />
+  <Registro ID="5105259" Nome="Lucas do Rio Verde - MT" Padrao="FISSLEX" />
+  <Registro ID="4210035" Nome="Luzerna - SC" Padrao="BETHA" />
+  <Registro ID="3302403" Nome="Macaé - RJ" Padrao="TIPLAN" />
+  <Registro ID="1600303" Nome="Macapá - AP" Padrao="FIORILLI" />
+  <Registro ID="3528809" Nome="Macaraí - SP" Padrao="SIMPLISS" />
+  <Registro ID="2704302" Nome="Maceió - AL" Padrao="GINFES" />
+  <Registro ID="3528502" Nome="Mairipora - SP" Padrao="CONAM" />
+  <Registro ID="1302603" Nome="Manaus - AM" Padrao="MANAUS_AM" />
+  <Registro ID="4114104" Nome="Mandaguaçú - PR" Padrao="BETHA" />
+  <Registro ID="2307650" Nome="Maracanaú - CE" Padrao="GINFES" />
+  <Registro ID="2704708" Nome="Marechal Deodoro - AL" Padrao="GINFES" />
+  <Registro ID="3302700" Nome="Maricá - RJ" Padrao="GINFES" />
+  <Registro ID="3529005" Nome="Marília - SP" Padrao="SIGCORP_SIGISS" />
+  <Registro ID="4115200" Nome="Maringá - PR" Padrao="MARINGA_PR" />
+  <Registro ID="3529401" Nome="Mauá - SP" Padrao="GINFES" />
+  <Registro ID="4306734" Nome="Mauricio Cardoso - RS" Padrao="ABASE" />
+  <Registro ID="3530300" Nome="Mirassol - SP" Padrao="PRONIN" />
+  <Registro ID="3530409" Nome="Mirassolândia - SP" Padrao="FIORILLI" />
+  <Registro ID="4116059" Nome="Missal - PR" Padrao="EQUIPLANO" />
+  <Registro ID="3530508" Nome="Mococa - SP" Padrao="GINFES" />
+  <Registro ID="3530607" Nome="Mogi das Cruzes - SP" Padrao="SMARAPD" />
+  <Registro ID="3530706" Nome="Mogi Guaçu - SP" Padrao="SIGCORP_SIGISS" />
+  <Registro ID="3530805" Nome="Mogi Mirim - SP" Padrao="FISSLEX" />
+  <Registro ID="3531308" Nome="Monte Alto - SP" Padrao="BETHA" />
+  <Registro ID="4312401" Nome="Montenegro - RS" Padrao="THEMA" />
+  <Registro ID="3143302" Nome="Montes Claros - MG" Padrao="E_RECEITA" />
+  <Registro ID="4211207" Nome="Morro da Fumaça - SC" Padrao="BETHA" />
+  <Registro ID="2408102" Nome="Natal - RN" Padrao="NATALENSE" />
+  <Registro ID="3303302" Nome="Niterói - RJ" Padrao="TIPLAN_203" />
+  <Registro ID="3303401" Nome="Nova Friburgo - RJ" Padrao="MODERNIZACAO_PUBLICA" />
+  <Registro ID="3303500" Nome="Nova Iguaçu - RJ" Padrao="DSF" />
+  <Registro ID="3144805" Nome="Nova Lima - MG" Padrao="SUPERNOVA" />
+  <Registro ID="5106224" Nome="Nova Mutum - MT" Padrao="COPLAN" />
+  <Registro ID="4313300" Nome="Nova Prata - RS" Padrao="TECNOSISTEMAS" />
+  <Registro ID="4313375" Nome="Nova Santa Rita - RS" Padrao="DUETO" />
+  <Registro ID="4211504" Nome="Nova Trento - SC" Padrao="BETHA" />
+  <Registro ID="4211603" Nome="Nova Veneza - SC" Padrao="BETHA" />
+  <Registro ID="4313409" Nome="Novo Hamburgo - RS" Padrao="ISSNET" />
+  <Registro ID="3533908" Nome="Olímpia - SP" Padrao="GINFES" />
+  <Registro ID="4211702" Nome="Orleans - SC" Padrao="BETHA" />
+  <Registro ID="3534401" Nome="Osasco - SP" Padrao="EGOVERNEISS" />
+  <Registro ID="4313508" Nome="Osório - RS" Padrao="DBSELLER" />
+  <Registro ID="4211900" Nome="Palhoça - SC" Padrao="IPM" />
+  <Registro ID="1721000" Nome="Palmas - TO" Padrao="WEBISS" />
+  <Registro ID="3147105" Nome="Pará de Minas - MG" Padrao="GINFES" />
+  <Registro ID="3147006" Nome="Paracatu - MG" Padrao="GOVDIGITAL" />
+  <Registro ID="1505502" Nome="Paragominas - PA" Padrao="DESENVOLVECIDADE" />
+  <Registro ID="3535507" Nome="Paraguaçu Paulista - SP" Padrao="SIMPLISS" />
+  <Registro ID="4118204" Nome="Paranaguá - PR" Padrao="IPM" />
+  <Registro ID="3535804" Nome="Paranapanema - SP" Padrao="PRONIN" />
+  <Registro ID="4118402" Nome="Paranavaí - PR" Padrao="BETHA" />
+  <Registro ID="1505536" Nome="Parauapebas - PA" Padrao="GINFES" />
+  <Registro ID="4314050" Nome="Parobé - RS" Padrao="GIF" />
+  <Registro ID="4314100" Nome="Passo Fundo - RS" Padrao="THEMA" />
+  <Registro ID="4118501" Nome="Pato Branco - PR" Padrao="PRONIN" />
+  <Registro ID="3148004" Nome="Patos de Minas - MG" Padrao="CONSIST" />
+  <Registro ID="3148103" Nome="Patrocínio - MG" Padrao="SIMPLISS" />
+  <Registro ID="3536505" Nome="Paulínia - SP" Padrao="GINFES" />
+  <Registro ID="2610707" Nome="Paulistana - PE" Padrao="PUBLIC_SOFT" />
+  <Registro ID="3149309" Nome="Pedro Leopoldo - MG" Padrao="GOVDIGITAL" />
+  <Registro ID="5106422" Nome="Peixoto de Azevedo - MT" Padrao="GINFES" />
+  <Registro ID="4314407" Nome="Pelotas - RS" Padrao="AVMB_ASTEN" />
+  <Registro ID="3537305" Nome="Penápolis - SP" Padrao="MGM" />
+  <Registro ID="4314423" Nome="Picada Café - RS" Padrao="PRONIN" />
+  <Registro ID="3538709" Nome="Piracicaba - SP" Padrao="SIMPLISS" />
+  <Registro ID="3304003" Nome="Piraí - RJ" Padrao="TIPLAN" />
+  <Registro ID="3539806" Nome="Poá - SP" Padrao="CONAM" />
+  <Registro ID="3151800" Nome="Poços de Caldas - MG" Padrao="GOVDIGITAL" />
+  <Registro ID="4119905" Nome="Ponta Grossa - PR" Padrao="FINTEL" />
+  <Registro ID="3152105" Nome="Ponte Nova - MG" Padrao="MEMORY" />
+  <Registro ID="4314803" Nome="Portão - RS" Padrao="TECNOSISTEMAS" />
+  <Registro ID="4314902" Nome="Porto Alegre - RS" Padrao="BHISS" />
+  <Registro ID="1100205" Nome="Porto Velho - RO" Padrao="PORTOVELHENSE" />
+  <Registro ID="4315107" Nome="Porto Xavier - RS" Padrao="ABASE" />
+  <Registro ID="3540804" Nome="Potirendaba - SP" Padrao="FIORILLI" />
+  <Registro ID="4120358" Nome="Pranchita - PR" Padrao="EQUIPLANO" />
+  <Registro ID="3152808" Nome="Prata - MG" Padrao="GOVDIGITAL" />
+  <Registro ID="4315149" Nome="Presidente Lucena - RS" Padrao="TECNOSISTEMAS" />
+  <Registro ID="3541406" Nome="Presidente Prudente - SP" Padrao="SIMPLISS" />
+  <Registro ID="3153608" Nome="Prudente Morais - MG" Padrao="WEBISS" />
+  <Registro ID="4120606" Nome="Prudentópolis - PR" Padrao="EQUIPLANO" />
+  <Registro ID="4120804" Nome="Quatro Barras - PR" Padrao="BETHA" />
+  <Registro ID="2611606" Nome="Recife - PE" Padrao="TIPLAN" />
+  <Registro ID="3542404" Nome="Regente Feijó - SP" Padrao="PRONIN" />
+  <Registro ID="3542602" Nome="Registro - SP" Padrao="GINFES" />
+  <Registro ID="3304201" Nome="Resende - RJ" Padrao="BETHA" />
+  <Registro ID="3154606" Nome="Ribeirão das Neves - MG" Padrao="GINFES" />
+  <Registro ID="3543402" Nome="Ribeirão Preto - SP" Padrao="GINFES" />
+  <Registro ID="4122008" Nome="Rio Azul - PR" Padrao="EQUIPLANO" />
+  <Registro ID="3304300" Nome="Rio Bonito - RJ" Padrao="GINFES" />
+  <Registro ID="3304557" Nome="Rio de Janeiro - RJ" Padrao="CARIOCA" />
+  <Registro ID="4315602" Nome="Rio Grande - RS" Padrao="SIGCORP_SIGISS" />
+  <Registro ID="5218805" Nome="Rio Vede - GO" Padrao="BETHA" />
+  <Registro ID="4122404" Nome="Rolandia - PR" Padrao="PRONIN" />
+  <Registro ID="5107602" Nome="Rondonópolis - MT" Padrao="ABACO" />
+  <Registro ID="2927408" Nome="Salvador - BA" Padrao="SALVADOR_BA" />
+  <Registro ID="4316501" Nome="Salvador do Sul - RS" Padrao="TECNOSISTEMAS" />
+  <Registro ID="4316808" Nome="Santa Cruz do Sul - RS" Padrao="THEMA" />
+  <Registro ID="3546603" Nome="Santa Fé do Sul - SP" Padrao="RLZ_INFORMATICA" />
+  <Registro ID="4316907" Nome="Santa Maria - RS" Padrao="ISSNET" />
+  <Registro ID="4317202" Nome="Santa Rosa - RS" Padrao="IPM" />
+  <Registro ID="4124020" Nome="Santa Tereza do Oeste - PR" Padrao="BETHA" />
+  <Registro ID="3547809" Nome="Santo André - SP" Padrao="GINFES" />
+  <Registro ID="4317509" Nome="Santo Ângelo - RS" Padrao="ABASE" />
+  <Registro ID="4317707" Nome="Santo Antônio das Missões - RS" Padrao="ABASE" />
+  <Registro ID="4124400" Nome="Santo Antonio do Sudoeste - PR" Padrao="EQUIPLANO" />
+  <Registro ID="4317806" Nome="Santo Augusto - RS" Padrao="BETHA" />
+  <Registro ID="4317905" Nome="Santo Cristo - RS" Padrao="ABASE" />
+  <Registro ID="3548500" Nome="Santos - SP" Padrao="GINFES" />
+  <Registro ID="4215802" Nome="São Bento do Sul - SC" Padrao="IPM" />
+  <Registro ID="3548708" Nome="São Bernardo do Campo - SP" Padrao="GINFES" />
+  <Registro ID="4318002" Nome="São Borja - RS" Padrao="BETHA" />
+  <Registro ID="3548807" Nome="São Caetano do Sul - SP" Padrao="GINFES" />
+  <Registro ID="3548906" Nome="São Carlos - SP" Padrao="GINFES" />
+  <Registro ID="4318309" Nome="São Gabriel - RS" Padrao="PRONIN" />
+  <Registro ID="3304904" Nome="São Gonçalo - RJ" Padrao="SIGCORP_SIGISS" />
+  <Registro ID="3162500" Nome="São João del-Rei - MG" Padrao="SH3" />
+  <Registro ID="4216602" Nome="São José - SC" Padrao="BETHA" />
+  <Registro ID="3162955" Nome="São José da Lapa - MG" Padrao="GOVDIGITAL" />
+  <Registro ID="2111201" Nome="São José do Ribamar - MA" Padrao="PORTALFACIL_ACTCON" />
+  <Registro ID="5107305" Nome="São José do Rio Claro - MT" Padrao="WEBISS" />
+  <Registro ID="3549805" Nome="São José do Rio Preto - SP" Padrao="GINFES" />
+  <Registro ID="3549904" Nome="São José dos Campos - SP" Padrao="GINFES" />
+  <Registro ID="4125506" Nome="São José dos Pinhais - PR" Padrao="GINFES" />
+  <Registro ID="4318705" Nome="São Leopoldo - RS" Padrao="THEMA" />
+  <Registro ID="2111300" Nome="São Luis - MA" Padrao="DSF" />
+  <Registro ID="4318903" Nome="São Luiz Gonzaga - RS" Padrao="ABASE" />
+  <Registro ID="3550308" Nome="São Paulo - SP" Padrao="PAULISTANA" />
+  <Registro ID="4319505" Nome="São Sebastião do Caí - RS" Padrao="TECNOSISTEMAS" />
+  <Registro ID="4320008" Nome="Sapucaia do Sul - RS" Padrao="GIF" />
+  <Registro ID="4126306" Nome="Sengés - PR" Padrao="EQUIPLANO" />
+  <Registro ID="4320404" Nome="Serafina Corrêa - RS" Padrao="FIORILLI" />
+  <Registro ID="3205002" Nome="Serra - ES" Padrao="SMARAPD" />
+  <Registro ID="3551702" Nome="Sertãozinho - SP" Padrao="SMARAPD" />
+  <Registro ID="4217600" Nome="Siderópolis - SC" Padrao="WEBISS" />
+  <Registro ID="2930709" Nome="Simões Filho - BA" Padrao="EL" />
+  <Registro ID="5107909" Nome="Sinop - MT" Padrao="COPLAN" />
+  <Registro ID="3552205" Nome="Sorocaba - SP" Padrao="DSF" />
+  <Registro ID="3552809" Nome="Taboão da Serra - SP" Padrao="CONAM" />
+  <Registro ID="4217808" Nome="Taió - SC" Padrao="IPM" />
+  <Registro ID="5107958" Nome="Tangará da Serra - MT" Padrao="WEBISS" />
+  <Registro ID="4321204" Nome="Taquara - RS" Padrao="THEMA" />
+  <Registro ID="3553807" Nome="Taquarituba - SP" Padrao="FIORILLI" />
+  <Registro ID="3553856" Nome="Taquarivaí - SP" Padrao="ISSONLINE4R" />
+  <Registro ID="3554003" Nome="Tatuí - SP" Padrao="GINFES" />
+  <Registro ID="3554102" Nome="Taubaté - SP" Padrao="CONAM" />
+  <Registro ID="2211001" Nome="Teresina - PI" Padrao="DSF" />
+  <Registro ID="4127700" Nome="Toledo - PR" Padrao="EQUIPLANO" />
+  <Registro ID="3554805" Nome="Tremembé - SP" Padrao="SIGCORP_SIGISS" />
+  <Registro ID="4321709" Nome="Tres Coroas - RS" Padrao="DUETO" />
+  <Registro ID="4321808" Nome="Três de Maio - RS" Padrao="ABASE" />
+  <Registro ID="4322004" Nome="Triunfo - RS" Padrao="DUETO" />
+  <Registro ID="3169901" Nome="Ubá - MG" Padrao="GINFES" />
+  <Registro ID="3170107" Nome="Uberaba - MG" Padrao="WEBISS" />
+  <Registro ID="3170206" Nome="Uberlândia - MG" Padrao="DSF" />
+  <Registro ID="4128104" Nome="Umuarama - PR" Padrao="GINFES" />
+  <Registro ID="4322400" Nome="Uruguaiana - RS" Padrao="DUETO" />
+  <Registro ID="4219002" Nome="Urussanga - SC" Padrao="BETHA" />
+  <Registro ID="4322509" Nome="Vacari - RS" Padrao="PRONIN" />
+  <Registro ID="3170701" Nome="Varginha - MG" Padrao="CONAM" />
+  <Registro ID="5108402" Nome="Várzea Grande - MT" Padrao="ABACO" />
+  <Registro ID="4322608" Nome="Venancio Aires - RS" Padrao="THEMA" />
+  <Registro ID="3556602" Nome="Vera Cruz - RS" Padrao="PRONIN" />
+  <Registro ID="4323002" Nome="Viamão - RS" Padrao="PRONIN" />
+  <Registro ID="3205200" Nome="Vila Velha - ES" Padrao="VVISS" />
+  <Registro ID="1100304" Nome="Vilhena - RO" Padrao="WEBISS_202" />
+  <Registro ID="3172004" Nome="Visconde do Rio Branco - MG" Padrao="SH3" />
+  <Registro ID="3205309" Nome="Vitória - ES" Padrao="VVISS" />
+  <Registro ID="3205309" Nome="Vitória - ES" Padrao="VVISS" />
+  <Registro ID="3306305" Nome="Volta Redonda - RJ" Padrao="SIMPLISS" />
+  <Registro ID="3557105" Nome="Votuporanga - SP" Padrao="GINFES" />
+</nfes_municipios>

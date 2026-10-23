@@ -1,0 +1,7 @@
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\x86\Release\CEnfe_ws.csproj.AssemblyReference.cache
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\x86\Release\NFe.UI.Form_Main.resources
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\x86\Release\CEnfe_ws.Properties.Resources.resources
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\x86\Release\CEnfe_ws.UserControl2.resources
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\x86\Release\CEnfe_ws.UserControl3.resources
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\x86\Release\CEnfe_ws.csproj.GenerateResource.cache
+D:\Projetos\CEV\extremeadmin2\cenfe\trunk\fontes\uninfe_ws\obj\x86\Release\CEnfe_ws.csproj.CoreCompileInputs.cache

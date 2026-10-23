@@ -1,0 +1,12 @@
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework\bin\Release\MetroFramework.dll
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework\bin\Release\MetroFramework.pdb
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.csproj.AssemblyReference.cache
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.Controls.MetroGrid.resources
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.Forms.MetroMessageBox.resources
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.Forms.MetroTaskWindow.resources
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.MetroMessageBoxControl.resources
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.Properties.Resources.resources
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.csproj.GenerateResource.cache
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.dll
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\MetroFramework\MetroFramework\obj\Debug\MetroFramework.pdb

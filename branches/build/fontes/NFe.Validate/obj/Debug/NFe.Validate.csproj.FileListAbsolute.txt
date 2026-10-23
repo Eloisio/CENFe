@@ -1,0 +1,16 @@
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\bin\Release\NFe.Validate.dll
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\bin\Release\NFe.Validate.pdb
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\bin\Release\NFe.Certificado.dll
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\bin\Release\NFe.Components.dll
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\bin\Release\NFe.Settings.dll
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\bin\Release\Newtonsoft.Json.dll
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\bin\Release\NFe.Certificado.pdb
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\bin\Release\NFe.Components.pdb
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\bin\Release\NFe.Components.dll.config
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\bin\Release\NFe.Settings.pdb
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\bin\Release\Newtonsoft.Json.xml
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\obj\Debug\NFe.Validate.csproj.AssemblyReference.cache
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\obj\Debug\NFe.Validate.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\obj\Debug\NFe.Validate.csproj.CopyComplete
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\obj\Debug\NFe.Validate.dll
+D:\Desenvolvimento\CEV\extremeadmin\cenfe\branches\build\fontes\NFe.Validate\obj\Debug\NFe.Validate.pdb
